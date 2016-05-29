@@ -1,0 +1,3682 @@
+[
+    {
+        "outputFile": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/values-de/values-de.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 13,
+                    "endColumn": 19,
+                    "endOffset": 382
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 4,
+                        "startOffset": 4300,
+                        "endLine": 134,
+                        "endColumn": 19,
+                        "endOffset": 4627
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 387,
+                    "endLine": 23,
+                    "endColumn": 19,
+                    "endOffset": 633
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 5147,
+                        "endLine": 166,
+                        "endColumn": 19,
+                        "endOffset": 5393
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 638,
+                    "endLine": 27,
+                    "endColumn": 19,
+                    "endOffset": 751
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 4,
+                        "startOffset": 3354,
+                        "endLine": 90,
+                        "endColumn": 19,
+                        "endOffset": 3467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 756,
+                    "endLine": 36,
+                    "endColumn": 19,
+                    "endOffset": 1005
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 136,
+                        "startColumn": 4,
+                        "startOffset": 4633,
+                        "endLine": 144,
+                        "endColumn": 19,
+                        "endOffset": 4882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1010,
+                    "endLine": 46,
+                    "endColumn": 19,
+                    "endOffset": 1263
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 4,
+                        "startOffset": 4888,
+                        "endLine": 155,
+                        "endColumn": 19,
+                        "endOffset": 5141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 1268,
+                    "endLine": 74,
+                    "endColumn": 19,
+                    "endOffset": 2027
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 3535,
+                        "endLine": 121,
+                        "endColumn": 19,
+                        "endOffset": 4294
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 2032,
+                    "endColumn": 36,
+                    "endOffset": 2064
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 2221,
+                        "endColumn": 36,
+                        "endOffset": 2253
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 2069,
+                    "endColumn": 41,
+                    "endOffset": 2106
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 2932,
+                        "endColumn": 41,
+                        "endOffset": 2969
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 2111,
+                    "endColumn": 45,
+                    "endOffset": 2152
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 2298,
+                        "endColumn": 45,
+                        "endOffset": 2339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 2157,
+                    "endColumn": 46,
+                    "endOffset": 2199
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 46,
+                        "endOffset": 97
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 2204,
+                    "endColumn": 37,
+                    "endOffset": 2237
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 2344,
+                        "endColumn": 37,
+                        "endOffset": 2377
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 2242,
+                    "endColumn": 51,
+                    "endOffset": 2289
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 3163,
+                        "endColumn": 51,
+                        "endOffset": 3210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 2294,
+                    "endColumn": 51,
+                    "endOffset": 2341
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 3111,
+                        "endColumn": 51,
+                        "endOffset": 3158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 2346,
+                    "endColumn": 53,
+                    "endOffset": 2395
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 416,
+                        "endColumn": 53,
+                        "endOffset": 465
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 2400,
+                    "endColumn": 38,
+                    "endOffset": 2434
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 2525,
+                        "endColumn": 38,
+                        "endOffset": 2559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 2439,
+                    "endColumn": 44,
+                    "endOffset": 2479
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 2641,
+                        "endColumn": 44,
+                        "endOffset": 2681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 2484,
+                    "endColumn": 39,
+                    "endOffset": 2519
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 4,
+                        "startOffset": 3216,
+                        "endColumn": 39,
+                        "endOffset": 3251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 2524,
+                    "endColumn": 43,
+                    "endOffset": 2563
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 323,
+                        "endColumn": 43,
+                        "endOffset": 362
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 2568,
+                    "endLine": 100,
+                    "endColumn": 14,
+                    "endOffset": 3254
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 281,
+                        "startColumn": 4,
+                        "startOffset": 11746,
+                        "endLine": 294,
+                        "endColumn": 14,
+                        "endOffset": 12432
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 3259,
+                    "endLine": 111,
+                    "endColumn": 13,
+                    "endOffset": 3934
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 296,
+                        "startColumn": 5,
+                        "startOffset": 12444,
+                        "endLine": 306,
+                        "endColumn": 13,
+                        "endOffset": 13119
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 3939,
+                    "endLine": 126,
+                    "endColumn": 12,
+                    "endOffset": 4915
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 238,
+                        "startColumn": 4,
+                        "startOffset": 9029,
+                        "endLine": 252,
+                        "endColumn": 12,
+                        "endOffset": 10005
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 4920,
+                    "endLine": 143,
+                    "endColumn": 12,
+                    "endOffset": 6196
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 254,
+                        "startColumn": 4,
+                        "startOffset": 10014,
+                        "endLine": 270,
+                        "endColumn": 12,
+                        "endOffset": 11290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 6201,
+                    "endLine": 155,
+                    "endColumn": 13,
+                    "endOffset": 6899
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 207,
+                        "startColumn": 4,
+                        "startOffset": 7203,
+                        "endLine": 218,
+                        "endColumn": 13,
+                        "endOffset": 7901
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 6904,
+                    "endLine": 163,
+                    "endColumn": 12,
+                    "endOffset": 7341
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 272,
+                        "startColumn": 4,
+                        "startOffset": 11300,
+                        "endLine": 279,
+                        "endColumn": 12,
+                        "endOffset": 11737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 7346,
+                    "endLine": 180,
+                    "endColumn": 12,
+                    "endOffset": 8455
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 220,
+                        "startColumn": 4,
+                        "startOffset": 7911,
+                        "endLine": 236,
+                        "endColumn": 12,
+                        "endOffset": 9020
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 181,
+                    "startColumn": 4,
+                    "startOffset": 8460,
+                    "endColumn": 46,
+                    "endOffset": 8502
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 4,
+                        "startOffset": 2795,
+                        "endColumn": 46,
+                        "endOffset": 2837
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 8507,
+                    "endLine": 205,
+                    "endColumn": 13,
+                    "endOffset": 9745
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 182,
+                        "startColumn": 4,
+                        "startOffset": 5954,
+                        "endLine": 205,
+                        "endColumn": 13,
+                        "endOffset": 7197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 206,
+                    "startColumn": 4,
+                    "startOffset": 9750,
+                    "endLine": 211,
+                    "endColumn": 13,
+                    "endOffset": 9972
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 175,
+                        "startColumn": 8,
+                        "startOffset": 5717,
+                        "endLine": 180,
+                        "endColumn": 13,
+                        "endOffset": 5944
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 212,
+                    "startColumn": 4,
+                    "startOffset": 9977,
+                    "endColumn": 38,
+                    "endOffset": 10011
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 2602,
+                        "endColumn": 38,
+                        "endOffset": 2636
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 213,
+                    "startColumn": 4,
+                    "startOffset": 10016,
+                    "endColumn": 37,
+                    "endOffset": 10049
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 2564,
+                        "endColumn": 37,
+                        "endOffset": 2597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 214,
+                    "startColumn": 4,
+                    "startOffset": 10054,
+                    "endColumn": 39,
+                    "endOffset": 10089
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 308,
+                        "startColumn": 4,
+                        "startOffset": 13125,
+                        "endColumn": 39,
+                        "endOffset": 13160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 215,
+                    "startColumn": 4,
+                    "startOffset": 10094,
+                    "endColumn": 49,
+                    "endOffset": 10139
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 2745,
+                        "endColumn": 49,
+                        "endOffset": 2790
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 216,
+                    "startColumn": 4,
+                    "startOffset": 10144,
+                    "endColumn": 44,
+                    "endOffset": 10184
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 3308,
+                        "endColumn": 44,
+                        "endOffset": 3348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 217,
+                    "startColumn": 4,
+                    "startOffset": 10189,
+                    "endColumn": 57,
+                    "endOffset": 10242
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 2687,
+                        "endColumn": 57,
+                        "endOffset": 2740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 218,
+                    "startColumn": 4,
+                    "startOffset": 10247,
+                    "endColumn": 40,
+                    "endOffset": 10283
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 470,
+                        "endColumn": 40,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 219,
+                    "startColumn": 4,
+                    "startOffset": 10288,
+                    "endColumn": 51,
+                    "endOffset": 10335
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 3256,
+                        "endColumn": 51,
+                        "endOffset": 3303
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 220,
+                    "startColumn": 4,
+                    "startOffset": 10340,
+                    "endColumn": 37,
+                    "endOffset": 10373
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 37,
+                        "endOffset": 583
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 221,
+                    "startColumn": 4,
+                    "startOffset": 10378,
+                    "endColumn": 41,
+                    "endOffset": 10415
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1225,
+                        "endColumn": 41,
+                        "endOffset": 1262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 222,
+                    "startColumn": 4,
+                    "startOffset": 10420,
+                    "endColumn": 42,
+                    "endOffset": 10458
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 960,
+                        "endColumn": 42,
+                        "endOffset": 998
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 223,
+                    "startColumn": 4,
+                    "startOffset": 10463,
+                    "endColumn": 44,
+                    "endOffset": 10503
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 770,
+                        "endColumn": 44,
+                        "endOffset": 810
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 224,
+                    "startColumn": 4,
+                    "startOffset": 10508,
+                    "endColumn": 43,
+                    "endOffset": 10547
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1093,
+                        "endColumn": 43,
+                        "endOffset": 1132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 225,
+                    "startColumn": 4,
+                    "startOffset": 10552,
+                    "endColumn": 45,
+                    "endOffset": 10593
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1047,
+                        "endColumn": 45,
+                        "endOffset": 1088
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 226,
+                    "startColumn": 4,
+                    "startOffset": 10598,
+                    "endColumn": 45,
+                    "endOffset": 10639
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 724,
+                        "endColumn": 45,
+                        "endOffset": 765
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 227,
+                    "startColumn": 4,
+                    "startOffset": 10644,
+                    "endColumn": 49,
+                    "endOffset": 10689
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 910,
+                        "endColumn": 49,
+                        "endOffset": 955
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 228,
+                    "startColumn": 4,
+                    "startOffset": 10694,
+                    "endColumn": 50,
+                    "endOffset": 10740
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 859,
+                        "endColumn": 50,
+                        "endOffset": 905
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 229,
+                    "startColumn": 4,
+                    "startOffset": 10745,
+                    "endColumn": 42,
+                    "endOffset": 10783
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1182,
+                        "endColumn": 42,
+                        "endOffset": 1220
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 230,
+                    "startColumn": 4,
+                    "startOffset": 10788,
+                    "endColumn": 58,
+                    "endOffset": 10842
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1267,
+                        "endColumn": 58,
+                        "endOffset": 1321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 231,
+                    "startColumn": 4,
+                    "startOffset": 10847,
+                    "endColumn": 43,
+                    "endOffset": 10886
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1003,
+                        "endColumn": 43,
+                        "endOffset": 1042
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 232,
+                    "startColumn": 4,
+                    "startOffset": 10891,
+                    "endColumn": 43,
+                    "endOffset": 10930
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 815,
+                        "endColumn": 43,
+                        "endOffset": 854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 233,
+                    "startColumn": 4,
+                    "startOffset": 10935,
+                    "endColumn": 44,
+                    "endOffset": 10975
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 589,
+                        "endColumn": 44,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 234,
+                    "startColumn": 4,
+                    "startOffset": 10980,
+                    "endColumn": 44,
+                    "endOffset": 11020
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1137,
+                        "endColumn": 44,
+                        "endOffset": 1177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 235,
+                    "startColumn": 4,
+                    "startOffset": 11025,
+                    "endColumn": 43,
+                    "endOffset": 11064
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 680,
+                        "endColumn": 43,
+                        "endOffset": 719
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 236,
+                    "startColumn": 4,
+                    "startOffset": 11069,
+                    "endColumn": 45,
+                    "endOffset": 11110
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 634,
+                        "endColumn": 45,
+                        "endOffset": 675
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 237,
+                    "startColumn": 4,
+                    "startOffset": 11115,
+                    "endColumn": 49,
+                    "endOffset": 11160
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 2123,
+                        "endColumn": 49,
+                        "endOffset": 2168
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 238,
+                    "startColumn": 4,
+                    "startOffset": 11165,
+                    "endColumn": 60,
+                    "endOffset": 11221
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 3473,
+                        "endColumn": 60,
+                        "endOffset": 3529
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 239,
+                    "startColumn": 4,
+                    "startOffset": 11226,
+                    "endColumn": 42,
+                    "endOffset": 11264
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 1944,
+                        "endColumn": 42,
+                        "endOffset": 1982
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 240,
+                    "startColumn": 4,
+                    "startOffset": 11269,
+                    "endColumn": 44,
+                    "endOffset": 11309
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 1987,
+                        "endColumn": 44,
+                        "endOffset": 2027
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 241,
+                    "startColumn": 4,
+                    "startOffset": 11314,
+                    "endColumn": 46,
+                    "endOffset": 11356
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1519,
+                        "endColumn": 46,
+                        "endOffset": 1561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 242,
+                    "startColumn": 4,
+                    "startOffset": 11361,
+                    "endColumn": 45,
+                    "endOffset": 11402
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 1750,
+                        "endColumn": 45,
+                        "endOffset": 1791
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 243,
+                    "startColumn": 4,
+                    "startOffset": 11407,
+                    "endColumn": 47,
+                    "endOffset": 11450
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 1702,
+                        "endColumn": 47,
+                        "endOffset": 1745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 244,
+                    "startColumn": 4,
+                    "startOffset": 11455,
+                    "endColumn": 53,
+                    "endOffset": 11504
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 1890,
+                        "endColumn": 53,
+                        "endOffset": 1939
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 245,
+                    "startColumn": 4,
+                    "startOffset": 11509,
+                    "endColumn": 50,
+                    "endOffset": 11555
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1468,
+                        "endColumn": 50,
+                        "endOffset": 1514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 246,
+                    "startColumn": 4,
+                    "startOffset": 11560,
+                    "endColumn": 46,
+                    "endOffset": 11602
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 1796,
+                        "endColumn": 46,
+                        "endOffset": 1838
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 247,
+                    "startColumn": 4,
+                    "startOffset": 11607,
+                    "endColumn": 45,
+                    "endOffset": 11648
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 1656,
+                        "endColumn": 45,
+                        "endOffset": 1697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 248,
+                    "startColumn": 4,
+                    "startOffset": 11653,
+                    "endColumn": 45,
+                    "endOffset": 11694
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1566,
+                        "endColumn": 45,
+                        "endOffset": 1607
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 249,
+                    "startColumn": 4,
+                    "startOffset": 11699,
+                    "endColumn": 43,
+                    "endOffset": 11738
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 1612,
+                        "endColumn": 43,
+                        "endOffset": 1651
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 250,
+                    "startColumn": 4,
+                    "startOffset": 11743,
+                    "endColumn": 43,
+                    "endOffset": 11782
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2032,
+                        "endColumn": 43,
+                        "endOffset": 2071
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 251,
+                    "startColumn": 4,
+                    "startOffset": 11787,
+                    "endColumn": 46,
+                    "endOffset": 11829
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1327,
+                        "endColumn": 46,
+                        "endOffset": 1369
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 252,
+                    "startColumn": 4,
+                    "startOffset": 11834,
+                    "endColumn": 46,
+                    "endOffset": 11876
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 1843,
+                        "endColumn": 46,
+                        "endOffset": 1885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 253,
+                    "startColumn": 4,
+                    "startOffset": 11881,
+                    "endColumn": 45,
+                    "endOffset": 11922
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1422,
+                        "endColumn": 45,
+                        "endOffset": 1463
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 254,
+                    "startColumn": 4,
+                    "startOffset": 11927,
+                    "endColumn": 47,
+                    "endOffset": 11970
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1374,
+                        "endColumn": 47,
+                        "endOffset": 1417
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 255,
+                    "startColumn": 4,
+                    "startOffset": 11975,
+                    "endColumn": 46,
+                    "endOffset": 12017
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 2076,
+                        "endColumn": 46,
+                        "endOffset": 2118
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 256,
+                    "startColumn": 4,
+                    "startOffset": 12022,
+                    "endColumn": 42,
+                    "endOffset": 12060
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 102,
+                        "endColumn": 42,
+                        "endOffset": 140
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 257,
+                    "startColumn": 4,
+                    "startOffset": 12065,
+                    "endColumn": 41,
+                    "endOffset": 12102
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 2975,
+                        "endColumn": 41,
+                        "endOffset": 3012
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 258,
+                    "startColumn": 4,
+                    "startOffset": 12107,
+                    "endColumn": 46,
+                    "endOffset": 12149
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 3017,
+                        "endColumn": 46,
+                        "endOffset": 3059
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 259,
+                    "startColumn": 4,
+                    "startOffset": 12154,
+                    "endColumn": 45,
+                    "endOffset": 12195
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endColumn": 45,
+                        "endOffset": 230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 260,
+                    "startColumn": 4,
+                    "startOffset": 12200,
+                    "endColumn": 39,
+                    "endOffset": 12235
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 2258,
+                        "endColumn": 39,
+                        "endOffset": 2293
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 261,
+                    "startColumn": 4,
+                    "startOffset": 12240,
+                    "endColumn": 46,
+                    "endOffset": 12282
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 3064,
+                        "endColumn": 46,
+                        "endOffset": 3106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 262,
+                    "startColumn": 4,
+                    "startOffset": 12287,
+                    "endColumn": 47,
+                    "endOffset": 12330
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 367,
+                        "endColumn": 47,
+                        "endOffset": 410
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 263,
+                    "startColumn": 4,
+                    "startOffset": 12335,
+                    "endColumn": 37,
+                    "endOffset": 12368
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endColumn": 37,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 264,
+                    "startColumn": 4,
+                    "startOffset": 12373,
+                    "endColumn": 44,
+                    "endOffset": 12413
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 2175,
+                        "endColumn": 44,
+                        "endOffset": 2215
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 265,
+                    "startColumn": 4,
+                    "startOffset": 12418,
+                    "endColumn": 43,
+                    "endOffset": 12457
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 145,
+                        "endColumn": 43,
+                        "endOffset": 184
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 266,
+                    "startColumn": 4,
+                    "startOffset": 12462,
+                    "endColumn": 42,
+                    "endOffset": 12500
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 42,
+                        "endOffset": 318
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 267,
+                    "startColumn": 4,
+                    "startOffset": 12505,
+                    "endColumn": 44,
+                    "endOffset": 12545
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 235,
+                        "endColumn": 44,
+                        "endOffset": 275
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 268,
+                    "startColumn": 4,
+                    "startOffset": 12550,
+                    "endColumn": 43,
+                    "endOffset": 12589
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 2842,
+                        "endColumn": 43,
+                        "endOffset": 2881
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 269,
+                    "startColumn": 4,
+                    "startOffset": 12594,
+                    "endColumn": 47,
+                    "endOffset": 12637
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 4,
+                        "startOffset": 5559,
+                        "endColumn": 47,
+                        "endOffset": 5602
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 270,
+                    "startColumn": 4,
+                    "startOffset": 12642,
+                    "endColumn": 50,
+                    "endOffset": 12688
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 173,
+                        "startColumn": 4,
+                        "startOffset": 5661,
+                        "endColumn": 50,
+                        "endOffset": 5707
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 271,
+                    "startColumn": 4,
+                    "startOffset": 12693,
+                    "endColumn": 53,
+                    "endOffset": 12742
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 5607,
+                        "endColumn": 53,
+                        "endOffset": 5656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 272,
+                    "startColumn": 4,
+                    "startOffset": 12747,
+                    "endColumn": 48,
+                    "endOffset": 12791
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 170,
+                        "startColumn": 4,
+                        "startOffset": 5510,
+                        "endColumn": 48,
+                        "endOffset": 5554
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 273,
+                    "startColumn": 4,
+                    "startOffset": 12796,
+                    "endColumn": 45,
+                    "endOffset": 12837
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 2886,
+                        "endColumn": 45,
+                        "endOffset": 2927
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 274,
+                    "startColumn": 4,
+                    "startOffset": 12842,
+                    "endColumn": 46,
+                    "endOffset": 12884
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 2477,
+                        "endColumn": 46,
+                        "endOffset": 2519
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 275,
+                    "startColumn": 4,
+                    "startOffset": 12889,
+                    "endColumn": 47,
+                    "endOffset": 12932
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 2383,
+                        "endColumn": 47,
+                        "endOffset": 2426
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 276,
+                    "startColumn": 4,
+                    "startOffset": 12937,
+                    "endColumn": 45,
+                    "endOffset": 12978
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 2431,
+                        "endColumn": 45,
+                        "endOffset": 2472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 277,
+                    "startColumn": 4,
+                    "startOffset": 12983,
+                    "endColumn": 57,
+                    "endOffset": 13036
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 168,
+                        "startColumn": 4,
+                        "startOffset": 5399,
+                        "endColumn": 57,
+                        "endOffset": 5452
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 278,
+                    "startColumn": 4,
+                    "startOffset": 13041,
+                    "endColumn": 52,
+                    "endOffset": 13089
+                },
+                "from": {
+                    "file": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 169,
+                        "startColumn": 4,
+                        "startOffset": 5457,
+                        "endColumn": 52,
+                        "endOffset": 5505
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/values-de/values-de.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 13,
+                    "endColumn": 19,
+                    "endOffset": 382
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 123,
+                        "startColumn": 4,
+                        "startOffset": 4300,
+                        "endLine": 134,
+                        "endColumn": 19,
+                        "endOffset": 4627
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 387,
+                    "endLine": 23,
+                    "endColumn": 19,
+                    "endOffset": 633
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 5147,
+                        "endLine": 166,
+                        "endColumn": 19,
+                        "endOffset": 5393
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 638,
+                    "endLine": 27,
+                    "endColumn": 19,
+                    "endOffset": 751
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 87,
+                        "startColumn": 4,
+                        "startOffset": 3354,
+                        "endLine": 90,
+                        "endColumn": 19,
+                        "endOffset": 3467
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 756,
+                    "endLine": 36,
+                    "endColumn": 19,
+                    "endOffset": 1005
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 136,
+                        "startColumn": 4,
+                        "startOffset": 4633,
+                        "endLine": 144,
+                        "endColumn": 19,
+                        "endOffset": 4882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1010,
+                    "endLine": 46,
+                    "endColumn": 19,
+                    "endOffset": 1263
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 4,
+                        "startOffset": 4888,
+                        "endLine": 155,
+                        "endColumn": 19,
+                        "endOffset": 5141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 1268,
+                    "endLine": 74,
+                    "endColumn": 19,
+                    "endOffset": 2027
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 94,
+                        "startColumn": 4,
+                        "startOffset": 3535,
+                        "endLine": 121,
+                        "endColumn": 19,
+                        "endOffset": 4294
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 75,
+                    "startColumn": 4,
+                    "startOffset": 2032,
+                    "endColumn": 36,
+                    "endOffset": 2064
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 2221,
+                        "endColumn": 36,
+                        "endOffset": 2253
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 76,
+                    "startColumn": 4,
+                    "startOffset": 2069,
+                    "endColumn": 41,
+                    "endOffset": 2106
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 75,
+                        "startColumn": 4,
+                        "startOffset": 2932,
+                        "endColumn": 41,
+                        "endOffset": 2969
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 2111,
+                    "endColumn": 45,
+                    "endOffset": 2152
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 2298,
+                        "endColumn": 45,
+                        "endOffset": 2339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 78,
+                    "startColumn": 4,
+                    "startOffset": 2157,
+                    "endColumn": 46,
+                    "endOffset": 2199
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 46,
+                        "endOffset": 97
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 79,
+                    "startColumn": 4,
+                    "startOffset": 2204,
+                    "endColumn": 37,
+                    "endOffset": 2237
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 2344,
+                        "endColumn": 37,
+                        "endOffset": 2377
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 80,
+                    "startColumn": 4,
+                    "startOffset": 2242,
+                    "endColumn": 51,
+                    "endOffset": 2289
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 81,
+                        "startColumn": 4,
+                        "startOffset": 3163,
+                        "endColumn": 51,
+                        "endOffset": 3210
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 81,
+                    "startColumn": 4,
+                    "startOffset": 2294,
+                    "endColumn": 51,
+                    "endOffset": 2341
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 80,
+                        "startColumn": 4,
+                        "startOffset": 3111,
+                        "endColumn": 51,
+                        "endOffset": 3158
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 82,
+                    "startColumn": 4,
+                    "startOffset": 2346,
+                    "endColumn": 53,
+                    "endOffset": 2395
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 416,
+                        "endColumn": 53,
+                        "endOffset": 465
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 83,
+                    "startColumn": 4,
+                    "startOffset": 2400,
+                    "endColumn": 38,
+                    "endOffset": 2434
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 2525,
+                        "endColumn": 38,
+                        "endOffset": 2559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 84,
+                    "startColumn": 4,
+                    "startOffset": 2439,
+                    "endColumn": 44,
+                    "endOffset": 2479
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 68,
+                        "startColumn": 4,
+                        "startOffset": 2641,
+                        "endColumn": 44,
+                        "endOffset": 2681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 2484,
+                    "endColumn": 39,
+                    "endOffset": 2519
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 83,
+                        "startColumn": 4,
+                        "startOffset": 3216,
+                        "endColumn": 39,
+                        "endOffset": 3251
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 2524,
+                    "endColumn": 43,
+                    "endOffset": 2563
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 323,
+                        "endColumn": 43,
+                        "endOffset": 362
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 2568,
+                    "endLine": 100,
+                    "endColumn": 14,
+                    "endOffset": 3254
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 281,
+                        "startColumn": 4,
+                        "startOffset": 11746,
+                        "endLine": 294,
+                        "endColumn": 14,
+                        "endOffset": 12432
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 101,
+                    "startColumn": 4,
+                    "startOffset": 3259,
+                    "endLine": 111,
+                    "endColumn": 13,
+                    "endOffset": 3934
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 296,
+                        "startColumn": 5,
+                        "startOffset": 12444,
+                        "endLine": 306,
+                        "endColumn": 13,
+                        "endOffset": 13119
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 112,
+                    "startColumn": 4,
+                    "startOffset": 3939,
+                    "endLine": 126,
+                    "endColumn": 12,
+                    "endOffset": 4915
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 238,
+                        "startColumn": 4,
+                        "startOffset": 9029,
+                        "endLine": 252,
+                        "endColumn": 12,
+                        "endOffset": 10005
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 127,
+                    "startColumn": 4,
+                    "startOffset": 4920,
+                    "endLine": 143,
+                    "endColumn": 12,
+                    "endOffset": 6196
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 254,
+                        "startColumn": 4,
+                        "startOffset": 10014,
+                        "endLine": 270,
+                        "endColumn": 12,
+                        "endOffset": 11290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 144,
+                    "startColumn": 4,
+                    "startOffset": 6201,
+                    "endLine": 155,
+                    "endColumn": 13,
+                    "endOffset": 6899
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 207,
+                        "startColumn": 4,
+                        "startOffset": 7203,
+                        "endLine": 218,
+                        "endColumn": 13,
+                        "endOffset": 7901
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 6904,
+                    "endLine": 163,
+                    "endColumn": 12,
+                    "endOffset": 7341
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 272,
+                        "startColumn": 4,
+                        "startOffset": 11300,
+                        "endLine": 279,
+                        "endColumn": 12,
+                        "endOffset": 11737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 164,
+                    "startColumn": 4,
+                    "startOffset": 7346,
+                    "endLine": 180,
+                    "endColumn": 12,
+                    "endOffset": 8455
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 220,
+                        "startColumn": 4,
+                        "startOffset": 7911,
+                        "endLine": 236,
+                        "endColumn": 12,
+                        "endOffset": 9020
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 181,
+                    "startColumn": 4,
+                    "startOffset": 8460,
+                    "endColumn": 46,
+                    "endOffset": 8502
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 72,
+                        "startColumn": 4,
+                        "startOffset": 2795,
+                        "endColumn": 46,
+                        "endOffset": 2837
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 182,
+                    "startColumn": 4,
+                    "startOffset": 8507,
+                    "endLine": 205,
+                    "endColumn": 13,
+                    "endOffset": 9745
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 182,
+                        "startColumn": 4,
+                        "startOffset": 5954,
+                        "endLine": 205,
+                        "endColumn": 13,
+                        "endOffset": 7197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 206,
+                    "startColumn": 4,
+                    "startOffset": 9750,
+                    "endLine": 211,
+                    "endColumn": 13,
+                    "endOffset": 9972
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 175,
+                        "startColumn": 8,
+                        "startOffset": 5717,
+                        "endLine": 180,
+                        "endColumn": 13,
+                        "endOffset": 5944
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 212,
+                    "startColumn": 4,
+                    "startOffset": 9977,
+                    "endColumn": 38,
+                    "endOffset": 10011
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 67,
+                        "startColumn": 4,
+                        "startOffset": 2602,
+                        "endColumn": 38,
+                        "endOffset": 2636
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 213,
+                    "startColumn": 4,
+                    "startOffset": 10016,
+                    "endColumn": 37,
+                    "endOffset": 10049
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 66,
+                        "startColumn": 4,
+                        "startOffset": 2564,
+                        "endColumn": 37,
+                        "endOffset": 2597
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 214,
+                    "startColumn": 4,
+                    "startOffset": 10054,
+                    "endColumn": 39,
+                    "endOffset": 10089
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 308,
+                        "startColumn": 4,
+                        "startOffset": 13125,
+                        "endColumn": 39,
+                        "endOffset": 13160
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 215,
+                    "startColumn": 4,
+                    "startOffset": 10094,
+                    "endColumn": 49,
+                    "endOffset": 10139
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 71,
+                        "startColumn": 4,
+                        "startOffset": 2745,
+                        "endColumn": 49,
+                        "endOffset": 2790
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 216,
+                    "startColumn": 4,
+                    "startOffset": 10144,
+                    "endColumn": 44,
+                    "endOffset": 10184
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 85,
+                        "startColumn": 4,
+                        "startOffset": 3308,
+                        "endColumn": 44,
+                        "endOffset": 3348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 217,
+                    "startColumn": 4,
+                    "startOffset": 10189,
+                    "endColumn": 57,
+                    "endOffset": 10242
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 70,
+                        "startColumn": 4,
+                        "startOffset": 2687,
+                        "endColumn": 57,
+                        "endOffset": 2740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 218,
+                    "startColumn": 4,
+                    "startOffset": 10247,
+                    "endColumn": 40,
+                    "endOffset": 10283
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 470,
+                        "endColumn": 40,
+                        "endOffset": 506
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 219,
+                    "startColumn": 4,
+                    "startOffset": 10288,
+                    "endColumn": 51,
+                    "endOffset": 10335
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 84,
+                        "startColumn": 4,
+                        "startOffset": 3256,
+                        "endColumn": 51,
+                        "endOffset": 3303
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 220,
+                    "startColumn": 4,
+                    "startOffset": 10340,
+                    "endColumn": 37,
+                    "endOffset": 10373
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 37,
+                        "endOffset": 583
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 221,
+                    "startColumn": 4,
+                    "startOffset": 10378,
+                    "endColumn": 41,
+                    "endOffset": 10415
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1225,
+                        "endColumn": 41,
+                        "endOffset": 1262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 222,
+                    "startColumn": 4,
+                    "startOffset": 10420,
+                    "endColumn": 42,
+                    "endOffset": 10458
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 960,
+                        "endColumn": 42,
+                        "endOffset": 998
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 223,
+                    "startColumn": 4,
+                    "startOffset": 10463,
+                    "endColumn": 44,
+                    "endOffset": 10503
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 770,
+                        "endColumn": 44,
+                        "endOffset": 810
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 224,
+                    "startColumn": 4,
+                    "startOffset": 10508,
+                    "endColumn": 43,
+                    "endOffset": 10547
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1093,
+                        "endColumn": 43,
+                        "endOffset": 1132
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 225,
+                    "startColumn": 4,
+                    "startOffset": 10552,
+                    "endColumn": 45,
+                    "endOffset": 10593
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1047,
+                        "endColumn": 45,
+                        "endOffset": 1088
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 226,
+                    "startColumn": 4,
+                    "startOffset": 10598,
+                    "endColumn": 45,
+                    "endOffset": 10639
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 724,
+                        "endColumn": 45,
+                        "endOffset": 765
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 227,
+                    "startColumn": 4,
+                    "startOffset": 10644,
+                    "endColumn": 49,
+                    "endOffset": 10689
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 910,
+                        "endColumn": 49,
+                        "endOffset": 955
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 228,
+                    "startColumn": 4,
+                    "startOffset": 10694,
+                    "endColumn": 50,
+                    "endOffset": 10740
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 859,
+                        "endColumn": 50,
+                        "endOffset": 905
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 229,
+                    "startColumn": 4,
+                    "startOffset": 10745,
+                    "endColumn": 42,
+                    "endOffset": 10783
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1182,
+                        "endColumn": 42,
+                        "endOffset": 1220
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 230,
+                    "startColumn": 4,
+                    "startOffset": 10788,
+                    "endColumn": 58,
+                    "endOffset": 10842
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1267,
+                        "endColumn": 58,
+                        "endOffset": 1321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 231,
+                    "startColumn": 4,
+                    "startOffset": 10847,
+                    "endColumn": 43,
+                    "endOffset": 10886
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1003,
+                        "endColumn": 43,
+                        "endOffset": 1042
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 232,
+                    "startColumn": 4,
+                    "startOffset": 10891,
+                    "endColumn": 43,
+                    "endOffset": 10930
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 815,
+                        "endColumn": 43,
+                        "endOffset": 854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 233,
+                    "startColumn": 4,
+                    "startOffset": 10935,
+                    "endColumn": 44,
+                    "endOffset": 10975
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 589,
+                        "endColumn": 44,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 234,
+                    "startColumn": 4,
+                    "startOffset": 10980,
+                    "endColumn": 44,
+                    "endOffset": 11020
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1137,
+                        "endColumn": 44,
+                        "endOffset": 1177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 235,
+                    "startColumn": 4,
+                    "startOffset": 11025,
+                    "endColumn": 43,
+                    "endOffset": 11064
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 680,
+                        "endColumn": 43,
+                        "endOffset": 719
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 236,
+                    "startColumn": 4,
+                    "startOffset": 11069,
+                    "endColumn": 45,
+                    "endOffset": 11110
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 634,
+                        "endColumn": 45,
+                        "endOffset": 675
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 237,
+                    "startColumn": 4,
+                    "startOffset": 11115,
+                    "endColumn": 49,
+                    "endOffset": 11160
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 2123,
+                        "endColumn": 49,
+                        "endOffset": 2168
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 238,
+                    "startColumn": 4,
+                    "startOffset": 11165,
+                    "endColumn": 60,
+                    "endOffset": 11221
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 92,
+                        "startColumn": 4,
+                        "startOffset": 3473,
+                        "endColumn": 60,
+                        "endOffset": 3529
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 239,
+                    "startColumn": 4,
+                    "startOffset": 11226,
+                    "endColumn": 42,
+                    "endOffset": 11264
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 1944,
+                        "endColumn": 42,
+                        "endOffset": 1982
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 240,
+                    "startColumn": 4,
+                    "startOffset": 11269,
+                    "endColumn": 44,
+                    "endOffset": 11309
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 1987,
+                        "endColumn": 44,
+                        "endOffset": 2027
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 241,
+                    "startColumn": 4,
+                    "startOffset": 11314,
+                    "endColumn": 46,
+                    "endOffset": 11356
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 1519,
+                        "endColumn": 46,
+                        "endOffset": 1561
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 242,
+                    "startColumn": 4,
+                    "startOffset": 11361,
+                    "endColumn": 45,
+                    "endOffset": 11402
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 1750,
+                        "endColumn": 45,
+                        "endOffset": 1791
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 243,
+                    "startColumn": 4,
+                    "startOffset": 11407,
+                    "endColumn": 47,
+                    "endOffset": 11450
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 1702,
+                        "endColumn": 47,
+                        "endOffset": 1745
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 244,
+                    "startColumn": 4,
+                    "startOffset": 11455,
+                    "endColumn": 53,
+                    "endOffset": 11504
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 1890,
+                        "endColumn": 53,
+                        "endOffset": 1939
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 245,
+                    "startColumn": 4,
+                    "startOffset": 11509,
+                    "endColumn": 50,
+                    "endOffset": 11555
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1468,
+                        "endColumn": 50,
+                        "endOffset": 1514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 246,
+                    "startColumn": 4,
+                    "startOffset": 11560,
+                    "endColumn": 46,
+                    "endOffset": 11602
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 1796,
+                        "endColumn": 46,
+                        "endOffset": 1838
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 247,
+                    "startColumn": 4,
+                    "startOffset": 11607,
+                    "endColumn": 45,
+                    "endOffset": 11648
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 1656,
+                        "endColumn": 45,
+                        "endOffset": 1697
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 248,
+                    "startColumn": 4,
+                    "startOffset": 11653,
+                    "endColumn": 45,
+                    "endOffset": 11694
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 1566,
+                        "endColumn": 45,
+                        "endOffset": 1607
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 249,
+                    "startColumn": 4,
+                    "startOffset": 11699,
+                    "endColumn": 43,
+                    "endOffset": 11738
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 1612,
+                        "endColumn": 43,
+                        "endOffset": 1651
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 250,
+                    "startColumn": 4,
+                    "startOffset": 11743,
+                    "endColumn": 43,
+                    "endOffset": 11782
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2032,
+                        "endColumn": 43,
+                        "endOffset": 2071
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 251,
+                    "startColumn": 4,
+                    "startOffset": 11787,
+                    "endColumn": 46,
+                    "endOffset": 11829
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1327,
+                        "endColumn": 46,
+                        "endOffset": 1369
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 252,
+                    "startColumn": 4,
+                    "startOffset": 11834,
+                    "endColumn": 46,
+                    "endOffset": 11876
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 1843,
+                        "endColumn": 46,
+                        "endOffset": 1885
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 253,
+                    "startColumn": 4,
+                    "startOffset": 11881,
+                    "endColumn": 45,
+                    "endOffset": 11922
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1422,
+                        "endColumn": 45,
+                        "endOffset": 1463
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 254,
+                    "startColumn": 4,
+                    "startOffset": 11927,
+                    "endColumn": 47,
+                    "endOffset": 11970
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1374,
+                        "endColumn": 47,
+                        "endOffset": 1417
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 255,
+                    "startColumn": 4,
+                    "startOffset": 11975,
+                    "endColumn": 46,
+                    "endOffset": 12017
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 2076,
+                        "endColumn": 46,
+                        "endOffset": 2118
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 256,
+                    "startColumn": 4,
+                    "startOffset": 12022,
+                    "endColumn": 42,
+                    "endOffset": 12060
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 102,
+                        "endColumn": 42,
+                        "endOffset": 140
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 257,
+                    "startColumn": 4,
+                    "startOffset": 12065,
+                    "endColumn": 41,
+                    "endOffset": 12102
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 77,
+                        "startColumn": 4,
+                        "startOffset": 2975,
+                        "endColumn": 41,
+                        "endOffset": 3012
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 258,
+                    "startColumn": 4,
+                    "startOffset": 12107,
+                    "endColumn": 46,
+                    "endOffset": 12149
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 78,
+                        "startColumn": 4,
+                        "startOffset": 3017,
+                        "endColumn": 46,
+                        "endOffset": 3059
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 259,
+                    "startColumn": 4,
+                    "startOffset": 12154,
+                    "endColumn": 45,
+                    "endOffset": 12195
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 189,
+                        "endColumn": 45,
+                        "endOffset": 230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 260,
+                    "startColumn": 4,
+                    "startOffset": 12200,
+                    "endColumn": 39,
+                    "endOffset": 12235
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 57,
+                        "startColumn": 4,
+                        "startOffset": 2258,
+                        "endColumn": 39,
+                        "endOffset": 2293
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 261,
+                    "startColumn": 4,
+                    "startOffset": 12240,
+                    "endColumn": 46,
+                    "endOffset": 12282
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 79,
+                        "startColumn": 4,
+                        "startOffset": 3064,
+                        "endColumn": 46,
+                        "endOffset": 3106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 262,
+                    "startColumn": 4,
+                    "startOffset": 12287,
+                    "endColumn": 47,
+                    "endOffset": 12330
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 367,
+                        "endColumn": 47,
+                        "endOffset": 410
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 263,
+                    "startColumn": 4,
+                    "startOffset": 12335,
+                    "endColumn": 37,
+                    "endOffset": 12368
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endColumn": 37,
+                        "endOffset": 545
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 264,
+                    "startColumn": 4,
+                    "startOffset": 12373,
+                    "endColumn": 44,
+                    "endOffset": 12413
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 2175,
+                        "endColumn": 44,
+                        "endOffset": 2215
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 265,
+                    "startColumn": 4,
+                    "startOffset": 12418,
+                    "endColumn": 43,
+                    "endOffset": 12457
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 145,
+                        "endColumn": 43,
+                        "endOffset": 184
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 266,
+                    "startColumn": 4,
+                    "startOffset": 12462,
+                    "endColumn": 42,
+                    "endOffset": 12500
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 280,
+                        "endColumn": 42,
+                        "endOffset": 318
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 267,
+                    "startColumn": 4,
+                    "startOffset": 12505,
+                    "endColumn": 44,
+                    "endOffset": 12545
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 235,
+                        "endColumn": 44,
+                        "endOffset": 275
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 268,
+                    "startColumn": 4,
+                    "startOffset": 12550,
+                    "endColumn": 43,
+                    "endOffset": 12589
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 73,
+                        "startColumn": 4,
+                        "startOffset": 2842,
+                        "endColumn": 43,
+                        "endOffset": 2881
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 269,
+                    "startColumn": 4,
+                    "startOffset": 12594,
+                    "endColumn": 47,
+                    "endOffset": 12637
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 171,
+                        "startColumn": 4,
+                        "startOffset": 5559,
+                        "endColumn": 47,
+                        "endOffset": 5602
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 270,
+                    "startColumn": 4,
+                    "startOffset": 12642,
+                    "endColumn": 50,
+                    "endOffset": 12688
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 173,
+                        "startColumn": 4,
+                        "startOffset": 5661,
+                        "endColumn": 50,
+                        "endOffset": 5707
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 271,
+                    "startColumn": 4,
+                    "startOffset": 12693,
+                    "endColumn": 53,
+                    "endOffset": 12742
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 5607,
+                        "endColumn": 53,
+                        "endOffset": 5656
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 272,
+                    "startColumn": 4,
+                    "startOffset": 12747,
+                    "endColumn": 48,
+                    "endOffset": 12791
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 170,
+                        "startColumn": 4,
+                        "startOffset": 5510,
+                        "endColumn": 48,
+                        "endOffset": 5554
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 273,
+                    "startColumn": 4,
+                    "startOffset": 12796,
+                    "endColumn": 45,
+                    "endOffset": 12837
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 74,
+                        "startColumn": 4,
+                        "startOffset": 2886,
+                        "endColumn": 45,
+                        "endOffset": 2927
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 274,
+                    "startColumn": 4,
+                    "startOffset": 12842,
+                    "endColumn": 46,
+                    "endOffset": 12884
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 2477,
+                        "endColumn": 46,
+                        "endOffset": 2519
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 275,
+                    "startColumn": 4,
+                    "startOffset": 12889,
+                    "endColumn": 47,
+                    "endOffset": 12932
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 2383,
+                        "endColumn": 47,
+                        "endOffset": 2426
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 276,
+                    "startColumn": 4,
+                    "startOffset": 12937,
+                    "endColumn": 45,
+                    "endOffset": 12978
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 2431,
+                        "endColumn": 45,
+                        "endOffset": 2472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 277,
+                    "startColumn": 4,
+                    "startOffset": 12983,
+                    "endColumn": 57,
+                    "endOffset": 13036
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 168,
+                        "startColumn": 4,
+                        "startOffset": 5399,
+                        "endColumn": 57,
+                        "endOffset": 5452
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 278,
+                    "startColumn": 4,
+                    "startOffset": 13041,
+                    "endColumn": 52,
+                    "endOffset": 13089
+                },
+                "from": {
+                    "file": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/values-de/strings.xml",
+                    "position": {
+                        "startLine": 169,
+                        "startColumn": 4,
+                        "startOffset": 5457,
+                        "endColumn": 52,
+                        "endOffset": 5505
+                    }
+                }
+            }
+        ]
+    }
+]

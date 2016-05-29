@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/rootpref"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayout1"
+                android:paddingBottom="2dp"
+                android:paddingTop="4dp"
+                android:paddingRight="5dp"
+                android:layout_margin="10dp">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/temp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/TextView1"
+                        android:layout_marginRight="10dp"></TextView>
+
+                    <EditText
+                        android:text=""
+                        android:id="@+id/temp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:ems="6"
+                        android:inputType="numberDecimal"></EditText>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/humid"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/TextView2"
+                        android:layout_marginRight="10dp"></TextView>
+
+                    <EditText
+                        android:text=""
+                        android:id="@+id/humid"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:inputType="numberDecimal"></EditText>
+                </TableRow>
+
+                <TableRow>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:id="@+id/RA_Deg"
+                            android:layout_width="wrap_content"
+                            android:text="@string/radeg"
+                            android:checked="true"></RadioButton>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:id="@+id/RA_HM"
+                            android:layout_width="wrap_content"
+                            android:text="@string/rahm"></RadioButton>
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:id="@+id/azN"
+                            android:layout_width="wrap_content"
+                            android:text="@string/azimuthNorth"
+                            android:checked="true"></RadioButton>
+
+                        <RadioButton
+                            android:layout_height="wrap_content"
+                            android:id="@+id/azS"
+                            android:layout_width="wrap_content"
+                            android:text="@string/azimuthSouth"></RadioButton>
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow>
+
+                    <CheckBox
+                        android:text="@string/showptr"
+                        android:id="@+id/showptr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></CheckBox>
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/prefCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/android:cancel" />
+
+        <Button
+            android:id="@+id/prefOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/android:ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

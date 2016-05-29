@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon.png",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon.png",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/drawable-hdpi/icon.png"
+    }
+]

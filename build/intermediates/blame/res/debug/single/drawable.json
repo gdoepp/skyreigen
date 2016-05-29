@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/drawable/tabcolors.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/drawable/tabcolors.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/drawable/tabcolors.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/drawable/tabcolors.xml"
+    }
+]

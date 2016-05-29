@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bodies_array">
+        <item>Mond</item>
+        <item>Sonne</item>
+        <item>Merkur</item>
+        <item>Venus</item>
+        <item>Erde</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptun</item>
+    </string-array>
+    <string-array name="directions_array">
+        <item>N</item>
+        <item>NO</item>
+        <item>O</item>
+        <item>SO</item>
+        <item>S</item>
+        <item>SW</item>
+        <item>W</item>
+        <item>NW</item>
+    </string-array>
+    <string-array name="locations_array">
+        <item>Stuttgart</item>
+        <item>add</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Merkur</item>
+        <item>Venus</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptun</item>
+    </string-array>
+    <string-array name="planets_short_array">
+        <item>Me</item>
+        <item>Ve</item>
+        <item>Er</item>
+        <item>Ma</item>
+        <item>Ju</item>
+        <item>Sa</item>
+        <item>Ur</item>
+        <item>Ne</item>
+    </string-array>
+    <string-array name="timezones">
+        <item>lokal</item>
+        <item>UTC+0</item>
+        <item>UTC+1</item>
+        <item>UTC-1</item>
+        <item>UTC+2</item>
+        <item>UTC-2</item>
+        <item>UTC+3</item>
+        <item>UTC-3</item>
+        <item>UTC+4</item>
+        <item>UTC-4</item>
+        <item>UTC+5</item>
+        <item>UTC-5</item>
+        <item>UTC+6</item>
+        <item>UTC-6</item>
+        <item>UTC+7</item>
+        <item>UTC-7</item>
+        <item>UTC+8</item>
+        <item>UTC-8</item>
+        <item>UTC+9</item>
+        <item>UTC-9</item>
+        <item>UTC+10</item>
+        <item>UTC-10</item>
+        <item>UTC+11</item>
+        <item>UTC-11</item>
+        <item>UTC+12</item>
+        <item>UTC-12</item>
+    </string-array>
+    <string name="alt">Höhe</string>
+    <string name="altitude">Höhe</string>
+    <string name="altnoon">Mitt.höhe</string>
+    <string name="app_name">SkyReigen</string>
+    <string name="az">Azimut</string>
+    <string name="azimuthNorth">Azimut 0 N</string>
+    <string name="azimuthSouth">Azimut 0 S</string>
+    <string name="centralmeridian">Zntr.Mer.</string>
+    <string name="city">Stadt</string>
+    <string name="delete">Entfernen</string>
+    <string name="edit">Ändern</string>
+    <string name="equtime">Zeitgl.</string>
+    <string name="help_equatorial">
+    <b>Himmelsäquator und Ekliptik</b>\n
+      Diese Seite zeigt den Himmelsäquator und die Gestirne des Sonnensystems vor dem 
+      Hintergrund des Tierkreises wie sie von der Erde gesehen werden.\n
+      Die Strecken, die aus den Gestirnen hervortreten, zeigen die zukünftige Position der Objekte:\n 
+     Mond: 1 Tag; \n
+     Sonne, Merkur, Venus: 1 Woche;\n
+     Mars: 2 Wochen;\n
+     Jupiter, Saturn: 1 Monat;\n
+     Uranus, Neptun: 1 Jahr.
+     \n
+     Die dicke braune Kurve markiert den Horizont am gewählten Ort und zur eingestellten Zeit.\n
+     Man kann die Umgebung eines Planeten bis zu einem Gesichtsfeld von 2° vergrößern.
+     </string>
+    <string name="help_month">
+      Sichtbarkeit der Planeten pro <b>Monat</b>\n
+      Diese Seite zeigt die Auf-, Untergangs- und Transitzeiten der Planeten während des laufenden
+      Monats. Tageslicht, Dämmerung und Mondlicht werden als Hintergrund angezeigt.\n
+      Man kann mit den Knöpfen zum vorherigen [-] oder nächsten [+] und zurück zum
+      laufenden [*] Monat wechseln.\n
+      Die Kurven für Aufgang, Kulmination und Untergang können mit den Knöpfen 
+       [/], [^] und [\\] rechts ein- und ausgeschaltet werden.\n
+      Man kann auch auf die Planetennamen am unteren Rand tippen und den betreffenden Planeten
+      löschen oder wiedereinschalten.
+    </string>
+    <string name="help_moon">
+    <b>Mond</b>\n
+    Mit dem Schieberegler kann man die Tageszeit einstellen, [*] setzt die aktuelle Zeit.\n
+    Die Entfernung wird in 1000 km angegeben.\n
+    Die Libration sagt i.W. von welchem Teil des Monds man am meisten sieht. Der Mittelpunkt
+    der Mondscheibe erscheint in die Gegenrichtung verschoben.\n
+    \n
+    Im Diagramm des Mondorbits um die Erde ist die grün hinterlegte Hälfte der Ellipse
+     der Teil des Orbits, der nördlich der Ekliptikebene liegt 
+    (nach dem aufsteigenden Knoten Ω). Die rote Linie ist die Apsidenlinie (Perigäum ω).
+    Der blau schattierte Sektor zeigt den Teil des Orbits, in dem die Äquatorebene der Erde südlich
+    der Ekliptik liegt, d.h. wo der Mond in der Nordhemisphäre höher am Himmel erscheint.\n
+    Durch Klicken auf grau schattierte Finsternisdaten bekommt man weitere Informationen.\n
+    Man kann auf die Datumsfelder der Ereignisse klicken, um zu diesem Termin zu schalten.
+   </string>
+    <string name="help_planet">
+    <b>Planet</b>\n
+    Mit dem Schieberegler kann man die Tageszeit einstellen, [*] setzt die aktuelle Zeit.\n
+    Die Entfernungen zu Sonne (Entf.So) und Erde sind in AE.\n
+    Die Sichtbarkeit (ggf. auch im untersten Diagramm angezeigt) ist die positive Zahl der Magnituden (nach Meeus)
+    über der Sichtbarkeitsgrenze.
+    Mit einem Fernglas kann man einen Planeten auch bei Sichtbarkeiten um oder unter Null sehen.\n
+    Details:\n 
+    W ist der Winkel des Zentralmeridians. Bei Jupiter gilt W1 für den Äquator, W2 für höhere Breiten (der rote Fleck befindet sich bei 205°). 
+    P ist die Neigung der Achse, D die Deklination der Erde zum Planetenäquator. \n    
+    Beim Saturnring bedeutet N20 W5: die Erde liegt 20° nördlich des Saturnäquators und die Saturnachse
+    erscheint 5° nach Westen gekippt.\n
+    Die Jupiter- und Saturnmonde sind so dargestellt, wie sie in einem Fernglas erscheinen.
+    Mit einem Klick auf das Diagramm bekommt man ggf. Informationen über Bedeckungen oder Vorübergänge.\n
+    Grau hinterlegte Angaben zur maximalen Elongation und zur unteren Konjunktion der inneren Planeten liefern den Winkelabstand.\n
+    Man kann auf die Datumsfelder der Ereignisse klicken, um zu diesem Termin zu schalten.
+   </string>
+    <string name="help_quick">
+    <b>Start</b>\n
+    Sonne: gelb\n
+    Mond: hellblau\n
+    Klicken Sie auf das Feld mit Datum oder Zeit um einen Dialog zum Ändern zu bekommen, [-] für Vortag, [+] 
+    für nächsten Tag, [*] für aktuelle Zeit. \n
+    In der Orte-Liste kann man einen Beobachtungsort auswählen oder mit \"hinzufügen\" einen neuen Ort eingeben.\n
+    Im Eingabedialog [Ändern] für Orte kann man mit \"Orten\" den vom Gerät ermittelten Ort lesen oder mit
+    "Stadt suchen" die Koordinaten der eingegebenen Stadt ermitteln (benötigt Internetverbindung).
+    Man kann die Koordinaten auch direkt eingeben.\n
+    Die "lokale" Zeitzone ist die im Gerät eingestellte Zone.\n    
+    </string>
+    <string name="help_solsys">
+    <b>Planetenbahnen</b>\n
+    Diese Seite zeigt die Position der Planeten in der Draufsicht vom Nordpol der Ekliptik. Die
+    Orbitradien und Scheibengrößen sind nicht proportional.\n
+    Das Perihel ist mit einem Strich markiert.\n 
+    Mit dem Schieberegler kann man ein halbes Jahr vor oder zurückstellen, mit [*] kommt man zu der eingestellten Zeit zurück.\n
+    [>] startet eine Animation.
+   </string>
+    <string name="help_sun">
+    <b>Sonne</b>\n
+    Mit dem Schieberegler kann man die Tageszeit einstellen, [*] setzt die aktuelle Zeit.\n
+    Die Dämmerungen entsprechen einer Sonnenhöhe von 6/12/18 Grad unterhalb des Horizonts.\n
+    Die Dauern der Dämmerungen gelten für Morgen- und Abenddämmerung getrennt, es sei denn, die nächste
+    Stufe wird nicht erreicht und es gibt somit nur eine Phase.\n
+    Die Zeitgleichung bedeutet: mittlerer minus wahrer Mittag.\n
+    Der nächste Tag mit dem gleichen Sonnenstand wird angezeigt.\n
+    Der scheinbare Durchmesser (Dmess) der Sonnenscheibe wird in Winkelminuten angezeigt, 
+    die Entfernung zur Sonne in AE.\n
+    Das Polardiagramm zeigt den Pfad der Sonne am jeweiligen Tag (rot), zur Tag- und Nachtgleiche (türkis) und den möglichen
+    Bereich zwischen den Sonnenwenden. Der grüne Punkt zeigt die aktuelle Position. 
+    Wenn der "Zeiger" aktiviert ist und die Sensoren vorhanden sind, zeigt der weiße Punkt die 
+    Richtung, in die das Gerät zeigt.\n
+    Man kann auf die Datumsfelder der Jahreszeiten klicken, um zu diesem Tag zu schalten.
+
+   </string>
+    <string name="humid">rel. Feuchte</string>
+    <string name="info">
+    <b>SkyReigen</b>\n
+    Android Ephemeriden-App für Sonne, Mond und Planeten.\n
+    © Gerhard Döppert, 2012\n\n
+    Die Anwendung benutzt die Library http://www.naughter.com/aa.html welche
+    Algorithmen aus dem Buch \"Astronomical Algorithms\" von Jean Meeus implementiert.\n
+    Für die Sichtbarkeitsberechnungen wird http://www.projectpluto.com/source.htm verwendet.\n
+    Ein Auszug des Bright Star Catalogue ftp://cdsarc.u-strasbg.fr/pub/cats/V/50/ wird benutzt.
+    \n\n
+    SkyReigen.apk is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.\n\n
+ 
+  SkyReigen.apk is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.\n\n
+ 
+   You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.\n\n
+
+	The sources are available at http://gdoeppert.de/android/sky_src.zip.
+    </string>
+    <string name="infoshort">
+    <b>SkyReigen</b>\n
+    Android Ephemeriden-App für Sonne, Mond und Planeten.\n
+    Aufgang, Untergang, Position, Sichtbarkeit und andere Daten.\n
+    © Gerhard Döppert, 2012-2015
+    </string>
+    <string name="lat">Breite</string>
+    <string name="lng">Länge</string>
+    <string name="local">lokal</string>
+    <string name="locate">Ort einstellen</string>
+    <string name="locatehere">Orten</string>
+    <string name="location_prompt">Ort auswählen</string>
+    <string name="look">Ansicht</string>
+    <string name="lookupcity">Stadt suchen</string>
+    <string name="moon">Mond</string>
+    <string name="moonage">Alter</string>
+    <string name="moonasc">AufKn.</string>
+    <string name="moondecl">Deklin.</string>
+    <string name="moondiam">Dmess.</string>
+    <string name="moondisk">beleuch.</string>
+    <string name="moondist">Entfern.</string>
+    <string name="moonlibraLat">Libr.Br.</string>
+    <string name="moonlibraLong">Libr.Lg.</string>
+    <string name="moonlong">Länge</string>
+    <string name="moonorbit">Mondbahn um die Erde</string>
+    <string name="moonperi">Perig.</string>
+    <string name="moonphase">Phase</string>
+    <string name="moonrise">Aufgang</string>
+    <string name="moonsdiam">Radius</string>
+    <string name="moonset">Unterg.</string>
+    <string name="moontrans">Kulmin.</string>
+    <string name="planetDetails">Details</string>
+    <string name="planet_prompt">Planeten auswählen</string>
+    <string name="planetalt">Höhe</string>
+    <string name="planetazi">Azimut</string>
+    <string name="planetdecl">Deklin.</string>
+    <string name="planetdiam">Dmess.</string>
+    <string name="planetdisk">beleuch.</string>
+    <string name="planetdistearth">Entf.Erde</string>
+    <string name="planetdistsun">Entf.So.</string>
+    <string name="planetelong">Elong.</string>
+    <string name="planetmag">Magnit.</string>
+    <string name="planetphase">Phase</string>
+    <string name="planetra">Rkasz.</string>
+    <string name="planetring">Ring</string>
+    <string name="planetrise">Aufgang</string>
+    <string name="planetsdiam">Radius</string>
+    <string name="planetset">Unterg.</string>
+    <string name="planettrans">Kulmin.</string>
+    <string name="planetvis">Sichtbk.</string>
+    <string name="quart">Viert:\ </string>
+    <string name="radeg">RA in °</string>
+    <string name="rahm">RA in Std:Min</string>
+    <string name="riseset">Auf/Untg.</string>
+    <string name="same">gleich</string>
+    <string name="showptr">Zeiger ein</string>
+    <string name="sidertime">Sternzeit</string>
+    <string name="sun">Sonne</string>
+    <string name="sundist">Entfern.</string>
+    <string name="sunrise">Aufgang</string>
+    <string name="sunset">Unterg.</string>
+    <string name="suntrans">Kulmin.</string>
+    <string name="temp">Temperatur</string>
+    <string name="time_evening">abends</string>
+    <string name="time_meridian">Meridian</string>
+    <string name="time_midnight">Mitternacht</string>
+    <string name="time_morning">morgens</string>
+    <string name="timezone">Zeitzone</string>
+    <string name="twiastro">astron.D.</string>
+    <string name="twicivil">zivile Dm.</string>
+    <string name="twinaut">naut. Dm.</string>
+    <string name="visibility_label">Sichtbarkeit</string>
+    <string name="visibility_no">unsichtbar</string>
+</resources>

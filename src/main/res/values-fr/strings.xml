@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SkyReigen</string>
+    <string name="quart">quart:</string>
+    <string name="sunrise">lever</string>
+    <string name="riseset">lev/couch</string>
+    <string name="suntrans">méridien</string>
+    <string name="sunset">coucher</string>
+    <string name="equtime">équ.temp.</string>
+    <string name="sun">Soleil</string>
+    <string name="moon">Lune</string>
+    <string name="sidertime">tmp.sid.</string>
+    <string name="centralmeridian">mérid.c.</string>
+    <string name="look">aspect</string>
+
+
+    <string name="moonrise">lever</string>
+    <string name="moontrans">méridien</string>
+    <string name="moonset">coucher</string>
+    <string name="moondist">distance</string>
+    <string name="moondecl">déclin.</string>
+    <string name="moonphase">phase</string>
+    <string name="moonlibraLong">libr.lg.</string>
+    <string name="moonlibraLat">libr.lt.</string>
+    <string name="moonasc">asc.d.</string>
+    <string name="moonperi">périgée</string>
+    <string name="moondisk">éclairé</string>
+    <string name="moondiam">diamèt.</string>
+    <string name="moonsdiam">sdiam.</string>
+    <string name="moonlong">long.</string>
+    <string name="moonage">âge</string>
+    <string name="moonorbit">L\'orbite de la Lune autour de la Terre</string>
+
+    <string name="planetrise">lever</string>
+    <string name="planettrans">méridien</string>
+    <string name="planetset">coucher</string>
+    <string name="planetdistsun">dist.sol.</string>
+    <string name="planetdecl">déclin.</string>
+    <string name="planetphase">phase</string>
+    <string name="planetra">asc.d.</string>
+    <string name="planetmag">magn.</string>
+    <string name="planetdisk">éclairé</string>
+    <string name="planetdiam">diamèt.</string>
+    <string name="planetelong">elong.</string>
+    <string name="planetsdiam">sdiam.</string>
+    <string name="planetdistearth">d.terre</string>
+    <string name="planetalt">hauteur</string>
+    <string name="planetazi">azimut</string>
+    <string name="planetring">anneau</string>
+    <string name="planetvis">visibilité</string>
+    <string name="planetDetails">plus</string>
+
+
+    <string name="sundist">distance</string>
+
+    <string name="alt">hauteur</string>
+    <string name="same">même h.</string>
+    <string name="altnoon">haut.midi</string>
+    <string name="az">azimut</string>
+
+    <string name="twicivil">crép.civ.</string>
+    <string name="twinaut">crép.naut.</string>
+    <string name="twiastro">c.astron.</string>
+
+    <string name="city">lieu</string>
+    <string name="lng">long.</string>
+    <string name="lat">lat.</string>
+    <string name="delete">Ècarter</string>
+
+    <string name="location_prompt">Changer lieu</string>
+    <string name="locate">local.</string>
+    <string name="humid">humid. rel.</string>
+    <string name="temp">temperature</string>
+    <string name="timezone">heure</string>
+    <string name="altitude">hauteur</string>
+
+    <string name="radeg">RA en °</string>
+    <string name="rahm">RA en H:M</string>
+    <string name="showptr">pointeur</string>
+    <string name="azimuthSouth">azimut 0 S</string>
+    <string name="azimuthNorth">azimut 0 N</string>
+
+    <string name="edit">modifier</string>
+    <string name="lookupcity">Recherche lieu</string>
+    <string name="locatehere">Localiser</string>
+
+
+    <string-array name="locations_array">
+        <item>Stuttgart</item>
+        <item>nouveau lieu</item>
+    </string-array>
+
+    <string name="planet_prompt">sél. planète</string>
+
+    <string-array name="timezones">
+        <item>locale</item>
+        <item>UTC+0</item>
+        <item>UTC+1</item>
+        <item>UTC-1</item>
+        <item>UTC+2</item>
+        <item>UTC-2</item>
+        <item>UTC+3</item>
+        <item>UTC-3</item>
+        <item>UTC+4</item>
+        <item>UTC-4</item>
+        <item>UTC+5</item>
+        <item>UTC-5</item>
+        <item>UTC+6</item>
+        <item>UTC-6</item>
+        <item>UTC+7</item>
+        <item>UTC-7</item>
+        <item>UTC+8</item>
+        <item>UTC-8</item>
+        <item>UTC+9</item>
+        <item>UTC-9</item>
+        <item>UTC+10</item>
+        <item>UTC-10</item>
+        <item>UTC+11</item>
+        <item>UTC-11</item>
+        <item>UTC+12</item>
+        <item>UTC-12</item>
+    </string-array>
+
+    <string-array name="bodies_array">
+        <item>Lune</item>
+        <item>Soleil</item>
+        <item>Mercure</item>
+        <item>Vénus</item>
+        <item>Terre</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturne</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Mercure</item>
+        <item>Vénus</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturne</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="planets_short_array">
+        <item>Me</item>
+        <item>Ve</item>
+        <item>Te</item>
+        <item>Ma</item>
+        <item>Ju</item>
+        <item>Sa</item>
+        <item>Ur</item>
+        <item>Ne</item>
+    </string-array>
+
+    <string-array name="directions_array">
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SO</item>
+        <item>O</item>
+        <item>NO</item>
+    </string-array>
+
+    <string name="visibility_label">Visibilité</string>
+    <string name="visibility_no">pas visible</string>
+    <string name="time_morning">matinal</string>
+    <string name="time_evening">vespéral</string>
+    <string name="time_midnight">minuit</string>
+    <string name="time_meridian">méridien</string>
+
+    <string name="local">locale</string>
+        
+    <string name="help_quick">  
+    <b>Résumé</b>\n
+    Soleil: jaune\n
+     Lune: bleu clair\n
+     Cliquez sur la case avec la date ou l\'heure pour obtenir une boîte de dialogue pour 
+     modifier la valeur, 
+     [-] pour passer au jour précédent,
+     [+] pour passer au jour suivant, [*] pour retourner à l\'heure actuelle.\n
+     Dans la liste des lieux, vous pouvez sélectionner un site d\'observation ou ajouter un nouvel endroit.
+     Dans la boîte de dialogue d\'entrée pour ajouter ou changer de site, vous pouvez entrer les coordonnées, 
+     [localiser] avec le service de l\'appareil ou [rechercher] l\'endroit dont vous avez entré le nom.\n
+     Le fuseau horaire \"local\" signifie la zone de l\'appareil.    
+      </string>
+    
+    <string name="help_sun">
+    <b>Soleil</b>\n
+    
+     Avec la barre de défilement, vous pouvez régler l\'heure de la journée, [*] définit l\'heure actuelle. \n
+     Les crépuscules correspondent à une altitude solaire de 6/12/18 degrés au-dessous de l\'horizon. \n
+     Les durées des crépuscules sont données séparément pour le matin et le soir, à moins que le 
+     prochain niveau ne soit pas atteint et il n\'y a donc qu\'une seule phase. \n
+     L\'équation du temps est: midi moyen moins vrai midi.\n
+     Le prochain jour avec la même hauteur du soleil est donné.\n
+     Le diamètre apparent (diam) du disque solaire est indiqué en minutes d\'arc,
+     la distance du Soleil en UA. \n
+     Le diagramme polaire montre le chemin du soleil pendent le jour donné (en rouge), 
+     au temps des équinoxes (turquoise) et les chemins possibles entre les solstices. Le point vert indique la position actuelle.
+     Si le \"pointeur\" est activé et les capteurs sont prévus, le point blanc montre la
+     direction dans laquelle l\'appareil indique. \n
+     Vous pouvez cliquer sur les dates des saisons pour passer à ce jour.
+   </string>
+   
+    <string name="help_moon">
+    <b>Lune</b>\n
+     Avec la barre de défilement, vous pouvez régler l\'heure de la journée, [*] définit l\'heure actuelle. \n
+     La distance est donnée en 1000 km. \n
+     La libration dit de quelle partie de la lune on peut vois de plus. Le centre
+     du disque lunaire apparaît déplacé dans la direction opposée. \n
+     \n
+     Dans le diagramme de l\'orbite de la lune autour de la Terre, la moitié vert de l\'ellipse
+      signifie la partie de l\'orbite, qui est au nord de l\'écliptique (le nœud ascendant est Ω). 
+      La ligne rouge est la ligne des apsides (périgée ω).
+     Le secteur ombragé bleu représente la partie de l\'orbite, dans lequel le plan équatorial de la terre se trouve au sud
+     de l\'écliptique, la lune semble plus élevé au ciel dans l\'hémisphère nord. \n
+     En cliquant sur les données à fond gris vous obtenez plus d\'informations. \n
+     Vous pouvez cliquer sur les dates des événements pour passer à ce jour.     
+     </string>
+   
+    <string name="help_planet">
+    <b>Planète</b>\n
+     Avec la barre de défilement, vous pouvez régler l\'heure de la journée, [*] définit l\'heure actuelle. \n
+    Les distances au soleil et à la terre sont en UA.\n
+    La visibilité (aussi dans le schéma représenté ci-dessous) est le nombre positif de magnitude (selon Meeus)
+    au-dessus de la limite de la visibilité.
+    Avec une paire de jumelles on peut voir une planète même avec une visibilité égale ou inférieure à zéro. \n
+    Détails: \n
+    W est l\'angle du méridien central. En cas de Jupiter W1 s\'applique à l\'équateur, 
+    W2 aux latitudes plus élevées (le tache rouge se trouve à 205°).
+    P est l\'inclinaison de l\'axe, D est la déclinaison de la terre rélatif à la plaine équatoriale de la planète. \n
+    Pour l\'anneau de Saturne N20 O5 signifie: la terre est 20° au nord de l\'équateur de Saturne et Saturne
+    apparaît incliné 5° vers l\'ouest. \n
+    Les satellites de Jupiter et de Saturne sont présentés tels qu\'ils apparaissent dans une paire de jumelles.
+    En cliquant sur le schéma (s\'il est grisé) vous obtenez des informations sur des occultations ou des passages.\n
+    En cliquant sur les élongations ou conjonctions inférieures des planètes intérieures vous obtenez 
+    l\'angle de l\'élongation maximal ou la distance angulaire.\n
+    Vous pouvez cliquer sur les dates des événements pour passer à cet jour.
+   
+     </string> 
+   
+    <string name="help_solsys">
+    <b>Orbites et Écliptique</b>\n
+    
+    Cette page montre la position des planètes vue du pôle nord de l\'écliptique. 
+     Les rayons des orbits et des disques ne sont pas proportionnelles.\n
+     Le périhélie est marqué par un tiret.\n
+     Avec la barre de défilement, vous pouvez modifier le date moins/plus une demi année. 
+     Appuyez sur [*] pour revenir au present. \n
+     [>] Démarre une animation.
+     
+      </string>
+   
+    <string name="help_equatorial">
+     <b> Équateur Céleste</b> \n
+       Cette page montre l\'équateur céleste et les corps célestes du système solaire au fond
+       du zodiaque vus de la terre. \n
+       Les traits qui saillissent des objets indiquent leur position future: \n
+      Lune: un jour; \n
+      Soleil, Mercure, Vénus 1 semaine; \n
+      Mars: 2 semaines; \n
+      Jupiter, Saturne: 1 mois; \n
+      Uranus, Neptune: 1 an.
+      \n
+      La courbe brune épaisse marque l\'horizon à l\'endroit choisi et le temps fixé. \n
+      On peut grossir l\'environnement d\'une planète jusqu\'à un champ de vue de 2°.
+      
+     </string>
+     
+    <string name="help_month">
+       <b>Mois</b> - Aperçu mensuel\n      
+       Cette page montre le temps du lever, coucher et transit des planètes au cours du mois actuelle. 
+       Les heures de jour, les crépuscules et le clair de lune sont presentés dans l\'arrière-plan.\n
+       On peut utiliser les boutons à passer au mois précédente [-] et suivant[+], ou à revenir 
+       au mois courant [*].\n
+       Les boutons sur la droite activent ou désactivent les courbes pour lever [/], 
+       coucher [\\] et transite [^].\n
+       Vous pouvez aussi toucher les noms des planète en bas pour les effacer ou les réactiver.        
+    </string>
+</resources>
+
+

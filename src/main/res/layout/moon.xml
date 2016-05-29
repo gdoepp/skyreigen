@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/moon0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#040404"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/moon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:isScrollContainer="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:inputType="date"
+                android:text=""></TextView>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:inputType="time"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/now"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" * " />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:isScrollContainer="true"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="4dp">
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonrise"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonrise2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="14dp"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonset"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonset2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moontrans"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moontrans2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="14dp"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/alt"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moontransalt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moondist"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moondist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="14dp"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moondiam"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moondiam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView13a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonlibraLat"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonlibra1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="14dp"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView13A"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonlibraLong"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonlibra2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView3h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moondisk"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moondisk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="14dp"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonphase"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonphase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moondecl"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moondecl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="14dp"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/planetra"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/planetalt"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/planetalt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="14dp"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/planetazi"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/planetazi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowBa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonph1a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <de.gdoeppert.sky.gui.LunarSurface
+                            android:id="@+id/lunarSurface2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:minHeight="50dp"></de.gdoeppert.sky.gui.LunarSurface>
+
+                        <TextView
+                            android:id="@+id/TextView12a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonage"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonage2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+                </TableLayout>
+
+                <de.gdoeppert.sky.gui.PolarView
+                    android:id="@+id/polarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"></de.gdoeppert.sky.gui.PolarView>
+
+                <TextView
+                    android:id="@+id/moonorbittxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moonorbit"
+                    android:textColor="#afafff"
+                    android:textSize="12sp" />
+
+                <de.gdoeppert.sky.gui.LunarOrbitView
+                    android:id="@+id/lunarViewMoon"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"></de.gdoeppert.sky.gui.LunarOrbitView>
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:isScrollContainer="true"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="4dp">
+
+                    <TableRow
+                        android:id="@+id/tableRowC1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonevent0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/mooneventdate0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonevent1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/mooneventdate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonevent2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/mooneventdate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonevent3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/mooneventdate3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonevent4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/mooneventdate4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRowH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonevent5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/mooneventdate5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

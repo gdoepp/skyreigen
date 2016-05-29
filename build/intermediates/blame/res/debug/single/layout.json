@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/equatorial.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/equatorial.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/locdialog.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/locdialog.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/quick.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/quick.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/equatorial.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/equatorial.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/month.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/month.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/locdialog.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/locdialog.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/spinneritem.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/spinneritem.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/moon.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/moon.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/quick.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/quick.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/sun.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/sun.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/preferencesdialog.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/preferencesdialog.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/ecliptic.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/ecliptic.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/spinneritem.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/spinneritem.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/preferencesdialog.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/preferencesdialog.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/messagedialog.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/messagedialog.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/numpic.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/numpic.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/numpic.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/numpic.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/sun.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/sun.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/messagedialog.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/messagedialog.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/month.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/month.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/planet.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/planet.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/ecliptic.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/ecliptic.xml"
+    },
+    {
+        "merged": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/build/intermediates/res/merged/debug/layout/moon.xml",
+        "source": "/home/all/gd/StudioProjects/SkyMeeus/skyreigen/src/main/res/layout/moon.xml"
+    },
+    {
+        "merged": "/home/gd/StudioProjects/SkyMeeus/app/build/intermediates/res/merged/debug/layout/planet.xml",
+        "source": "/home/gd/StudioProjects/SkyMeeus/app/src/main/res/layout/planet.xml"
+    }
+]

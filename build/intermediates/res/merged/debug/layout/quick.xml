@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#040404"
+    android:id="@+id/quickfrag">
+
+    <LinearLayout
+        android:id="@+id/quick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:isScrollContainer="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <Button
+                android:id="@+id/dateDecr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "></Button>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/dateIncr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "></Button>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="time"
+                android:text=""></TextView>
+
+            <Button
+                android:id="@+id/dateNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" * "></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:prompt="@string/location_prompt" />
+
+            <Button
+                android:id="@+id/locEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"></Button>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1b"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tableQuick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="4dp">
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView5x"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/sidertime"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/sidertime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/sunrise"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/sunrise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3a"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/az"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/sunriseazi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/suntrans"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/suntrans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3b"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/alt"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/suntransalt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/sunset"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/sunset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3c"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/az"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/sunsetazi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#ffff00"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonrise"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonrise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/az"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonriseazi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moontrans"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moontrans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/alt"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moontransalt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/TextView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/moonset"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/TextView3f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/az"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonsetazi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                        <TextView
+                            android:id="@+id/moonph1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#afafff"
+                            android:textSize="16sp"></TextView>
+
+                        <de.gdoeppert.sky.gui.LunarSurface
+                            android:id="@+id/lunarSurface"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:minHeight="30dp"></de.gdoeppert.sky.gui.LunarSurface>
+
+                        <TextView
+                            android:id="@+id/TextView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/moonage"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/moonage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical|right"
+                            android:textColor="#afafff"
+                            android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

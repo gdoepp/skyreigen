@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SkyReigen</string>
+    <string name="quart">quar:</string>
+    <string name="sunrise">rise</string>
+    <string name="riseset">rise/set</string>
+    <string name="suntrans">transit</string>
+    <string name="sunset">set</string>
+    <string name="equtime">equ.time</string>
+    <string name="sidertime">sid.time</string>
+    <string name="centralmeridian">c.merid.</string>
+    <string name="look">look</string>
+
+    <string name="moonrise">rise</string>
+    <string name="moontrans">transit</string>
+    <string name="moonset">set</string>
+    <string name="moondist">distance</string>
+    <string name="moondecl">declin.</string>
+    <string name="moonphase">phase</string>
+    <string name="moonlibraLong">libr.lng.</string>
+    <string name="moonlibraLat">libr.lat.</string>
+    <string name="moondisk">illum.</string>
+    <string name="moondiam">diamet.</string>
+    <string name="moonage">age</string>
+    <string name="moonorbit">Orbit of the moon</string>
+
+    <string name="planetrise">rise</string>
+    <string name="planettrans">transit</string>
+    <string name="planetset">set</string>
+    <string name="planetdistsun">dist.sun</string>
+    <string name="planetdecl">declin.</string>
+    <string name="planetra">rectas.</string>
+    <string name="planetmag">magn.</string>
+    <string name="planetdisk">illum.</string>
+    <string name="planetdiam">diamet.</string>
+    <string name="planetelong">elong.</string>
+    <string name="planetdistearth">d.earth</string>
+    <string name="planetalt">altitude</string>
+    <string name="planetazi">azimuth</string>
+    <string name="planetring">ring</string>
+    <string name="planetvis">visibility</string>
+    <string name="planetDetails">details</string>
+    <string name="sundist">distance</string>
+
+    <string name="alt">altitude</string>
+    <string name="altnoon">max. alt.</string>
+    <string name="az">azimuth</string>
+    <string name="same">same</string>
+
+    <string name="twicivil">civil twil.</string>
+    <string name="twinaut">nautical</string>
+    <string name="twiastro">astronom.</string>
+
+    <string name="city">city</string>
+    <string name="lng">longitude</string>
+    <string name="lat">latitude</string>
+    <string name="delete">delete</string>
+
+    <string name="location_prompt">Choose a location</string>
+    <string name="humid">rel. humidity</string>
+    <string name="temp">temperature</string>
+    <string name="timezone">timezone</string>
+    <string name="altitude">altitude</string>
+
+    <string name="radeg">RA in °</string>
+    <string name="rahm">RA in H:M</string>
+    <string name="showptr">show pointer</string>
+    <string name="azimuthSouth">azimuth 0 at S</string>
+    <string name="azimuthNorth">azimuth 0 at N</string>
+
+    <string name="edit">edit</string>
+    <string name="lookupcity">lookup city</string>
+    <string name="locatehere">locate here</string>
+
+
+    <string-array name="locations_array">
+        <item>Stuttgart</item>
+        <item>add</item>
+    </string-array>
+
+    <string name="planet_prompt">Choose a planet</string>
+
+    <string-array name="timezones">
+        <item>local</item>
+        <item>UTC+0</item>
+        <item>UTC+1</item>
+        <item>UTC-1</item>
+        <item>UTC+2</item>
+        <item>UTC-2</item>
+        <item>UTC+3</item>
+        <item>UTC-3</item>
+        <item>UTC+4</item>
+        <item>UTC-4</item>
+        <item>UTC+5</item>
+        <item>UTC-5</item>
+        <item>UTC+6</item>
+        <item>UTC-6</item>
+        <item>UTC+7</item>
+        <item>UTC-7</item>
+        <item>UTC+8</item>
+        <item>UTC-8</item>
+        <item>UTC+9</item>
+        <item>UTC-9</item>
+        <item>UTC+10</item>
+        <item>UTC-10</item>
+        <item>UTC+11</item>
+        <item>UTC-11</item>
+        <item>UTC+12</item>
+        <item>UTC-12</item>
+    </string-array>
+
+    <string-array name="bodies_array">
+        <item>Moon</item>
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="planets_short_array">
+        <item>Me</item>
+        <item>Ve</item>
+        <item>Er</item>
+        <item>Ma</item>
+        <item>Ju</item>
+        <item>Sa</item>
+        <item>Ur</item>
+        <item>Ne</item>
+    </string-array>
+
+    <string-array name="directions_array">
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SW</item>
+        <item>W</item>
+        <item>NW</item>
+    </string-array>
+
+    <string name="visibility_no">not visible</string>
+    <string name="time_morning">morning</string>
+    <string name="time_evening">evening</string>
+    <string name="time_midnight">midnight</string>
+    <string name="time_meridian">meridian</string>
+
+    <string name="visibility_label">Visibility</string>
+    
+    <string name="infoshort">
+    <b>SkyReigen</b>\n
+    Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
+    Rise, set, position, visibility and other data.\n
+    &#169; Gerhard Döppert 2012-2015\n
+    </string>
+    <string name="info">
+    <b>SkyReigen</b>\n
+    Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
+    &#169; Gerhard Döppert\n\n
+    This application uses the library http://www.naughter.com/aa.html that
+    implements algorithms from the book \"Astronomical Algorithms\" by Jean Meeus.\n
+    The visibility calculations are taken from http://mhuss.com/AstroCpp/AstroCpp.zip.\n
+    A part of the Bright Star Catalogue ftp://cdsarc.u-strasbg.fr/pub/cats/V/50/ is used.
+    \n\n
+    SkyReigen.apk is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version (http://www.gnu.org/licenses/licenses).\n\n
+ 
+  SkyReigen.apk is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.\n\n
+ 
+   You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.\n\n
+
+	The sources are available at http://gdoeppert.de/android/sky_src.zip.
+    </string>
+    
+    <string name="help_quick" style="">
+    <b>Overview</b>\n
+    Sun data: yellow\n
+    Moon data: light blue\n
+    
+    Click the date or time field to get a dialog for editing date or time, [-], [+] to switch one day back or forward,
+    [*] for current time.\n
+    Select a location from the list of locations or choose \"add\" to enter a new location.\n
+    In the [edit] dialog for locations, you can press \"locate\" to get the current/last
+    location from your device. Enter a city name and press \"lookup\" to get the coordinates 
+    for the city (you will need an internet connection).  You may also enter the latitude/longitude coordinates
+    directly.\n
+    The \"local\" timezone is the local timezone of your device. You may also set the offset to UTC in steps of 15 minutes.\n   
+    </string>
+    
+    <string name="help_sun">
+    <b>Sun</b>\n
+    The slider can be used to change the time of day, [*] takes the current time.\n
+    For twilight, the sun is 6/12/18 degrees below the horizon. 
+    The duration of the twilight periods is valid for dawn and dusk separately, unless
+    the next level is not reached and thus there is only one twilight period of this kind.\n
+    The equation of time is given as mean noon minus true noon.\n
+    The next day when the sun is at the same altitude is shown.\n
+    The distance of the sun is given in AU.\n
+    The polar diagram shows the path of the sun for the current day (red), for equinox (turquoise) and the range between solstices (yellow).
+    The small green disk shows the current position.\n
+    If you have got the sensors and the "pointer" is enabled (see preferences), the white disk shows the direction
+    your device is pointing to.\n
+    You can click on the dates of the events to switch the date to solstices or equinoxes.
+   </string>
+    <string name="help_moon">
+    <b>Moon</b>\n
+    The slider can be used to change the time of day, [*] takes the current time.\n
+    The distance of the moon is given in 1000 km.\n
+    For libration, the directions mean where you can see more of the moon. The central point of the moon disk
+    is translated a bit in the opposite direction.\n
+    The green field in the view with the moon orbit is the part of the lunar orbit north of the ecliptic plane,
+    after passing the ascending node (Ω). The red line shows the perigee (ω) and apogee direction. 
+    The transparent blue sector shows where the equatorial plane of the earth is south of the ecliptic plane, i.e. 
+    the moon appears high up in the sky of the northern hemisphere.\n
+    If there are eclipses in the list of lunar events, you can get more information by clicking the text with the gray background.\n
+    You can click on the date field of the events to set the date to that of the event.
+   </string>
+    <string name="help_planet">
+    <b>Planet</b>\n
+    The slider can be used to change the time of day, [*] takes the current time.\n
+    The distances are given in AU.\n
+    Visibility (also shown in the diagram below) is the positive number of magnitudes (according to Meeus) 
+    above the visual limit. 
+    You may still see the planet with binoculars for visibilities around or below zero.\n
+    Details:\n 
+    W is the angle of the central meridian. For Jupiter, W1 is for the equatorial rotational system, W2 belongs to higher
+    latitudes (red spot is at 205°). P is the inclination of the axis, D the declination of earth with respect 
+    to the equatorial plane of the planet. \n
+    For Saturn, the ring orientation N20 W5 means: earth is 20° north of the equator of saturn and saturn\'s axis
+    seems to be inclined 5° to the west (clockwise). \n
+    The galilean moons of jupiter and the major moons of saturn are displayed as seen in binoculars. Your can
+    click the picture to get further information if one of the moons is ocultated or in transit (gray background).\n
+    You can click the data about maximal elongations or inferior conjunctions of the inner planets for
+    more information about the actual angles.\n
+    You can click on the date field of the events to set the date to that of the event.
+    
+   </string> 
+    <string name="help_solsys">
+    <b>Orbits</b>\n
+      This page shows you the positions of the planets as seen from the north pole of the ecliptic plane.
+      The distances and the sizes of the disks are not proportional.\n
+      The position of the perihelion is marked with a dash.\n
+      The slider can be used to draw time half a year back or forward, [*] returns you to the selected date.\n 
+      [>] starts an animation.
+   </string>
+    <string name="help_equatorial">
+    <b>Equatorial view</b>\n
+     This page shows you the area in the sky around the celestial equator including the zoodiac as seen from earth.
+     The short lines coming from the solar system objects show the future positions of the objects:\n 
+     moon: 1 day; \n
+     sun, mercury, venus: 1 week;\n
+     mars: 2 weeks;\n
+     jupiter, saturn: 1 month;\n
+     uranus, neptune: 1 year.
+     \n
+     The brown curve shows you the horizon for your location and time.\n
+     You may scale the region around a planet to get a magnified field of view up to 2°.
+   </string>
+    <string name="help_month">
+      <b>Month</b>\n
+      Planets visible this month\n
+      This page shows when the planets rise, set or pass the meridian during the current month.
+      Daytime, the twilight phases and moonlight are shown in the background.\n
+      You can go to the previous or next month with the [-] vs. [+] button or return to the current
+      month with the [*] button.\n
+      The curves for rise, transit and set can be switched on and off with the toggle buttons
+      [/], [^] and [\\] at the right.\n
+      You can also tip on one of the planet names at the bottom to switch it on or off.
+    </string>
+
+    <style name="MyTheme" parent="@android:style/Theme.Light">
+        <item name="android:tabWidgetStyle">@style/LightTabWidget</item>
+    </style>
+
+    <style name="LightTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#1E90FF</item>
+    </style>
+
+    <string name="local">local</string>
+
+
+</resources>
+
+

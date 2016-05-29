@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bodies_array">
+        <item>Luna</item>
+        <item>Sol</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
+    <string-array name="directions_array">
+        <item>N</item>
+        <item>NE</item>
+        <item>E</item>
+        <item>SE</item>
+        <item>S</item>
+        <item>SO</item>
+        <item>O</item>
+        <item>NO</item>
+    </string-array>
+    <string-array name="locations_array">
+        <item>Stuttgart</item>
+        <item>nuevo lugar</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
+    <string-array name="planets_short_array">
+        <item>Me</item>
+        <item>Ve</item>
+        <item>Tie</item>
+        <item>Ma</item>
+        <item>Jú</item>
+        <item>Sa</item>
+        <item>Ur</item>
+        <item>Ne</item>
+    </string-array>
+    <string-array name="timezones">
+        <item>local</item>
+        <item>UTC+0</item>
+        <item>UTC+1</item>
+        <item>UTC-1</item>
+        <item>UTC+2</item>
+        <item>UTC-2</item>
+        <item>UTC+3</item>
+        <item>UTC-3</item>
+        <item>UTC+4</item>
+        <item>UTC-4</item>
+        <item>UTC+5</item>
+        <item>UTC-5</item>
+        <item>UTC+6</item>
+        <item>UTC-6</item>
+        <item>UTC+7</item>
+        <item>UTC-7</item>
+        <item>UTC+8</item>
+        <item>UTC-8</item>
+        <item>UTC+9</item>
+        <item>UTC-9</item>
+        <item>UTC+10</item>
+        <item>UTC-10</item>
+        <item>UTC+11</item>
+        <item>UTC-11</item>
+        <item>UTC+12</item>
+        <item>UTC-12</item>
+    </string-array>
+    <string name="alt">altura</string>
+    <string name="altitude">altura</string>
+    <string name="altnoon">alt.medd.</string>
+    <string name="app_name">SkyReigen</string>
+    <string name="az">acimut</string>
+    <string name="azimuthNorth">acimut 0 en el N</string>
+    <string name="azimuthSouth">acimut 0 en el S</string>
+    <string name="centralmeridian">merid.c.</string>
+    <string name="city">Lugar</string>
+    <string name="delete">borrar</string>
+    <string name="edit">modificar</string>
+    <string name="equtime">equ.tmp.</string>
+    <string name="help_equatorial">
+     <b>Ecuadór celeste</b> \n
+       Esta página muestra el ecuadór celeste y los cuerpos celestes del sistema solar con las estrellas de
+       la zódiac en el fondo, vistos desde la tierra. \n
+       Las pistas que se destacan de los planetas muestran la futura posición de los objetos: \n
+      Luna: 1 día; \n
+      Sol, Mercurio, Venus 1 semana; \n
+      Marte: 2 semanas; \n
+      Júpiter, Saturno: 1 mes; \n
+      Urano, Neptuno: 1 año.
+      \n
+      La curva de color marrón gruesa marca el horizonte en la ubicación seleccionada y al tiempo establecido. \n
+      Se puede acercarse de un planeta (o de otro punto) hasta un campo de visión de 2°.
+      
+       </string>
+    <string name="help_month">
+        <b>Mes</b> - Resumen mensual\n
+       Esta página muestra cuándo sale o se pone un planeta y cuándo ocurre el tránsito durante
+       el mes. Las horas del día, el crepúsculo y la luz de la luna se muestran en el fondo.\n
+       Se puede usar los botones para cambiar al mes anterior ([-]) o siguiente ([+]) o para volver al
+       mes actual ([*]).\n
+       Las curvas pueden estar encendidas o apagadas con los botones
+        [/] (salida) [^] (tránsito) y [\\] (puesta). \n
+       Además se puede tocar los nombres de las planetas al pie de la pagina 
+       para eliminar el planeta en cuestión o hacerlo reaparecer.
+        
+    </string>
+    <string name="help_moon">
+    <b>Luna</b>\n
+    Utilizando la barra deslizante se puede establecer la hora del día, [*] establece la hora actual. \n
+     La distancia de la tierra se da en 1000 km. \n
+     La libración dice de cual parte de la luna se puede ver más. El centro
+     del disco lunar aparece movido en la dirección opuesta. \n
+     \n
+     En el diagrama de la órbita de la luna alrededor de la tierra el medio verde de la elipse
+     indica la parte de la órbita que está al norte del llano de la eclíptica
+     (de acuerdo con el nodo ascendente Ω). La línea roja es la línea de los ápsides (ω perigeo).\n
+     El sector sombreado azul muestra la parte de la órbita, en la que el llano ecuatorial de la tierra está al sur
+     de la eclíptica, es decir, donde la luna parece más alto en el cielo en el hemisferio norte. \n
+     Al hacer clic en los datos con sombra gris se puede obtener más información. \n
+     Puede hacer clic en los campos de la fecha de los hechos para cambiar al día de este evento.
+    
+    </string>
+    <string name="help_planet">
+    <b>Planeta</b>\n
+    Utilizando la barra deslizante se puede establecer la hora del día,
+    [* ] establece la hora actual. \n
+    Las distancias al sol (dist.sol) y a la tierra son en UUAA. \n
+    La visibilidad (también en el diagrama inferior) es el número positivo de las magnitudes (según Meeus) 
+    por encima del límite de visibilidad.
+    Con un par de binoculares se puede ver un planeta aún con visibilidades proximas a, o por
+    debajo de cero.\n
+    Detalles: \n
+    W es el ángulo del meridiano central. Con relación a Júpiter, W1 se aplica a la región ecuatorial, W2 a las latitudes más altas 
+    (la mancha roja se encuentra a 205°).
+    P es la inclinación del eje, D es la declinación de la tierra relativo al llano ecuatorial del planeta.\n
+    Con el anillo de Saturno, N20 O5 significa: la tierra es de 20° al norte del ecuador de Saturno y Saturno
+    aparece inclinado 5° hacia el oeste.\n
+    Las lunas de Júpiter y de Saturno se muestran como aparecen en un par de binoculares.
+    Al hacer clic en el diagrama (si tiene fondo gris) se puede obtener información sobre ocultaciones o tránsitos.\n
+    Al hacer clic en los dados de una elongación o de una conjunción inferior de los planetas interiores se puede obtenir 
+    la elongación máxima o la distancia angular en grados. \n
+    Se puede hacer clic en los campos de la fecha de los hechos para cambiar al día de este evento.
+
+     </string>
+    <string name="help_quick">
+    <b>Resumen</b>\n
+    Sol: amarillo\n
+     Luna: azul claro\n
+     Haga clic en el cuadro con la fecha o la hora para conseguir un diálogo para cambiarla,
+     con [-] se va al día antes, con [+] al día siguiente. Con [*] se vuelve al tiempo actual.\n
+     En la lista de lugares, se puede seleccionar un sitio de observación o añadir un nuevo lugar.
+     En el cuadro de diálogo de entrada para añadir o modificar un lugar puede usted insertar los 
+     coordenadas,  
+     leer los datos del lugar desde el dispositivo o determinar las coordenadas por el 
+     nombre de la ciudad (requiere conexión a Internet).\n
+     La zona horaria \"local\" es la zona de la máquina.
+      </string>
+    <string name="help_solsys">
+    <b>Órbitas y Eclíptica</b>\n
+    Esta página muestra la posición de los planetas vistos desde el polo norte de la eclíptica. 
+    Los radios del las órbitas y los tamaños de los discos no son proporcionales.\n
+     El perihelio está marcado con un trazo. \n
+     Utilizando el control deslizante se puede variar el tiempo por medio año en cada dirección, pulse [*] para volver 
+     a la hora establecida. \n
+     [>] inicia una animación.
+      </string>
+    <string name="help_sun">
+    <b>Sol</b>\n
+    
+    Utilizando la barra deslizante se puede establecer la hora del día,
+     [*] establece la hora actual. \n
+     Los crepúsculos corresponden a una altitud solar de 6, 12 o 18 grados por debajo del horizonte. \n
+     Las duraciones de los crepúsculos son para la mañana y el atardecer por separado, 
+     a menos que el siguiente
+     nivel no se alcance y hay, por tanto, sólo una fase. \n
+     La ecuación del tiempo es: mediodía medio menos mediodía del lugar.\n
+     El próximo día con la misma altura del sol es dado.\n
+     El diámetro aparente (diam) del disco solar aparece en minutos de arco,
+     la distancia del Sol en UA. \n
+     El diagrama polar muestra la trayectoria del sol en el día determinado (rojo), 
+     en el día del equinoccio (turquesa) y las 
+     posisiones posibles entre los solsticios. El punto verde indica la posición actual.
+     Si el "puntero" se activa y los sensores se proporcionan, el punto blanco muestra la
+     dirección en la cual apunta el dispositivo.\n
+     Puede hacer clic en los campos de fecha de las estaciones para cambiar a este día.
+    
+     </string>
+    <string name="humid">humidid. rel.</string>
+    <string name="lat">Latitud</string>
+    <string name="lng">Longitud</string>
+    <string name="locate">ubicar</string>
+    <string name="locatehere">ubicar</string>
+    <string name="location_prompt">cambiar de lugar</string>
+    <string name="look">aspecto</string>
+    <string name="lookupcity">buscar lugar</string>
+    <string name="moon">Luna</string>
+    <string name="moonage">edad</string>
+    <string name="moonasc">asc.</string>
+    <string name="moondecl">declin.</string>
+    <string name="moondiam">diámet.</string>
+    <string name="moondisk">ilum.</string>
+    <string name="moondist">distanza</string>
+    <string name="moonlibraLat">libr.lt.</string>
+    <string name="moonlibraLong">libr.lg.</string>
+    <string name="moonlong">long.</string>
+    <string name="moonorbit">La órbita de la luna alrededor de la Tierra</string>
+    <string name="moonperi">perigeo</string>
+    <string name="moonphase">fase</string>
+    <string name="moonrise">sale</string>
+    <string name="moonsdiam">sdiam</string>
+    <string name="moonset">pone</string>
+    <string name="moontrans">tránsito</string>
+    <string name="planetDetails">más</string>
+    <string name="planet_prompt">elejir planeta</string>
+    <string name="planetalt">altura</string>
+    <string name="planetazi">acimut</string>
+    <string name="planetdecl">declin.</string>
+    <string name="planetdiam">diámet.</string>
+    <string name="planetdisk">ilum.</string>
+    <string name="planetdistearth">d.tierra</string>
+    <string name="planetdistsun">dist.sol</string>
+    <string name="planetelong">elong.</string>
+    <string name="planetmag">magn.</string>
+    <string name="planetphase">fase</string>
+    <string name="planetra">A.R.</string>
+    <string name="planetring">anillo</string>
+    <string name="planetrise">sale</string>
+    <string name="planetsdiam">sdiam</string>
+    <string name="planetset">pone</string>
+    <string name="planettrans">tránsito</string>
+    <string name="planetvis">visibilitad</string>
+    <string name="quart">cuar:</string>
+    <string name="radeg">AR en °</string>
+    <string name="rahm">AR en H:M</string>
+    <string name="riseset">sale/pone</string>
+    <string name="same">misma a.</string>
+    <string name="showptr"/>
+    <string name="sidertime">tmp.sid.</string>
+    <string name="sun">Sol</string>
+    <string name="sundist">distanza</string>
+    <string name="sunrise">sale</string>
+    <string name="sunset">pone</string>
+    <string name="suntrans">tránsito</string>
+    <string name="temp">temperatura</string>
+    <string name="time_evening">vespertino</string>
+    <string name="time_meridian">meridiano</string>
+    <string name="time_midnight">media noche</string>
+    <string name="time_morning">matutino</string>
+    <string name="timezone">zona horario</string>
+    <string name="twiastro">c.astron.</string>
+    <string name="twicivil">crep.civ.</string>
+    <string name="twinaut">c.náut.</string>
+    <string name="visibility_label">Visibilidad</string>
+    <string name="visibility_no">no visible</string>
+</resources>
