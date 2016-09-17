@@ -22,9 +22,10 @@
 
             <Button
                 android:id="@+id/dateDecr"
+                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" - "></Button>
+                android:text="-"></Button>
 
             <TextView
                 android:id="@+id/date"
@@ -35,9 +36,10 @@
 
             <Button
                 android:id="@+id/dateIncr"
+                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" + "></Button>
+                android:text="+"></Button>
 
             <TextView
                 android:id="@+id/time"
@@ -48,9 +50,10 @@
 
             <Button
                 android:id="@+id/dateNow"
+                style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" * "></Button>
+                android:text="*"></Button>
         </LinearLayout>
 
         <LinearLayout

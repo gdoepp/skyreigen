@@ -26,6 +26,7 @@ import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -171,8 +172,22 @@ public class MonthView extends View implements OnTouchListener {
 
         for (int j = 0; j < planetNames.length; j++) {
             if (j < cols.length) {
+
+                paint.setColor(Color.DKGRAY);
+                Rect rect = new Rect();
+                String name = "  " + planetNames[j] + "  ";
+                paint.getTextBounds(name, 0, name.length(), rect);
+                rect.offset((int) (x1 + j * dx * 0.14f), (int) (y1 + rst.length * dy - 2));
+                rect.bottom += 5;
+                rect.top -= 5;
+                rect.left -= 5;
+                rect.right += 5;
+                paint.setStyle(Style.FILL);
+                canvas.drawRect(rect, paint);
+                //paint.setStyle(Style.STROKE);
+
                 paint.setColor(cols[j]);
-                canvas.drawText(planetNames[j], x1 + j * dx * 0.14f, y1
+                canvas.drawText(name, x1 + j * dx * 0.14f, y1
                         + rst.length * dy - 2, paint);
             }
         }
@@ -438,7 +453,7 @@ public class MonthView extends View implements OnTouchListener {
 
         StringBuffer sb = new StringBuffer();
         for (RiseSetAll r : rst) {
-            sb.append(String.format("$02d: ", r.day));
+            sb.append(String.format("%02d: ", r.day));
             sb.append(se.getRise(r.rst[RSTitem.astroTw.ordinal()]) + ","
                     + se.getRise(r.rst[RSTitem.nautTw.ordinal()])
                     + se.getRise(r.rst[RSTitem.civilTw.ordinal()])

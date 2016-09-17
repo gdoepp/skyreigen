@@ -119,7 +119,7 @@ public class VisibilityView extends View {
                     if ((j + 24.) % 24 == 0) {
                         meshPaint.setColor(Color.LTGRAY);
                     } else {
-                        meshPaint.setColor(Color.DKGRAY);
+                        meshPaint.setColor(Color.GRAY);
                     }
                     canvas.drawLine((float) (20 + (j - x0) * xd), h0,
                             (float) (20 + (j - x0) * xd), 0, meshPaint);
@@ -127,7 +127,7 @@ public class VisibilityView extends View {
                             (float) (20 + (j - x0) * xd) - 4, h - 2, meshPaint);
                 }
             } else {
-                meshPaint.setColor(Color.DKGRAY);
+                meshPaint.setColor(Color.GRAY);
                 double delta = (duration > 1 ? 0.5 : 0.25);
                 for (double t = 0; t < duration + 0.1; t += delta) {
                     canvas.drawLine((float) (20 + t * xd), h0, (float) (20 + t
@@ -136,7 +136,7 @@ public class VisibilityView extends View {
                             (float) (20 + t * xd) - 4, h - 2, meshPaint);
                 }
             }
-            meshPaint.setColor(Color.DKGRAY);
+            meshPaint.setColor(Color.GRAY);
             for (int j = 1; j <= 8; j++) {
                 canvas.drawLine(20, h0 - j * hd, w, h0 - j * hd, meshPaint);
                 canvas.drawText("" + (int) (j + m0), 0, h0 - j * hd + 4,

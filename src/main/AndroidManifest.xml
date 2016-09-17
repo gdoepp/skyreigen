@@ -3,8 +3,8 @@
     package="de.gdoeppert.sky"
 
     android:installLocation="auto"
-    android:versionName="3.2"
-    android:versionCode="32">
+    android:versionName="3.4"
+    android:versionCode="34">
 
     <uses-sdk
         android:minSdkVersion="11"
