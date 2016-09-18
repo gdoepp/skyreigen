@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAAEclipticalElements {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAEclipticalElements(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAEclipticalElements obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAEclipticalElements(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAEclipticalElements(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAAEclipticalElementDetails Calculate(double i0, double w0, double omega0, double JD0, double JD) {
-    return new CAAEclipticalElementDetails(AAJNI.CAAEclipticalElements_Calculate(i0, w0, omega0, JD0, JD), true);
-  }
+    protected static long getCPtr(CAAEclipticalElements obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAAEclipticalElementDetails FK4B1950ToFK5J2000(double i0, double w0, double omega0) {
-    return new CAAEclipticalElementDetails(AAJNI.CAAEclipticalElements_FK4B1950ToFK5J2000(i0, w0, omega0), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAAEclipticalElements() {
-    this(AAJNI.new_CAAEclipticalElements(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAEclipticalElements(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAAEclipticalElementDetails Calculate(double i0, double w0, double omega0, double JD0, double JD) {
+        return new CAAEclipticalElementDetails(AAJNI.CAAEclipticalElements_Calculate(i0, w0, omega0, JD0, JD), true);
+    }
+
+    public static CAAEclipticalElementDetails FK4B1950ToFK5J2000(double i0, double w0, double omega0) {
+        return new CAAEclipticalElementDetails(AAJNI.CAAEclipticalElements_FK4B1950ToFK5J2000(i0, w0, omega0), true);
+    }
+
+    public CAAEclipticalElements() {
+        this(AAJNI.new_CAAEclipticalElements(), true);
+    }
 
 }

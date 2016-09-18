@@ -9,46 +9,46 @@
 package com.naughter.aaplus;
 
 public class CAAMoslemCalendar {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAMoslemCalendar(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAMoslemCalendar obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAMoslemCalendar(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAMoslemCalendar(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAACalendarDate MoslemToJulian(int Year, int Month, int Day) {
-    return new CAACalendarDate(AAJNI.CAAMoslemCalendar_MoslemToJulian(Year, Month, Day), true);
-  }
+    protected static long getCPtr(CAAMoslemCalendar obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAACalendarDate JulianToMoslem(int Year, int Month, int Day) {
-    return new CAACalendarDate(AAJNI.CAAMoslemCalendar_JulianToMoslem(Year, Month, Day), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static boolean IsLeap(int Year) {
-    return AAJNI.CAAMoslemCalendar_IsLeap(Year);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAMoslemCalendar(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public CAAMoslemCalendar() {
-    this(AAJNI.new_CAAMoslemCalendar(), true);
-  }
+    public static CAACalendarDate MoslemToJulian(int Year, int Month, int Day) {
+        return new CAACalendarDate(AAJNI.CAAMoslemCalendar_MoslemToJulian(Year, Month, Day), true);
+    }
+
+    public static CAACalendarDate JulianToMoslem(int Year, int Month, int Day) {
+        return new CAACalendarDate(AAJNI.CAAMoslemCalendar_JulianToMoslem(Year, Month, Day), true);
+    }
+
+    public static boolean IsLeap(int Year) {
+        return AAJNI.CAAMoslemCalendar_IsLeap(Year);
+    }
+
+    public CAAMoslemCalendar() {
+        this(AAJNI.new_CAAMoslemCalendar(), true);
+    }
 
 }

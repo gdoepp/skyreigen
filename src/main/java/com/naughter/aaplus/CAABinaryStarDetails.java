@@ -9,58 +9,58 @@
 package com.naughter.aaplus;
 
 public class CAABinaryStarDetails {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAABinaryStarDetails(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAABinaryStarDetails obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAABinaryStarDetails(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAABinaryStarDetails(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAABinaryStarDetails() {
-    this(AAJNI.new_CAABinaryStarDetails(), true);
-  }
+    protected static long getCPtr(CAABinaryStarDetails obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setR(double value) {
-    AAJNI.CAABinaryStarDetails_r_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public double getR() {
-    return AAJNI.CAABinaryStarDetails_r_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAABinaryStarDetails(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setTheta(double value) {
-    AAJNI.CAABinaryStarDetails_Theta_set(swigCPtr, this, value);
-  }
+    public CAABinaryStarDetails() {
+        this(AAJNI.new_CAABinaryStarDetails(), true);
+    }
 
-  public double getTheta() {
-    return AAJNI.CAABinaryStarDetails_Theta_get(swigCPtr, this);
-  }
+    public void setR(double value) {
+        AAJNI.CAABinaryStarDetails_r_set(swigCPtr, this, value);
+    }
 
-  public void setRho(double value) {
-    AAJNI.CAABinaryStarDetails_Rho_set(swigCPtr, this, value);
-  }
+    public double getR() {
+        return AAJNI.CAABinaryStarDetails_r_get(swigCPtr, this);
+    }
 
-  public double getRho() {
-    return AAJNI.CAABinaryStarDetails_Rho_get(swigCPtr, this);
-  }
+    public void setTheta(double value) {
+        AAJNI.CAABinaryStarDetails_Theta_set(swigCPtr, this, value);
+    }
+
+    public double getTheta() {
+        return AAJNI.CAABinaryStarDetails_Theta_get(swigCPtr, this);
+    }
+
+    public void setRho(double value) {
+        AAJNI.CAABinaryStarDetails_Rho_set(swigCPtr, this, value);
+    }
+
+    public double getRho() {
+        return AAJNI.CAABinaryStarDetails_Rho_get(swigCPtr, this);
+    }
 
 }

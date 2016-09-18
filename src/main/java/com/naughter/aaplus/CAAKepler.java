@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAAKepler {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAKepler(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAKepler obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAKepler(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAKepler(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double Calculate(double M, double e, int nIterations) {
-    return AAJNI.CAAKepler_Calculate__SWIG_0(M, e, nIterations);
-  }
+    protected static long getCPtr(CAAKepler obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double Calculate(double M, double e) {
-    return AAJNI.CAAKepler_Calculate__SWIG_1(M, e);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAAKepler() {
-    this(AAJNI.new_CAAKepler(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAKepler(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static double Calculate(double M, double e, int nIterations) {
+        return AAJNI.CAAKepler_Calculate__SWIG_0(M, e, nIterations);
+    }
+
+    public static double Calculate(double M, double e) {
+        return AAJNI.CAAKepler_Calculate__SWIG_1(M, e);
+    }
+
+    public CAAKepler() {
+        this(AAJNI.new_CAAKepler(), true);
+    }
 
 }

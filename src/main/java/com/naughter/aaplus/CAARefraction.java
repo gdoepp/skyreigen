@@ -9,58 +9,58 @@
 package com.naughter.aaplus;
 
 public class CAARefraction {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAARefraction(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAARefraction obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAARefraction(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAARefraction(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double RefractionFromApparent(double Altitude, double Pressure, double Temperature) {
-    return AAJNI.CAARefraction_RefractionFromApparent__SWIG_0(Altitude, Pressure, Temperature);
-  }
+    protected static long getCPtr(CAARefraction obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double RefractionFromApparent(double Altitude, double Pressure) {
-    return AAJNI.CAARefraction_RefractionFromApparent__SWIG_1(Altitude, Pressure);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double RefractionFromApparent(double Altitude) {
-    return AAJNI.CAARefraction_RefractionFromApparent__SWIG_2(Altitude);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAARefraction(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double RefractionFromTrue(double Altitude, double Pressure, double Temperature) {
-    return AAJNI.CAARefraction_RefractionFromTrue__SWIG_0(Altitude, Pressure, Temperature);
-  }
+    public static double RefractionFromApparent(double Altitude, double Pressure, double Temperature) {
+        return AAJNI.CAARefraction_RefractionFromApparent__SWIG_0(Altitude, Pressure, Temperature);
+    }
 
-  public static double RefractionFromTrue(double Altitude, double Pressure) {
-    return AAJNI.CAARefraction_RefractionFromTrue__SWIG_1(Altitude, Pressure);
-  }
+    public static double RefractionFromApparent(double Altitude, double Pressure) {
+        return AAJNI.CAARefraction_RefractionFromApparent__SWIG_1(Altitude, Pressure);
+    }
 
-  public static double RefractionFromTrue(double Altitude) {
-    return AAJNI.CAARefraction_RefractionFromTrue__SWIG_2(Altitude);
-  }
+    public static double RefractionFromApparent(double Altitude) {
+        return AAJNI.CAARefraction_RefractionFromApparent__SWIG_2(Altitude);
+    }
 
-  public CAARefraction() {
-    this(AAJNI.new_CAARefraction(), true);
-  }
+    public static double RefractionFromTrue(double Altitude, double Pressure, double Temperature) {
+        return AAJNI.CAARefraction_RefractionFromTrue__SWIG_0(Altitude, Pressure, Temperature);
+    }
+
+    public static double RefractionFromTrue(double Altitude, double Pressure) {
+        return AAJNI.CAARefraction_RefractionFromTrue__SWIG_1(Altitude, Pressure);
+    }
+
+    public static double RefractionFromTrue(double Altitude) {
+        return AAJNI.CAARefraction_RefractionFromTrue__SWIG_2(Altitude);
+    }
+
+    public CAARefraction() {
+        this(AAJNI.new_CAARefraction(), true);
+    }
 
 }

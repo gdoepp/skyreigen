@@ -9,54 +9,54 @@
 package com.naughter.aaplus;
 
 public class CAAParallax {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAParallax(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAParallax obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAParallax(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAParallax(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAA2DCoordinate Equatorial2TopocentricDelta(double Alpha, double Delta, double Distance, double Longitude, double Latitude, double Height, double JD) {
-    return new CAA2DCoordinate(AAJNI.CAAParallax_Equatorial2TopocentricDelta(Alpha, Delta, Distance, Longitude, Latitude, Height, JD), true);
-  }
+    protected static long getCPtr(CAAParallax obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAA2DCoordinate Equatorial2Topocentric(double Alpha, double Delta, double Distance, double Longitude, double Latitude, double Height, double JD) {
-    return new CAA2DCoordinate(AAJNI.CAAParallax_Equatorial2Topocentric(Alpha, Delta, Distance, Longitude, Latitude, Height, JD), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static CAATopocentricEclipticDetails Ecliptic2Topocentric(double Lambda, double Beta, double Semidiameter, double Distance, double Epsilon, double Latitude, double Height, double JD) {
-    return new CAATopocentricEclipticDetails(AAJNI.CAAParallax_Ecliptic2Topocentric(Lambda, Beta, Semidiameter, Distance, Epsilon, Latitude, Height, JD), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAParallax(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double ParallaxToDistance(double Parallax) {
-    return AAJNI.CAAParallax_ParallaxToDistance(Parallax);
-  }
+    public static CAA2DCoordinate Equatorial2TopocentricDelta(double Alpha, double Delta, double Distance, double Longitude, double Latitude, double Height, double JD) {
+        return new CAA2DCoordinate(AAJNI.CAAParallax_Equatorial2TopocentricDelta(Alpha, Delta, Distance, Longitude, Latitude, Height, JD), true);
+    }
 
-  public static double DistanceToParallax(double Distance) {
-    return AAJNI.CAAParallax_DistanceToParallax(Distance);
-  }
+    public static CAA2DCoordinate Equatorial2Topocentric(double Alpha, double Delta, double Distance, double Longitude, double Latitude, double Height, double JD) {
+        return new CAA2DCoordinate(AAJNI.CAAParallax_Equatorial2Topocentric(Alpha, Delta, Distance, Longitude, Latitude, Height, JD), true);
+    }
 
-  public CAAParallax() {
-    this(AAJNI.new_CAAParallax(), true);
-  }
+    public static CAATopocentricEclipticDetails Ecliptic2Topocentric(double Lambda, double Beta, double Semidiameter, double Distance, double Epsilon, double Latitude, double Height, double JD) {
+        return new CAATopocentricEclipticDetails(AAJNI.CAAParallax_Ecliptic2Topocentric(Lambda, Beta, Semidiameter, Distance, Epsilon, Latitude, Height, JD), true);
+    }
+
+    public static double ParallaxToDistance(double Parallax) {
+        return AAJNI.CAAParallax_ParallaxToDistance(Parallax);
+    }
+
+    public static double DistanceToParallax(double Distance) {
+        return AAJNI.CAAParallax_DistanceToParallax(Distance);
+    }
+
+    public CAAParallax() {
+        this(AAJNI.new_CAAParallax(), true);
+    }
 
 }

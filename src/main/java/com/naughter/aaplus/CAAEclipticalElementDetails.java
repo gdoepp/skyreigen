@@ -9,58 +9,58 @@
 package com.naughter.aaplus;
 
 public class CAAEclipticalElementDetails {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAEclipticalElementDetails(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAEclipticalElementDetails obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAEclipticalElementDetails(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAEclipticalElementDetails(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAAEclipticalElementDetails() {
-    this(AAJNI.new_CAAEclipticalElementDetails(), true);
-  }
+    protected static long getCPtr(CAAEclipticalElementDetails obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setI(double value) {
-    AAJNI.CAAEclipticalElementDetails_i_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public double getI() {
-    return AAJNI.CAAEclipticalElementDetails_i_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAEclipticalElementDetails(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setW(double value) {
-    AAJNI.CAAEclipticalElementDetails_w_set(swigCPtr, this, value);
-  }
+    public CAAEclipticalElementDetails() {
+        this(AAJNI.new_CAAEclipticalElementDetails(), true);
+    }
 
-  public double getW() {
-    return AAJNI.CAAEclipticalElementDetails_w_get(swigCPtr, this);
-  }
+    public void setI(double value) {
+        AAJNI.CAAEclipticalElementDetails_i_set(swigCPtr, this, value);
+    }
 
-  public void setOmega(double value) {
-    AAJNI.CAAEclipticalElementDetails_omega_set(swigCPtr, this, value);
-  }
+    public double getI() {
+        return AAJNI.CAAEclipticalElementDetails_i_get(swigCPtr, this);
+    }
 
-  public double getOmega() {
-    return AAJNI.CAAEclipticalElementDetails_omega_get(swigCPtr, this);
-  }
+    public void setW(double value) {
+        AAJNI.CAAEclipticalElementDetails_w_set(swigCPtr, this, value);
+    }
+
+    public double getW() {
+        return AAJNI.CAAEclipticalElementDetails_w_get(swigCPtr, this);
+    }
+
+    public void setOmega(double value) {
+        AAJNI.CAAEclipticalElementDetails_omega_set(swigCPtr, this, value);
+    }
+
+    public double getOmega() {
+        return AAJNI.CAAEclipticalElementDetails_omega_get(swigCPtr, this);
+    }
 
 }

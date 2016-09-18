@@ -9,38 +9,38 @@
 package com.naughter.aaplus;
 
 public class CAASaturnMoons {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAASaturnMoons(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAASaturnMoons obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAASaturnMoons(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAASaturnMoons(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAASaturnMoonsDetails Calculate(double JD, boolean bHighPrecision) {
-    return new CAASaturnMoonsDetails(AAJNI.CAASaturnMoons_Calculate(JD, bHighPrecision), true);
-  }
+    protected static long getCPtr(CAASaturnMoons obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public CAASaturnMoons() {
-    this(AAJNI.new_CAASaturnMoons(), true);
-  }
+    protected void finalize() {
+        delete();
+    }
+
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAASaturnMoons(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAASaturnMoonsDetails Calculate(double JD, boolean bHighPrecision) {
+        return new CAASaturnMoonsDetails(AAJNI.CAASaturnMoons_Calculate(JD, bHighPrecision), true);
+    }
+
+    public CAASaturnMoons() {
+        this(AAJNI.new_CAASaturnMoons(), true);
+    }
 
 }

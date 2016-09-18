@@ -9,50 +9,50 @@
 package com.naughter.aaplus;
 
 public class CAAMoonIlluminatedFraction {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAMoonIlluminatedFraction(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAMoonIlluminatedFraction obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAMoonIlluminatedFraction(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAMoonIlluminatedFraction(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double GeocentricElongation(double ObjectAlpha, double ObjectDelta, double SunAlpha, double SunDelta) {
-    return AAJNI.CAAMoonIlluminatedFraction_GeocentricElongation(ObjectAlpha, ObjectDelta, SunAlpha, SunDelta);
-  }
+    protected static long getCPtr(CAAMoonIlluminatedFraction obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double PhaseAngle(double GeocentricElongation, double EarthObjectDistance, double EarthSunDistance) {
-    return AAJNI.CAAMoonIlluminatedFraction_PhaseAngle(GeocentricElongation, EarthObjectDistance, EarthSunDistance);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double IlluminatedFraction(double PhaseAngle) {
-    return AAJNI.CAAMoonIlluminatedFraction_IlluminatedFraction(PhaseAngle);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAMoonIlluminatedFraction(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double PositionAngle(double Alpha0, double Delta0, double Alpha, double Delta) {
-    return AAJNI.CAAMoonIlluminatedFraction_PositionAngle(Alpha0, Delta0, Alpha, Delta);
-  }
+    public static double GeocentricElongation(double ObjectAlpha, double ObjectDelta, double SunAlpha, double SunDelta) {
+        return AAJNI.CAAMoonIlluminatedFraction_GeocentricElongation(ObjectAlpha, ObjectDelta, SunAlpha, SunDelta);
+    }
 
-  public CAAMoonIlluminatedFraction() {
-    this(AAJNI.new_CAAMoonIlluminatedFraction(), true);
-  }
+    public static double PhaseAngle(double GeocentricElongation, double EarthObjectDistance, double EarthSunDistance) {
+        return AAJNI.CAAMoonIlluminatedFraction_PhaseAngle(GeocentricElongation, EarthObjectDistance, EarthSunDistance);
+    }
+
+    public static double IlluminatedFraction(double PhaseAngle) {
+        return AAJNI.CAAMoonIlluminatedFraction_IlluminatedFraction(PhaseAngle);
+    }
+
+    public static double PositionAngle(double Alpha0, double Delta0, double Alpha, double Delta) {
+        return AAJNI.CAAMoonIlluminatedFraction_PositionAngle(Alpha0, Delta0, Alpha, Delta);
+    }
+
+    public CAAMoonIlluminatedFraction() {
+        this(AAJNI.new_CAAMoonIlluminatedFraction(), true);
+    }
 
 }

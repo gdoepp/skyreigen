@@ -9,50 +9,50 @@
 package com.naughter.aaplus;
 
 public class CAAEasterDetails {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAEasterDetails(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAEasterDetails obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAEasterDetails(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAEasterDetails(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAAEasterDetails() {
-    this(AAJNI.new_CAAEasterDetails(), true);
-  }
+    protected static long getCPtr(CAAEasterDetails obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setMonth(int value) {
-    AAJNI.CAAEasterDetails_Month_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public int getMonth() {
-    return AAJNI.CAAEasterDetails_Month_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAEasterDetails(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setDay(int value) {
-    AAJNI.CAAEasterDetails_Day_set(swigCPtr, this, value);
-  }
+    public CAAEasterDetails() {
+        this(AAJNI.new_CAAEasterDetails(), true);
+    }
 
-  public int getDay() {
-    return AAJNI.CAAEasterDetails_Day_get(swigCPtr, this);
-  }
+    public void setMonth(int value) {
+        AAJNI.CAAEasterDetails_Month_set(swigCPtr, this, value);
+    }
+
+    public int getMonth() {
+        return AAJNI.CAAEasterDetails_Month_get(swigCPtr, this);
+    }
+
+    public void setDay(int value) {
+        AAJNI.CAAEasterDetails_Day_set(swigCPtr, this, value);
+    }
+
+    public int getDay() {
+        return AAJNI.CAAEasterDetails_Day_get(swigCPtr, this);
+    }
 
 }

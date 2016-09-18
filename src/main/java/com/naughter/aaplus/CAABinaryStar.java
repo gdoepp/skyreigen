@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAABinaryStar {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAABinaryStar(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAABinaryStar obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAABinaryStar(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAABinaryStar(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAABinaryStarDetails Calculate(double t, double P, double T, double e, double a, double i, double omega, double w) {
-    return new CAABinaryStarDetails(AAJNI.CAABinaryStar_Calculate(t, P, T, e, a, i, omega, w), true);
-  }
+    protected static long getCPtr(CAABinaryStar obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double ApparentEccentricity(double e, double i, double w) {
-    return AAJNI.CAABinaryStar_ApparentEccentricity(e, i, w);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAABinaryStar() {
-    this(AAJNI.new_CAABinaryStar(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAABinaryStar(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAABinaryStarDetails Calculate(double t, double P, double T, double e, double a, double i, double omega, double w) {
+        return new CAABinaryStarDetails(AAJNI.CAABinaryStar_Calculate(t, P, T, e, a, i, omega, w), true);
+    }
+
+    public static double ApparentEccentricity(double e, double i, double w) {
+        return AAJNI.CAABinaryStar_ApparentEccentricity(e, i, w);
+    }
+
+    public CAABinaryStar() {
+        this(AAJNI.new_CAABinaryStar(), true);
+    }
 
 }

@@ -9,88 +9,88 @@
 package com.naughter.aaplus;
 
 public class CAASolarEclipseDetails {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAASolarEclipseDetails(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAASolarEclipseDetails obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAASolarEclipseDetails(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAASolarEclipseDetails(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAASolarEclipseDetails() {
-    this(AAJNI.new_CAASolarEclipseDetails(), true);
-  }
+    protected static long getCPtr(CAASolarEclipseDetails obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setFlags(long value) {
-    AAJNI.CAASolarEclipseDetails_Flags_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public long getFlags() {
-    return AAJNI.CAASolarEclipseDetails_Flags_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAASolarEclipseDetails(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setTimeOfMaximumEclipse(double value) {
-    AAJNI.CAASolarEclipseDetails_TimeOfMaximumEclipse_set(swigCPtr, this, value);
-  }
+    public CAASolarEclipseDetails() {
+        this(AAJNI.new_CAASolarEclipseDetails(), true);
+    }
 
-  public double getTimeOfMaximumEclipse() {
-    return AAJNI.CAASolarEclipseDetails_TimeOfMaximumEclipse_get(swigCPtr, this);
-  }
+    public void setFlags(long value) {
+        AAJNI.CAASolarEclipseDetails_Flags_set(swigCPtr, this, value);
+    }
 
-  public void setF(double value) {
-    AAJNI.CAASolarEclipseDetails_F_set(swigCPtr, this, value);
-  }
+    public long getFlags() {
+        return AAJNI.CAASolarEclipseDetails_Flags_get(swigCPtr, this);
+    }
 
-  public double getF() {
-    return AAJNI.CAASolarEclipseDetails_F_get(swigCPtr, this);
-  }
+    public void setTimeOfMaximumEclipse(double value) {
+        AAJNI.CAASolarEclipseDetails_TimeOfMaximumEclipse_set(swigCPtr, this, value);
+    }
 
-  public void setU(double value) {
-    AAJNI.CAASolarEclipseDetails_u_set(swigCPtr, this, value);
-  }
+    public double getTimeOfMaximumEclipse() {
+        return AAJNI.CAASolarEclipseDetails_TimeOfMaximumEclipse_get(swigCPtr, this);
+    }
 
-  public double getU() {
-    return AAJNI.CAASolarEclipseDetails_u_get(swigCPtr, this);
-  }
+    public void setF(double value) {
+        AAJNI.CAASolarEclipseDetails_F_set(swigCPtr, this, value);
+    }
 
-  public void setGamma(double value) {
-    AAJNI.CAASolarEclipseDetails_gamma_set(swigCPtr, this, value);
-  }
+    public double getF() {
+        return AAJNI.CAASolarEclipseDetails_F_get(swigCPtr, this);
+    }
 
-  public double getGamma() {
-    return AAJNI.CAASolarEclipseDetails_gamma_get(swigCPtr, this);
-  }
+    public void setU(double value) {
+        AAJNI.CAASolarEclipseDetails_u_set(swigCPtr, this, value);
+    }
 
-  public void setGreatestMagnitude(double value) {
-    AAJNI.CAASolarEclipseDetails_GreatestMagnitude_set(swigCPtr, this, value);
-  }
+    public double getU() {
+        return AAJNI.CAASolarEclipseDetails_u_get(swigCPtr, this);
+    }
 
-  public double getGreatestMagnitude() {
-    return AAJNI.CAASolarEclipseDetails_GreatestMagnitude_get(swigCPtr, this);
-  }
+    public void setGamma(double value) {
+        AAJNI.CAASolarEclipseDetails_gamma_set(swigCPtr, this, value);
+    }
 
-  public final static long TOTAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_TOTAL_ECLIPSE_get();
-  public final static long ANNULAR_ECLIPSE = AAJNI.CAASolarEclipseDetails_ANNULAR_ECLIPSE_get();
-  public final static long ANNULAR_TOTAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_ANNULAR_TOTAL_ECLIPSE_get();
-  public final static long CENTRAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_CENTRAL_ECLIPSE_get();
-  public final static long PARTIAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_PARTIAL_ECLIPSE_get();
-  public final static long NON_CENTRAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_NON_CENTRAL_ECLIPSE_get();
+    public double getGamma() {
+        return AAJNI.CAASolarEclipseDetails_gamma_get(swigCPtr, this);
+    }
+
+    public void setGreatestMagnitude(double value) {
+        AAJNI.CAASolarEclipseDetails_GreatestMagnitude_set(swigCPtr, this, value);
+    }
+
+    public double getGreatestMagnitude() {
+        return AAJNI.CAASolarEclipseDetails_GreatestMagnitude_get(swigCPtr, this);
+    }
+
+    public final static long TOTAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_TOTAL_ECLIPSE_get();
+    public final static long ANNULAR_ECLIPSE = AAJNI.CAASolarEclipseDetails_ANNULAR_ECLIPSE_get();
+    public final static long ANNULAR_TOTAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_ANNULAR_TOTAL_ECLIPSE_get();
+    public final static long CENTRAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_CENTRAL_ECLIPSE_get();
+    public final static long PARTIAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_PARTIAL_ECLIPSE_get();
+    public final static long NON_CENTRAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_NON_CENTRAL_ECLIPSE_get();
 }

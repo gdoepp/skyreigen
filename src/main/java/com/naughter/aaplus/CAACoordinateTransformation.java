@@ -9,110 +9,110 @@
 package com.naughter.aaplus;
 
 public class CAACoordinateTransformation {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAACoordinateTransformation(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAACoordinateTransformation obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAACoordinateTransformation(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAACoordinateTransformation(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAA2DCoordinate Equatorial2Ecliptic(double Alpha, double Delta, double Epsilon) {
-    return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Equatorial2Ecliptic(Alpha, Delta, Epsilon), true);
-  }
+    protected static long getCPtr(CAACoordinateTransformation obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAA2DCoordinate Ecliptic2Equatorial(double Lambda, double Beta, double Epsilon) {
-    return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Ecliptic2Equatorial(Lambda, Beta, Epsilon), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static CAA2DCoordinate Equatorial2Horizontal(double LocalHourAngle, double Delta, double Latitude) {
-    return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Equatorial2Horizontal(LocalHourAngle, Delta, Latitude), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAACoordinateTransformation(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static CAA2DCoordinate Horizontal2Equatorial(double A, double h, double Latitude) {
-    return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Horizontal2Equatorial(A, h, Latitude), true);
-  }
+    public static CAA2DCoordinate Equatorial2Ecliptic(double Alpha, double Delta, double Epsilon) {
+        return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Equatorial2Ecliptic(Alpha, Delta, Epsilon), true);
+    }
 
-  public static CAA2DCoordinate Equatorial2Galactic(double Alpha, double Delta) {
-    return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Equatorial2Galactic(Alpha, Delta), true);
-  }
+    public static CAA2DCoordinate Ecliptic2Equatorial(double Lambda, double Beta, double Epsilon) {
+        return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Ecliptic2Equatorial(Lambda, Beta, Epsilon), true);
+    }
 
-  public static CAA2DCoordinate Galactic2Equatorial(double l, double b) {
-    return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Galactic2Equatorial(l, b), true);
-  }
+    public static CAA2DCoordinate Equatorial2Horizontal(double LocalHourAngle, double Delta, double Latitude) {
+        return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Equatorial2Horizontal(LocalHourAngle, Delta, Latitude), true);
+    }
 
-  public static double DegreesToRadians(double Degrees) {
-    return AAJNI.CAACoordinateTransformation_DegreesToRadians(Degrees);
-  }
+    public static CAA2DCoordinate Horizontal2Equatorial(double A, double h, double Latitude) {
+        return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Horizontal2Equatorial(A, h, Latitude), true);
+    }
 
-  public static double RadiansToDegrees(double Radians) {
-    return AAJNI.CAACoordinateTransformation_RadiansToDegrees(Radians);
-  }
+    public static CAA2DCoordinate Equatorial2Galactic(double Alpha, double Delta) {
+        return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Equatorial2Galactic(Alpha, Delta), true);
+    }
 
-  public static double RadiansToHours(double Radians) {
-    return AAJNI.CAACoordinateTransformation_RadiansToHours(Radians);
-  }
+    public static CAA2DCoordinate Galactic2Equatorial(double l, double b) {
+        return new CAA2DCoordinate(AAJNI.CAACoordinateTransformation_Galactic2Equatorial(l, b), true);
+    }
 
-  public static double HoursToRadians(double Hours) {
-    return AAJNI.CAACoordinateTransformation_HoursToRadians(Hours);
-  }
+    public static double DegreesToRadians(double Degrees) {
+        return AAJNI.CAACoordinateTransformation_DegreesToRadians(Degrees);
+    }
 
-  public static double HoursToDegrees(double Hours) {
-    return AAJNI.CAACoordinateTransformation_HoursToDegrees(Hours);
-  }
+    public static double RadiansToDegrees(double Radians) {
+        return AAJNI.CAACoordinateTransformation_RadiansToDegrees(Radians);
+    }
 
-  public static double DegreesToHours(double Degrees) {
-    return AAJNI.CAACoordinateTransformation_DegreesToHours(Degrees);
-  }
+    public static double RadiansToHours(double Radians) {
+        return AAJNI.CAACoordinateTransformation_RadiansToHours(Radians);
+    }
 
-  public static double PI() {
-    return AAJNI.CAACoordinateTransformation_PI();
-  }
+    public static double HoursToRadians(double Hours) {
+        return AAJNI.CAACoordinateTransformation_HoursToRadians(Hours);
+    }
 
-  public static double MapTo0To360Range(double Degrees) {
-    return AAJNI.CAACoordinateTransformation_MapTo0To360Range(Degrees);
-  }
+    public static double HoursToDegrees(double Hours) {
+        return AAJNI.CAACoordinateTransformation_HoursToDegrees(Hours);
+    }
 
-  public static double MapToMinus90To90Range(double Degrees) {
-    return AAJNI.CAACoordinateTransformation_MapToMinus90To90Range(Degrees);
-  }
+    public static double DegreesToHours(double Degrees) {
+        return AAJNI.CAACoordinateTransformation_DegreesToHours(Degrees);
+    }
 
-  public static double MapTo0To24Range(double HourAngle) {
-    return AAJNI.CAACoordinateTransformation_MapTo0To24Range(HourAngle);
-  }
+    public static double PI() {
+        return AAJNI.CAACoordinateTransformation_PI();
+    }
 
-  public static double MapTo0To2PIRange(double Angle) {
-    return AAJNI.CAACoordinateTransformation_MapTo0To2PIRange(Angle);
-  }
+    public static double MapTo0To360Range(double Degrees) {
+        return AAJNI.CAACoordinateTransformation_MapTo0To360Range(Degrees);
+    }
 
-  public static double DMSToDegrees(double Degrees, double Minutes, double Seconds, boolean bPositive) {
-    return AAJNI.CAACoordinateTransformation_DMSToDegrees__SWIG_0(Degrees, Minutes, Seconds, bPositive);
-  }
+    public static double MapToMinus90To90Range(double Degrees) {
+        return AAJNI.CAACoordinateTransformation_MapToMinus90To90Range(Degrees);
+    }
 
-  public static double DMSToDegrees(double Degrees, double Minutes, double Seconds) {
-    return AAJNI.CAACoordinateTransformation_DMSToDegrees__SWIG_1(Degrees, Minutes, Seconds);
-  }
+    public static double MapTo0To24Range(double HourAngle) {
+        return AAJNI.CAACoordinateTransformation_MapTo0To24Range(HourAngle);
+    }
 
-  public CAACoordinateTransformation() {
-    this(AAJNI.new_CAACoordinateTransformation(), true);
-  }
+    public static double MapTo0To2PIRange(double Angle) {
+        return AAJNI.CAACoordinateTransformation_MapTo0To2PIRange(Angle);
+    }
+
+    public static double DMSToDegrees(double Degrees, double Minutes, double Seconds, boolean bPositive) {
+        return AAJNI.CAACoordinateTransformation_DMSToDegrees__SWIG_0(Degrees, Minutes, Seconds, bPositive);
+    }
+
+    public static double DMSToDegrees(double Degrees, double Minutes, double Seconds) {
+        return AAJNI.CAACoordinateTransformation_DMSToDegrees__SWIG_1(Degrees, Minutes, Seconds);
+    }
+
+    public CAACoordinateTransformation() {
+        this(AAJNI.new_CAACoordinateTransformation(), true);
+    }
 
 }

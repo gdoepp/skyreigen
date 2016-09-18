@@ -9,90 +9,90 @@
 package com.naughter.aaplus;
 
 public class CAAEllipticalObjectElements {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAEllipticalObjectElements(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAEllipticalObjectElements obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAEllipticalObjectElements(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAEllipticalObjectElements(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAAEllipticalObjectElements() {
-    this(AAJNI.new_CAAEllipticalObjectElements(), true);
-  }
+    protected static long getCPtr(CAAEllipticalObjectElements obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setA(double value) {
-    AAJNI.CAAEllipticalObjectElements_a_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public double getA() {
-    return AAJNI.CAAEllipticalObjectElements_a_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAEllipticalObjectElements(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setE(double value) {
-    AAJNI.CAAEllipticalObjectElements_e_set(swigCPtr, this, value);
-  }
+    public CAAEllipticalObjectElements() {
+        this(AAJNI.new_CAAEllipticalObjectElements(), true);
+    }
 
-  public double getE() {
-    return AAJNI.CAAEllipticalObjectElements_e_get(swigCPtr, this);
-  }
+    public void setA(double value) {
+        AAJNI.CAAEllipticalObjectElements_a_set(swigCPtr, this, value);
+    }
 
-  public void setI(double value) {
-    AAJNI.CAAEllipticalObjectElements_i_set(swigCPtr, this, value);
-  }
+    public double getA() {
+        return AAJNI.CAAEllipticalObjectElements_a_get(swigCPtr, this);
+    }
 
-  public double getI() {
-    return AAJNI.CAAEllipticalObjectElements_i_get(swigCPtr, this);
-  }
+    public void setE(double value) {
+        AAJNI.CAAEllipticalObjectElements_e_set(swigCPtr, this, value);
+    }
 
-  public void setW(double value) {
-    AAJNI.CAAEllipticalObjectElements_w_set(swigCPtr, this, value);
-  }
+    public double getE() {
+        return AAJNI.CAAEllipticalObjectElements_e_get(swigCPtr, this);
+    }
 
-  public double getW() {
-    return AAJNI.CAAEllipticalObjectElements_w_get(swigCPtr, this);
-  }
+    public void setI(double value) {
+        AAJNI.CAAEllipticalObjectElements_i_set(swigCPtr, this, value);
+    }
 
-  public void setOmega(double value) {
-    AAJNI.CAAEllipticalObjectElements_omega_set(swigCPtr, this, value);
-  }
+    public double getI() {
+        return AAJNI.CAAEllipticalObjectElements_i_get(swigCPtr, this);
+    }
 
-  public double getOmega() {
-    return AAJNI.CAAEllipticalObjectElements_omega_get(swigCPtr, this);
-  }
+    public void setW(double value) {
+        AAJNI.CAAEllipticalObjectElements_w_set(swigCPtr, this, value);
+    }
 
-  public void setJDEquinox(double value) {
-    AAJNI.CAAEllipticalObjectElements_JDEquinox_set(swigCPtr, this, value);
-  }
+    public double getW() {
+        return AAJNI.CAAEllipticalObjectElements_w_get(swigCPtr, this);
+    }
 
-  public double getJDEquinox() {
-    return AAJNI.CAAEllipticalObjectElements_JDEquinox_get(swigCPtr, this);
-  }
+    public void setOmega(double value) {
+        AAJNI.CAAEllipticalObjectElements_omega_set(swigCPtr, this, value);
+    }
 
-  public void setT(double value) {
-    AAJNI.CAAEllipticalObjectElements_T_set(swigCPtr, this, value);
-  }
+    public double getOmega() {
+        return AAJNI.CAAEllipticalObjectElements_omega_get(swigCPtr, this);
+    }
 
-  public double getT() {
-    return AAJNI.CAAEllipticalObjectElements_T_get(swigCPtr, this);
-  }
+    public void setJDEquinox(double value) {
+        AAJNI.CAAEllipticalObjectElements_JDEquinox_set(swigCPtr, this, value);
+    }
+
+    public double getJDEquinox() {
+        return AAJNI.CAAEllipticalObjectElements_JDEquinox_get(swigCPtr, this);
+    }
+
+    public void setT(double value) {
+        AAJNI.CAAEllipticalObjectElements_T_set(swigCPtr, this, value);
+    }
+
+    public double getT() {
+        return AAJNI.CAAEllipticalObjectElements_T_get(swigCPtr, this);
+    }
 
 }

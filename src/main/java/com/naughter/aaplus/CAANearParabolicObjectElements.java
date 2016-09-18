@@ -9,90 +9,90 @@
 package com.naughter.aaplus;
 
 public class CAANearParabolicObjectElements {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAANearParabolicObjectElements(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAANearParabolicObjectElements obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAANearParabolicObjectElements(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAANearParabolicObjectElements(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAANearParabolicObjectElements() {
-    this(AAJNI.new_CAANearParabolicObjectElements(), true);
-  }
+    protected static long getCPtr(CAANearParabolicObjectElements obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setQ(double value) {
-    AAJNI.CAANearParabolicObjectElements_q_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public double getQ() {
-    return AAJNI.CAANearParabolicObjectElements_q_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAANearParabolicObjectElements(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setI(double value) {
-    AAJNI.CAANearParabolicObjectElements_i_set(swigCPtr, this, value);
-  }
+    public CAANearParabolicObjectElements() {
+        this(AAJNI.new_CAANearParabolicObjectElements(), true);
+    }
 
-  public double getI() {
-    return AAJNI.CAANearParabolicObjectElements_i_get(swigCPtr, this);
-  }
+    public void setQ(double value) {
+        AAJNI.CAANearParabolicObjectElements_q_set(swigCPtr, this, value);
+    }
 
-  public void setW(double value) {
-    AAJNI.CAANearParabolicObjectElements_w_set(swigCPtr, this, value);
-  }
+    public double getQ() {
+        return AAJNI.CAANearParabolicObjectElements_q_get(swigCPtr, this);
+    }
 
-  public double getW() {
-    return AAJNI.CAANearParabolicObjectElements_w_get(swigCPtr, this);
-  }
+    public void setI(double value) {
+        AAJNI.CAANearParabolicObjectElements_i_set(swigCPtr, this, value);
+    }
 
-  public void setOmega(double value) {
-    AAJNI.CAANearParabolicObjectElements_omega_set(swigCPtr, this, value);
-  }
+    public double getI() {
+        return AAJNI.CAANearParabolicObjectElements_i_get(swigCPtr, this);
+    }
 
-  public double getOmega() {
-    return AAJNI.CAANearParabolicObjectElements_omega_get(swigCPtr, this);
-  }
+    public void setW(double value) {
+        AAJNI.CAANearParabolicObjectElements_w_set(swigCPtr, this, value);
+    }
 
-  public void setJDEquinox(double value) {
-    AAJNI.CAANearParabolicObjectElements_JDEquinox_set(swigCPtr, this, value);
-  }
+    public double getW() {
+        return AAJNI.CAANearParabolicObjectElements_w_get(swigCPtr, this);
+    }
 
-  public double getJDEquinox() {
-    return AAJNI.CAANearParabolicObjectElements_JDEquinox_get(swigCPtr, this);
-  }
+    public void setOmega(double value) {
+        AAJNI.CAANearParabolicObjectElements_omega_set(swigCPtr, this, value);
+    }
 
-  public void setT(double value) {
-    AAJNI.CAANearParabolicObjectElements_T_set(swigCPtr, this, value);
-  }
+    public double getOmega() {
+        return AAJNI.CAANearParabolicObjectElements_omega_get(swigCPtr, this);
+    }
 
-  public double getT() {
-    return AAJNI.CAANearParabolicObjectElements_T_get(swigCPtr, this);
-  }
+    public void setJDEquinox(double value) {
+        AAJNI.CAANearParabolicObjectElements_JDEquinox_set(swigCPtr, this, value);
+    }
 
-  public void setE(double value) {
-    AAJNI.CAANearParabolicObjectElements_e_set(swigCPtr, this, value);
-  }
+    public double getJDEquinox() {
+        return AAJNI.CAANearParabolicObjectElements_JDEquinox_get(swigCPtr, this);
+    }
 
-  public double getE() {
-    return AAJNI.CAANearParabolicObjectElements_e_get(swigCPtr, this);
-  }
+    public void setT(double value) {
+        AAJNI.CAANearParabolicObjectElements_T_set(swigCPtr, this, value);
+    }
+
+    public double getT() {
+        return AAJNI.CAANearParabolicObjectElements_T_get(swigCPtr, this);
+    }
+
+    public void setE(double value) {
+        AAJNI.CAANearParabolicObjectElements_e_set(swigCPtr, this, value);
+    }
+
+    public double getE() {
+        return AAJNI.CAANearParabolicObjectElements_e_get(swigCPtr, this);
+    }
 
 }

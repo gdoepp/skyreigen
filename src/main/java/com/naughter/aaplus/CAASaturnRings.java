@@ -9,38 +9,38 @@
 package com.naughter.aaplus;
 
 public class CAASaturnRings {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAASaturnRings(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAASaturnRings obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAASaturnRings(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAASaturnRings(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAASaturnRingDetails Calculate(double JD, boolean bHighPrecision) {
-    return new CAASaturnRingDetails(AAJNI.CAASaturnRings_Calculate(JD, bHighPrecision), true);
-  }
+    protected static long getCPtr(CAASaturnRings obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public CAASaturnRings() {
-    this(AAJNI.new_CAASaturnRings(), true);
-  }
+    protected void finalize() {
+        delete();
+    }
+
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAASaturnRings(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAASaturnRingDetails Calculate(double JD, boolean bHighPrecision) {
+        return new CAASaturnRingDetails(AAJNI.CAASaturnRings_Calculate(JD, bHighPrecision), true);
+    }
+
+    public CAASaturnRings() {
+        this(AAJNI.new_CAASaturnRings(), true);
+    }
 
 }

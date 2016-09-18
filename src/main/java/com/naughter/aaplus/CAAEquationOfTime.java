@@ -9,38 +9,38 @@
 package com.naughter.aaplus;
 
 public class CAAEquationOfTime {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAEquationOfTime(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAEquationOfTime obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAEquationOfTime(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAEquationOfTime(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double Calculate(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAEquationOfTime_Calculate(JD, bHighPrecision);
-  }
+    protected static long getCPtr(CAAEquationOfTime obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public CAAEquationOfTime() {
-    this(AAJNI.new_CAAEquationOfTime(), true);
-  }
+    protected void finalize() {
+        delete();
+    }
+
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAEquationOfTime(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static double Calculate(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAEquationOfTime_Calculate(JD, bHighPrecision);
+    }
+
+    public CAAEquationOfTime() {
+        this(AAJNI.new_CAAEquationOfTime(), true);
+    }
 
 }

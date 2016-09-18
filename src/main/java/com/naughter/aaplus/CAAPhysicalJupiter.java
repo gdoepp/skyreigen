@@ -9,38 +9,38 @@
 package com.naughter.aaplus;
 
 public class CAAPhysicalJupiter {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAPhysicalJupiter(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAPhysicalJupiter obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAPhysicalJupiter(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAPhysicalJupiter(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAAPhysicalJupiterDetails Calculate(double JD, boolean bHighPrecision) {
-    return new CAAPhysicalJupiterDetails(AAJNI.CAAPhysicalJupiter_Calculate(JD, bHighPrecision), true);
-  }
+    protected static long getCPtr(CAAPhysicalJupiter obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public CAAPhysicalJupiter() {
-    this(AAJNI.new_CAAPhysicalJupiter(), true);
-  }
+    protected void finalize() {
+        delete();
+    }
+
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAPhysicalJupiter(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAAPhysicalJupiterDetails Calculate(double JD, boolean bHighPrecision) {
+        return new CAAPhysicalJupiterDetails(AAJNI.CAAPhysicalJupiter_Calculate(JD, bHighPrecision), true);
+    }
+
+    public CAAPhysicalJupiter() {
+        this(AAJNI.new_CAAPhysicalJupiter(), true);
+    }
 
 }

@@ -9,50 +9,50 @@
 package com.naughter.aaplus;
 
 public class CAANodes {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAANodes(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAANodes obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAANodes(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAANodes(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAANodeObjectDetails PassageThroAscendingNode(CAAEllipticalObjectElements elements) {
-    return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroAscendingNode__SWIG_0(CAAEllipticalObjectElements.getCPtr(elements), elements), true);
-  }
+    protected static long getCPtr(CAANodes obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAANodeObjectDetails PassageThroDescendingNode(CAAEllipticalObjectElements elements) {
-    return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroDescendingNode__SWIG_0(CAAEllipticalObjectElements.getCPtr(elements), elements), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static CAANodeObjectDetails PassageThroAscendingNode(CAAParabolicObjectElements elements) {
-    return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroAscendingNode__SWIG_1(CAAParabolicObjectElements.getCPtr(elements), elements), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAANodes(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static CAANodeObjectDetails PassageThroDescendingNode(CAAParabolicObjectElements elements) {
-    return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroDescendingNode__SWIG_1(CAAParabolicObjectElements.getCPtr(elements), elements), true);
-  }
+    public static CAANodeObjectDetails PassageThroAscendingNode(CAAEllipticalObjectElements elements) {
+        return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroAscendingNode__SWIG_0(CAAEllipticalObjectElements.getCPtr(elements), elements), true);
+    }
 
-  public CAANodes() {
-    this(AAJNI.new_CAANodes(), true);
-  }
+    public static CAANodeObjectDetails PassageThroDescendingNode(CAAEllipticalObjectElements elements) {
+        return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroDescendingNode__SWIG_0(CAAEllipticalObjectElements.getCPtr(elements), elements), true);
+    }
+
+    public static CAANodeObjectDetails PassageThroAscendingNode(CAAParabolicObjectElements elements) {
+        return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroAscendingNode__SWIG_1(CAAParabolicObjectElements.getCPtr(elements), elements), true);
+    }
+
+    public static CAANodeObjectDetails PassageThroDescendingNode(CAAParabolicObjectElements elements) {
+        return new CAANodeObjectDetails(AAJNI.CAANodes_PassageThroDescendingNode__SWIG_1(CAAParabolicObjectElements.getCPtr(elements), elements), true);
+    }
+
+    public CAANodes() {
+        this(AAJNI.new_CAANodes(), true);
+    }
 
 }

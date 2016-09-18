@@ -107,7 +107,7 @@ public class SolSysPositions {
         planetColors[idx_neptune] = 0xef0080ff;
 
         eclipticPosition[idx_earth] = new PlanetPositionEcl(jd,
-                CAAEarth.EclipticLongitudeJ2000(jd,false), 0,
+                CAAEarth.EclipticLongitudeJ2000(jd, false), 0,
                 CAAEarth.EclipticLongitudeJ2000(CAAPlanetPerihelionAphelion
                         .EarthPerihelion(CAAPlanetPerihelionAphelion
                                 .EarthK(year)), false));

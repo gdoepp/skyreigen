@@ -9,46 +9,46 @@
 package com.naughter.aaplus;
 
 public class CAAAberration {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAAberration(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAAberration obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAAberration(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAAberration(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAA3DCoordinate EarthVelocity(double JD, boolean bHighPrecision) {
-    return new CAA3DCoordinate(AAJNI.CAAAberration_EarthVelocity(JD, bHighPrecision), true);
-  }
+    protected static long getCPtr(CAAAberration obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAA2DCoordinate EclipticAberration(double Alpha, double Delta, double JD, boolean bHighPrecision) {
-    return new CAA2DCoordinate(AAJNI.CAAAberration_EclipticAberration(Alpha, Delta, JD, bHighPrecision), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static CAA2DCoordinate EquatorialAberration(double Lambda, double Beta, double JD, boolean bHighPrecision) {
-    return new CAA2DCoordinate(AAJNI.CAAAberration_EquatorialAberration(Lambda, Beta, JD, bHighPrecision), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAAberration(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public CAAAberration() {
-    this(AAJNI.new_CAAAberration(), true);
-  }
+    public static CAA3DCoordinate EarthVelocity(double JD, boolean bHighPrecision) {
+        return new CAA3DCoordinate(AAJNI.CAAAberration_EarthVelocity(JD, bHighPrecision), true);
+    }
+
+    public static CAA2DCoordinate EclipticAberration(double Alpha, double Delta, double JD, boolean bHighPrecision) {
+        return new CAA2DCoordinate(AAJNI.CAAAberration_EclipticAberration(Alpha, Delta, JD, bHighPrecision), true);
+    }
+
+    public static CAA2DCoordinate EquatorialAberration(double Lambda, double Beta, double JD, boolean bHighPrecision) {
+        return new CAA2DCoordinate(AAJNI.CAAAberration_EquatorialAberration(Lambda, Beta, JD, bHighPrecision), true);
+    }
+
+    public CAAAberration() {
+        this(AAJNI.new_CAAAberration(), true);
+    }
 
 }

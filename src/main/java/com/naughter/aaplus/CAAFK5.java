@@ -9,54 +9,54 @@
 package com.naughter.aaplus;
 
 public class CAAFK5 {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAFK5(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAFK5 obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAFK5(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAFK5(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double CorrectionInLongitude(double Longitude, double Latitude, double JD) {
-    return AAJNI.CAAFK5_CorrectionInLongitude(Longitude, Latitude, JD);
-  }
+    protected static long getCPtr(CAAFK5 obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double CorrectionInLatitude(double Longitude, double JD) {
-    return AAJNI.CAAFK5_CorrectionInLatitude(Longitude, JD);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static CAA3DCoordinate ConvertVSOPToFK5J2000(CAA3DCoordinate value) {
-    return new CAA3DCoordinate(AAJNI.CAAFK5_ConvertVSOPToFK5J2000(CAA3DCoordinate.getCPtr(value), value), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAFK5(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static CAA3DCoordinate ConvertVSOPToFK5B1950(CAA3DCoordinate value) {
-    return new CAA3DCoordinate(AAJNI.CAAFK5_ConvertVSOPToFK5B1950(CAA3DCoordinate.getCPtr(value), value), true);
-  }
+    public static double CorrectionInLongitude(double Longitude, double Latitude, double JD) {
+        return AAJNI.CAAFK5_CorrectionInLongitude(Longitude, Latitude, JD);
+    }
 
-  public static CAA3DCoordinate ConvertVSOPToFK5AnyEquinox(CAA3DCoordinate value, double JDEquinox) {
-    return new CAA3DCoordinate(AAJNI.CAAFK5_ConvertVSOPToFK5AnyEquinox(CAA3DCoordinate.getCPtr(value), value, JDEquinox), true);
-  }
+    public static double CorrectionInLatitude(double Longitude, double JD) {
+        return AAJNI.CAAFK5_CorrectionInLatitude(Longitude, JD);
+    }
 
-  public CAAFK5() {
-    this(AAJNI.new_CAAFK5(), true);
-  }
+    public static CAA3DCoordinate ConvertVSOPToFK5J2000(CAA3DCoordinate value) {
+        return new CAA3DCoordinate(AAJNI.CAAFK5_ConvertVSOPToFK5J2000(CAA3DCoordinate.getCPtr(value), value), true);
+    }
+
+    public static CAA3DCoordinate ConvertVSOPToFK5B1950(CAA3DCoordinate value) {
+        return new CAA3DCoordinate(AAJNI.CAAFK5_ConvertVSOPToFK5B1950(CAA3DCoordinate.getCPtr(value), value), true);
+    }
+
+    public static CAA3DCoordinate ConvertVSOPToFK5AnyEquinox(CAA3DCoordinate value, double JDEquinox) {
+        return new CAA3DCoordinate(AAJNI.CAAFK5_ConvertVSOPToFK5AnyEquinox(CAA3DCoordinate.getCPtr(value), value, JDEquinox), true);
+    }
+
+    public CAAFK5() {
+        this(AAJNI.new_CAAFK5(), true);
+    }
 
 }

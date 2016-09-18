@@ -9,90 +9,90 @@
 package com.naughter.aaplus;
 
 public class CAARiseTransitSetDetails {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAARiseTransitSetDetails(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAARiseTransitSetDetails obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAARiseTransitSetDetails(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAARiseTransitSetDetails(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAARiseTransitSetDetails() {
-    this(AAJNI.new_CAARiseTransitSetDetails(), true);
-  }
+    protected static long getCPtr(CAARiseTransitSetDetails obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setBRiseValid(boolean value) {
-    AAJNI.CAARiseTransitSetDetails_bRiseValid_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public boolean getBRiseValid() {
-    return AAJNI.CAARiseTransitSetDetails_bRiseValid_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAARiseTransitSetDetails(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setRise(double value) {
-    AAJNI.CAARiseTransitSetDetails_Rise_set(swigCPtr, this, value);
-  }
+    public CAARiseTransitSetDetails() {
+        this(AAJNI.new_CAARiseTransitSetDetails(), true);
+    }
 
-  public double getRise() {
-    return AAJNI.CAARiseTransitSetDetails_Rise_get(swigCPtr, this);
-  }
+    public void setBRiseValid(boolean value) {
+        AAJNI.CAARiseTransitSetDetails_bRiseValid_set(swigCPtr, this, value);
+    }
 
-  public void setBTransitValid(boolean value) {
-    AAJNI.CAARiseTransitSetDetails_bTransitValid_set(swigCPtr, this, value);
-  }
+    public boolean getBRiseValid() {
+        return AAJNI.CAARiseTransitSetDetails_bRiseValid_get(swigCPtr, this);
+    }
 
-  public boolean getBTransitValid() {
-    return AAJNI.CAARiseTransitSetDetails_bTransitValid_get(swigCPtr, this);
-  }
+    public void setRise(double value) {
+        AAJNI.CAARiseTransitSetDetails_Rise_set(swigCPtr, this, value);
+    }
 
-  public void setBTransitAboveHorizon(boolean value) {
-    AAJNI.CAARiseTransitSetDetails_bTransitAboveHorizon_set(swigCPtr, this, value);
-  }
+    public double getRise() {
+        return AAJNI.CAARiseTransitSetDetails_Rise_get(swigCPtr, this);
+    }
 
-  public boolean getBTransitAboveHorizon() {
-    return AAJNI.CAARiseTransitSetDetails_bTransitAboveHorizon_get(swigCPtr, this);
-  }
+    public void setBTransitValid(boolean value) {
+        AAJNI.CAARiseTransitSetDetails_bTransitValid_set(swigCPtr, this, value);
+    }
 
-  public void setTransit(double value) {
-    AAJNI.CAARiseTransitSetDetails_Transit_set(swigCPtr, this, value);
-  }
+    public boolean getBTransitValid() {
+        return AAJNI.CAARiseTransitSetDetails_bTransitValid_get(swigCPtr, this);
+    }
 
-  public double getTransit() {
-    return AAJNI.CAARiseTransitSetDetails_Transit_get(swigCPtr, this);
-  }
+    public void setBTransitAboveHorizon(boolean value) {
+        AAJNI.CAARiseTransitSetDetails_bTransitAboveHorizon_set(swigCPtr, this, value);
+    }
 
-  public void setBSetValid(boolean value) {
-    AAJNI.CAARiseTransitSetDetails_bSetValid_set(swigCPtr, this, value);
-  }
+    public boolean getBTransitAboveHorizon() {
+        return AAJNI.CAARiseTransitSetDetails_bTransitAboveHorizon_get(swigCPtr, this);
+    }
 
-  public boolean getBSetValid() {
-    return AAJNI.CAARiseTransitSetDetails_bSetValid_get(swigCPtr, this);
-  }
+    public void setTransit(double value) {
+        AAJNI.CAARiseTransitSetDetails_Transit_set(swigCPtr, this, value);
+    }
 
-  public void setSet(double value) {
-    AAJNI.CAARiseTransitSetDetails_Set_set(swigCPtr, this, value);
-  }
+    public double getTransit() {
+        return AAJNI.CAARiseTransitSetDetails_Transit_get(swigCPtr, this);
+    }
 
-  public double getSet() {
-    return AAJNI.CAARiseTransitSetDetails_Set_get(swigCPtr, this);
-  }
+    public void setBSetValid(boolean value) {
+        AAJNI.CAARiseTransitSetDetails_bSetValid_set(swigCPtr, this, value);
+    }
+
+    public boolean getBSetValid() {
+        return AAJNI.CAARiseTransitSetDetails_bSetValid_get(swigCPtr, this);
+    }
+
+    public void setSet(double value) {
+        AAJNI.CAARiseTransitSetDetails_Set_set(swigCPtr, this, value);
+    }
+
+    public double getSet() {
+        return AAJNI.CAARiseTransitSetDetails_Set_get(swigCPtr, this);
+    }
 
 }

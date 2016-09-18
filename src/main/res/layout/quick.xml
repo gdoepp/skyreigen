@@ -21,11 +21,9 @@
             android:clickable="true">
 
             <Button
-                android:id="@+id/dateDecr"
-                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/dateDecr" style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="-"></Button>
+                android:layout_height="wrap_content" android:text="-"></Button>
 
             <TextView
                 android:id="@+id/date"
@@ -35,11 +33,9 @@
                 android:text=""></TextView>
 
             <Button
-                android:id="@+id/dateIncr"
-                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/dateIncr" style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+"></Button>
+                android:layout_height="wrap_content" android:text="+"></Button>
 
             <TextView
                 android:id="@+id/time"
@@ -49,11 +45,9 @@
                 android:text=""></TextView>
 
             <Button
-                android:id="@+id/dateNow"
-                style="?android:attr/buttonStyleSmall"
+                android:id="@+id/dateNow" style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="*"></Button>
+                android:layout_height="wrap_content" android:text="*"></Button>
         </LinearLayout>
 
         <LinearLayout

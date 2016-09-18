@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAAPhysicalSun {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAPhysicalSun(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAPhysicalSun obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAPhysicalSun(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAPhysicalSun(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAAPhysicalSunDetails Calculate(double JD, boolean bHighPrecision) {
-    return new CAAPhysicalSunDetails(AAJNI.CAAPhysicalSun_Calculate(JD, bHighPrecision), true);
-  }
+    protected static long getCPtr(CAAPhysicalSun obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double TimeOfStartOfRotation(int C) {
-    return AAJNI.CAAPhysicalSun_TimeOfStartOfRotation(C);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAAPhysicalSun() {
-    this(AAJNI.new_CAAPhysicalSun(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAPhysicalSun(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAAPhysicalSunDetails Calculate(double JD, boolean bHighPrecision) {
+        return new CAAPhysicalSunDetails(AAJNI.CAAPhysicalSun_Calculate(JD, bHighPrecision), true);
+    }
+
+    public static double TimeOfStartOfRotation(int C) {
+        return AAJNI.CAAPhysicalSun_TimeOfStartOfRotation(C);
+    }
+
+    public CAAPhysicalSun() {
+        this(AAJNI.new_CAAPhysicalSun(), true);
+    }
 
 }

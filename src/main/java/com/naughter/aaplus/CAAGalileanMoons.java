@@ -9,38 +9,38 @@
 package com.naughter.aaplus;
 
 public class CAAGalileanMoons {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAGalileanMoons(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAGalileanMoons obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAGalileanMoons(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAGalileanMoons(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAAGalileanMoonsDetails Calculate(double JD, boolean bHighPrecision) {
-    return new CAAGalileanMoonsDetails(AAJNI.CAAGalileanMoons_Calculate(JD, bHighPrecision), true);
-  }
+    protected static long getCPtr(CAAGalileanMoons obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public CAAGalileanMoons() {
-    this(AAJNI.new_CAAGalileanMoons(), true);
-  }
+    protected void finalize() {
+        delete();
+    }
+
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAGalileanMoons(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAAGalileanMoonsDetails Calculate(double JD, boolean bHighPrecision) {
+        return new CAAGalileanMoonsDetails(AAJNI.CAAGalileanMoons_Calculate(JD, bHighPrecision), true);
+    }
+
+    public CAAGalileanMoons() {
+        this(AAJNI.new_CAAGalileanMoons(), true);
+    }
 
 }

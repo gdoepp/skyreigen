@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAAMoonNodes {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAMoonNodes(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAMoonNodes obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAMoonNodes(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAMoonNodes(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double K(double Year) {
-    return AAJNI.CAAMoonNodes_K(Year);
-  }
+    protected static long getCPtr(CAAMoonNodes obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double PassageThroNode(double k) {
-    return AAJNI.CAAMoonNodes_PassageThroNode(k);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAAMoonNodes() {
-    this(AAJNI.new_CAAMoonNodes(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAMoonNodes(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static double K(double Year) {
+        return AAJNI.CAAMoonNodes_K(Year);
+    }
+
+    public static double PassageThroNode(double k) {
+        return AAJNI.CAAMoonNodes_PassageThroNode(k);
+    }
+
+    public CAAMoonNodes() {
+        this(AAJNI.new_CAAMoonNodes(), true);
+    }
 
 }

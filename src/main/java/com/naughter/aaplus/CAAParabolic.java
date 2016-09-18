@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAAParabolic {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAParabolic(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAParabolic obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAParabolic(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAParabolic(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double CalculateBarkers(double W) {
-    return AAJNI.CAAParabolic_CalculateBarkers(W);
-  }
+    protected static long getCPtr(CAAParabolic obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAAParabolicObjectDetails Calculate(double JD, CAAParabolicObjectElements elements, boolean bHighPrecision) {
-    return new CAAParabolicObjectDetails(AAJNI.CAAParabolic_Calculate(JD, CAAParabolicObjectElements.getCPtr(elements), elements, bHighPrecision), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAAParabolic() {
-    this(AAJNI.new_CAAParabolic(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAParabolic(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static double CalculateBarkers(double W) {
+        return AAJNI.CAAParabolic_CalculateBarkers(W);
+    }
+
+    public static CAAParabolicObjectDetails Calculate(double JD, CAAParabolicObjectElements elements, boolean bHighPrecision) {
+        return new CAAParabolicObjectDetails(AAJNI.CAAParabolic_Calculate(JD, CAAParabolicObjectElements.getCPtr(elements), elements, bHighPrecision), true);
+    }
+
+    public CAAParabolic() {
+        this(AAJNI.new_CAAParabolic(), true);
+    }
 
 }

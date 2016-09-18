@@ -9,62 +9,62 @@
 package com.naughter.aaplus;
 
 public class CAAEarth {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAEarth(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAEarth obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAEarth(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAEarth(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double EclipticLongitude(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAEarth_EclipticLongitude(JD, bHighPrecision);
-  }
+    protected static long getCPtr(CAAEarth obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double EclipticLatitude(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAEarth_EclipticLatitude(JD, bHighPrecision);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double RadiusVector(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAEarth_RadiusVector(JD, bHighPrecision);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAEarth(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double SunMeanAnomaly(double JD) {
-    return AAJNI.CAAEarth_SunMeanAnomaly(JD);
-  }
+    public static double EclipticLongitude(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAEarth_EclipticLongitude(JD, bHighPrecision);
+    }
 
-  public static double Eccentricity(double JD) {
-    return AAJNI.CAAEarth_Eccentricity(JD);
-  }
+    public static double EclipticLatitude(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAEarth_EclipticLatitude(JD, bHighPrecision);
+    }
 
-  public static double EclipticLongitudeJ2000(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAEarth_EclipticLongitudeJ2000(JD, bHighPrecision);
-  }
+    public static double RadiusVector(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAEarth_RadiusVector(JD, bHighPrecision);
+    }
 
-  public static double EclipticLatitudeJ2000(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAEarth_EclipticLatitudeJ2000(JD, bHighPrecision);
-  }
+    public static double SunMeanAnomaly(double JD) {
+        return AAJNI.CAAEarth_SunMeanAnomaly(JD);
+    }
 
-  public CAAEarth() {
-    this(AAJNI.new_CAAEarth(), true);
-  }
+    public static double Eccentricity(double JD) {
+        return AAJNI.CAAEarth_Eccentricity(JD);
+    }
+
+    public static double EclipticLongitudeJ2000(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAEarth_EclipticLongitudeJ2000(JD, bHighPrecision);
+    }
+
+    public static double EclipticLatitudeJ2000(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAEarth_EclipticLatitudeJ2000(JD, bHighPrecision);
+    }
+
+    public CAAEarth() {
+        this(AAJNI.new_CAAEarth(), true);
+    }
 
 }

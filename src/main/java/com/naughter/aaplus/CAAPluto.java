@@ -9,46 +9,46 @@
 package com.naughter.aaplus;
 
 public class CAAPluto {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAPluto(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAPluto obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAPluto(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAPluto(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double EclipticLongitude(double JD) {
-    return AAJNI.CAAPluto_EclipticLongitude(JD);
-  }
+    protected static long getCPtr(CAAPluto obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double EclipticLatitude(double JD) {
-    return AAJNI.CAAPluto_EclipticLatitude(JD);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double RadiusVector(double JD) {
-    return AAJNI.CAAPluto_RadiusVector(JD);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAPluto(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public CAAPluto() {
-    this(AAJNI.new_CAAPluto(), true);
-  }
+    public static double EclipticLongitude(double JD) {
+        return AAJNI.CAAPluto_EclipticLongitude(JD);
+    }
+
+    public static double EclipticLatitude(double JD) {
+        return AAJNI.CAAPluto_EclipticLatitude(JD);
+    }
+
+    public static double RadiusVector(double JD) {
+        return AAJNI.CAAPluto_RadiusVector(JD);
+    }
+
+    public CAAPluto() {
+        this(AAJNI.new_CAAPluto(), true);
+    }
 
 }

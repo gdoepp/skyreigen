@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAASidereal {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAASidereal(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAASidereal obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAASidereal(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAASidereal(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double MeanGreenwichSiderealTime(double JD) {
-    return AAJNI.CAASidereal_MeanGreenwichSiderealTime(JD);
-  }
+    protected static long getCPtr(CAASidereal obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double ApparentGreenwichSiderealTime(double JD) {
-    return AAJNI.CAASidereal_ApparentGreenwichSiderealTime(JD);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAASidereal() {
-    this(AAJNI.new_CAASidereal(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAASidereal(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static double MeanGreenwichSiderealTime(double JD) {
+        return AAJNI.CAASidereal_MeanGreenwichSiderealTime(JD);
+    }
+
+    public static double ApparentGreenwichSiderealTime(double JD) {
+        return AAJNI.CAASidereal_ApparentGreenwichSiderealTime(JD);
+    }
+
+    public CAASidereal() {
+        this(AAJNI.new_CAASidereal(), true);
+    }
 
 }

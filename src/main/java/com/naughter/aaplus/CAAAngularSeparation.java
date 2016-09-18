@@ -9,50 +9,50 @@
 package com.naughter.aaplus;
 
 public class CAAAngularSeparation {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAAngularSeparation(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAAngularSeparation obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAAngularSeparation(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAAngularSeparation(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double Separation(double Alpha1, double Delta1, double Alpha2, double Delta2) {
-    return AAJNI.CAAAngularSeparation_Separation(Alpha1, Delta1, Alpha2, Delta2);
-  }
+    protected static long getCPtr(CAAAngularSeparation obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double PositionAngle(double Alpha1, double Delta1, double Alpha2, double Delta2) {
-    return AAJNI.CAAAngularSeparation_PositionAngle(Alpha1, Delta1, Alpha2, Delta2);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double DistanceFromGreatArc(double Alpha1, double Delta1, double Alpha2, double Delta2, double Alpha3, double Delta3) {
-    return AAJNI.CAAAngularSeparation_DistanceFromGreatArc(Alpha1, Delta1, Alpha2, Delta2, Alpha3, Delta3);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAAngularSeparation(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double SmallestCircle(double Alpha1, double Delta1, double Alpha2, double Delta2, double Alpha3, double Delta3, SWIGTYPE_p_bool bType1) {
-    return AAJNI.CAAAngularSeparation_SmallestCircle(Alpha1, Delta1, Alpha2, Delta2, Alpha3, Delta3, SWIGTYPE_p_bool.getCPtr(bType1));
-  }
+    public static double Separation(double Alpha1, double Delta1, double Alpha2, double Delta2) {
+        return AAJNI.CAAAngularSeparation_Separation(Alpha1, Delta1, Alpha2, Delta2);
+    }
 
-  public CAAAngularSeparation() {
-    this(AAJNI.new_CAAAngularSeparation(), true);
-  }
+    public static double PositionAngle(double Alpha1, double Delta1, double Alpha2, double Delta2) {
+        return AAJNI.CAAAngularSeparation_PositionAngle(Alpha1, Delta1, Alpha2, Delta2);
+    }
+
+    public static double DistanceFromGreatArc(double Alpha1, double Delta1, double Alpha2, double Delta2, double Alpha3, double Delta3) {
+        return AAJNI.CAAAngularSeparation_DistanceFromGreatArc(Alpha1, Delta1, Alpha2, Delta2, Alpha3, Delta3);
+    }
+
+    public static double SmallestCircle(double Alpha1, double Delta1, double Alpha2, double Delta2, double Alpha3, double Delta3, SWIGTYPE_p_bool bType1) {
+        return AAJNI.CAAAngularSeparation_SmallestCircle(Alpha1, Delta1, Alpha2, Delta2, Alpha3, Delta3, SWIGTYPE_p_bool.getCPtr(bType1));
+    }
+
+    public CAAAngularSeparation() {
+        this(AAJNI.new_CAAAngularSeparation(), true);
+    }
 
 }

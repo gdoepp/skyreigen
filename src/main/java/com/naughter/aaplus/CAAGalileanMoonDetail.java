@@ -9,124 +9,124 @@
 package com.naughter.aaplus;
 
 public class CAAGalileanMoonDetail {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAGalileanMoonDetail(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAGalileanMoonDetail obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAGalileanMoonDetail(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAGalileanMoonDetail(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAAGalileanMoonDetail() {
-    this(AAJNI.new_CAAGalileanMoonDetail(), true);
-  }
+    protected static long getCPtr(CAAGalileanMoonDetail obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setMeanLongitude(double value) {
-    AAJNI.CAAGalileanMoonDetail_MeanLongitude_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public double getMeanLongitude() {
-    return AAJNI.CAAGalileanMoonDetail_MeanLongitude_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAGalileanMoonDetail(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setTrueLongitude(double value) {
-    AAJNI.CAAGalileanMoonDetail_TrueLongitude_set(swigCPtr, this, value);
-  }
+    public CAAGalileanMoonDetail() {
+        this(AAJNI.new_CAAGalileanMoonDetail(), true);
+    }
 
-  public double getTrueLongitude() {
-    return AAJNI.CAAGalileanMoonDetail_TrueLongitude_get(swigCPtr, this);
-  }
+    public void setMeanLongitude(double value) {
+        AAJNI.CAAGalileanMoonDetail_MeanLongitude_set(swigCPtr, this, value);
+    }
 
-  public void setTropicalLongitude(double value) {
-    AAJNI.CAAGalileanMoonDetail_TropicalLongitude_set(swigCPtr, this, value);
-  }
+    public double getMeanLongitude() {
+        return AAJNI.CAAGalileanMoonDetail_MeanLongitude_get(swigCPtr, this);
+    }
 
-  public double getTropicalLongitude() {
-    return AAJNI.CAAGalileanMoonDetail_TropicalLongitude_get(swigCPtr, this);
-  }
+    public void setTrueLongitude(double value) {
+        AAJNI.CAAGalileanMoonDetail_TrueLongitude_set(swigCPtr, this, value);
+    }
 
-  public void setEquatorialLatitude(double value) {
-    AAJNI.CAAGalileanMoonDetail_EquatorialLatitude_set(swigCPtr, this, value);
-  }
+    public double getTrueLongitude() {
+        return AAJNI.CAAGalileanMoonDetail_TrueLongitude_get(swigCPtr, this);
+    }
 
-  public double getEquatorialLatitude() {
-    return AAJNI.CAAGalileanMoonDetail_EquatorialLatitude_get(swigCPtr, this);
-  }
+    public void setTropicalLongitude(double value) {
+        AAJNI.CAAGalileanMoonDetail_TropicalLongitude_set(swigCPtr, this, value);
+    }
 
-  public void setR(double value) {
-    AAJNI.CAAGalileanMoonDetail_r_set(swigCPtr, this, value);
-  }
+    public double getTropicalLongitude() {
+        return AAJNI.CAAGalileanMoonDetail_TropicalLongitude_get(swigCPtr, this);
+    }
 
-  public double getR() {
-    return AAJNI.CAAGalileanMoonDetail_r_get(swigCPtr, this);
-  }
+    public void setEquatorialLatitude(double value) {
+        AAJNI.CAAGalileanMoonDetail_EquatorialLatitude_set(swigCPtr, this, value);
+    }
 
-  public void setTrueRectangularCoordinates(CAA3DCoordinate value) {
-    AAJNI.CAAGalileanMoonDetail_TrueRectangularCoordinates_set(swigCPtr, this, CAA3DCoordinate.getCPtr(value), value);
-  }
+    public double getEquatorialLatitude() {
+        return AAJNI.CAAGalileanMoonDetail_EquatorialLatitude_get(swigCPtr, this);
+    }
 
-  public CAA3DCoordinate getTrueRectangularCoordinates() {
-    long cPtr = AAJNI.CAAGalileanMoonDetail_TrueRectangularCoordinates_get(swigCPtr, this);
-    return (cPtr == 0) ? null : new CAA3DCoordinate(cPtr, false);
-  }
+    public void setR(double value) {
+        AAJNI.CAAGalileanMoonDetail_r_set(swigCPtr, this, value);
+    }
 
-  public void setApparentRectangularCoordinates(CAA3DCoordinate value) {
-    AAJNI.CAAGalileanMoonDetail_ApparentRectangularCoordinates_set(swigCPtr, this, CAA3DCoordinate.getCPtr(value), value);
-  }
+    public double getR() {
+        return AAJNI.CAAGalileanMoonDetail_r_get(swigCPtr, this);
+    }
 
-  public CAA3DCoordinate getApparentRectangularCoordinates() {
-    long cPtr = AAJNI.CAAGalileanMoonDetail_ApparentRectangularCoordinates_get(swigCPtr, this);
-    return (cPtr == 0) ? null : new CAA3DCoordinate(cPtr, false);
-  }
+    public void setTrueRectangularCoordinates(CAA3DCoordinate value) {
+        AAJNI.CAAGalileanMoonDetail_TrueRectangularCoordinates_set(swigCPtr, this, CAA3DCoordinate.getCPtr(value), value);
+    }
 
-  public void setBInTransit(boolean value) {
-    AAJNI.CAAGalileanMoonDetail_bInTransit_set(swigCPtr, this, value);
-  }
+    public CAA3DCoordinate getTrueRectangularCoordinates() {
+        long cPtr = AAJNI.CAAGalileanMoonDetail_TrueRectangularCoordinates_get(swigCPtr, this);
+        return (cPtr == 0) ? null : new CAA3DCoordinate(cPtr, false);
+    }
 
-  public boolean getBInTransit() {
-    return AAJNI.CAAGalileanMoonDetail_bInTransit_get(swigCPtr, this);
-  }
+    public void setApparentRectangularCoordinates(CAA3DCoordinate value) {
+        AAJNI.CAAGalileanMoonDetail_ApparentRectangularCoordinates_set(swigCPtr, this, CAA3DCoordinate.getCPtr(value), value);
+    }
 
-  public void setBInOccultation(boolean value) {
-    AAJNI.CAAGalileanMoonDetail_bInOccultation_set(swigCPtr, this, value);
-  }
+    public CAA3DCoordinate getApparentRectangularCoordinates() {
+        long cPtr = AAJNI.CAAGalileanMoonDetail_ApparentRectangularCoordinates_get(swigCPtr, this);
+        return (cPtr == 0) ? null : new CAA3DCoordinate(cPtr, false);
+    }
 
-  public boolean getBInOccultation() {
-    return AAJNI.CAAGalileanMoonDetail_bInOccultation_get(swigCPtr, this);
-  }
+    public void setBInTransit(boolean value) {
+        AAJNI.CAAGalileanMoonDetail_bInTransit_set(swigCPtr, this, value);
+    }
 
-  public void setBInEclipse(boolean value) {
-    AAJNI.CAAGalileanMoonDetail_bInEclipse_set(swigCPtr, this, value);
-  }
+    public boolean getBInTransit() {
+        return AAJNI.CAAGalileanMoonDetail_bInTransit_get(swigCPtr, this);
+    }
 
-  public boolean getBInEclipse() {
-    return AAJNI.CAAGalileanMoonDetail_bInEclipse_get(swigCPtr, this);
-  }
+    public void setBInOccultation(boolean value) {
+        AAJNI.CAAGalileanMoonDetail_bInOccultation_set(swigCPtr, this, value);
+    }
 
-  public void setBInShadowTransit(boolean value) {
-    AAJNI.CAAGalileanMoonDetail_bInShadowTransit_set(swigCPtr, this, value);
-  }
+    public boolean getBInOccultation() {
+        return AAJNI.CAAGalileanMoonDetail_bInOccultation_get(swigCPtr, this);
+    }
 
-  public boolean getBInShadowTransit() {
-    return AAJNI.CAAGalileanMoonDetail_bInShadowTransit_get(swigCPtr, this);
-  }
+    public void setBInEclipse(boolean value) {
+        AAJNI.CAAGalileanMoonDetail_bInEclipse_set(swigCPtr, this, value);
+    }
+
+    public boolean getBInEclipse() {
+        return AAJNI.CAAGalileanMoonDetail_bInEclipse_get(swigCPtr, this);
+    }
+
+    public void setBInShadowTransit(boolean value) {
+        AAJNI.CAAGalileanMoonDetail_bInShadowTransit_set(swigCPtr, this, value);
+    }
+
+    public boolean getBInShadowTransit() {
+        return AAJNI.CAAGalileanMoonDetail_bInShadowTransit_get(swigCPtr, this);
+    }
 
 }

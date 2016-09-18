@@ -9,46 +9,46 @@
 package com.naughter.aaplus;
 
 public class CAAJupiter {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAJupiter(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAJupiter obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAJupiter(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAJupiter(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double EclipticLongitude(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAJupiter_EclipticLongitude(JD, bHighPrecision);
-  }
+    protected static long getCPtr(CAAJupiter obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double EclipticLatitude(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAJupiter_EclipticLatitude(JD, bHighPrecision);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double RadiusVector(double JD, boolean bHighPrecision) {
-    return AAJNI.CAAJupiter_RadiusVector(JD, bHighPrecision);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAJupiter(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public CAAJupiter() {
-    this(AAJNI.new_CAAJupiter(), true);
-  }
+    public static double EclipticLongitude(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAJupiter_EclipticLongitude(JD, bHighPrecision);
+    }
+
+    public static double EclipticLatitude(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAJupiter_EclipticLatitude(JD, bHighPrecision);
+    }
+
+    public static double RadiusVector(double JD, boolean bHighPrecision) {
+        return AAJNI.CAAJupiter_RadiusVector(JD, bHighPrecision);
+    }
+
+    public CAAJupiter() {
+        this(AAJNI.new_CAAJupiter(), true);
+    }
 
 }

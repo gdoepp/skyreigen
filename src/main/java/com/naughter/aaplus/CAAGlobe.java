@@ -9,54 +9,54 @@
 package com.naughter.aaplus;
 
 public class CAAGlobe {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAGlobe(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAGlobe obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAGlobe(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAGlobe(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double RhoSinThetaPrime(double GeographicalLatitude, double Height) {
-    return AAJNI.CAAGlobe_RhoSinThetaPrime(GeographicalLatitude, Height);
-  }
+    protected static long getCPtr(CAAGlobe obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double RhoCosThetaPrime(double GeographicalLatitude, double Height) {
-    return AAJNI.CAAGlobe_RhoCosThetaPrime(GeographicalLatitude, Height);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double RadiusOfParallelOfLatitude(double GeographicalLatitude) {
-    return AAJNI.CAAGlobe_RadiusOfParallelOfLatitude(GeographicalLatitude);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAGlobe(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double RadiusOfCurvature(double GeographicalLatitude) {
-    return AAJNI.CAAGlobe_RadiusOfCurvature(GeographicalLatitude);
-  }
+    public static double RhoSinThetaPrime(double GeographicalLatitude, double Height) {
+        return AAJNI.CAAGlobe_RhoSinThetaPrime(GeographicalLatitude, Height);
+    }
 
-  public static double DistanceBetweenPoints(double GeographicalLatitude1, double GeographicalLongitude1, double GeographicalLatitude2, double GeographicalLongitude2) {
-    return AAJNI.CAAGlobe_DistanceBetweenPoints(GeographicalLatitude1, GeographicalLongitude1, GeographicalLatitude2, GeographicalLongitude2);
-  }
+    public static double RhoCosThetaPrime(double GeographicalLatitude, double Height) {
+        return AAJNI.CAAGlobe_RhoCosThetaPrime(GeographicalLatitude, Height);
+    }
 
-  public CAAGlobe() {
-    this(AAJNI.new_CAAGlobe(), true);
-  }
+    public static double RadiusOfParallelOfLatitude(double GeographicalLatitude) {
+        return AAJNI.CAAGlobe_RadiusOfParallelOfLatitude(GeographicalLatitude);
+    }
+
+    public static double RadiusOfCurvature(double GeographicalLatitude) {
+        return AAJNI.CAAGlobe_RadiusOfCurvature(GeographicalLatitude);
+    }
+
+    public static double DistanceBetweenPoints(double GeographicalLatitude1, double GeographicalLongitude1, double GeographicalLatitude2, double GeographicalLongitude2) {
+        return AAJNI.CAAGlobe_DistanceBetweenPoints(GeographicalLatitude1, GeographicalLongitude1, GeographicalLatitude2, GeographicalLongitude2);
+    }
+
+    public CAAGlobe() {
+        this(AAJNI.new_CAAGlobe(), true);
+    }
 
 }

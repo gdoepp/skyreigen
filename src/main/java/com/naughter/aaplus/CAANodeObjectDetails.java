@@ -9,50 +9,50 @@
 package com.naughter.aaplus;
 
 public class CAANodeObjectDetails {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAANodeObjectDetails(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAANodeObjectDetails obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAANodeObjectDetails(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAANodeObjectDetails(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAANodeObjectDetails() {
-    this(AAJNI.new_CAANodeObjectDetails(), true);
-  }
+    protected static long getCPtr(CAANodeObjectDetails obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setT(double value) {
-    AAJNI.CAANodeObjectDetails_t_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public double getT() {
-    return AAJNI.CAANodeObjectDetails_t_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAANodeObjectDetails(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setRadius(double value) {
-    AAJNI.CAANodeObjectDetails_radius_set(swigCPtr, this, value);
-  }
+    public CAANodeObjectDetails() {
+        this(AAJNI.new_CAANodeObjectDetails(), true);
+    }
 
-  public double getRadius() {
-    return AAJNI.CAANodeObjectDetails_radius_get(swigCPtr, this);
-  }
+    public void setT(double value) {
+        AAJNI.CAANodeObjectDetails_t_set(swigCPtr, this, value);
+    }
+
+    public double getT() {
+        return AAJNI.CAANodeObjectDetails_t_get(swigCPtr, this);
+    }
+
+    public void setRadius(double value) {
+        AAJNI.CAANodeObjectDetails_radius_set(swigCPtr, this, value);
+    }
+
+    public double getRadius() {
+        return AAJNI.CAANodeObjectDetails_radius_get(swigCPtr, this);
+    }
 
 }

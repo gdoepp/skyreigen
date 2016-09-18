@@ -9,98 +9,98 @@
 package com.naughter.aaplus;
 
 public class CAAPhysicalMarsDetails {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAPhysicalMarsDetails(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAPhysicalMarsDetails obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAPhysicalMarsDetails(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAPhysicalMarsDetails(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public CAAPhysicalMarsDetails() {
-    this(AAJNI.new_CAAPhysicalMarsDetails(), true);
-  }
+    protected static long getCPtr(CAAPhysicalMarsDetails obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public void setDE(double value) {
-    AAJNI.CAAPhysicalMarsDetails_DE_set(swigCPtr, this, value);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public double getDE() {
-    return AAJNI.CAAPhysicalMarsDetails_DE_get(swigCPtr, this);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAPhysicalMarsDetails(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public void setDS(double value) {
-    AAJNI.CAAPhysicalMarsDetails_DS_set(swigCPtr, this, value);
-  }
+    public CAAPhysicalMarsDetails() {
+        this(AAJNI.new_CAAPhysicalMarsDetails(), true);
+    }
 
-  public double getDS() {
-    return AAJNI.CAAPhysicalMarsDetails_DS_get(swigCPtr, this);
-  }
+    public void setDE(double value) {
+        AAJNI.CAAPhysicalMarsDetails_DE_set(swigCPtr, this, value);
+    }
 
-  public void setW(double value) {
-    AAJNI.CAAPhysicalMarsDetails_w_set(swigCPtr, this, value);
-  }
+    public double getDE() {
+        return AAJNI.CAAPhysicalMarsDetails_DE_get(swigCPtr, this);
+    }
 
-  public double getW() {
-    return AAJNI.CAAPhysicalMarsDetails_w_get(swigCPtr, this);
-  }
+    public void setDS(double value) {
+        AAJNI.CAAPhysicalMarsDetails_DS_set(swigCPtr, this, value);
+    }
 
-  public void setP(double value) {
-    AAJNI.CAAPhysicalMarsDetails_P_set(swigCPtr, this, value);
-  }
+    public double getDS() {
+        return AAJNI.CAAPhysicalMarsDetails_DS_get(swigCPtr, this);
+    }
 
-  public double getP() {
-    return AAJNI.CAAPhysicalMarsDetails_P_get(swigCPtr, this);
-  }
+    public void setW(double value) {
+        AAJNI.CAAPhysicalMarsDetails_w_set(swigCPtr, this, value);
+    }
 
-  public void setX(double value) {
-    AAJNI.CAAPhysicalMarsDetails_X_set(swigCPtr, this, value);
-  }
+    public double getW() {
+        return AAJNI.CAAPhysicalMarsDetails_w_get(swigCPtr, this);
+    }
 
-  public double getX() {
-    return AAJNI.CAAPhysicalMarsDetails_X_get(swigCPtr, this);
-  }
+    public void setP(double value) {
+        AAJNI.CAAPhysicalMarsDetails_P_set(swigCPtr, this, value);
+    }
 
-  public void setK(double value) {
-    AAJNI.CAAPhysicalMarsDetails_k_set(swigCPtr, this, value);
-  }
+    public double getP() {
+        return AAJNI.CAAPhysicalMarsDetails_P_get(swigCPtr, this);
+    }
 
-  public double getK() {
-    return AAJNI.CAAPhysicalMarsDetails_k_get(swigCPtr, this);
-  }
+    public void setX(double value) {
+        AAJNI.CAAPhysicalMarsDetails_X_set(swigCPtr, this, value);
+    }
 
-  public void setQ(double value) {
-    AAJNI.CAAPhysicalMarsDetails_q_set(swigCPtr, this, value);
-  }
+    public double getX() {
+        return AAJNI.CAAPhysicalMarsDetails_X_get(swigCPtr, this);
+    }
 
-  public double getQ() {
-    return AAJNI.CAAPhysicalMarsDetails_q_get(swigCPtr, this);
-  }
+    public void setK(double value) {
+        AAJNI.CAAPhysicalMarsDetails_k_set(swigCPtr, this, value);
+    }
 
-  public void setD(double value) {
-    AAJNI.CAAPhysicalMarsDetails_d_set(swigCPtr, this, value);
-  }
+    public double getK() {
+        return AAJNI.CAAPhysicalMarsDetails_k_get(swigCPtr, this);
+    }
 
-  public double getD() {
-    return AAJNI.CAAPhysicalMarsDetails_d_get(swigCPtr, this);
-  }
+    public void setQ(double value) {
+        AAJNI.CAAPhysicalMarsDetails_q_set(swigCPtr, this, value);
+    }
+
+    public double getQ() {
+        return AAJNI.CAAPhysicalMarsDetails_q_get(swigCPtr, this);
+    }
+
+    public void setD(double value) {
+        AAJNI.CAAPhysicalMarsDetails_d_set(swigCPtr, this, value);
+    }
+
+    public double getD() {
+        return AAJNI.CAAPhysicalMarsDetails_d_get(swigCPtr, this);
+    }
 
 }

@@ -216,13 +216,13 @@ public class LunarElements extends SolSysElements {
             }
 
             if ((sec.getFlags() & CAASolarEclipseDetails.TOTAL_ECLIPSE) != 0) {
-                events[j].info += Messages.getString("LunarElements.total") ; //$NON-NLS-1$
+                events[j].info += Messages.getString("LunarElements.total"); //$NON-NLS-1$
             }
             if ((sec.getFlags() & CAASolarEclipseDetails.ANNULAR_TOTAL_ECLIPSE) != 0) {
                 events[j].info += Messages.getString("LunarElements.total_annular"); //$NON-NLS-1$
             }
             if ((sec.getFlags() & CAASolarEclipseDetails.ANNULAR_ECLIPSE) != 0) {
-                events[j].info += Messages.getString("LunarElements.annular") ; //$NON-NLS-1$
+                events[j].info += Messages.getString("LunarElements.annular"); //$NON-NLS-1$
             }
             if ((sec.getFlags() & CAASolarEclipseDetails.PARTIAL_ECLIPSE) != 0) {
                 events[j].info += Messages.getString("LunarElements.partial_semi"); //$NON-NLS-1$

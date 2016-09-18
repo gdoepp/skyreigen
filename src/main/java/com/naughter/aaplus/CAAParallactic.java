@@ -9,50 +9,50 @@
 package com.naughter.aaplus;
 
 public class CAAParallactic {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAParallactic(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAParallactic obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAParallactic(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAParallactic(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static double ParallacticAngle(double HourAngle, double Latitude, double delta) {
-    return AAJNI.CAAParallactic_ParallacticAngle(HourAngle, Latitude, delta);
-  }
+    protected static long getCPtr(CAAParallactic obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static double EclipticLongitudeOnHorizon(double LocalSiderealTime, double ObliquityOfEcliptic, double Latitude) {
-    return AAJNI.CAAParallactic_EclipticLongitudeOnHorizon(LocalSiderealTime, ObliquityOfEcliptic, Latitude);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static double AngleBetweenEclipticAndHorizon(double LocalSiderealTime, double ObliquityOfEcliptic, double Latitude) {
-    return AAJNI.CAAParallactic_AngleBetweenEclipticAndHorizon(LocalSiderealTime, ObliquityOfEcliptic, Latitude);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAParallactic(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double AngleBetweenNorthCelestialPoleAndNorthPoleOfEcliptic(double Lambda, double Beta, double ObliquityOfEcliptic) {
-    return AAJNI.CAAParallactic_AngleBetweenNorthCelestialPoleAndNorthPoleOfEcliptic(Lambda, Beta, ObliquityOfEcliptic);
-  }
+    public static double ParallacticAngle(double HourAngle, double Latitude, double delta) {
+        return AAJNI.CAAParallactic_ParallacticAngle(HourAngle, Latitude, delta);
+    }
 
-  public CAAParallactic() {
-    this(AAJNI.new_CAAParallactic(), true);
-  }
+    public static double EclipticLongitudeOnHorizon(double LocalSiderealTime, double ObliquityOfEcliptic, double Latitude) {
+        return AAJNI.CAAParallactic_EclipticLongitudeOnHorizon(LocalSiderealTime, ObliquityOfEcliptic, Latitude);
+    }
+
+    public static double AngleBetweenEclipticAndHorizon(double LocalSiderealTime, double ObliquityOfEcliptic, double Latitude) {
+        return AAJNI.CAAParallactic_AngleBetweenEclipticAndHorizon(LocalSiderealTime, ObliquityOfEcliptic, Latitude);
+    }
+
+    public static double AngleBetweenNorthCelestialPoleAndNorthPoleOfEcliptic(double Lambda, double Beta, double ObliquityOfEcliptic) {
+        return AAJNI.CAAParallactic_AngleBetweenNorthCelestialPoleAndNorthPoleOfEcliptic(Lambda, Beta, ObliquityOfEcliptic);
+    }
+
+    public CAAParallactic() {
+        this(AAJNI.new_CAAParallactic(), true);
+    }
 
 }

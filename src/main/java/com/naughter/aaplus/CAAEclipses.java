@@ -9,42 +9,42 @@
 package com.naughter.aaplus;
 
 public class CAAEclipses {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAEclipses(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAEclipses obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAEclipses(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAEclipses(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAASolarEclipseDetails CalculateSolar(double k) {
-    return new CAASolarEclipseDetails(AAJNI.CAAEclipses_CalculateSolar(k), true);
-  }
+    protected static long getCPtr(CAAEclipses obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAALunarEclipseDetails CalculateLunar(double k) {
-    return new CAALunarEclipseDetails(AAJNI.CAAEclipses_CalculateLunar(k), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public CAAEclipses() {
-    this(AAJNI.new_CAAEclipses(), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAEclipses(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
+
+    public static CAASolarEclipseDetails CalculateSolar(double k) {
+        return new CAASolarEclipseDetails(AAJNI.CAAEclipses_CalculateSolar(k), true);
+    }
+
+    public static CAALunarEclipseDetails CalculateLunar(double k) {
+        return new CAALunarEclipseDetails(AAJNI.CAAEclipses_CalculateLunar(k), true);
+    }
+
+    public CAAEclipses() {
+        this(AAJNI.new_CAAEclipses(), true);
+    }
 
 }

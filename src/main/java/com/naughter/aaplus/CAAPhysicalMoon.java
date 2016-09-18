@@ -9,58 +9,58 @@
 package com.naughter.aaplus;
 
 public class CAAPhysicalMoon {
-  private transient long swigCPtr;
-  protected transient boolean swigCMemOwn;
+    private transient long swigCPtr;
+    protected transient boolean swigCMemOwn;
 
-  protected CAAPhysicalMoon(long cPtr, boolean cMemoryOwn) {
-    swigCMemOwn = cMemoryOwn;
-    swigCPtr = cPtr;
-  }
-
-  protected static long getCPtr(CAAPhysicalMoon obj) {
-    return (obj == null) ? 0 : obj.swigCPtr;
-  }
-
-  protected void finalize() {
-    delete();
-  }
-
-  public synchronized void delete() {
-    if (swigCPtr != 0) {
-      if (swigCMemOwn) {
-        swigCMemOwn = false;
-        AAJNI.delete_CAAPhysicalMoon(swigCPtr);
-      }
-      swigCPtr = 0;
+    protected CAAPhysicalMoon(long cPtr, boolean cMemoryOwn) {
+        swigCMemOwn = cMemoryOwn;
+        swigCPtr = cPtr;
     }
-  }
 
-  public static CAAPhysicalMoonDetails CalculateGeocentric(double JD) {
-    return new CAAPhysicalMoonDetails(AAJNI.CAAPhysicalMoon_CalculateGeocentric(JD), true);
-  }
+    protected static long getCPtr(CAAPhysicalMoon obj) {
+        return (obj == null) ? 0 : obj.swigCPtr;
+    }
 
-  public static CAAPhysicalMoonDetails CalculateTopocentric(double JD, double Longitude, double Latitude) {
-    return new CAAPhysicalMoonDetails(AAJNI.CAAPhysicalMoon_CalculateTopocentric(JD, Longitude, Latitude), true);
-  }
+    protected void finalize() {
+        delete();
+    }
 
-  public static CAASelenographicMoonDetails CalculateSelenographicPositionOfSun(double JD, boolean bHighPrecision) {
-    return new CAASelenographicMoonDetails(AAJNI.CAAPhysicalMoon_CalculateSelenographicPositionOfSun(JD, bHighPrecision), true);
-  }
+    public synchronized void delete() {
+        if (swigCPtr != 0) {
+            if (swigCMemOwn) {
+                swigCMemOwn = false;
+                AAJNI.delete_CAAPhysicalMoon(swigCPtr);
+            }
+            swigCPtr = 0;
+        }
+    }
 
-  public static double AltitudeOfSun(double JD, double Longitude, double Latitude, boolean bHighPrecision) {
-    return AAJNI.CAAPhysicalMoon_AltitudeOfSun(JD, Longitude, Latitude, bHighPrecision);
-  }
+    public static CAAPhysicalMoonDetails CalculateGeocentric(double JD) {
+        return new CAAPhysicalMoonDetails(AAJNI.CAAPhysicalMoon_CalculateGeocentric(JD), true);
+    }
 
-  public static double TimeOfSunrise(double JD, double Longitude, double Latitude, boolean bHighPrecision) {
-    return AAJNI.CAAPhysicalMoon_TimeOfSunrise(JD, Longitude, Latitude, bHighPrecision);
-  }
+    public static CAAPhysicalMoonDetails CalculateTopocentric(double JD, double Longitude, double Latitude) {
+        return new CAAPhysicalMoonDetails(AAJNI.CAAPhysicalMoon_CalculateTopocentric(JD, Longitude, Latitude), true);
+    }
 
-  public static double TimeOfSunset(double JD, double Longitude, double Latitude, boolean bHighPrecision) {
-    return AAJNI.CAAPhysicalMoon_TimeOfSunset(JD, Longitude, Latitude, bHighPrecision);
-  }
+    public static CAASelenographicMoonDetails CalculateSelenographicPositionOfSun(double JD, boolean bHighPrecision) {
+        return new CAASelenographicMoonDetails(AAJNI.CAAPhysicalMoon_CalculateSelenographicPositionOfSun(JD, bHighPrecision), true);
+    }
 
-  public CAAPhysicalMoon() {
-    this(AAJNI.new_CAAPhysicalMoon(), true);
-  }
+    public static double AltitudeOfSun(double JD, double Longitude, double Latitude, boolean bHighPrecision) {
+        return AAJNI.CAAPhysicalMoon_AltitudeOfSun(JD, Longitude, Latitude, bHighPrecision);
+    }
+
+    public static double TimeOfSunrise(double JD, double Longitude, double Latitude, boolean bHighPrecision) {
+        return AAJNI.CAAPhysicalMoon_TimeOfSunrise(JD, Longitude, Latitude, bHighPrecision);
+    }
+
+    public static double TimeOfSunset(double JD, double Longitude, double Latitude, boolean bHighPrecision) {
+        return AAJNI.CAAPhysicalMoon_TimeOfSunset(JD, Longitude, Latitude, bHighPrecision);
+    }
+
+    public CAAPhysicalMoon() {
+        this(AAJNI.new_CAAPhysicalMoon(), true);
+    }
 
 }
