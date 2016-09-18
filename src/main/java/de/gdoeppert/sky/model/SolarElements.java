@@ -89,7 +89,7 @@ public class SolarElements extends SolSysElements {
     @Override
     protected PlanetPositionEqu getEquForTime(double time) {
         CAAEllipticalPlanetaryDetails details = CAAElliptical.Calculate(time,
-                theObject);
+                theObject, false);
         return new PlanetPositionEqu(time, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(), getJD0());
 
@@ -133,7 +133,7 @@ public class SolarElements extends SolSysElements {
 
     @SuppressLint("DefaultLocale")
     public String getEquTime() {
-        double eqn = CAAEquationOfTime.Calculate(getJD());
+        double eqn = CAAEquationOfTime.Calculate(getJD(), false);
         int min = (int) Math.floor(Math.abs(eqn));
         int sec = (int) ((Math.abs(eqn) - min) * 60);
         return String.format("%c%02d:%02d", eqn > 0 ? '+' : '-', min, sec); //$NON-NLS-1$
@@ -178,7 +178,7 @@ public class SolarElements extends SolSysElements {
         StringWriter result = new StringWriter();
         PrintWriter pr = new PrintWriter(result);
         pr.printf(
-                "%5.1f'", 2 * CAADiameters.SunSemidiameterA(CAAEarth.RadiusVector(getJD())) / 60); //$NON-NLS-1$
+                "%5.1f'", 2 * CAADiameters.SunSemidiameterA(CAAEarth.RadiusVector(getJD(), false)) / 60); //$NON-NLS-1$
         return result.getBuffer().toString();
     }
 
@@ -207,12 +207,12 @@ public class SolarElements extends SolSysElements {
 
             double seasons[] = {
                     CAAEquinoxesAndSolstices
-                            .NorthwardEquinox(mon > 3 ? year + 1 : year),
+                            .NorthwardEquinox(mon > 3 ? year + 1 : year, false),
                     CAAEquinoxesAndSolstices
-                            .NorthernSolstice(mon > 6 ? year + 1 : year),
+                            .NorthernSolstice(mon > 6 ? year + 1 : year, false),
                     CAAEquinoxesAndSolstices
-                            .SouthwardEquinox(mon > 9 ? year + 1 : year),
-                    CAAEquinoxesAndSolstices.SouthernSolstice(year)};
+                            .SouthwardEquinox(mon > 9 ? year + 1 : year, false),
+                    CAAEquinoxesAndSolstices.SouthernSolstice(year, false)};
 
             nextSolstice = seasons[1];
             if (nextSolstice < getJD() || (mon > 6 && getJD() < seasons[3])) {
@@ -261,12 +261,12 @@ public class SolarElements extends SolSysElements {
         ra = (360 + 180 - ra) % 360; // the rectasc. with the same declination
 
         delta = CAAInterpolate.Zero(
-                CAAElliptical.Calculate(candidate - 10, theObject)
+                CAAElliptical.Calculate(candidate - 10, theObject, false)
                         .getApparentGeocentricRA() * 15 - ra, CAAElliptical
-                        .Calculate(candidate, theObject)
+                        .Calculate(candidate, theObject, false)
                         .getApparentGeocentricRA()
                         * 15 - ra,
-                CAAElliptical.Calculate(candidate + 10, theObject)
+                CAAElliptical.Calculate(candidate + 10, theObject, false)
                         .getApparentGeocentricRA() * 15 - ra);
 
         Log.d("same", "delta = " + (delta * 10));
@@ -291,8 +291,8 @@ public class SolarElements extends SolSysElements {
         Log.println(Log.DEBUG, "sun", "calculate");
 
         super.calculate();
-        phyDetails = CAAPhysicalSun.Calculate(getJD());
-        details = CAAElliptical.Calculate(getJD(), theObject);
+        phyDetails = CAAPhysicalSun.Calculate(getJD(), false);
+        details = CAAElliptical.Calculate(getJD(), theObject, false);
         nextSolstice = 0;
         events = null;
     }
@@ -305,11 +305,11 @@ public class SolarElements extends SolSysElements {
     @Override
     public void update(Calendar cal) {
         super.update(cal);
-        phyDetails = CAAPhysicalSun.Calculate(getJD());
+        phyDetails = CAAPhysicalSun.Calculate(getJD(), false);
     }
 
     public double getRadius() {
-        return CAADiameters.SunSemidiameterA(CAAEarth.RadiusVector(getJD())) / 3600;
+        return CAADiameters.SunSemidiameterA(CAAEarth.RadiusVector(getJD(), false)) / 3600;
     }
 
     public double getPosAngle() {

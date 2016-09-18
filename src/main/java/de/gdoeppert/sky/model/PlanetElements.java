@@ -95,7 +95,7 @@ public abstract class PlanetElements extends SolSysElements {
     @Override
     protected PlanetPositionEqu getEquForTime(double time) {
         CAAEllipticalPlanetaryDetails details = CAAElliptical.Calculate(time,
-                theObject);
+                theObject, false);
         return new PlanetPositionEqu(time, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(), getJD0());
     }
@@ -408,7 +408,7 @@ public abstract class PlanetElements extends SolSysElements {
 
         super.calculate();
 
-        details = CAAElliptical.Calculate(getJD(), theObject);
+        details = CAAElliptical.Calculate(getJD(), theObject, false);
         edist = details.getApparentGeocentricDistance();
         events = null;
     }

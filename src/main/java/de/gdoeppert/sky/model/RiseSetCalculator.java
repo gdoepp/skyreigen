@@ -26,15 +26,15 @@ public class RiseSetCalculator {
     public RiseSetCalculator(double jd, EllipticalObject theObject) {
         this.jd = jd;
         deltaT = CAADynamicalTime.DeltaT(jd) / 86400;
-        details2 = CAAElliptical.Calculate(jd + deltaT, theObject);
+        details2 = CAAElliptical.Calculate(jd + deltaT, theObject, false);
         if (theObject == EllipticalObject.NEPTUNE
                 || theObject == EllipticalObject.URANUS
                 || theObject == EllipticalObject.SATURN) {
             details1 = details2;
             details3 = details2;
         } else {
-            details1 = CAAElliptical.Calculate(jd - 1 + deltaT, theObject);
-            details3 = CAAElliptical.Calculate(jd + 1 + deltaT, theObject);
+            details1 = CAAElliptical.Calculate(jd - 1 + deltaT, theObject, false);
+            details3 = CAAElliptical.Calculate(jd + 1 + deltaT, theObject, false);
         }
     }
 

@@ -38,9 +38,9 @@ public class VenusElements extends PlanetElements {
     public void calculate() {
         super.calculate();
 
-        sdist = CAAVenus.RadiusVector(getJD());
+        sdist = CAAVenus.RadiusVector(getJD(), false);
         sdiam = CAADiameters.VenusSemidiameterA(edist);
-        double sedist = CAAEarth.RadiusVector(getJD());
+        double sedist = CAAEarth.RadiusVector(getJD(), false);
         disk = CAAIlluminatedFraction.IlluminatedFraction(sdist, sedist, edist);
         double phaseAngle = CAAIlluminatedFraction.PhaseAngle(sdist, sedist,
                 edist);

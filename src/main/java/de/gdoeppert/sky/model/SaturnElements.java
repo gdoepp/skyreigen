@@ -51,13 +51,13 @@ public class SaturnElements extends PlanetElements {
     public void calculate() {
         super.calculate();
 
-        sdist = CAASaturn.RadiusVector(getJD());
+        sdist = CAASaturn.RadiusVector(getJD(), false);
         sdiam = CAADiameters.SaturnEquatorialSemidiameterA(edist);
         disk = CAAIlluminatedFraction.IlluminatedFraction(sdist,
-                CAAEarth.RadiusVector(getJD()), edist);
-        CAASaturnRingDetails rings = CAASaturnRings.Calculate(getJD());
+                CAAEarth.RadiusVector(getJD(), false), edist);
+        CAASaturnRingDetails rings = CAASaturnRings.Calculate(getJD(), false);
         mag = CAAIlluminatedFraction.SaturnMagnitudeAA(sdist, edist,
-                Math.abs(rings.getDeltaU()), Math.abs(rings.getB2()));
+                Math.abs(rings.getDeltaU()), Math.abs(rings.getB2())); // B2
 
     }
 
@@ -70,7 +70,7 @@ public class SaturnElements extends PlanetElements {
         final String[] names = new String[]{
                 Messages.getString("SaturnElements.mimas"), Messages.getString("SaturnElements.enceladus"), Messages.getString("SaturnElements.tethys"), Messages.getString("SaturnElements.dione"), Messages.getString("SaturnElements.rhea"), Messages.getString("SaturnElements.titan")}; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$
 
-        CAASaturnMoonsDetails stMoons = CAASaturnMoons.Calculate(getJD());
+        CAASaturnMoonsDetails stMoons = CAASaturnMoons.Calculate(getJD(), false);
 
         CAASaturnMoonDetail[] stMoonsArr = new CAASaturnMoonDetail[]{
                 stMoons.getSatellite1(), stMoons.getSatellite2(),
@@ -96,7 +96,7 @@ public class SaturnElements extends PlanetElements {
     @Override
     public String getPhys() {
         final String dir = Messages.getString("SaturnElements.nesw"); //$NON-NLS-1$
-        CAASaturnRingDetails ringDetails = CAASaturnRings.Calculate(getJD());
+        CAASaturnRingDetails ringDetails = CAASaturnRings.Calculate(getJD(), false);
         Character NS = (ringDetails.getB2() > 0 ? dir.charAt(0) : dir.charAt(2));
         Character WE = (ringDetails.getP() > 0 ? dir.charAt(1) : dir.charAt(3));
 

@@ -57,60 +57,60 @@ public class SolSysPositions {
         int k = CAAPlanetPerihelionAphelion.MercuryK(year);
         double perihelion = CAAMercury
                 .EclipticLongitude(CAAPlanetPerihelionAphelion
-                        .MercuryPerihelion(k));
+                        .MercuryPerihelion(k), false);
         eclipticPosition[idx_mercury] = new PlanetPositionEcl(jd,
-                CAAMercury.EclipticLongitude(jd), 0, perihelion);
+                CAAMercury.EclipticLongitude(jd, false), 0, perihelion);
         planetColors[idx_mercury] = 0xefdfdf40;
 
         k = CAAPlanetPerihelionAphelion.VenusK(year);
         perihelion = CAAVenus.EclipticLongitude(CAAPlanetPerihelionAphelion
-                .VenusPerihelion(k));
+                .VenusPerihelion(k), false);
         eclipticPosition[idx_venus] = new PlanetPositionEcl(jd,
-                CAAVenus.EclipticLongitude(jd), 0, perihelion);
+                CAAVenus.EclipticLongitude(jd, false), 0, perihelion);
         planetColors[idx_venus] = 0xefffff80;
 
         k = CAAPlanetPerihelionAphelion.MarsK(year);
         perihelion = CAAMars.EclipticLongitude(CAAPlanetPerihelionAphelion
-                .MarsPerihelion(k));
+                .MarsPerihelion(k), false);
         eclipticPosition[idx_mars] = new PlanetPositionEcl(jd,
-                CAAMars.EclipticLongitude(jd), 0, perihelion);
+                CAAMars.EclipticLongitude(jd, false), 0, perihelion);
         planetColors[idx_mars] = 0xefff5020;
 
         k = CAAPlanetPerihelionAphelion.JupiterK(year);
         perihelion = CAAJupiter.EclipticLongitude(CAAPlanetPerihelionAphelion
-                .JupiterPerihelion(k));
+                .JupiterPerihelion(k), false);
         eclipticPosition[idx_jupiter] = new PlanetPositionEcl(jd,
-                CAAJupiter.EclipticLongitude(jd), 0, perihelion);
+                CAAJupiter.EclipticLongitude(jd, false), 0, perihelion);
         planetColors[idx_jupiter] = 0xefffffff;
 
         k = CAAPlanetPerihelionAphelion.SaturnK(year);
         perihelion = CAASaturn.EclipticLongitude(CAAPlanetPerihelionAphelion
-                .SaturnPerihelion(k));
+                .SaturnPerihelion(k), false);
         eclipticPosition[idx_saturn] = new PlanetPositionEcl(jd,
-                CAASaturn.EclipticLongitude(jd), 0, perihelion);
+                CAASaturn.EclipticLongitude(jd, false), 0, perihelion);
         planetColors[idx_saturn] = 0xefe0e080;
 
         k = CAAPlanetPerihelionAphelion.UranusK(year);
         perihelion = CAAUranus.EclipticLongitude(CAAPlanetPerihelionAphelion
-                .UranusPerihelion(k));
+                .UranusPerihelion(k), false);
         eclipticPosition[idx_uranus] = new PlanetPositionEcl(jd,
-                CAAUranus.EclipticLongitude(jd), 0, perihelion);
+                CAAUranus.EclipticLongitude(jd, false), 0, perihelion);
         planetColors[idx_uranus] = 0xef00ffa0;
 
         k = CAAPlanetPerihelionAphelion.NeptuneK(year);
         perihelion = CAANeptune.EclipticLongitude(CAAPlanetPerihelionAphelion
-                .NeptunePerihelion(k));
+                .NeptunePerihelion(k), false);
 
         eclipticPosition[idx_neptune] = new PlanetPositionEcl(jd,
-                CAANeptune.EclipticLongitude(jd), 0, perihelion);
+                CAANeptune.EclipticLongitude(jd, false), 0, perihelion);
 
         planetColors[idx_neptune] = 0xef0080ff;
 
         eclipticPosition[idx_earth] = new PlanetPositionEcl(jd,
-                CAAEarth.EclipticLongitudeJ2000(jd), 0,
+                CAAEarth.EclipticLongitudeJ2000(jd,false), 0,
                 CAAEarth.EclipticLongitudeJ2000(CAAPlanetPerihelionAphelion
                         .EarthPerihelion(CAAPlanetPerihelionAphelion
-                                .EarthK(year))));
+                                .EarthK(year)), false));
         planetColors[idx_earth] = 0xff1010ff;
 
     }

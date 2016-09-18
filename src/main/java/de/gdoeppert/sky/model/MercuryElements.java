@@ -38,9 +38,9 @@ public class MercuryElements extends PlanetElements {
     public void calculate() {
         super.calculate();
 
-        sdist = CAAMercury.RadiusVector(getJD());
+        sdist = CAAMercury.RadiusVector(getJD(), false);
         sdiam = CAADiameters.MercurySemidiameterA(edist);
-        double sedist = CAAEarth.RadiusVector(getJD());
+        double sedist = CAAEarth.RadiusVector(getJD(), false);
         disk = CAAIlluminatedFraction.IlluminatedFraction(sdist, sedist, edist);
         double phaseAngle = CAAIlluminatedFraction.PhaseAngle(sdist, sedist,
                 edist);

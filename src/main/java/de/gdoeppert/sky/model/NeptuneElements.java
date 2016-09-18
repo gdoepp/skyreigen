@@ -38,9 +38,9 @@ public class NeptuneElements extends PlanetElements {
     public void calculate() {
         super.calculate();
 
-        sdist = CAANeptune.RadiusVector(getJD());
+        sdist = CAANeptune.RadiusVector(getJD(), false);
         sdiam = CAADiameters.NeptuneSemidiameterA(edist);
-        double sedist = CAAEarth.RadiusVector(getJD());
+        double sedist = CAAEarth.RadiusVector(getJD(), false);
         disk = CAAIlluminatedFraction.IlluminatedFraction(sdist, sedist, edist);
         mag = CAAIlluminatedFraction.NeptuneMagnitudeAA(sdist, edist);
 

@@ -41,9 +41,9 @@ public class MarsElements extends PlanetElements {
     public void calculate() {
         super.calculate();
 
-        sdist = CAAMars.RadiusVector(getJD());
+        sdist = CAAMars.RadiusVector(getJD(), false);
         sdiam = CAADiameters.MarsSemidiameterA(edist);
-        double sedist = CAAEarth.RadiusVector(getJD());
+        double sedist = CAAEarth.RadiusVector(getJD(), false);
         disk = CAAIlluminatedFraction.IlluminatedFraction(sdist, sedist, edist);
         double phaseAngle = CAAIlluminatedFraction.PhaseAngle(sdist, sedist,
                 edist);
@@ -51,14 +51,14 @@ public class MarsElements extends PlanetElements {
             phaseAngle = 0;
         }
         mag = CAAIlluminatedFraction.MarsMagnitudeAA(sdist, edist, phaseAngle);
-        physDetails = CAAPhysicalMars.Calculate(getJD());
+        physDetails = CAAPhysicalMars.Calculate(getJD(), false);
 
     }
 
     @Override
     public void update(Calendar cal) {
         super.update(cal);
-        physDetails = CAAPhysicalMars.Calculate(getJD());
+        physDetails = CAAPhysicalMars.Calculate(getJD(), false);
     }
 
     @Override

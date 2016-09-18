@@ -9,9 +9,4 @@
 package com.naughter.aaplus;
 
 public interface AAConstants {
-    public final static int WINVER = AAJNI.WINVER_get();
-    public final static int _WIN32_WINNT = AAJNI._WIN32_WINNT_get();
-    public final static int _WIN32_WINDOWS = AAJNI._WIN32_WINDOWS_get();
-    public final static int _WIN32_IE = AAJNI._WIN32_IE_get();
-    public final static int _SECURE_ATL = AAJNI._SECURE_ATL_get();
 }

@@ -167,7 +167,7 @@ public class LunarElements extends SolSysElements {
 
         CAASolarEclipseDetails sec = CAAEclipses.CalculateSolar(k1
                 + ((4 - k2) % 4) * 0.25);
-        if (sec.getBEclipse()) {
+        if (sec != null && sec.getFlags() != 0) {
             numEvents++;
         }
         CAALunarEclipseDetails lec = CAAEclipses.CalculateLunar(k1
@@ -198,7 +198,7 @@ public class LunarElements extends SolSysElements {
         age = (getJD() - (events[(4 - k2) % 4].jd - 29.53)) % 29.53;
 
         int j = 4;
-        if (sec.getBEclipse()) {
+        if (sec != null && sec.getFlags() != 0) {
             CAADate time = new CAADate(sec.getTimeOfMaximumEclipse(), true);
             Calendar cal = new GregorianCalendar(time.Year(), time.Month() - 1,
                     time.Day(), time.Hour(), time.Minute());
@@ -207,6 +207,29 @@ public class LunarElements extends SolSysElements {
             events[j] = new SkyEvent(
                     Messages.getString("LunarElements.secl"), cal, sec.getTimeOfMaximumEclipse()); //$NON-NLS-1$
             events[j].info = Messages.getString("LunarElements.solareclipse") + "\n"; //$NON-NLS-1$ //$NON-NLS-2$
+
+            if ((sec.getFlags() & CAASolarEclipseDetails.CENTRAL_ECLIPSE) != 0) {
+                events[j].info += Messages.getString("LunarElements.central") + ", "; //$NON-NLS-1$
+            }
+            if ((sec.getFlags() & CAASolarEclipseDetails.NON_CENTRAL_ECLIPSE) != 0) {
+                events[j].info += Messages.getString("LunarElements.notcentral") + ", "; //$NON-NLS-1$
+            }
+
+            if ((sec.getFlags() & CAASolarEclipseDetails.TOTAL_ECLIPSE) != 0) {
+                events[j].info += Messages.getString("LunarElements.total") ; //$NON-NLS-1$
+            }
+            if ((sec.getFlags() & CAASolarEclipseDetails.ANNULAR_TOTAL_ECLIPSE) != 0) {
+                events[j].info += Messages.getString("LunarElements.total_annular"); //$NON-NLS-1$
+            }
+            if ((sec.getFlags() & CAASolarEclipseDetails.ANNULAR_ECLIPSE) != 0) {
+                events[j].info += Messages.getString("LunarElements.annular") ; //$NON-NLS-1$
+            }
+            if ((sec.getFlags() & CAASolarEclipseDetails.PARTIAL_ECLIPSE) != 0) {
+                events[j].info += Messages.getString("LunarElements.partial_semi"); //$NON-NLS-1$
+            }
+            events[j].info += "\n";
+
+/*
             if (Math.abs(sec.getGamma()) < 0.9972) {
                 events[j].info += Messages.getString("LunarElements.central") + ", "; //$NON-NLS-1$ //$NON-NLS-2$
                 if (sec.getU() < 0) {
@@ -229,6 +252,7 @@ public class LunarElements extends SolSysElements {
                 events[j].info += Messages
                         .getString("LunarElements.notcentral") + ", " + Messages.getString("LunarElements.totalOrAnnular") + "\n"; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
             }
+            */
             double mag = sec.getGreatestMagnitude();
             if (mag > 0) {
                 events[j].info += Messages.getString("LunarElements.mag") + String.format("%5.2f", mag) + "\n"; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
@@ -341,7 +365,7 @@ public class LunarElements extends SolSysElements {
         elongDiff = (poseq.getRa() - solar.poseq.getRa() + 360) % 360;
         phase = CAAMoonIlluminatedFraction.PhaseAngle(geoElong,
                 CAAMoon.RadiusVector(getJD()),
-                CAAEarth.RadiusVector(getJD()) * 149597871);
+                CAAEarth.RadiusVector(getJD(), false) * 149597871);
         moonDetails = CAAPhysicalMoon.CalculateTopocentric(getJD(),
                 -getObserver().localLong, getObserver().localLat);
     }
@@ -360,7 +384,7 @@ public class LunarElements extends SolSysElements {
                 solar.poseq.getDecl());
         phase = CAAMoonIlluminatedFraction.PhaseAngle(geoElong,
                 CAAMoon.RadiusVector(getJD()),
-                CAAEarth.RadiusVector(getJD()) * 149597871);
+                CAAEarth.RadiusVector(getJD(), false) * 149597871);
         moonDetails = CAAPhysicalMoon.CalculateTopocentric(getJD(),
                 -getObserver().localLong, getObserver().localLat);
 

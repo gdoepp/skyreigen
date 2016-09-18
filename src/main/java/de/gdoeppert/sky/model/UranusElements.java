@@ -39,10 +39,10 @@ public class UranusElements extends PlanetElements {
     public void calculate() {
         super.calculate();
 
-        sdist = CAAUranus.RadiusVector(getJD());
+        sdist = CAAUranus.RadiusVector(getJD(), false);
         sdiam = CAADiameters.UranusSemidiameterA(edist);
 
-        double sedist = CAAEarth.RadiusVector(getJD());
+        double sedist = CAAEarth.RadiusVector(getJD(), false);
         disk = CAAIlluminatedFraction.IlluminatedFraction(sdist, sedist, edist);
         mag = CAAIlluminatedFraction.UranusMagnitudeAA(sdist, edist);
     }

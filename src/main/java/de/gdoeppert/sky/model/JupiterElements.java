@@ -52,9 +52,9 @@ public class JupiterElements extends PlanetElements {
     public void calculate() {
 
         super.calculate();
-        sdist = CAAJupiter.RadiusVector(getJD());
+        sdist = CAAJupiter.RadiusVector(getJD(), false);
         sdiam = CAADiameters.JupiterEquatorialSemidiameterA(edist);
-        double sedist = CAAEarth.RadiusVector(getJD());
+        double sedist = CAAEarth.RadiusVector(getJD(), false);
         disk = CAAIlluminatedFraction.IlluminatedFraction(sdist, sedist, edist);
         double phaseAngle = CAAIlluminatedFraction.PhaseAngle(sdist, sedist,
                 edist);
@@ -63,7 +63,7 @@ public class JupiterElements extends PlanetElements {
         }
         mag = CAAIlluminatedFraction.JupiterMagnitudeAA(sdist, edist,
                 phaseAngle);
-        physDetails = CAAPhysicalJupiter.Calculate(getJD());
+        physDetails = CAAPhysicalJupiter.Calculate(getJD(), false);
 
     }
 
@@ -76,7 +76,7 @@ public class JupiterElements extends PlanetElements {
         final String[] names = new String[]{
                 Messages.getString("JupiterElements.io"), Messages.getString("JupiterElements.europa"), Messages.getString("JupiterElements.ganymed"), Messages.getString("JupiterElements.callisto")}; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 
-        CAAGalileanMoonsDetails jpMoons = CAAGalileanMoons.Calculate(getJD());
+        CAAGalileanMoonsDetails jpMoons = CAAGalileanMoons.Calculate(getJD(), false);
 
         CAAGalileanMoonDetail[] jpMoonsArr = new CAAGalileanMoonDetail[]{
                 jpMoons.getSatellite1(), jpMoons.getSatellite2(),
@@ -115,7 +115,7 @@ public class JupiterElements extends PlanetElements {
     @Override
     public void update(Calendar cal) {
         super.update(cal);
-        physDetails = CAAPhysicalJupiter.Calculate(getJD());
+        physDetails = CAAPhysicalJupiter.Calculate(getJD(), false);
     }
 
     @Override
