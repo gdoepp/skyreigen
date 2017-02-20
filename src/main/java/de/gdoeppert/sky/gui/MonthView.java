@@ -34,7 +34,6 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 
 import de.gdoeppert.sky.R;
-import de.gdoeppert.sky.model.RiseSet.Circ;
 import de.gdoeppert.sky.model.RiseSetCalculator.RSTitem;
 import de.gdoeppert.sky.model.RiseSetCalculator.RiseSetAll;
 import de.gdoeppert.sky.model.SolSysElements;
@@ -211,9 +210,9 @@ public class MonthView extends View implements OnTouchListener {
             x %= 1;
             x *= dx;
 
-            boolean xValid = (r.rst[index].getRises() == Circ.rises);
+            boolean xValid = (r.rst[index].isRising());
 
-            if (r.rst[index].getRises() == Circ.above) {
+            if (r.rst[index].isAlwaysAbove()) {
                 x = (index / 10f - 0.7f) * x1;
                 xValid = true;
             }
@@ -250,7 +249,7 @@ public class MonthView extends View implements OnTouchListener {
 
             boolean xValid = r.rst[index].isSetting();
 
-            if (r.rst[index].getRises() == Circ.above) {
+            if (r.rst[index].isAlwaysAbove()) {
                 x = 1 * dx + (0.0f + index / 10f) * x1;
                 xValid = true;
             }
@@ -285,7 +284,7 @@ public class MonthView extends View implements OnTouchListener {
             x %= 1;
             x *= dx;
 
-            boolean xValid = r.rst[index].getRises() != Circ.below;
+            boolean xValid = !r.rst[index].isAlwaysBelow();
 
             if (inLine && xValid && Math.abs(xold - x) < w / 2) {
                 path.lineTo(x1 + x, y1 + y);
@@ -316,10 +315,10 @@ public class MonthView extends View implements OnTouchListener {
             float xr;
             float xs;
 
-            if (r.rst[index].getRises() == Circ.above) {
+            if (r.rst[index].isAlwaysAbove()) {
                 xr = 0;
                 xs = x1 + dx;
-            } else if (r.rst[index].getRises() == Circ.below) {
+            } else if (r.rst[index].isAlwaysBelow()) {
                 xr = 0;
                 xs = 0;
             } else {
@@ -374,7 +373,7 @@ public class MonthView extends View implements OnTouchListener {
 
         boolean inArea = false;
 
-        boolean below = (rst[0].rst[index].getRises() == Circ.below);
+        boolean below = (rst[0].rst[index].isAlwaysBelow());
 
         for (RiseSetAll r : rst) {
 
@@ -386,9 +385,9 @@ public class MonthView extends View implements OnTouchListener {
 
             x *= dx;
 
-            if (r.rst[index].getRises() == Circ.above) {
+            if (r.rst[index].isAlwaysAbove()) {
                 x = 0;
-            } else if (r.rst[index].getRises() == Circ.below) {
+            } else if (r.rst[index].isAlwaysBelow()) {
                 if (below) {
                     continue;
                 }
@@ -418,9 +417,9 @@ public class MonthView extends View implements OnTouchListener {
 
             x *= dx;
 
-            if (r.rst[index].getRises() == Circ.above) {
+            if (r.rst[index].isAlwaysAbove()) {
                 x = dx;
-            } else if (r.rst[index].getRises() == Circ.below) {
+            } else if (r.rst[index].isAlwaysBelow()) {
                 if (below)
                     continue;
                 x = 0;

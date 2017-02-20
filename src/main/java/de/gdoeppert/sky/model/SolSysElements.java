@@ -35,7 +35,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Vector;
 
-import de.gdoeppert.sky.model.RiseSet.Circ;
 
 @SuppressLint("DefaultLocale")
 public abstract class SolSysElements {
@@ -104,13 +103,14 @@ public abstract class SolSysElements {
     public PlanetPositionHrz[] getTraj() {
 
         if (traj == null) {
-            if (getRiseSet() == null || getRiseSet().getRises() == Circ.below)
+            RiseSet rs = getRiseSet();
+            if (rs == null || rs.isAlwaysBelow()) {
                 return null;
+            }
 
             Vector<PlanetPositionHrz> trajVec = new Vector<PlanetPositionHrz>();
-            RiseSet rs = getRiseSet();
 
-            if (rs.getRises() == Circ.above) {
+            if (rs.isAlwaysAbove()) {
                 for (double t1 = getJD0(); t1 < getJD0() + 1; t1 += 1.0 / 24) {
                     PlanetPositionHrz pos = getPosForTime(t1);
                     if (pos.getAltitude() >= horizon) {
@@ -123,32 +123,30 @@ public abstract class SolSysElements {
                 }
 
             } else {
+                double rise = (rs.isRising() ? rs.getRiseNum() : getJD0());
+                double set = (rs.isSetting() ? rs.getSetNum() : getJD0()+1);
 
-                if (rs.getRiseNum() > rs.getSetNum()) {
+                if (rise > set) {
 
-                    for (double t1 = rs.getRiseNum(); t1 < getJD0() + 1; t1 += 1.0 / 24) {
+                    for (double t1 = rise; t1 < getJD0() + 1; t1 += 1.0 / 24) {
                         PlanetPositionHrz pos = getPosForTime(t1);
-                        if (pos.getAltitude() >= -1) {
-                            trajVec.add(pos);
-                        }
+                        trajVec.add(pos);
                     }
                     PlanetPositionHrz pos0 = getPosForTime(getJD0() + 1);
                     if (pos0.getAltitude() >= horizon) {
                         trajVec.add(pos0);
                     }
 
-                    for (double t1 = getJD0(); t1 < rs.getSetNum(); t1 += 1.0 / 24) {
+                    for (double t1 = getJD0(); t1 < set; t1 += 1.0 / 24) {
                         PlanetPositionHrz pos = getPosForTime(t1);
-                        if (pos.getAltitude() >= horizon) {
-                            trajVec.add(pos);
-                        }
+                        trajVec.add(pos);
                     }
                     double t1 = rs.getSetNum();
                     PlanetPositionHrz pos = getPosForTime(t1);
                     trajVec.add(pos);
                 } else {
                     poseq = getEquForTime(getJD());
-                    for (double t1 = rs.getRiseNum(); t1 < rs.getSetNum(); t1 += 1.0 / 24) {
+                    for (double t1 = rise; t1 < set; t1 += 1.0 / 24) {
                         trajVec.add(getPosForTime(t1));
                     }
                     trajVec.add(getPosForTime(rs.getSetNum()));
@@ -173,20 +171,25 @@ public abstract class SolSysElements {
 
     }
 
-    protected String printTimeSpan(CAADate date) {
+    protected String printTimeSpan(CAADate date, int times) {
+        String str;
         if (date.Hour() > 0) {
-            return String.format("%02dh%02d", date.Hour(), date.Minute());
+            str= String.format("%02dh%02d", date.Hour(), date.Minute());
         } else {
-            return String.format("%02dmin", date.Minute());
+            str= String.format("%02dmin", date.Minute());
         }
+        if (times>1) {
+            str=str + "x2";
+        }
+        return str;
     }
 
-    protected String printTimeSpan(double days) {
+    protected String printTimeSpan(double days, int times) {
         CAADate date = new CAADate();
         int hours = (int) Math.floor(days * 24);
         date.Set(0, 0, 0, hours, (int) (Math.round((days * 24 - hours) * 60)),
                 0, true);
-        return printTimeSpan(date);
+        return printTimeSpan(date,  times);
     }
 
     protected String printDeg(double deg) {
@@ -378,7 +381,7 @@ public abstract class SolSysElements {
 
     public String getRiseAz(RiseSet riseSet) {
 
-        if (riseSet.getRises() != Circ.rises)
+        if (!riseSet.isRising())
             return "---";
         else {
 
@@ -398,7 +401,7 @@ public abstract class SolSysElements {
 
     public String getTransit(RiseSet riseSet) {
 
-        if (riseSet.getRises() == Circ.below)
+        if (riseSet.isAlwaysBelow())
             return "---";
         else {
             return printRST(riseSet.jd0, riseSet.rtsDetails.getTransit());
@@ -409,8 +412,7 @@ public abstract class SolSysElements {
 
         Log.println(Log.DEBUG, "rise", "d=" + riseSet.rtsDetails.getRise());
 
-        if (riseSet.getRises() != Circ.rises
-                || !riseSet.rtsDetails.getBRiseValid())
+        if (!riseSet.isRising())
             return "---";
         else {
             return printRST(riseSet.jd0, riseSet.rtsDetails.getRise());
@@ -419,7 +421,7 @@ public abstract class SolSysElements {
 
     public String getTransitAlt(RiseSet riseSet) {
 
-        if (riseSet.getRises() != Circ.rises)
+        if (riseSet.isAlwaysBelow())
             return "---";
         else {
 
@@ -431,7 +433,7 @@ public abstract class SolSysElements {
 
     public String getSetAz(RiseSet riseSet) {
 
-        if (riseSet.getRises() != Circ.rises)
+        if (!riseSet.isSetting())
             return "---";
         else {
 

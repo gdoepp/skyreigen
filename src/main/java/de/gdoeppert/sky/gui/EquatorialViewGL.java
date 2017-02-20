@@ -27,6 +27,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.ScaleGestureDetector.OnScaleGestureListener;
+import android.view.View;
 
 import java.util.List;
 import java.util.Vector;
@@ -37,7 +38,7 @@ import de.gdoeppert.sky.model.PlanetPositionEqu;
 import de.gdoeppert.sky.model.SolSysPositions;
 import de.gdoeppert.sky.model.Star;
 
-public class EquatorialViewGL extends GLSurfaceView {
+public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickListener {
 
     private final GLRenderer renderer;
 
@@ -76,6 +77,7 @@ public class EquatorialViewGL extends GLSurfaceView {
         }
         super.onSizeChanged(w, h, oldw, oldh);
     }
+
 
     public void setPlanetColors(int[] planetColors) {
         this.planetColors = planetColors;
@@ -183,9 +185,12 @@ public class EquatorialViewGL extends GLSurfaceView {
         // Render the view only when there is a change in the drawing data
         setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 
+        setOnLongClickListener(this);
         setLongClickable(true);
 
+
     }
+
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -280,7 +285,11 @@ public class EquatorialViewGL extends GLSurfaceView {
         return starSize;
     }
 
-    public void clear() {
+    @Override
+    public boolean onLongClick(View view) {
+        Log.d("equviewgl", "longclick");
+        renderer.toggleShowConstNames();
+        requestRender();
+        return true;
     }
-
 }

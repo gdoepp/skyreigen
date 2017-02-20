@@ -269,7 +269,7 @@ public class PolarView extends View {
         boolean first = true;
         double time = traj[0].getTime();
         for (int j = 0; j < traj.length; j++) {
-            if (traj[j].getTime() < time) {
+            if (traj[j].getTime() < time) {  // the day before
                 first = true;
             }
             time = traj[j].getTime();

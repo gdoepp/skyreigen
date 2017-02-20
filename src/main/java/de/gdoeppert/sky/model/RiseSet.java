@@ -23,27 +23,29 @@ import com.naughter.aaplus.CAARiseTransitSetDetails;
 
 public class RiseSet {
 
-    public enum Circ {
-        below, rises, above
-    }
-
-    private Circ isCirc = Circ.rises;
     final CAARiseTransitSetDetails rtsDetails;
     final double jd0;
 
     public RiseSet(CAARiseTransitSetDetails rtsDetails, double jd0) {
         this.rtsDetails = rtsDetails;
         this.jd0 = jd0;
-        isCirc = rtsDetails.getBRiseValid() ? Circ.rises : (rtsDetails
-                .getBTransitAboveHorizon() ? Circ.above : Circ.below);
     }
 
-    public Circ getRises() {
-        return isCirc;
+    public boolean isAlwaysAbove() {
+        return (!isSetting() && !isRising()) && rtsDetails.getBTransitAboveHorizon();
+    }
+    public boolean isAbove() {
+        return rtsDetails.getBTransitAboveHorizon();
+    }
+    public boolean isAlwaysBelow() {
+        return (!isSetting() && !isRising()) && !rtsDetails.getBTransitAboveHorizon();
     }
 
     public boolean isSetting() {
         return rtsDetails.getBSetValid();
+    }
+    public boolean isRising() {
+        return rtsDetails.getBRiseValid();
     }
 
     public double getRiseNum() {

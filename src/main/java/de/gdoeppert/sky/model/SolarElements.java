@@ -45,7 +45,6 @@ import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
 import de.gdoeppert.sky.Messages;
-import de.gdoeppert.sky.model.RiseSet.Circ;
 
 public class SolarElements extends SolSysElements {
 
@@ -54,7 +53,7 @@ public class SolarElements extends SolSysElements {
     RiseSet twilightAstronomical = null;
     private CAAPhysicalSunDetails phyDetails;
     private double nextSolstice = 0;
-    static double horizon = -0.833;
+    final static double horizon = -0.833;
 
     public SolarElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
@@ -120,14 +119,18 @@ public class SolarElements extends SolSysElements {
     }
 
     public String getDayLen() {
-        if (getRiseSet().getRises() == Circ.below)
+        if (getRiseSet().isAlwaysBelow())
             return "0h"; //$NON-NLS-1$
-        else if (getRiseSet().getRises() == Circ.above)
+        else if (getRiseSet().isAlwaysAbove())
             return "24h"; //$NON-NLS-1$
         else {
-            double t = getRiseSet().getSetNum() - getRiseSet().getRiseNum();
+            RiseSet rs = getRiseSet();
+            double rise = (rs.isRising() ? rs.getRiseNum() : getJD0());
+            double set = (rs.isSetting() ? rs.getSetNum() : getJD0()+1);
+
+            double t = set - rise;
             t = t - Math.floor(t);
-            return printTimeSpan(t);
+            return printTimeSpan(t, 1);
         }
     }
 
@@ -139,38 +142,60 @@ public class SolarElements extends SolSysElements {
         return String.format("%c%02d:%02d", eqn > 0 ? '+' : '-', min, sec); //$NON-NLS-1$
     }
 
-    public String getTwilightLen(RiseSet twi, RiseSet twi0) {
+    public String getTwilightLen(RiseSet twi_lower, RiseSet twi_higher) {
 
-        if (twi0 == null)
-            twi0 = getRiseSet();
+        if (twi_higher == null)
+            twi_higher = getRiseSet(); // sun / day
 
-        if (twi0.getRises() == Circ.above || twi.getRises() == Circ.below)
+        if (twi_higher.isAlwaysAbove() || twi_lower.isAlwaysBelow())
             return "---"; //$NON-NLS-1$
 
         double len = 0;
 
-        if (twi0.getRises() == Circ.rises && twi.getRises() == Circ.above) {
-            len = (1 - (twi0.getSetNum() - twi0.getRiseNum()));
-        } else if (getRiseSet().getRises() == Circ.below) {
-            len = (twi.getSetNum() - twi0.getRiseNum());
-        } else {
-            len = (twi0.getRiseNum() - twi.getRiseNum());
+        int n=0;
+
+        if (!twi_lower.isAlwaysAbove() && !twi_higher.isAlwaysBelow()) {
+
+            if (twi_higher.isRising() && twi_lower.isRising()) {
+                len += (twi_higher.getRiseNum() - twi_lower.getRiseNum());
+                n++;
+            }
+            if (twi_higher.isSetting() && twi_lower.isSetting()) {
+                len += (twi_lower.getSetNum() - twi_higher.getSetNum());
+                n++;
+            }
+            if (n>0) len /= n;
+
+        } else if (twi_lower.isAlwaysAbove()) {
+            double rise = (twi_higher.isRising() ? twi_higher.getRiseNum() : getJD0());
+            double set = (twi_higher.isSetting() ? twi_higher.getSetNum() : getJD0()+1);
+            len = (1 - (set - rise));
+            n=1;
+        } else if (twi_higher.isAlwaysBelow()) {
+            double rise = (twi_lower.isRising() ? twi_lower.getRiseNum() : getJD0());
+            double set = (twi_lower.isSetting() ? twi_lower.getSetNum() : getJD0()+1);
+            len = set-rise;
+            n=1;
         }
+        else {
+            return "---";
+        }
+
         len = len - Math.floor(len);
-        return printTimeSpan(len);
+        return printTimeSpan(len, n);
 
     }
 
     public String getNightLen() {
-        if (getRiseSet().getRises() == Circ.above)
+        if (getRiseSet().isAlwaysAbove())
             return "0h"; //$NON-NLS-1$
-        else if (getRiseSet().getRises() == Circ.below)
+        else if (getRiseSet().isAlwaysBelow())
             return "24h";
         else {
             double t = getRiseSet().getRiseNum() - getRiseSet().getSetNum();
             t = t - Math.floor(t);
 
-            return printTimeSpan(t);
+            return printTimeSpan(t,1);
         }
     }
 

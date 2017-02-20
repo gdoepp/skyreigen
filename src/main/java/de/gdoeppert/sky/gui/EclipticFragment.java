@@ -54,6 +54,14 @@ public class EclipticFragment extends SkyFragment {
         updateDate(activity, t);
 
     }
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (timer != null) {
+            timer.cancel();
+            timer = null;
+        }
+    }
 
     @Override
     public void unselect() {
@@ -213,7 +221,7 @@ public class EclipticFragment extends SkyFragment {
     private void updateDate(final SkyActivity activity, int t) {
         TextView dp = (TextView) getRootView().findViewById(R.id.date);
 
-        if (dp != null) {
+        if (dp != null && activity != null) {
 
             Calendar cal0 = activity.getSkyData().getCalClone();
 

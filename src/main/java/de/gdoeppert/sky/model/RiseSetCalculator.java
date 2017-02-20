@@ -17,6 +17,9 @@ import java.util.Calendar;
 
 public class RiseSetCalculator {
 
+    public static final float half_day = 12.0f;
+    public static final int one_day = 24;
+    public static final int secs_a_day = 86400;
     final double deltaT;
     final CAAEllipticalPlanetaryDetails details1;
     final CAAEllipticalPlanetaryDetails details2;
@@ -25,16 +28,29 @@ public class RiseSetCalculator {
 
     public RiseSetCalculator(double jd, EllipticalObject theObject) {
         this.jd = jd;
-        deltaT = CAADynamicalTime.DeltaT(jd) / 86400;
+        deltaT = CAADynamicalTime.DeltaT(jd) / secs_a_day;
         details2 = CAAElliptical.Calculate(jd + deltaT, theObject, false);
         if (theObject == EllipticalObject.NEPTUNE
                 || theObject == EllipticalObject.URANUS
                 || theObject == EllipticalObject.SATURN) {
             details1 = details2;
             details3 = details2;
+
         } else {
             details1 = CAAElliptical.Calculate(jd - 1 + deltaT, theObject, false);
             details3 = CAAElliptical.Calculate(jd + 1 + deltaT, theObject, false);
+            if (details1.getApparentGeocentricRA()-details2.getApparentGeocentricRA() > half_day) {
+                details1.setApparentGeocentricRA(details1.getApparentGeocentricRA()- one_day);
+            }
+            if (details1.getApparentGeocentricRA()-details2.getApparentGeocentricRA() < -half_day) {
+                details1.setApparentGeocentricRA(details1.getApparentGeocentricRA()+ one_day);
+            }
+            if (details3.getApparentGeocentricRA()-details2.getApparentGeocentricRA() > half_day) {
+                details3.setApparentGeocentricRA(details3.getApparentGeocentricRA()- one_day);
+            }
+            if (details3.getApparentGeocentricRA()-details2.getApparentGeocentricRA() < -half_day) {
+                details3.setApparentGeocentricRA(details3.getApparentGeocentricRA()+ one_day);
+            }
         }
     }
 

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.gdoeppert.sky"
 
-    android:installLocation="auto" android:versionName="3.5" android:versionCode="35">
+    android:installLocation="auto" android:versionName="3.8" android:versionCode="38">
 
     <uses-sdk
         android:minSdkVersion="11"

@@ -36,6 +36,10 @@ import de.gdoeppert.sky.model.Star;
 
 public class GLRenderer implements GLSurfaceView.Renderer {
 
+    public void toggleShowConstNames() {
+        showConstNames = !showConstNames;
+    }
+
     private class Pos implements Comparable<Pos> {
         Pos(int idx, float pos, float pos0) {
             this.pos0 = pos0;
@@ -935,9 +939,11 @@ public class GLRenderer implements GLSurfaceView.Renderer {
 
         prepareConstellations();
 
-        for (Constellation constellation : glSurfaceView.constellations) {
-            drawText(gl, constellation.getName(), constellation.getRa(),
-                    constellation.getDecl(), Color.argb(0x8f, 0, 0xbf, 0), 0);
+        if (showConstNames) {
+            for (Constellation constellation : glSurfaceView.constellations) {
+                drawText(gl, constellation.getName(), constellation.getRa(),
+                        constellation.getDecl(), Color.argb(0xbf, 0, 0xdf, 0), 0);
+            }
         }
 
         gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
@@ -1067,6 +1073,7 @@ public class GLRenderer implements GLSurfaceView.Renderer {
     private FloatBuffer horizon2Buf = null;
     private float maxRa = 0;
     private float minRa = -360;
+    private boolean showConstNames = true;
 
     private final float[] modelViewMatrix = new float[16];
     private FloatBuffer planetBuffer = null;

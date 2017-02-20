@@ -29,7 +29,12 @@ public class DateDialog extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        return new DatePickerDialog(getActivity(), ondateSet, year, month, day);
+
+        DatePickerDialog dia = new DatePickerDialog(getActivity(),
+                //android.R.style.Theme_Holo_Dialog_MinWidth,
+                ondateSet, year, month, day);
+
+        return dia;
     }
 
 }
