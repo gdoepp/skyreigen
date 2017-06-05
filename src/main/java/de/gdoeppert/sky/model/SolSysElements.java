@@ -130,20 +130,25 @@ public abstract class SolSysElements {
 
                     for (double t1 = rise; t1 < getJD0() + 1; t1 += 1.0 / 24) {
                         PlanetPositionHrz pos = getPosForTime(t1);
-                        trajVec.add(pos);
+                        if (pos.getAltitude() > -1) {
+                            trajVec.add(pos);
+                        }
                     }
                     PlanetPositionHrz pos0 = getPosForTime(getJD0() + 1);
-                    if (pos0.getAltitude() >= horizon) {
+                    if (pos0.getAltitude() > -1) {
                         trajVec.add(pos0);
                     }
 
                     for (double t1 = getJD0(); t1 < set; t1 += 1.0 / 24) {
                         PlanetPositionHrz pos = getPosForTime(t1);
-                        trajVec.add(pos);
+                        if (pos.getAltitude() > -1) {
+                            trajVec.add(pos);
+                        }
                     }
-                    double t1 = rs.getSetNum();
+                    double t1 = set;
                     PlanetPositionHrz pos = getPosForTime(t1);
                     trajVec.add(pos);
+
                 } else {
                     poseq = getEquForTime(getJD());
                     for (double t1 = rise; t1 < set; t1 += 1.0 / 24) {

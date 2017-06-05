@@ -85,8 +85,8 @@ public class PolarView extends View {
                 if (j % 45 == 0) {
 
                     String hour = dir[j / 45];
-                    canvas.drawText(hour, (float) (x / 2 + dx * 10.4 - 5), y
-                            / 2 + dy * 10 + 5, meshPaint);
+                    canvas.drawText(hour, (float) (x / 2 + dx * 10.4 - 8), y
+                            / 2 + dy * 10 + 6, meshPaint);
                 }
             }
 

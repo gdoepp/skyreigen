@@ -22,7 +22,7 @@ public class SkyData {
     private SolarElements solarElements;
     private final PlanetElements[] planetElements = new PlanetElements[PlanetId
             .values().length];
-    private EarthLocation location = null;
+    private EarthLocation location = new EarthLocation();
     private DisplayParams displayParameter = null;
     private boolean sunDirty;
     private boolean moonDirty;

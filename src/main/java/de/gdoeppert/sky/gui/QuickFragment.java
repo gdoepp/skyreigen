@@ -286,6 +286,8 @@ public class QuickFragment extends SkyFragment implements OnClickListener,
         SkyData skyData = activity.getSkyData();
         if (arg0.getId() == R.id.location) {
 
+            if (arg2 >= activity.getSkyData().getLocations().size()) return;
+
             skyData.setLocation(arg2,
                     activity.getSkyData().getLocations().get(arg2));
 
