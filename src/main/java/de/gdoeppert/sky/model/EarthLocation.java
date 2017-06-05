@@ -47,7 +47,7 @@ public class EarthLocation {
     }
 
     public EarthLocation() {
-        name = "-";
+        name = null;
         gmt = -99;
         localLong = 0;
         localLat = 0;

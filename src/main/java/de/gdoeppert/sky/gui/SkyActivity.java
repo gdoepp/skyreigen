@@ -261,7 +261,9 @@ public class SkyActivity extends FragmentActivity implements
             pr.println("raHms=" + (skyData.getShowHms() ? "true" : "false")); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
             pr.println("showAzS=" + (skyData.getShowAzS() ? "true" : "false")); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
             pr.println("showPointer=" + (isShowPointer() ? "true" : "false")); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-            pr.println("skyData.getLocation()=" + getSkyData().getLocationName()); //$NON-NLS-1$
+            if (!getSkyData().isLocationDummy()) {
+                pr.println("skyData.location=" + getSkyData().getLocationName()); //$NON-NLS-1$
+            }
             pr.println("humidity=" + humidity); //$NON-NLS-1$
             pr.println("temperature=" + temperature); //$NON-NLS-1$
             pr.close();
@@ -368,7 +370,8 @@ public class SkyActivity extends FragmentActivity implements
                             skyData.setShowHms(cols[1].equals("true")); //$NON-NLS-1$
                         else if (cols[0].equals("showPointer")) //$NON-NLS-1$
                             setShowPointer(cols[1].equals("true")); //$NON-NLS-1$
-                        else if (cols[0].equals("skyData.getLocation()")) { //$NON-NLS-1$
+                        else if (cols[0].equals("skyData.getLocation()") ||
+                                cols[0].equals("skyData.location")) { //$NON-NLS-1$
                             for (int j = 0; j < skyData.getLocations().size(); j++) {
                                 if (!skyData.getLocations().get(j).isDummy()
                                         && skyData.getLocations().get(j).name
