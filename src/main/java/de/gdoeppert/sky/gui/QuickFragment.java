@@ -64,8 +64,8 @@ public class QuickFragment extends SkyFragment implements OnClickListener,
             spinner.setSelection(idx);
         } else if (idx < 0) {
             spinner.setSelection(0);
-            activity.getSkyData().setLocation(0,
-                    activity.getSkyData().getLocations().firstElement());
+            activity.getSkyData().normalizeLocations();
+            activity.getSkyData().setLocation(0);
         }
 
         spinner.setOnItemSelectedListener(this);
@@ -288,8 +288,7 @@ public class QuickFragment extends SkyFragment implements OnClickListener,
 
             if (arg2 >= activity.getSkyData().getLocations().size()) return;
 
-            skyData.setLocation(arg2,
-                    activity.getSkyData().getLocations().get(arg2));
+            skyData.setLocation(arg2);
 
             if (skyData.getLocations().get(arg2).isDummy()) {
                 LocationDialog locDialog = new LocationDialog();

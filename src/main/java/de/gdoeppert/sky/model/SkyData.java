@@ -205,8 +205,27 @@ public class SkyData {
         return cal.getTimeInMillis();
     }
 
+    public void normalizeLocations() {
+
+        for (int k=0; k<locations.size()-1; k++) {
+            if (locations.get(k).isDummy()) {
+                locations.removeElementAt(k);
+                k--;
+            }
+        }
+
+        if (locations.isEmpty()) {
+            locations.add(new EarthLocation("Stuttgart", 9.24, 48.8, 250, -99)); //$NON-NLS-1$);
+        }
+        if (!locations.lastElement().isDummy()) {
+            locations.add(new EarthLocation());
+        }
+
+    }
+
     public void removeCurrentLocation() {
         locations.remove(location);
+        normalizeLocations();
         setLocation(0);
     }
 
@@ -228,17 +247,13 @@ public class SkyData {
     }
 
     public void setLocation(int idx, EarthLocation loc) {
-        EarthLocation loc0 = ((idx >= 0 && idx < locations.size()) ? locations
-                .get(idx) : null);
-        if (loc0 != null && idx < locations.size() - 1) {
+        if (idx >= 0 && idx < locations.size()) {
             locations.set(idx, loc);
         } else {
-            while (idx >= locations.size()) {
-                locations.add(new EarthLocation());
-            }
-            locations.insertElementAt(loc, idx);
+            locations.add(loc);
         }
-
+        normalizeLocations();
+        idx = locations.lastIndexOf(loc);
         setLocation(idx);
     }
 

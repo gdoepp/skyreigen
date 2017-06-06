@@ -352,11 +352,7 @@ public class SkyActivity extends FragmentActivity implements
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        if (skyData.getLocations().isEmpty()) {
-            skyData.getLocations().add(
-                    new EarthLocation("Stuttgart", 9.24, 48.8, 250, -99)); //$NON-NLS-1$
-        }
-        skyData.getLocations().add(new EarthLocation());
+        skyData.normalizeLocations();
 
         try {
             FileInputStream fis = openFileInput("preferences.txt"); //$NON-NLS-1$

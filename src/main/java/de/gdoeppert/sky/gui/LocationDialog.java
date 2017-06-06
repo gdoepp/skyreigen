@@ -116,7 +116,7 @@ public class LocationDialog extends DialogFragment {
                         .getItem(Frags.itQuick.ordinal()).getRootView()
                         .findViewById(R.id.location);
                 if (activity.getSkyData().isLocationDummy()) {
-                    activity.getSkyData().removeCurrentLocation();
+//                    activity.getSkyData().removeCurrentLocation();
                     sp.setSelection(0);
                 }
                 LocationDialog.this.dismiss();
@@ -124,6 +124,7 @@ public class LocationDialog extends DialogFragment {
         });
 
         btn = (Button) layout.findViewById(R.id.locDelete);
+        btn.setEnabled(activity.getSkyData().getLocations().size()>2 && !activity.getSkyData().isLocationDummy()); // 1+dummy
         btn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View btn0) {
@@ -132,10 +133,11 @@ public class LocationDialog extends DialogFragment {
                         .getItem(Frags.itQuick.ordinal()).getRootView()
                         .findViewById(R.id.location);
 
-                activity.getSkyData().removeCurrentLocation();
-                activity.setLocationAdapter(sp);
-                sp.setSelection(0);
-
+                if (sp.getCount() > 1 ) {
+                    activity.getSkyData().removeCurrentLocation();
+                    activity.setLocationAdapter(sp);
+                    sp.setSelection(0);
+                }
                 LocationDialog.this.dismiss();
             }
         });
