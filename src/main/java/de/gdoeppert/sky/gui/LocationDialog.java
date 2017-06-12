@@ -116,7 +116,6 @@ public class LocationDialog extends DialogFragment {
                         .getItem(Frags.itQuick.ordinal()).getRootView()
                         .findViewById(R.id.location);
                 if (activity.getSkyData().isLocationDummy()) {
-//                    activity.getSkyData().removeCurrentLocation();
                     sp.setSelection(0);
                 }
                 LocationDialog.this.dismiss();

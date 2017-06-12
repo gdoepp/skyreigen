@@ -90,7 +90,7 @@ public class SunTask extends AsyncTask<SkyActivity, String, SkyActivity> {
         if (isCancelled())
             return null;
 
-        cal.set(2011, 02, 21);
+        cal.set(2011, 02, 20);
         SolSysElements solarEqui = sky.getSkyData().getSolarElements(cal);
         equiTraj = solarEqui.getTraj();
 

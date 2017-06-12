@@ -157,11 +157,15 @@ public class SolarElements extends SolSysElements {
         if (!twi_lower.isAlwaysAbove() && !twi_higher.isAlwaysBelow()) {
 
             if (twi_higher.isRising() && twi_lower.isRising()) {
-                len += (twi_higher.getRiseNum() - twi_lower.getRiseNum());
+                double l1 = (twi_higher.getRiseNum() - twi_lower.getRiseNum());
+                if (l1 < 0) l1 += 1;
+                len += l1;
                 n++;
             }
             if (twi_higher.isSetting() && twi_lower.isSetting()) {
-                len += (twi_lower.getSetNum() - twi_higher.getSetNum());
+                 double l1 = (twi_lower.getSetNum() - twi_higher.getSetNum());
+                if (l1 < 0) l1 += 1;
+                len += l1;
                 n++;
             }
             if (n>0) len /= n;

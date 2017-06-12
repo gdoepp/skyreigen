@@ -184,7 +184,7 @@ public abstract class SolSysElements {
             str= String.format("%02dmin", date.Minute());
         }
         if (times>1) {
-            str=str + "x2";
+            str=str + "\u00D72";
         }
         return str;
     }
