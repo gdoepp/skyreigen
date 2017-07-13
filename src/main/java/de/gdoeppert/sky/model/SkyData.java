@@ -96,7 +96,7 @@ public class SkyData {
     }
 
     public boolean isLocationDummy() {
-        return location.isDummy();
+        return location==null || location.isDummy();
     }
 
     public Vector<EarthLocation> getLocations() {
