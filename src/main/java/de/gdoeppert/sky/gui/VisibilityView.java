@@ -25,6 +25,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Path;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -41,6 +42,7 @@ public class VisibilityView extends View {
     private final String label;
     private final String invisible;
     private final Paint meshPaint = new Paint();
+    private final Rect bounds = new Rect();
     private final Path path = new Path();
 
     class Intervall {
@@ -67,9 +69,11 @@ public class VisibilityView extends View {
         meshPaint.setStyle(Style.STROKE);
         float w = this.getWidth();
         float h = this.getHeight();
-        float h0 = h - 20;
+        meshPaint.getTextBounds("XgX", 0, 3, bounds);
+        float h0 = h - bounds.height() - 4;
         float hd = h0 / 10;
         float m0 = 1;
+        float x1 = bounds.width();
 
         if (vislist != null) {
 
@@ -108,7 +112,7 @@ public class VisibilityView extends View {
             double xn = Math.ceil(vislist[rangeIdx.last].getTimeHr()) % 24;
             if (xn == x0)
                 xn += 23.99;
-            double xd = (w - 25) / ((xn - x0 + 24) % 24);
+            double xd = (w - x1-5) / ((xn - x0 + 24) % 24);
             meshPaint.setColor(Color.WHITE);
             canvas.drawLine(20, h0, w, h0, meshPaint);
 
@@ -121,24 +125,24 @@ public class VisibilityView extends View {
                     } else {
                         meshPaint.setColor(Color.GRAY);
                     }
-                    canvas.drawLine((float) (20 + (j - x0) * xd), h0,
-                            (float) (20 + (j - x0) * xd), 0, meshPaint);
+                    canvas.drawLine((float) (x1 + (j - x0) * xd), h0,
+                            (float) (x1 + (j - x0) * xd), 0, meshPaint);
                     canvas.drawText(String.format("%02.0f", (j + 24.) % 24),
-                            (float) (20 + (j - x0) * xd) - 4, h - 2, meshPaint);
+                            (float) (x1 + (j - x0) * xd) - 4, h - 2, meshPaint);
                 }
             } else {
                 meshPaint.setColor(Color.GRAY);
                 double delta = (duration > 1 ? 0.5 : 0.25);
                 for (double t = 0; t < duration + 0.1; t += delta) {
-                    canvas.drawLine((float) (20 + t * xd), h0, (float) (20 + t
-                            * xd), 0, meshPaint);
+                    canvas.drawLine((float) (x1 + t * xd), h0,
+                            (float) (x1 + t * xd), 0, meshPaint);
                     canvas.drawText(formatHour((x0 + t + 24.) % 24),
-                            (float) (20 + t * xd) - 4, h - 2, meshPaint);
+                            (float) (x1 + t * xd) - 4, h - 2, meshPaint);
                 }
             }
             meshPaint.setColor(Color.GRAY);
             for (int j = 1; j <= 8; j++) {
-                canvas.drawLine(20, h0 - j * hd, w, h0 - j * hd, meshPaint);
+                canvas.drawLine(x1, h0 - j * hd, w, h0 - j * hd, meshPaint);
                 canvas.drawText("" + (int) (j + m0), 0, h0 - j * hd + 4,
                         meshPaint);
             }
@@ -147,11 +151,11 @@ public class VisibilityView extends View {
 
             meshPaint.setColor(Color.RED);
             path.moveTo(
-                    (float) (20 + ((vislist[rangeIdx.first].getTimeHr() - x0 + 24) % 24)
+                    (float) (x1 + ((vislist[rangeIdx.first].getTimeHr() - x0 + 24) % 24)
                             * xd),
                     (float) (h0 - (vislist[rangeIdx.first].getVmag() - m0) * hd));
             for (int j = rangeIdx.first + 1; j <= rangeIdx.last; j++) {
-                float x = 20 + (float) (((vislist[j].getTimeHr() - x0 + 24) % 24) * xd);
+                float x = x1 + (float) (((vislist[j].getTimeHr() - x0 + 24) % 24) * xd);
                 float y = (float) (h0 - (vislist[j].getVmag() - m0) * hd);
                 if (vislist[j].getTime() > vislist[j - 1].getTime()) {
                     path.lineTo(x, y);
@@ -162,7 +166,7 @@ public class VisibilityView extends View {
             canvas.drawPath(path, meshPaint);
         } else {
             meshPaint.setColor(Color.WHITE);
-            canvas.drawText(label, 20, h / 2, meshPaint);
+            canvas.drawText(label, x1, h / 2, meshPaint);
         }
     }
 

@@ -415,7 +415,7 @@
                     android:id="@+id/planetMoonsView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:minHeight="80dp"></de.gdoeppert.sky.gui.PlanetMoonsView>
+                    android:minHeight="100dp"></de.gdoeppert.sky.gui.PlanetMoonsView>
 
                 <TextView
                     android:id="@+id/planetvistxt"

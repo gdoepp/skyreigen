@@ -59,10 +59,6 @@ public class PlanetMoonsView extends View {
 
         this.canvas = canvas;
 
-        float x = this.getWidth() * 0.5f;
-        float y = this.getHeight() * 0.6f;
-        float r = x;
-
         paint.reset();
 
         paint.setTextSize(getContext().getApplicationContext().getResources()
@@ -70,6 +66,15 @@ public class PlanetMoonsView extends View {
         paint.setColor(Color.WHITE);
         paint.setAlpha(255);
         paint.setStyle(Style.FILL);
+
+        paint.getTextBounds("X", 0, 1, bounds);
+
+        float y = bounds.height()+(this.getHeight()-bounds.height())*0.6f;
+        float x = this.getWidth() * 0.5f;
+        float r = x;
+        float dx = bounds.width();
+        float dy = bounds.height();
+
         canvas.drawCircle(x, y, (float) (r / maxRadius), paint);
 
         paint.setColor(Color.CYAN);
@@ -81,8 +86,8 @@ public class PlanetMoonsView extends View {
             drawMoon(moon, canvas, paint, r, x, y);
             String name = moon.getName();
             paint.getTextBounds(name, 0, name.length(), bounds);
-            canvas.drawText(name, xText, 20, paint);
-            xText += bounds.width() + 12;
+            canvas.drawText(name, xText, dy, paint);
+            xText += bounds.width() + dx;
         }
 
     }
