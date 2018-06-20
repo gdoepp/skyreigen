@@ -55,18 +55,19 @@ public abstract class SolSysElements {
 
     public SolSysElements(Calendar cal, EarthLocation location, DisplayParams dp) {
         super();
-        setObserver(location);
         setDisplayParams(dp);
+        if (getJD() - getJD0() > 1)
+            setJD0(getJD0() + 1);
+        if (location == null) return;
+        setObserver(location);
         if (location.gmt > 24 || location.gmt < -24) {
             setGmt((cal.getTimeZone().getOffset(cal.getTimeInMillis()) / 3600000.0f));
         } else {
             setGmt(location.gmt);
         }
-
         setJD(EarthLocation.currentJD(cal, false, gmt));
         setJD0(EarthLocation.currentJD(cal, true, gmt));
-        if (getJD() - getJD0() > 1)
-            setJD0(getJD0() + 1);
+
     }
 
     protected PlanetPositionHrz getHorizontalPosition(PlanetPositionEqu posEqu) {

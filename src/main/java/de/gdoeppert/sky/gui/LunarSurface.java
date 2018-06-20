@@ -104,7 +104,7 @@ public class LunarSurface extends View {
         paint.setAlpha(255);
         paint.setStyle(Style.FILL);
         canvas.drawArc(oval, angle, 180, false, paint);
-        float s = FloatMath.cos((float) (Math.PI * phase / 180.0));
+        float s = (float) Math.cos(Math.PI * phase / 180.0);
         if (phase >= 90) {
             paint.setColor(0xff404040);
         } else {
@@ -131,7 +131,7 @@ public class LunarSurface extends View {
             paint.setColor(Color.BLUE);
 
             float l1 = 0, a1 = 90;
-            l1 = FloatMath.sin((float) (l0 / 180.0 * Math.PI));
+            l1 = (float) Math.sin(l0 / 180.0 * Math.PI);
             if (l1 < 0) {
                 l1 = -l1;
                 a1 = 270;
@@ -144,7 +144,7 @@ public class LunarSurface extends View {
             paint.setColor(0xff008000);
             float b1 = 0;
             a1 = 0;
-            b1 = FloatMath.sin((float) (b0 / 180.0 * Math.PI));
+            b1 = (float)Math.sin(b0 / 180.0 * Math.PI);
             if (b1 < 0) {
                 b1 = -b1;
                 a1 = 180;

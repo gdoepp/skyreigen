@@ -20,18 +20,15 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -201,7 +198,13 @@ public class LocationDialog extends DialogFragment {
                 String providerName = lm.getBestProvider(whatFor, true);
 
                 if (providerName != null) {
-                    Location loc = lm.getLastKnownLocation(providerName);
+                    Location loc = null;
+
+                    try {
+                        loc = lm.getLastKnownLocation(providerName);
+                    } catch (SecurityException ex) {
+                        // nothing
+                    }
                     if (loc != null) {
                         EditText ed = (EditText) layout
                                 .findViewById(R.id.latitude);
@@ -330,18 +333,15 @@ public class LocationDialog extends DialogFragment {
             throws JSONException {
 
         address = address.replaceAll(" ", "%20");
-
-        HttpGet httpGet = new HttpGet(
-                "http://maps.google.com/maps/api/geocode/json?address="
-                        + address + "&ka&sensor=false");
-        HttpClient client = new DefaultHttpClient();
-        HttpResponse response;
         StringBuilder stringBuilder = new StringBuilder();
-
         try {
-            response = client.execute(httpGet);
-            HttpEntity entity = response.getEntity();
-            InputStream stream = entity.getContent();
+            URL httpGet = new URL(
+                    "http://maps.google.com/maps/api/geocode/json?address="
+                            + address + "&ka&sensor=false");
+            HttpURLConnection httpCon = (HttpURLConnection) httpGet.openConnection();
+
+            InputStream stream = httpCon.getInputStream();
+
             int b;
             while ((b = stream.read()) != -1) {
                 stringBuilder.append((char) b);
@@ -369,22 +369,19 @@ public class LocationDialog extends DialogFragment {
     }
 
     public static List<Address> getStringFromLocation(double lat, double lng)
-            throws ClientProtocolException, IOException, JSONException {
+            throws  IOException, JSONException {
 
         String address = String
                 .format(Locale.ENGLISH,
                         "http://maps.googleapis.com/maps/api/geocode/json?latlng=%1$f,%2$f&sensor=true&language="
                                 + Locale.getDefault().getCountry(), lat, lng);
-        HttpGet httpGet = new HttpGet(address);
-        HttpClient client = new DefaultHttpClient();
-        HttpResponse response;
+        URL url = new URL(address);
+        HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
+        InputStream stream = httpCon.getInputStream();
         StringBuilder stringBuilder = new StringBuilder();
 
         List<Address> retList = null;
 
-        response = client.execute(httpGet);
-        HttpEntity entity = response.getEntity();
-        InputStream stream = entity.getContent();
         int b;
         while ((b = stream.read()) != -1) {
             stringBuilder.append((char) b);

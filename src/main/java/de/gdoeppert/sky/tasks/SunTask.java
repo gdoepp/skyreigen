@@ -176,7 +176,7 @@ public class SunTask extends AsyncTask<SkyActivity, String, SkyActivity> {
                 R.id.suneventdate2, R.id.suneventdate3};
 
         SkyEvent[] events = sky.getSolarElements().getNextEvent();
-        for (int j = 0; j < events.length; j++) {
+        for (int j = 0; j < events.length && j<evIds.length; j++) {
 
             tx = (TextView) currentTab.findViewById(evIds[j]);
             tx.setText(events[j].event);

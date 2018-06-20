@@ -1,15 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion "23.0.1"
-
+    compileSdkVersion 24
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "de.gdoeppert.sky"
         minSdkVersion 11
-        targetSdkVersion 22
+        targetSdkVersion 24
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -19,8 +17,10 @@ android {
     lintOptions {
         checkReleaseBuilds false
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:support-v4:24.0.0'
 }
