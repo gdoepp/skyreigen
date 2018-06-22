@@ -4,7 +4,7 @@ http://www.naughter.com/aa.html
 
 that implements algorithms from the book "Astronomical Algorithms" by Jean Meeus.
 
-Please unpack aaplus.zip in this directory or create symbolic links to the *.h/*.cpp files.
+Please unpack aaplus.zip in this directory (or create symbolic links to the *.h/*.cpp files).
 The latest version is 1.95. 
 
 The visibility calculations are taken from http://mhuss.com/AstroCpp/AstroCpp.zip
@@ -12,4 +12,12 @@ The visibility calculations are taken from http://mhuss.com/AstroCpp/AstroCpp.zi
 Please unzip at least VisLimit.h and VisLimit.cpp from AstroCpp.zip.
 
 The java classes and the SWIG wrappers can be generated with SWIG and the files in swiggen.
+
+You need to have SWIG and the Android NDK installed. Then you can use the script build.sh (set NDK_HOME) to 
+generate the JNI interface and the C++-wrappers, and to compile the native libraries.
+
+Please check whether the generated java sources compile. Currently, there is a name clash because of camel case 
+in CAASaturnRingDetails. The first 'B' in the setter/getter must be changed to 'B2'.
+
+
 

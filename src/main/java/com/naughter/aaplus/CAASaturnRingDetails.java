@@ -71,11 +71,11 @@ public class CAASaturnRingDetails {
     return AAJNI.CAASaturnRingDetails_a_get(swigCPtr, this);
   }
 
-  public void setB2(double value) {
+  public void setB(double value) {
     AAJNI.CAASaturnRingDetails_b_set(swigCPtr, this, value);
   }
 
-  public double getB2() {
+  public double getB() {
     return AAJNI.CAASaturnRingDetails_b_get(swigCPtr, this);
   }
 
