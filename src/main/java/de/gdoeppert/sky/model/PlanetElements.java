@@ -62,10 +62,13 @@ public abstract class PlanetElements extends SolSysElements {
     public PlanetElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
         disk = 1;
-        alt = loc.localAltitude;
+        if (loc != null) {
+            alt = loc.localAltitude;
+        } else {
+            alt = 100;
+        }
         humidity = 80;
         temperature = 10;
-
     }
 
     protected double edist;

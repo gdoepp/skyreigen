@@ -164,13 +164,13 @@ public class CAADate {
   }
 
   public final static class DAY_OF_WEEK {
-    public final static CAADate.DAY_OF_WEEK SUNDAY = new CAADate.DAY_OF_WEEK("SUNDAY", AAJNI.CAADate_SUNDAY_get());
-    public final static CAADate.DAY_OF_WEEK MONDAY = new CAADate.DAY_OF_WEEK("MONDAY", AAJNI.CAADate_MONDAY_get());
-    public final static CAADate.DAY_OF_WEEK TUESDAY = new CAADate.DAY_OF_WEEK("TUESDAY", AAJNI.CAADate_TUESDAY_get());
-    public final static CAADate.DAY_OF_WEEK WEDNESDAY = new CAADate.DAY_OF_WEEK("WEDNESDAY", AAJNI.CAADate_WEDNESDAY_get());
-    public final static CAADate.DAY_OF_WEEK THURSDAY = new CAADate.DAY_OF_WEEK("THURSDAY", AAJNI.CAADate_THURSDAY_get());
-    public final static CAADate.DAY_OF_WEEK FRIDAY = new CAADate.DAY_OF_WEEK("FRIDAY", AAJNI.CAADate_FRIDAY_get());
-    public final static CAADate.DAY_OF_WEEK SATURDAY = new CAADate.DAY_OF_WEEK("SATURDAY", AAJNI.CAADate_SATURDAY_get());
+    public final static CAADate.DAY_OF_WEEK SUNDAY = new CAADate.DAY_OF_WEEK("SUNDAY", AAJNI.CAADate_DAY_OF_WEEK_SUNDAY_get());
+    public final static CAADate.DAY_OF_WEEK MONDAY = new CAADate.DAY_OF_WEEK("MONDAY", AAJNI.CAADate_DAY_OF_WEEK_MONDAY_get());
+    public final static CAADate.DAY_OF_WEEK TUESDAY = new CAADate.DAY_OF_WEEK("TUESDAY", AAJNI.CAADate_DAY_OF_WEEK_TUESDAY_get());
+    public final static CAADate.DAY_OF_WEEK WEDNESDAY = new CAADate.DAY_OF_WEEK("WEDNESDAY", AAJNI.CAADate_DAY_OF_WEEK_WEDNESDAY_get());
+    public final static CAADate.DAY_OF_WEEK THURSDAY = new CAADate.DAY_OF_WEEK("THURSDAY", AAJNI.CAADate_DAY_OF_WEEK_THURSDAY_get());
+    public final static CAADate.DAY_OF_WEEK FRIDAY = new CAADate.DAY_OF_WEEK("FRIDAY", AAJNI.CAADate_DAY_OF_WEEK_FRIDAY_get());
+    public final static CAADate.DAY_OF_WEEK SATURDAY = new CAADate.DAY_OF_WEEK("SATURDAY", AAJNI.CAADate_DAY_OF_WEEK_SATURDAY_get());
 
     public final int swigValue() {
       return swigValue;

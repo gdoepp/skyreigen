@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "de.gdoeppert.sky"
-        minSdkVersion 11
-        targetSdkVersion 24
+        minSdkVersion 14
+        targetSdkVersion 26
     }
     buildTypes {
         release {
@@ -20,7 +20,10 @@ android {
     productFlavors {
     }
 }
-
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven{url 'https://maven.google.com'}
+}
 dependencies {
-    compile 'com.android.support:support-v4:24.0.0'
+    implementation 'com.android.support:support-v4:26.+'
 }

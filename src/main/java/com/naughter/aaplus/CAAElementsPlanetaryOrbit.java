@@ -39,8 +39,8 @@ public class CAAElementsPlanetaryOrbit {
     return AAJNI.CAAElementsPlanetaryOrbit_MercuryMeanLongitude(JD);
   }
 
-  public static double MercurySemimajorAxis(double JD) {
-    return AAJNI.CAAElementsPlanetaryOrbit_MercurySemimajorAxis(JD);
+  public static double MercurySemimajorAxis(double arg0) {
+    return AAJNI.CAAElementsPlanetaryOrbit_MercurySemimajorAxis(arg0);
   }
 
   public static double MercuryEccentricity(double JD) {
@@ -63,8 +63,8 @@ public class CAAElementsPlanetaryOrbit {
     return AAJNI.CAAElementsPlanetaryOrbit_VenusMeanLongitude(JD);
   }
 
-  public static double VenusSemimajorAxis(double JD) {
-    return AAJNI.CAAElementsPlanetaryOrbit_VenusSemimajorAxis(JD);
+  public static double VenusSemimajorAxis(double arg0) {
+    return AAJNI.CAAElementsPlanetaryOrbit_VenusSemimajorAxis(arg0);
   }
 
   public static double VenusEccentricity(double JD) {
@@ -87,16 +87,16 @@ public class CAAElementsPlanetaryOrbit {
     return AAJNI.CAAElementsPlanetaryOrbit_EarthMeanLongitude(JD);
   }
 
-  public static double EarthSemimajorAxis(double JD) {
-    return AAJNI.CAAElementsPlanetaryOrbit_EarthSemimajorAxis(JD);
+  public static double EarthSemimajorAxis(double arg0) {
+    return AAJNI.CAAElementsPlanetaryOrbit_EarthSemimajorAxis(arg0);
   }
 
   public static double EarthEccentricity(double JD) {
     return AAJNI.CAAElementsPlanetaryOrbit_EarthEccentricity(JD);
   }
 
-  public static double EarthInclination(double JD) {
-    return AAJNI.CAAElementsPlanetaryOrbit_EarthInclination(JD);
+  public static double EarthInclination(double arg0) {
+    return AAJNI.CAAElementsPlanetaryOrbit_EarthInclination(arg0);
   }
 
   public static double EarthLongitudePerihelion(double JD) {
@@ -107,8 +107,8 @@ public class CAAElementsPlanetaryOrbit {
     return AAJNI.CAAElementsPlanetaryOrbit_MarsMeanLongitude(JD);
   }
 
-  public static double MarsSemimajorAxis(double JD) {
-    return AAJNI.CAAElementsPlanetaryOrbit_MarsSemimajorAxis(JD);
+  public static double MarsSemimajorAxis(double arg0) {
+    return AAJNI.CAAElementsPlanetaryOrbit_MarsSemimajorAxis(arg0);
   }
 
   public static double MarsEccentricity(double JD) {

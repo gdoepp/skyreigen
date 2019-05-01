@@ -33,6 +33,7 @@ include SRCPP
 
 LOCAL_MODULE    := astro
 LOCAL_CFLAGS    := -O2 
+LOCAL_CPPFLAGS := -std=c++11 
 LOCAL_SRC_FILES := $(SRCPP)
 
 include $(BUILD_SHARED_LIBRARY)

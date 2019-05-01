@@ -1211,85 +1211,85 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAACalendarDate(J
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1SUNDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1SUNDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CAADate::DAY_OF_WEEK result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::SUNDAY;
+  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::SUNDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1MONDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1MONDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CAADate::DAY_OF_WEEK result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::MONDAY;
+  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::MONDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1TUESDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1TUESDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CAADate::DAY_OF_WEEK result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::TUESDAY;
+  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::TUESDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1WEDNESDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1WEDNESDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CAADate::DAY_OF_WEEK result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::WEDNESDAY;
+  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::WEDNESDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1THURSDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1THURSDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CAADate::DAY_OF_WEEK result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::THURSDAY;
+  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::THURSDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1FRIDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1FRIDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CAADate::DAY_OF_WEEK result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::FRIDAY;
+  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::FRIDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1SATURDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1SATURDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CAADate::DAY_OF_WEEK result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::SATURDAY;
+  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::SATURDAY;
   jresult = (jint)result; 
   return jresult;
 }
@@ -1977,22 +1977,6 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1SaturnPo
 }
 
 
-SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1ApparentSaturnPolarSemidiameterA(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2) {
-  jdouble jresult = 0 ;
-  double arg1 ;
-  double arg2 ;
-  double result;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = (double)jarg1; 
-  arg2 = (double)jarg2; 
-  result = (double)CAADiameters::ApparentSaturnPolarSemidiameterA(arg1,arg2);
-  jresult = (jdouble)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1UranusSemidiameterA(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
   jdouble jresult = 0 ;
   double arg1 ;
@@ -2119,22 +2103,6 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1SaturnPo
 }
 
 
-SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1ApparentSaturnPolarSemidiameterB(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2) {
-  jdouble jresult = 0 ;
-  double arg1 ;
-  double arg2 ;
-  double result;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = (double)jarg1; 
-  arg2 = (double)jarg2; 
-  result = (double)CAADiameters::ApparentSaturnPolarSemidiameterB(arg1,arg2);
-  jresult = (jdouble)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1UranusSemidiameterB(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
   jdouble jresult = 0 ;
   double arg1 ;
@@ -2191,6 +2159,54 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1Geocentr
 }
 
 
+SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1ApparentAsteroidDiameter(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2) {
+  jdouble jresult = 0 ;
+  double arg1 ;
+  double arg2 ;
+  double result;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = (double)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (double)CAADiameters::ApparentAsteroidDiameter(arg1,arg2);
+  jresult = (jdouble)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1ApparentSaturnPolarSemidiameterA(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2) {
+  jdouble jresult = 0 ;
+  double arg1 ;
+  double arg2 ;
+  double result;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = (double)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (double)CAADiameters::ApparentSaturnPolarSemidiameterA(arg1,arg2);
+  jresult = (jdouble)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1ApparentSaturnPolarSemidiameterB(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2) {
+  jdouble jresult = 0 ;
+  double arg1 ;
+  double arg2 ;
+  double result;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = (double)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (double)CAADiameters::ApparentSaturnPolarSemidiameterB(arg1,arg2);
+  jresult = (jdouble)result; 
+  return jresult;
+}
+
+
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1TopocentricMoonSemidiameter(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2, jdouble jarg3, jdouble jarg4, jdouble jarg5) {
   jdouble jresult = 0 ;
   double arg1 ;
@@ -2224,22 +2240,6 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1Asteroid
   arg1 = (double)jarg1; 
   arg2 = (double)jarg2; 
   result = (double)CAADiameters::AsteroidDiameter(arg1,arg2);
-  jresult = (jdouble)result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1ApparentAsteroidDiameter(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2) {
-  jdouble jresult = 0 ;
-  double arg1 ;
-  double arg2 ;
-  double result;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = (double)jarg1; 
-  arg2 = (double)jarg2; 
-  result = (double)CAADiameters::ApparentAsteroidDiameter(arg1,arg2);
   jresult = (jdouble)result; 
   return jresult;
 }
@@ -2625,13 +2625,13 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEasterDetails(
 
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAAEaster_1Calculate(JNIEnv *jenv, jclass jcls, jint jarg1, jboolean jarg2) {
   jlong jresult = 0 ;
-  long arg1 ;
+  int arg1 ;
   bool arg2 ;
   CAAEasterDetails result;
   
   (void)jenv;
   (void)jcls;
-  arg1 = (long)jarg1; 
+  arg1 = (int)jarg1; 
   arg2 = jarg2 ? true : false; 
   result = CAAEaster::Calculate(arg1,arg2);
   *(CAAEasterDetails **)&jresult = new CAAEasterDetails((const CAAEasterDetails &)result); 
@@ -7045,7 +7045,7 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAInterpolate_1Lagran
   arg2 = (int)jarg2; 
   arg3 = *(double **)&jarg3; 
   arg4 = *(double **)&jarg4; 
-  result = (double)CAAInterpolate::LagrangeInterpolate(arg1,arg2,arg3,arg4);
+  result = (double)CAAInterpolate::LagrangeInterpolate(arg1,arg2,(double const *)arg3,(double const *)arg4);
   jresult = (jdouble)result; 
   return jresult;
 }
@@ -8910,7 +8910,7 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolic_1cbrt
 }
 
 
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolic_1CalulateTrueAnnomalyAndRadius(JNIEnv *jenv, jclass jcls, jdouble jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolic_1CalculateTrueAnnomalyAndRadius(JNIEnv *jenv, jclass jcls, jdouble jarg1, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
   double arg1 ;
   CAANearParabolicObjectElements *arg2 = 0 ;
   double *arg3 = 0 ;
@@ -8935,7 +8935,7 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolic_1Calulat
     SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "double & reference is null");
     return ;
   } 
-  CAANearParabolic::CalulateTrueAnnomalyAndRadius(arg1,(CAANearParabolicObjectElements const &)*arg2,*arg3,*arg4);
+  CAANearParabolic::CalculateTrueAnnomalyAndRadius(arg1,(CAANearParabolicObjectElements const &)*arg2,*arg3,*arg4);
 }
 
 

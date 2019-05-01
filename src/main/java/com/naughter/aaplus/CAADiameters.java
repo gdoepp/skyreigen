@@ -67,10 +67,6 @@ public class CAADiameters {
     return AAJNI.CAADiameters_SaturnPolarSemidiameterA(Delta);
   }
 
-  public static double ApparentSaturnPolarSemidiameterA(double Delta, double B) {
-    return AAJNI.CAADiameters_ApparentSaturnPolarSemidiameterA(Delta, B);
-  }
-
   public static double UranusSemidiameterA(double Delta) {
     return AAJNI.CAADiameters_UranusSemidiameterA(Delta);
   }
@@ -107,10 +103,6 @@ public class CAADiameters {
     return AAJNI.CAADiameters_SaturnPolarSemidiameterB(Delta);
   }
 
-  public static double ApparentSaturnPolarSemidiameterB(double Delta, double B) {
-    return AAJNI.CAADiameters_ApparentSaturnPolarSemidiameterB(Delta, B);
-  }
-
   public static double UranusSemidiameterB(double Delta) {
     return AAJNI.CAADiameters_UranusSemidiameterB(Delta);
   }
@@ -127,16 +119,24 @@ public class CAADiameters {
     return AAJNI.CAADiameters_GeocentricMoonSemidiameter(Delta);
   }
 
+  public static double ApparentAsteroidDiameter(double Delta, double d) {
+    return AAJNI.CAADiameters_ApparentAsteroidDiameter(Delta, d);
+  }
+
+  public static double ApparentSaturnPolarSemidiameterA(double Delta, double B) {
+    return AAJNI.CAADiameters_ApparentSaturnPolarSemidiameterA(Delta, B);
+  }
+
+  public static double ApparentSaturnPolarSemidiameterB(double Delta, double B) {
+    return AAJNI.CAADiameters_ApparentSaturnPolarSemidiameterB(Delta, B);
+  }
+
   public static double TopocentricMoonSemidiameter(double DistanceDelta, double Delta, double H, double Latitude, double Height) {
     return AAJNI.CAADiameters_TopocentricMoonSemidiameter(DistanceDelta, Delta, H, Latitude, Height);
   }
 
   public static double AsteroidDiameter(double H, double A) {
     return AAJNI.CAADiameters_AsteroidDiameter(H, A);
-  }
-
-  public static double ApparentAsteroidDiameter(double H, double A) {
-    return AAJNI.CAADiameters_ApparentAsteroidDiameter(H, A);
   }
 
   public CAADiameters() {

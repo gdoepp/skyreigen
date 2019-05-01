@@ -43,8 +43,8 @@ public class CAANearParabolic {
     return AAJNI.CAANearParabolic_cbrt(x);
   }
 
-  public static void CalulateTrueAnnomalyAndRadius(double JD, CAANearParabolicObjectElements elements, SWIGTYPE_p_double v, SWIGTYPE_p_double r) {
-    AAJNI.CAANearParabolic_CalulateTrueAnnomalyAndRadius(JD, CAANearParabolicObjectElements.getCPtr(elements), elements, SWIGTYPE_p_double.getCPtr(v), SWIGTYPE_p_double.getCPtr(r));
+  public static void CalculateTrueAnnomalyAndRadius(double JD, CAANearParabolicObjectElements elements, SWIGTYPE_p_double v, SWIGTYPE_p_double r) {
+    AAJNI.CAANearParabolic_CalculateTrueAnnomalyAndRadius(JD, CAANearParabolicObjectElements.getCPtr(elements), elements, SWIGTYPE_p_double.getCPtr(v), SWIGTYPE_p_double.getCPtr(r));
   }
 
   public CAANearParabolic() {
