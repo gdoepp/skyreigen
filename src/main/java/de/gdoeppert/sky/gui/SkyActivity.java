@@ -393,6 +393,9 @@ public class SkyActivity extends FragmentActivity implements
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        if (!skyData.getLocations().isEmpty() && skyData.isLocationDummy()) {
+            skyData.setLocation(0);
+        }
     }
 
     void setLocationAdapter(Spinner spinner) {

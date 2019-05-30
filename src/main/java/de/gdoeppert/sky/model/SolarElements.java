@@ -65,9 +65,10 @@ public class SolarElements extends SolSysElements {
 
         Log.println(Log.DEBUG, "RST", "calc Rst");
         RiseSetCalculator rstcal = new RiseSetCalculator(getJD0(), theObject);
-        riseSet = rstcal.createRst(horizon, getObserver().localLong,
-                getObserver().localLat);
-
+        if (getObserver() != null) {
+            riseSet = rstcal.createRst(horizon, getObserver().localLong,
+                    getObserver().localLat);
+        }
     }
 
     protected void calcRstTwi() {

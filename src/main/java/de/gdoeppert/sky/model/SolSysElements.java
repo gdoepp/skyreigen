@@ -67,7 +67,6 @@ public abstract class SolSysElements {
         }
         setJD(EarthLocation.currentJD(cal, false, gmt));
         setJD0(EarthLocation.currentJD(cal, true, gmt));
-
     }
 
     protected PlanetPositionHrz getHorizontalPosition(PlanetPositionEqu posEqu) {
