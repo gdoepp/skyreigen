@@ -189,7 +189,7 @@
     <ClCompile Include="AAVenus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StdAfx.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AAVSOP87.cpp">
@@ -349,6 +349,24 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AAELPMPP02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AARiseTransitSet2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AAEquinoxesAndSolstices2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AAMoonMaxDeclinations2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AAMoonPerigeeApogee2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AAMoonNodes2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AAMoonPhases2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -533,7 +551,7 @@
     <ClInclude Include="AAVenus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StdAfx.h">
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AAVSOP87.h">
@@ -693,6 +711,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AAELPMPP02.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AARiseTransitSet2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AAEquinoxesAndSolstices2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AAMoonMaxDeclinations2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AAMoonPerigeeApogee2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AAMoonNodes2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AAMoonPhases2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AADefines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

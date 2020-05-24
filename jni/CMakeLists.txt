@@ -29,6 +29,7 @@ SET ( SRCS_LIB
   AAELPMPP02.cpp
   AAEquationOfTime.cpp
   AAEquinoxesAndSolstices.cpp
+  AAEquinoxesAndSolstices2.cpp
   AAFK5.cpp
   AAGalileanMoons.cpp
   AAGlobe.cpp
@@ -42,9 +43,13 @@ SET ( SRCS_LIB
   AAMoon.cpp
   AAMoonIlluminatedFraction.cpp
   AAMoonMaxDeclinations.cpp
+  AAMoonMaxDeclinations2.cpp
   AAMoonNodes.cpp
+  AAMoonNodes2.cpp
   AAMoonPerigeeApogee.cpp
+  AAMoonPerigeeApogee2.cpp
   AAMoonPhases.cpp
+  AAMoonPhases2.cpp
   AAMoslemCalendar.cpp
   AANearParabolic.cpp
   AANeptune.cpp
@@ -63,6 +68,7 @@ SET ( SRCS_LIB
   AAPrecession.cpp
   AARefraction.cpp
   AARiseTransitSet.cpp
+  AARiseTransitSet2.cpp
   AASaturn.cpp
   AASaturnMoons.cpp
   AASaturnRings.cpp
@@ -135,6 +141,7 @@ SET ( INCS
   AABinaryStar.h
   AACoordinateTransformation.h
   AADate.h
+  AADefines.h
   AADiameters.h
   AADynamicalTime.h
   AAEarth.h
