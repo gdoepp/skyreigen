@@ -134,7 +134,7 @@ public class SolsysView extends View {
             canvas.drawCircle(cx + px, cy + py, 4 * starSize, paint);
             canvas.drawText(planet_names_short[j - 2].substring(0, 1), cx + px
                     + 5, cy + py - 5, paint);
-            canvas.drawLine(cx + ppx - 8 * ppfx,
+            canvas.drawLine(cx + ppx - 8 * starSize * ppfx,
                     cy + ppy - 8 * starSize * ppfy, cx + ppx, cy + ppy, paint);
         }
     }

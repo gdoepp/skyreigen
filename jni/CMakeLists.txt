@@ -1,6 +1,9 @@
 PROJECT (AstronomicalAlgorithms)
 
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.8)
+
+SET(CMAKE_CXX_STANDARD 17)
+SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 #-----------------------------------------------------------------------------
 # Output directories.
@@ -63,7 +66,9 @@ SET ( SRCS_LIB
   AAPhysicalMoon.cpp
   AAPhysicalSun.cpp
   AAPlanetPerihelionAphelion.cpp
+  AAPlanetPerihelionAphelion2.cpp
   AAPlanetaryPhenomena.cpp
+  AAPlanetaryPhenomena2.cpp
   AAPluto.cpp
   AAPrecession.cpp
   AARefraction.cpp
@@ -180,7 +185,9 @@ SET ( INCS
   AAPhysicalMoon.h
   AAPhysicalSun.h
   AAPlanetPerihelionAphelion.h
+  AAPlanetPerihelionAphelion2.h
   AAPlanetaryPhenomena.h
+  AAPlanetaryPhenomena2.h
   AAPluto.h
   AAPrecession.h
   AARefraction.h

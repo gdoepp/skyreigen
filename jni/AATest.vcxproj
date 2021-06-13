@@ -533,12 +533,14 @@
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="AAPlanetaryPhenomena2.cpp" />
     <ClCompile Include="AAPlanetPerihelionAphelion.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <ClCompile Include="AAPlanetPerihelionAphelion2.cpp" />
     <ClCompile Include="AAPluto.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -736,7 +738,9 @@
     <ClInclude Include="AAPhysicalMoon.h" />
     <ClInclude Include="AAPhysicalSun.h" />
     <ClInclude Include="AAPlanetaryPhenomena.h" />
+    <ClInclude Include="AAPlanetaryPhenomena2.h" />
     <ClInclude Include="AAPlanetPerihelionAphelion.h" />
+    <ClInclude Include="AAPlanetPerihelionAphelion2.h" />
     <ClInclude Include="AAPluto.h" />
     <ClInclude Include="AAPrecession.h" />
     <ClInclude Include="AARefraction.h" />
