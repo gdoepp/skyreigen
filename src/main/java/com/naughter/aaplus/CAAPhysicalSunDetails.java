@@ -36,14 +36,6 @@ public class CAAPhysicalSunDetails {
     }
   }
 
-  public CAAPhysicalSunDetails() {
-    this(AAJNI.new_CAAPhysicalSunDetails__SWIG_0(), true);
-  }
-
-  public CAAPhysicalSunDetails(CAAPhysicalSunDetails arg0) {
-    this(AAJNI.new_CAAPhysicalSunDetails__SWIG_1(CAAPhysicalSunDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setP(double value) {
     AAJNI.CAAPhysicalSunDetails_P_set(swigCPtr, this, value);
   }
@@ -66,6 +58,10 @@ public class CAAPhysicalSunDetails {
 
   public double getL0() {
     return AAJNI.CAAPhysicalSunDetails_L0_get(swigCPtr, this);
+  }
+
+  public CAAPhysicalSunDetails() {
+    this(AAJNI.new_CAAPhysicalSunDetails(), true);
   }
 
 }

@@ -36,14 +36,6 @@ public class CAAEllipticalPlanetaryDetails {
     }
   }
 
-  public CAAEllipticalPlanetaryDetails() {
-    this(AAJNI.new_CAAEllipticalPlanetaryDetails__SWIG_0(), true);
-  }
-
-  public CAAEllipticalPlanetaryDetails(CAAEllipticalPlanetaryDetails arg0) {
-    this(AAJNI.new_CAAEllipticalPlanetaryDetails__SWIG_1(CAAEllipticalPlanetaryDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setApparentGeocentricLongitude(double value) {
     AAJNI.CAAEllipticalPlanetaryDetails_ApparentGeocentricLongitude_set(swigCPtr, this, value);
   }
@@ -90,6 +82,10 @@ public class CAAEllipticalPlanetaryDetails {
 
   public double getApparentGeocentricDeclination() {
     return AAJNI.CAAEllipticalPlanetaryDetails_ApparentGeocentricDeclination_get(swigCPtr, this);
+  }
+
+  public CAAEllipticalPlanetaryDetails() {
+    this(AAJNI.new_CAAEllipticalPlanetaryDetails(), true);
   }
 
 }

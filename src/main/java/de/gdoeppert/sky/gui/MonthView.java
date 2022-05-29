@@ -63,6 +63,7 @@ public class MonthView extends View implements OnTouchListener {
             Color.RED, Color.WHITE, 0xffffaf00, Color.GREEN, Color.BLUE};
     private float xNoon;
     private int toDraw;
+    private boolean onoff = true;
     public static final int b_rise = 1;
     public static final int b_set = 2;
     public static final int b_transit = 4;
@@ -488,7 +489,13 @@ public class MonthView extends View implements OnTouchListener {
                 showPlanet[j] = !showPlanet[j];
                 this.invalidate();
             }
-
+        }
+        if (y > y1 && y < h - y1 && ev.getAction() == MotionEvent.ACTION_DOWN) {
+            onoff = !onoff;
+            for (int j=0; j < showPlanet.length; j++) {
+                showPlanet[j] = onoff;
+            }
+            this.invalidate();
         }
         return false;
     }

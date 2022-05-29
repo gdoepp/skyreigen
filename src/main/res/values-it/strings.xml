@@ -9,8 +9,8 @@
     <string name="equtime">equ.temp.</string>
     <string name="sun">Sole</string>
     <string name="moon">Luna</string>
-    <string name="sidertime">tmp.sid.</string>
-    <string name="centralmeridian">merid.c.</string>
+    <string name="sidertime">temp.sid.</string>
+    <string name="centralmeridian">merid.cnt.</string>
     <string name="look">aspetto</string>
 
 
@@ -20,12 +20,12 @@
     <string name="moondist">distanza</string>
     <string name="moondecl">declin.</string>
     <string name="moonphase">fase</string>
-    <string name="moonlibraLong">libr.lg.</string>
-    <string name="moonlibraLat">libr.lt.</string>
-    <string name="moonasc">asc.r.</string>
+    <string name="moonlibraLong">libr.lng.</string>
+    <string name="moonlibraLat">libr.lat.</string>
+    <string name="moonasc">asc.retta</string>
     <string name="moonperi">perigeo</string>
     <string name="moondisk">illum.</string>
-    <string name="moondiam">diamet.</string>
+    <string name="moondiam">diametro</string>
     <string name="moonsdiam">sdiam.</string>
     <string name="moonlong">long.</string>
     <string name="moonage">età</string>
@@ -37,13 +37,13 @@
     <string name="planetdistsun">dist.sole</string>
     <string name="planetdecl">declin.</string>
     <string name="planetphase">fase</string>
-    <string name="planetra">asc.r.</string>
-    <string name="planetmag">magn.</string>
+    <string name="planetra">asc.retta</string>
+    <string name="planetmag">magnit.</string>
     <string name="planetdisk">illum.</string>
     <string name="planetdiam">diamet.</string>
     <string name="planetelong">elong.</string>
     <string name="planetsdiam">sdiam.</string>
-    <string name="planetdistearth">d.terra</string>
+    <string name="planetdistearth">dist.terra</string>
     <string name="planetalt">altezza</string>
     <string name="planetazi">azimut</string>
     <string name="planetring">anello</string>
@@ -81,7 +81,7 @@
     <string name="azimuthNorth">azimut 0 N</string>
 
     <string name="edit">modifica</string>
-    <string name="lookupcity">cerc.luogo</string>
+    <string name="lookupcity">cerca luogo</string>
     <string name="locatehere">localizza</string>
 
 

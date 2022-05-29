@@ -118,6 +118,7 @@ public class LunarOrbitView extends View {
                 * Math.cos((solarLong - perigeeLong) / 180f * Math.PI));
         y = (float) (oval.centerY() + r * 0.6
                 * Math.sin((solarLong - perigeeLong) / 180f * Math.PI));
+        paint.setStyle(Style.FILL_AND_STROKE);
         canvas.drawText("ω", x, y, paint);
 
         paint.setColor(Color.WHITE);
@@ -127,8 +128,8 @@ public class LunarOrbitView extends View {
                 * Math.cos((solarLong - lunarLong) / 180f * Math.PI));
         y = (float) (oval.centerY() + r
                 * Math.sin((solarLong - lunarLong) / 180f * Math.PI));
-        canvas.drawCircle(x, y, 10, paint);
-        RectF medilun = new RectF(x - 10, y - 10, x + 10, y + 10);
+        canvas.drawCircle(x, y, 15, paint);
+        RectF medilun = new RectF(x - 15, y - 15, x + 15, y + 15);
         paint.setStyle(Style.FILL);
         paint.setAlpha(200);
         canvas.drawArc(medilun, 270, 180, true, paint);
@@ -136,16 +137,16 @@ public class LunarOrbitView extends View {
         paint.setColor(Color.YELLOW);
         paint.setStyle(Style.FILL);
         paint.setAlpha(200);
-        x = getWidth() - 10;
+        x = getWidth() + 10;
         y = (oval.centerY());
-        canvas.drawCircle(x, y, 10, paint);
+        canvas.drawCircle(x, y, 40, paint);
 
         paint.setColor(Color.BLUE);
         paint.setStyle(Style.FILL);
         paint.setAlpha(200);
         x = (oval.centerX());
         y = (oval.centerY());
-        canvas.drawCircle(x, y, 10, paint);
+        canvas.drawCircle(x, y, 20, paint);
 
     }
 

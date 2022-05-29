@@ -36,14 +36,6 @@ public class CAATopocentricEclipticDetails {
     }
   }
 
-  public CAATopocentricEclipticDetails() {
-    this(AAJNI.new_CAATopocentricEclipticDetails__SWIG_0(), true);
-  }
-
-  public CAATopocentricEclipticDetails(CAATopocentricEclipticDetails arg0) {
-    this(AAJNI.new_CAATopocentricEclipticDetails__SWIG_1(CAATopocentricEclipticDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setLambda(double value) {
     AAJNI.CAATopocentricEclipticDetails_Lambda_set(swigCPtr, this, value);
   }
@@ -66,6 +58,10 @@ public class CAATopocentricEclipticDetails {
 
   public double getSemidiameter() {
     return AAJNI.CAATopocentricEclipticDetails_Semidiameter_get(swigCPtr, this);
+  }
+
+  public CAATopocentricEclipticDetails() {
+    this(AAJNI.new_CAATopocentricEclipticDetails(), true);
   }
 
 }

@@ -36,14 +36,6 @@ public class CAAEasterDetails {
     }
   }
 
-  public CAAEasterDetails() {
-    this(AAJNI.new_CAAEasterDetails__SWIG_0(), true);
-  }
-
-  public CAAEasterDetails(CAAEasterDetails arg0) {
-    this(AAJNI.new_CAAEasterDetails__SWIG_1(CAAEasterDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setMonth(int value) {
     AAJNI.CAAEasterDetails_Month_set(swigCPtr, this, value);
   }
@@ -58,6 +50,10 @@ public class CAAEasterDetails {
 
   public int getDay() {
     return AAJNI.CAAEasterDetails_Day_get(swigCPtr, this);
+  }
+
+  public CAAEasterDetails() {
+    this(AAJNI.new_CAAEasterDetails(), true);
   }
 
 }

@@ -24,7 +24,7 @@ import android.util.Log;
 
 import com.naughter.aaplus.CAAAngularSeparation;
 import com.naughter.aaplus.CAADate;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAEllipticalPlanetaryDetails;
 import com.naughter.aaplus.CAAParallactic;
 import com.naughter.aaplus.CAASidereal;
@@ -44,7 +44,7 @@ public abstract class SolSysElements {
     private EarthLocation observer;
     private double JD;
     private double JD0;
-    protected EllipticalObject theObject;
+    protected Object theObject;
     protected CAAEllipticalPlanetaryDetails details;
     protected PlanetPositionEqu poseq;
     protected PlanetPositionHrz[] traj = null;

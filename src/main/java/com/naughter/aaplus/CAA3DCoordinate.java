@@ -36,14 +36,6 @@ public class CAA3DCoordinate {
     }
   }
 
-  public CAA3DCoordinate() {
-    this(AAJNI.new_CAA3DCoordinate__SWIG_0(), true);
-  }
-
-  public CAA3DCoordinate(CAA3DCoordinate arg0) {
-    this(AAJNI.new_CAA3DCoordinate__SWIG_1(CAA3DCoordinate.getCPtr(arg0), arg0), true);
-  }
-
   public void setX(double value) {
     AAJNI.CAA3DCoordinate_X_set(swigCPtr, this, value);
   }
@@ -66,6 +58,10 @@ public class CAA3DCoordinate {
 
   public double getZ() {
     return AAJNI.CAA3DCoordinate_Z_get(swigCPtr, this);
+  }
+
+  public CAA3DCoordinate() {
+    this(AAJNI.new_CAA3DCoordinate(), true);
   }
 
 }

@@ -9,10 +9,9 @@
     <string name="equtime">équ.temp.</string>
     <string name="sun">Soleil</string>
     <string name="moon">Lune</string>
-    <string name="sidertime">tmp.sid.</string>
-    <string name="centralmeridian">mérid.c.</string>
+    <string name="sidertime">temp.sid.</string>
+    <string name="centralmeridian">mérid.cnt.</string>
     <string name="look">aspect</string>
-
 
     <string name="moonrise">lever</string>
     <string name="moontrans">méridien</string>
@@ -20,12 +19,12 @@
     <string name="moondist">distance</string>
     <string name="moondecl">déclin.</string>
     <string name="moonphase">phase</string>
-    <string name="moonlibraLong">libr.lg.</string>
-    <string name="moonlibraLat">libr.lt.</string>
-    <string name="moonasc">asc.d.</string>
+    <string name="moonlibraLong">libr.lng.</string>
+    <string name="moonlibraLat">libr.lat.</string>
+    <string name="moonasc">asc.droite</string>
     <string name="moonperi">périgée</string>
     <string name="moondisk">éclairé</string>
-    <string name="moondiam">diamèt.</string>
+    <string name="moondiam">diamètre</string>
     <string name="moonsdiam">sdiam.</string>
     <string name="moonlong">long.</string>
     <string name="moonage">âge</string>
@@ -37,10 +36,10 @@
     <string name="planetdistsun">dist.sol.</string>
     <string name="planetdecl">déclin.</string>
     <string name="planetphase">phase</string>
-    <string name="planetra">asc.d.</string>
-    <string name="planetmag">magn.</string>
+    <string name="planetra">asc.droite</string>
+    <string name="planetmag">magnit.</string>
     <string name="planetdisk">éclairé</string>
-    <string name="planetdiam">diamèt.</string>
+    <string name="planetdiam">diamètre</string>
     <string name="planetelong">elong.</string>
     <string name="planetsdiam">sdiam.</string>
     <string name="planetdistearth">d.terre</string>

@@ -36,34 +36,34 @@ public class CAAPlanetaryPhenomena {
     }
   }
 
-  public static double K(double Year, CAAPlanetaryPhenomena.PlanetaryObject object, CAAPlanetaryPhenomena.EventType type) {
-    return AAJNI.CAAPlanetaryPhenomena_K(Year, object.swigValue(), type.swigValue());
+  public static double K(double Year, CAAPlanetaryPhenomena.Planet planet, CAAPlanetaryPhenomena.Type type) {
+    return AAJNI.CAAPlanetaryPhenomena_K(Year, planet.swigValue(), type.swigValue());
   }
 
-  public static double Mean(double k, CAAPlanetaryPhenomena.PlanetaryObject object, CAAPlanetaryPhenomena.EventType type) {
-    return AAJNI.CAAPlanetaryPhenomena_Mean(k, object.swigValue(), type.swigValue());
+  public static double Mean(double k, CAAPlanetaryPhenomena.Planet planet, CAAPlanetaryPhenomena.Type type) {
+    return AAJNI.CAAPlanetaryPhenomena_Mean(k, planet.swigValue(), type.swigValue());
   }
 
-  public static double True(double k, CAAPlanetaryPhenomena.PlanetaryObject object, CAAPlanetaryPhenomena.EventType type) {
-    return AAJNI.CAAPlanetaryPhenomena_True(k, object.swigValue(), type.swigValue());
+  public static double True(double k, CAAPlanetaryPhenomena.Planet planet, CAAPlanetaryPhenomena.Type type) {
+    return AAJNI.CAAPlanetaryPhenomena_True(k, planet.swigValue(), type.swigValue());
   }
 
-  public static double ElongationValue(double k, CAAPlanetaryPhenomena.PlanetaryObject object, boolean bEastern) {
-    return AAJNI.CAAPlanetaryPhenomena_ElongationValue(k, object.swigValue(), bEastern);
+  public static double ElongationValue(double k, CAAPlanetaryPhenomena.Planet planet, boolean bEastern) {
+    return AAJNI.CAAPlanetaryPhenomena_ElongationValue(k, planet.swigValue(), bEastern);
   }
 
   public CAAPlanetaryPhenomena() {
     this(AAJNI.new_CAAPlanetaryPhenomena(), true);
   }
 
-  public final static class PlanetaryObject {
-    public final static CAAPlanetaryPhenomena.PlanetaryObject MERCURY = new CAAPlanetaryPhenomena.PlanetaryObject("MERCURY");
-    public final static CAAPlanetaryPhenomena.PlanetaryObject VENUS = new CAAPlanetaryPhenomena.PlanetaryObject("VENUS");
-    public final static CAAPlanetaryPhenomena.PlanetaryObject MARS = new CAAPlanetaryPhenomena.PlanetaryObject("MARS");
-    public final static CAAPlanetaryPhenomena.PlanetaryObject JUPITER = new CAAPlanetaryPhenomena.PlanetaryObject("JUPITER");
-    public final static CAAPlanetaryPhenomena.PlanetaryObject SATURN = new CAAPlanetaryPhenomena.PlanetaryObject("SATURN");
-    public final static CAAPlanetaryPhenomena.PlanetaryObject URANUS = new CAAPlanetaryPhenomena.PlanetaryObject("URANUS");
-    public final static CAAPlanetaryPhenomena.PlanetaryObject NEPTUNE = new CAAPlanetaryPhenomena.PlanetaryObject("NEPTUNE");
+  public final static class Planet {
+    public final static CAAPlanetaryPhenomena.Planet MERCURY = new CAAPlanetaryPhenomena.Planet("MERCURY");
+    public final static CAAPlanetaryPhenomena.Planet VENUS = new CAAPlanetaryPhenomena.Planet("VENUS");
+    public final static CAAPlanetaryPhenomena.Planet MARS = new CAAPlanetaryPhenomena.Planet("MARS");
+    public final static CAAPlanetaryPhenomena.Planet JUPITER = new CAAPlanetaryPhenomena.Planet("JUPITER");
+    public final static CAAPlanetaryPhenomena.Planet SATURN = new CAAPlanetaryPhenomena.Planet("SATURN");
+    public final static CAAPlanetaryPhenomena.Planet URANUS = new CAAPlanetaryPhenomena.Planet("URANUS");
+    public final static CAAPlanetaryPhenomena.Planet NEPTUNE = new CAAPlanetaryPhenomena.Planet("NEPTUNE");
 
     public final int swigValue() {
       return swigValue;
@@ -73,47 +73,47 @@ public class CAAPlanetaryPhenomena {
       return swigName;
     }
 
-    public static PlanetaryObject swigToEnum(int swigValue) {
+    public static Planet swigToEnum(int swigValue) {
       if (swigValue < swigValues.length && swigValue >= 0 && swigValues[swigValue].swigValue == swigValue)
         return swigValues[swigValue];
       for (int i = 0; i < swigValues.length; i++)
         if (swigValues[i].swigValue == swigValue)
           return swigValues[i];
-      throw new IllegalArgumentException("No enum " + PlanetaryObject.class + " with value " + swigValue);
+      throw new IllegalArgumentException("No enum " + Planet.class + " with value " + swigValue);
     }
 
-    private PlanetaryObject(String swigName) {
+    private Planet(String swigName) {
       this.swigName = swigName;
       this.swigValue = swigNext++;
     }
 
-    private PlanetaryObject(String swigName, int swigValue) {
+    private Planet(String swigName, int swigValue) {
       this.swigName = swigName;
       this.swigValue = swigValue;
       swigNext = swigValue+1;
     }
 
-    private PlanetaryObject(String swigName, PlanetaryObject swigEnum) {
+    private Planet(String swigName, Planet swigEnum) {
       this.swigName = swigName;
       this.swigValue = swigEnum.swigValue;
       swigNext = this.swigValue+1;
     }
 
-    private static PlanetaryObject[] swigValues = { MERCURY, VENUS, MARS, JUPITER, SATURN, URANUS, NEPTUNE };
+    private static Planet[] swigValues = { MERCURY, VENUS, MARS, JUPITER, SATURN, URANUS, NEPTUNE };
     private static int swigNext = 0;
     private final int swigValue;
     private final String swigName;
   }
 
-  public final static class EventType {
-    public final static CAAPlanetaryPhenomena.EventType INFERIOR_CONJUNCTION = new CAAPlanetaryPhenomena.EventType("INFERIOR_CONJUNCTION");
-    public final static CAAPlanetaryPhenomena.EventType SUPERIOR_CONJUNCTION = new CAAPlanetaryPhenomena.EventType("SUPERIOR_CONJUNCTION");
-    public final static CAAPlanetaryPhenomena.EventType OPPOSITION = new CAAPlanetaryPhenomena.EventType("OPPOSITION");
-    public final static CAAPlanetaryPhenomena.EventType CONJUNCTION = new CAAPlanetaryPhenomena.EventType("CONJUNCTION");
-    public final static CAAPlanetaryPhenomena.EventType EASTERN_ELONGATION = new CAAPlanetaryPhenomena.EventType("EASTERN_ELONGATION");
-    public final static CAAPlanetaryPhenomena.EventType WESTERN_ELONGATION = new CAAPlanetaryPhenomena.EventType("WESTERN_ELONGATION");
-    public final static CAAPlanetaryPhenomena.EventType STATION1 = new CAAPlanetaryPhenomena.EventType("STATION1");
-    public final static CAAPlanetaryPhenomena.EventType STATION2 = new CAAPlanetaryPhenomena.EventType("STATION2");
+  public final static class Type {
+    public final static CAAPlanetaryPhenomena.Type INFERIOR_CONJUNCTION = new CAAPlanetaryPhenomena.Type("INFERIOR_CONJUNCTION");
+    public final static CAAPlanetaryPhenomena.Type SUPERIOR_CONJUNCTION = new CAAPlanetaryPhenomena.Type("SUPERIOR_CONJUNCTION");
+    public final static CAAPlanetaryPhenomena.Type OPPOSITION = new CAAPlanetaryPhenomena.Type("OPPOSITION");
+    public final static CAAPlanetaryPhenomena.Type CONJUNCTION = new CAAPlanetaryPhenomena.Type("CONJUNCTION");
+    public final static CAAPlanetaryPhenomena.Type EASTERN_ELONGATION = new CAAPlanetaryPhenomena.Type("EASTERN_ELONGATION");
+    public final static CAAPlanetaryPhenomena.Type WESTERN_ELONGATION = new CAAPlanetaryPhenomena.Type("WESTERN_ELONGATION");
+    public final static CAAPlanetaryPhenomena.Type STATION1 = new CAAPlanetaryPhenomena.Type("STATION1");
+    public final static CAAPlanetaryPhenomena.Type STATION2 = new CAAPlanetaryPhenomena.Type("STATION2");
 
     public final int swigValue() {
       return swigValue;
@@ -123,33 +123,33 @@ public class CAAPlanetaryPhenomena {
       return swigName;
     }
 
-    public static EventType swigToEnum(int swigValue) {
+    public static Type swigToEnum(int swigValue) {
       if (swigValue < swigValues.length && swigValue >= 0 && swigValues[swigValue].swigValue == swigValue)
         return swigValues[swigValue];
       for (int i = 0; i < swigValues.length; i++)
         if (swigValues[i].swigValue == swigValue)
           return swigValues[i];
-      throw new IllegalArgumentException("No enum " + EventType.class + " with value " + swigValue);
+      throw new IllegalArgumentException("No enum " + Type.class + " with value " + swigValue);
     }
 
-    private EventType(String swigName) {
+    private Type(String swigName) {
       this.swigName = swigName;
       this.swigValue = swigNext++;
     }
 
-    private EventType(String swigName, int swigValue) {
+    private Type(String swigName, int swigValue) {
       this.swigName = swigName;
       this.swigValue = swigValue;
       swigNext = swigValue+1;
     }
 
-    private EventType(String swigName, EventType swigEnum) {
+    private Type(String swigName, Type swigEnum) {
       this.swigName = swigName;
       this.swigValue = swigEnum.swigValue;
       swigNext = this.swigValue+1;
     }
 
-    private static EventType[] swigValues = { INFERIOR_CONJUNCTION, SUPERIOR_CONJUNCTION, OPPOSITION, CONJUNCTION, EASTERN_ELONGATION, WESTERN_ELONGATION, STATION1, STATION2 };
+    private static Type[] swigValues = { INFERIOR_CONJUNCTION, SUPERIOR_CONJUNCTION, OPPOSITION, CONJUNCTION, EASTERN_ELONGATION, WESTERN_ELONGATION, STATION1, STATION2 };
     private static int swigNext = 0;
     private final int swigValue;
     private final String swigName;

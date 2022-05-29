@@ -36,14 +36,6 @@ public class CAALunarEclipseDetails {
     }
   }
 
-  public CAALunarEclipseDetails() {
-    this(AAJNI.new_CAALunarEclipseDetails__SWIG_0(), true);
-  }
-
-  public CAALunarEclipseDetails(CAALunarEclipseDetails arg0) {
-    this(AAJNI.new_CAALunarEclipseDetails__SWIG_1(CAALunarEclipseDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setBEclipse(boolean value) {
     AAJNI.CAALunarEclipseDetails_bEclipse_set(swigCPtr, this, value);
   }
@@ -138,6 +130,10 @@ public class CAALunarEclipseDetails {
 
   public double getPartialPhasePenumbraSemiDuration() {
     return AAJNI.CAALunarEclipseDetails_PartialPhasePenumbraSemiDuration_get(swigCPtr, this);
+  }
+
+  public CAALunarEclipseDetails() {
+    this(AAJNI.new_CAALunarEclipseDetails(), true);
   }
 
 }

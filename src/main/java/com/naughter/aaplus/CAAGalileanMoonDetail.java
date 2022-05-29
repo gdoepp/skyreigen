@@ -36,14 +36,6 @@ public class CAAGalileanMoonDetail {
     }
   }
 
-  public CAAGalileanMoonDetail() {
-    this(AAJNI.new_CAAGalileanMoonDetail__SWIG_0(), true);
-  }
-
-  public CAAGalileanMoonDetail(CAAGalileanMoonDetail arg0) {
-    this(AAJNI.new_CAAGalileanMoonDetail__SWIG_1(CAAGalileanMoonDetail.getCPtr(arg0), arg0), true);
-  }
-
   public void setMeanLongitude(double value) {
     AAJNI.CAAGalileanMoonDetail_MeanLongitude_set(swigCPtr, this, value);
   }
@@ -132,6 +124,10 @@ public class CAAGalileanMoonDetail {
 
   public boolean getBInShadowTransit() {
     return AAJNI.CAAGalileanMoonDetail_bInShadowTransit_get(swigCPtr, this);
+  }
+
+  public CAAGalileanMoonDetail() {
+    this(AAJNI.new_CAAGalileanMoonDetail(), true);
   }
 
 }

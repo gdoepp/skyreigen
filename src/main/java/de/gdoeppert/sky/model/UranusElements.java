@@ -21,7 +21,7 @@ package de.gdoeppert.sky.model;
 
 import com.naughter.aaplus.CAADiameters;
 import com.naughter.aaplus.CAAEarth;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAIlluminatedFraction;
 import com.naughter.aaplus.CAAUranus;
 
@@ -32,7 +32,7 @@ public class UranusElements extends PlanetElements {
 
     public UranusElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
-        theObject = EllipticalObject.URANUS;
+        theObject = Object.URANUS;
     }
 
     @Override

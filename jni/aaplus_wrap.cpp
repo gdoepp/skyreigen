@@ -239,47 +239,6 @@ static void SWIGUNUSED SWIG_JavaThrowException(JNIEnv *jenv, SWIG_JavaExceptionC
 extern "C" {
 #endif
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAA2DCoordinate_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAA2DCoordinate *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAA2DCoordinate *)new CAA2DCoordinate();
-  *(CAA2DCoordinate **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAA2DCoordinate_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAA2DCoordinate *arg1 = 0 ;
-  CAA2DCoordinate *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAA2DCoordinate **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAA2DCoordinate const & reference is null");
-    return 0;
-  } 
-  result = (CAA2DCoordinate *)new CAA2DCoordinate((CAA2DCoordinate const &)*arg1);
-  *(CAA2DCoordinate **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAA2DCoordinate(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAA2DCoordinate *arg1 = (CAA2DCoordinate *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAA2DCoordinate **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAA2DCoordinate_1X_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAA2DCoordinate *arg1 = (CAA2DCoordinate *) 0 ;
   double arg2 ;
@@ -336,43 +295,24 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAA2DCoordinate_1Y_1ge
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAA3DCoordinate_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAA2DCoordinate(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
-  CAA3DCoordinate *result = 0 ;
+  CAA2DCoordinate *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAA3DCoordinate *)new CAA3DCoordinate();
-  *(CAA3DCoordinate **)&jresult = result; 
+  result = (CAA2DCoordinate *)new CAA2DCoordinate();
+  *(CAA2DCoordinate **)&jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAA3DCoordinate_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAA3DCoordinate *arg1 = 0 ;
-  CAA3DCoordinate *result = 0 ;
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAA2DCoordinate(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAA2DCoordinate *arg1 = (CAA2DCoordinate *) 0 ;
   
   (void)jenv;
   (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAA3DCoordinate **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAA3DCoordinate const & reference is null");
-    return 0;
-  } 
-  result = (CAA3DCoordinate *)new CAA3DCoordinate((CAA3DCoordinate const &)*arg1);
-  *(CAA3DCoordinate **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAA3DCoordinate(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAA3DCoordinate *arg1 = (CAA3DCoordinate *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAA3DCoordinate **)&jarg1; 
+  arg1 = *(CAA2DCoordinate **)&jarg1; 
   delete arg1;
 }
 
@@ -458,6 +398,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAA3DCoordinate_1Z_1ge
   result = (double) ((arg1)->Z);
   jresult = (jdouble)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAA3DCoordinate(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAA3DCoordinate *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAA3DCoordinate *)new CAA3DCoordinate();
+  *(CAA3DCoordinate **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAA3DCoordinate(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAA3DCoordinate *arg1 = (CAA3DCoordinate *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAA3DCoordinate **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -655,47 +617,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAAngularSeparat
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAABinaryStarDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAABinaryStarDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAABinaryStarDetails *)new CAABinaryStarDetails();
-  *(CAABinaryStarDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAABinaryStarDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAABinaryStarDetails *arg1 = 0 ;
-  CAABinaryStarDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAABinaryStarDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAABinaryStarDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAABinaryStarDetails *)new CAABinaryStarDetails((CAABinaryStarDetails const &)*arg1);
-  *(CAABinaryStarDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAABinaryStarDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAABinaryStarDetails *arg1 = (CAABinaryStarDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAABinaryStarDetails **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAABinaryStarDetails_1r_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAABinaryStarDetails *arg1 = (CAABinaryStarDetails *) 0 ;
   double arg2 ;
@@ -777,6 +698,84 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAABinaryStarDetails_1
   result = (double) ((arg1)->Rho);
   jresult = (jdouble)result; 
   return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAABinaryStarDetails_1x_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
+  CAABinaryStarDetails *arg1 = (CAABinaryStarDetails *) 0 ;
+  double arg2 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(CAABinaryStarDetails **)&jarg1; 
+  arg2 = (double)jarg2; 
+  if (arg1) (arg1)->x = arg2;
+}
+
+
+SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAABinaryStarDetails_1x_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+  jdouble jresult = 0 ;
+  CAABinaryStarDetails *arg1 = (CAABinaryStarDetails *) 0 ;
+  double result;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(CAABinaryStarDetails **)&jarg1; 
+  result = (double) ((arg1)->x);
+  jresult = (jdouble)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAABinaryStarDetails_1y_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
+  CAABinaryStarDetails *arg1 = (CAABinaryStarDetails *) 0 ;
+  double arg2 ;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(CAABinaryStarDetails **)&jarg1; 
+  arg2 = (double)jarg2; 
+  if (arg1) (arg1)->y = arg2;
+}
+
+
+SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAABinaryStarDetails_1y_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+  jdouble jresult = 0 ;
+  CAABinaryStarDetails *arg1 = (CAABinaryStarDetails *) 0 ;
+  double result;
+  
+  (void)jenv;
+  (void)jcls;
+  (void)jarg1_;
+  arg1 = *(CAABinaryStarDetails **)&jarg1; 
+  result = (double) ((arg1)->y);
+  jresult = (jdouble)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAABinaryStarDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAABinaryStarDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAABinaryStarDetails *)new CAABinaryStarDetails();
+  *(CAABinaryStarDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAABinaryStarDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAABinaryStarDetails *arg1 = (CAABinaryStarDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAABinaryStarDetails **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -1164,47 +1163,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAACoordinateTran
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAACalendarDate_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAACalendarDate *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAACalendarDate *)new CAACalendarDate();
-  *(CAACalendarDate **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAACalendarDate_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAACalendarDate *arg1 = 0 ;
-  CAACalendarDate *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAACalendarDate **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAACalendarDate const & reference is null");
-    return 0;
-  } 
-  result = (CAACalendarDate *)new CAACalendarDate((CAACalendarDate const &)*arg1);
-  *(CAACalendarDate **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAACalendarDate(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAACalendarDate *arg1 = (CAACalendarDate *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAACalendarDate **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAACalendarDate_1Year_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   CAACalendarDate *arg1 = (CAACalendarDate *) 0 ;
   long arg2 ;
@@ -1289,85 +1247,107 @@ SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAACalendarDate_1Day_1get
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1SUNDAY_1get(JNIEnv *jenv, jclass jcls) {
-  jint jresult = 0 ;
-  CAADate::DAY_OF_WEEK result;
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAACalendarDate(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAACalendarDate *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::SUNDAY;
+  result = (CAACalendarDate *)new CAACalendarDate();
+  *(CAACalendarDate **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAACalendarDate(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAACalendarDate *arg1 = (CAACalendarDate *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAACalendarDate **)&jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DOW_1SUNDAY_1get(JNIEnv *jenv, jclass jcls) {
+  jint jresult = 0 ;
+  CAADate::DOW result;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAADate::DOW)CAADate::DOW::SUNDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1MONDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DOW_1MONDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
-  CAADate::DAY_OF_WEEK result;
+  CAADate::DOW result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::MONDAY;
+  result = (CAADate::DOW)CAADate::DOW::MONDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1TUESDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DOW_1TUESDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
-  CAADate::DAY_OF_WEEK result;
+  CAADate::DOW result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::TUESDAY;
+  result = (CAADate::DOW)CAADate::DOW::TUESDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1WEDNESDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DOW_1WEDNESDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
-  CAADate::DAY_OF_WEEK result;
+  CAADate::DOW result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::WEDNESDAY;
+  result = (CAADate::DOW)CAADate::DOW::WEDNESDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1THURSDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DOW_1THURSDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
-  CAADate::DAY_OF_WEEK result;
+  CAADate::DOW result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::THURSDAY;
+  result = (CAADate::DOW)CAADate::DOW::THURSDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1FRIDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DOW_1FRIDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
-  CAADate::DAY_OF_WEEK result;
+  CAADate::DOW result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::FRIDAY;
+  result = (CAADate::DOW)CAADate::DOW::FRIDAY;
   jresult = (jint)result; 
   return jresult;
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DAY_1OF_1WEEK_1SATURDAY_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DOW_1SATURDAY_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
-  CAADate::DAY_OF_WEEK result;
+  CAADate::DOW result;
   
   (void)jenv;
   (void)jcls;
-  result = (CAADate::DAY_OF_WEEK)CAADate::DAY_OF_WEEK::SATURDAY;
+  result = (CAADate::DOW)CAADate::DOW::SATURDAY;
   jresult = (jint)result; 
   return jresult;
 }
@@ -1831,13 +1811,13 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1Get(JNIEnv *jenv
 SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAADate_1DayOfWeek(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   CAADate *arg1 = (CAADate *) 0 ;
-  CAADate::DAY_OF_WEEK result;
+  CAADate::DOW result;
   
   (void)jenv;
   (void)jcls;
   (void)jarg1_;
   arg1 = *(CAADate **)&jarg1; 
-  result = (CAADate::DAY_OF_WEEK)((CAADate const *)arg1)->DayOfWeek();
+  result = (CAADate::DOW)((CAADate const *)arg1)->DayOfWeek();
   jresult = (jint)result; 
   return jresult;
 }
@@ -2637,47 +2617,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEarth(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEasterDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAEasterDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAEasterDetails *)new CAAEasterDetails();
-  *(CAAEasterDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEasterDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAEasterDetails *arg1 = 0 ;
-  CAAEasterDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAEasterDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAEasterDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAEasterDetails *)new CAAEasterDetails((CAAEasterDetails const &)*arg1);
-  *(CAAEasterDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEasterDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAEasterDetails *arg1 = (CAAEasterDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAEasterDetails **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAAEasterDetails_1Month_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   CAAEasterDetails *arg1 = (CAAEasterDetails *) 0 ;
   long arg2 ;
@@ -2731,6 +2670,28 @@ SWIGEXPORT jint JNICALL Java_com_naughter_aaplus_AAJNI_CAAEasterDetails_1Day_1ge
   result = (long) ((arg1)->Day);
   jresult = (jint)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEasterDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAEasterDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAEasterDetails *)new CAAEasterDetails();
+  *(CAAEasterDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEasterDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAEasterDetails *arg1 = (CAAEasterDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAEasterDetails **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -2841,47 +2802,6 @@ SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAASolarEclipseDetails_1
   result = (unsigned int)CAASolarEclipseDetails::NON_CENTRAL_ECLIPSE;
   jresult = (jlong)result; 
   return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASolarEclipseDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAASolarEclipseDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAASolarEclipseDetails *)new CAASolarEclipseDetails();
-  *(CAASolarEclipseDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASolarEclipseDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAASolarEclipseDetails *arg1 = 0 ;
-  CAASolarEclipseDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAASolarEclipseDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAASolarEclipseDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAASolarEclipseDetails *)new CAASolarEclipseDetails((CAASolarEclipseDetails const &)*arg1);
-  *(CAASolarEclipseDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASolarEclipseDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAASolarEclipseDetails *arg1 = (CAASolarEclipseDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAASolarEclipseDetails **)&jarg1; 
-  delete arg1;
 }
 
 
@@ -3053,43 +2973,24 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAASolarEclipseDetails
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAALunarEclipseDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASolarEclipseDetails(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
-  CAALunarEclipseDetails *result = 0 ;
+  CAASolarEclipseDetails *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAALunarEclipseDetails *)new CAALunarEclipseDetails();
-  *(CAALunarEclipseDetails **)&jresult = result; 
+  result = (CAASolarEclipseDetails *)new CAASolarEclipseDetails();
+  *(CAASolarEclipseDetails **)&jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAALunarEclipseDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAALunarEclipseDetails *arg1 = 0 ;
-  CAALunarEclipseDetails *result = 0 ;
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASolarEclipseDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAASolarEclipseDetails *arg1 = (CAASolarEclipseDetails *) 0 ;
   
   (void)jenv;
   (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAALunarEclipseDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAALunarEclipseDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAALunarEclipseDetails *)new CAALunarEclipseDetails((CAALunarEclipseDetails const &)*arg1);
-  *(CAALunarEclipseDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAALunarEclipseDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAALunarEclipseDetails *arg1 = (CAALunarEclipseDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAALunarEclipseDetails **)&jarg1; 
+  arg1 = *(CAASolarEclipseDetails **)&jarg1; 
   delete arg1;
 }
 
@@ -3430,6 +3331,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAALunarEclipseDetails
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAALunarEclipseDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAALunarEclipseDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAALunarEclipseDetails *)new CAALunarEclipseDetails();
+  *(CAALunarEclipseDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAALunarEclipseDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAALunarEclipseDetails *arg1 = (CAALunarEclipseDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAALunarEclipseDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAAEclipses_1CalculateSolar(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
   jlong jresult = 0 ;
   double arg1 ;
@@ -3476,47 +3399,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEclipses(JNIEn
   (void)jenv;
   (void)jcls;
   arg1 = *(CAAEclipses **)&jarg1; 
-  delete arg1;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEclipticalElementDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAEclipticalElementDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAEclipticalElementDetails *)new CAAEclipticalElementDetails();
-  *(CAAEclipticalElementDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEclipticalElementDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAEclipticalElementDetails *arg1 = 0 ;
-  CAAEclipticalElementDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAEclipticalElementDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAEclipticalElementDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAEclipticalElementDetails *)new CAAEclipticalElementDetails((CAAEclipticalElementDetails const &)*arg1);
-  *(CAAEclipticalElementDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEclipticalElementDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAEclipticalElementDetails *arg1 = (CAAEclipticalElementDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAEclipticalElementDetails **)&jarg1; 
   delete arg1;
 }
 
@@ -3602,6 +3484,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAEclipticalElementDe
   result = (double) ((arg1)->omega);
   jresult = (jdouble)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEclipticalElementDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAEclipticalElementDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAEclipticalElementDetails *)new CAAEclipticalElementDetails();
+  *(CAAEclipticalElementDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEclipticalElementDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAEclipticalElementDetails *arg1 = (CAAEclipticalElementDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAEclipticalElementDetails **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -4795,47 +4699,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAElementsPlanet
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalObjectElements_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAEllipticalObjectElements *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAEllipticalObjectElements *)new CAAEllipticalObjectElements();
-  *(CAAEllipticalObjectElements **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalObjectElements_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAEllipticalObjectElements *arg1 = 0 ;
-  CAAEllipticalObjectElements *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAEllipticalObjectElements **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAEllipticalObjectElements const & reference is null");
-    return 0;
-  } 
-  result = (CAAEllipticalObjectElements *)new CAAEllipticalObjectElements((CAAEllipticalObjectElements const &)*arg1);
-  *(CAAEllipticalObjectElements **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEllipticalObjectElements(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAEllipticalObjectElements *arg1 = (CAAEllipticalObjectElements *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAEllipticalObjectElements **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAAEllipticalObjectElements_1a_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAAEllipticalObjectElements *arg1 = (CAAEllipticalObjectElements *) 0 ;
   double arg2 ;
@@ -5032,43 +4895,24 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAEllipticalObjectEle
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalPlanetaryDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalObjectElements(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
-  CAAEllipticalPlanetaryDetails *result = 0 ;
+  CAAEllipticalObjectElements *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAAEllipticalPlanetaryDetails *)new CAAEllipticalPlanetaryDetails();
-  *(CAAEllipticalPlanetaryDetails **)&jresult = result; 
+  result = (CAAEllipticalObjectElements *)new CAAEllipticalObjectElements();
+  *(CAAEllipticalObjectElements **)&jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalPlanetaryDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAEllipticalPlanetaryDetails *arg1 = 0 ;
-  CAAEllipticalPlanetaryDetails *result = 0 ;
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEllipticalObjectElements(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAEllipticalObjectElements *arg1 = (CAAEllipticalObjectElements *) 0 ;
   
   (void)jenv;
   (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAEllipticalPlanetaryDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAEllipticalPlanetaryDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAEllipticalPlanetaryDetails *)new CAAEllipticalPlanetaryDetails((CAAEllipticalPlanetaryDetails const &)*arg1);
-  *(CAAEllipticalPlanetaryDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEllipticalPlanetaryDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAEllipticalPlanetaryDetails *arg1 = (CAAEllipticalPlanetaryDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAEllipticalPlanetaryDetails **)&jarg1; 
+  arg1 = *(CAAEllipticalObjectElements **)&jarg1; 
   delete arg1;
 }
 
@@ -5241,43 +5085,24 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAEllipticalPlanetary
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalObjectDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalPlanetaryDetails(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
-  CAAEllipticalObjectDetails *result = 0 ;
+  CAAEllipticalPlanetaryDetails *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAAEllipticalObjectDetails *)new CAAEllipticalObjectDetails();
-  *(CAAEllipticalObjectDetails **)&jresult = result; 
+  result = (CAAEllipticalPlanetaryDetails *)new CAAEllipticalPlanetaryDetails();
+  *(CAAEllipticalPlanetaryDetails **)&jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalObjectDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAEllipticalObjectDetails *arg1 = 0 ;
-  CAAEllipticalObjectDetails *result = 0 ;
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEllipticalPlanetaryDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAEllipticalPlanetaryDetails *arg1 = (CAAEllipticalPlanetaryDetails *) 0 ;
   
   (void)jenv;
   (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAEllipticalObjectDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAEllipticalObjectDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAEllipticalObjectDetails *)new CAAEllipticalObjectDetails((CAAEllipticalObjectDetails const &)*arg1);
-  *(CAAEllipticalObjectDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEllipticalObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAEllipticalObjectDetails *arg1 = (CAAEllipticalObjectDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAEllipticalObjectDetails **)&jarg1; 
+  arg1 = *(CAAEllipticalPlanetaryDetails **)&jarg1; 
   delete arg1;
 }
 
@@ -5676,6 +5501,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAEllipticalObjectDet
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAEllipticalObjectDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAEllipticalObjectDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAEllipticalObjectDetails *)new CAAEllipticalObjectDetails();
+  *(CAAEllipticalObjectDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAEllipticalObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAEllipticalObjectDetails *arg1 = (CAAEllipticalObjectDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAEllipticalObjectDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAElliptical_1DistanceToLightTime(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
   jdouble jresult = 0 ;
   double arg1 ;
@@ -5693,14 +5540,14 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAElliptical_1Distanc
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAAElliptical_1Calculate_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jdouble jarg1, jint jarg2, jboolean jarg3) {
   jlong jresult = 0 ;
   double arg1 ;
-  CAAElliptical::EllipticalObject arg2 ;
+  CAAElliptical::Object arg2 ;
   bool arg3 ;
   CAAEllipticalPlanetaryDetails result;
   
   (void)jenv;
   (void)jcls;
   arg1 = (double)jarg1; 
-  arg2 = (CAAElliptical::EllipticalObject)jarg2; 
+  arg2 = (CAAElliptical::Object)jarg2; 
   arg3 = jarg3 ? true : false; 
   result = CAAElliptical::Calculate(arg1,arg2,arg3);
   *(CAAEllipticalPlanetaryDetails **)&jresult = new CAAEllipticalPlanetaryDetails((const CAAEllipticalPlanetaryDetails &)result); 
@@ -6200,47 +6047,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAFK5(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAGalileanMoonDetail_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAGalileanMoonDetail *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAGalileanMoonDetail *)new CAAGalileanMoonDetail();
-  *(CAAGalileanMoonDetail **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAGalileanMoonDetail_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAGalileanMoonDetail *arg1 = 0 ;
-  CAAGalileanMoonDetail *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAGalileanMoonDetail **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAGalileanMoonDetail const & reference is null");
-    return 0;
-  } 
-  result = (CAAGalileanMoonDetail *)new CAAGalileanMoonDetail((CAAGalileanMoonDetail const &)*arg1);
-  *(CAAGalileanMoonDetail **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAGalileanMoonDetail(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAGalileanMoonDetail *arg1 = (CAAGalileanMoonDetail *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAGalileanMoonDetail **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAAGalileanMoonDetail_1MeanLongitude_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAAGalileanMoonDetail *arg1 = (CAAGalileanMoonDetail *) 0 ;
   double arg2 ;
@@ -6548,6 +6354,28 @@ SWIGEXPORT jboolean JNICALL Java_com_naughter_aaplus_AAJNI_CAAGalileanMoonDetail
   result = (bool) ((arg1)->bInShadowTransit);
   jresult = (jboolean)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAGalileanMoonDetail(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAGalileanMoonDetail *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAGalileanMoonDetail *)new CAAGalileanMoonDetail();
+  *(CAAGalileanMoonDetail **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAGalileanMoonDetail(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAGalileanMoonDetail *arg1 = (CAAGalileanMoonDetail *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAGalileanMoonDetail **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -8483,47 +8311,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAMoslemCalendar
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANearParabolicObjectElements_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAANearParabolicObjectElements *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAANearParabolicObjectElements *)new CAANearParabolicObjectElements();
-  *(CAANearParabolicObjectElements **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANearParabolicObjectElements_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAANearParabolicObjectElements *arg1 = 0 ;
-  CAANearParabolicObjectElements *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAANearParabolicObjectElements **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAANearParabolicObjectElements const & reference is null");
-    return 0;
-  } 
-  result = (CAANearParabolicObjectElements *)new CAANearParabolicObjectElements((CAANearParabolicObjectElements const &)*arg1);
-  *(CAANearParabolicObjectElements **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANearParabolicObjectElements(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAANearParabolicObjectElements *arg1 = (CAANearParabolicObjectElements *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAANearParabolicObjectElements **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolicObjectElements_1q_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAANearParabolicObjectElements *arg1 = (CAANearParabolicObjectElements *) 0 ;
   double arg2 ;
@@ -8720,43 +8507,24 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolicObject
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANearParabolicObjectDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANearParabolicObjectElements(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
-  CAANearParabolicObjectDetails *result = 0 ;
+  CAANearParabolicObjectElements *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAANearParabolicObjectDetails *)new CAANearParabolicObjectDetails();
-  *(CAANearParabolicObjectDetails **)&jresult = result; 
+  result = (CAANearParabolicObjectElements *)new CAANearParabolicObjectElements();
+  *(CAANearParabolicObjectElements **)&jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANearParabolicObjectDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAANearParabolicObjectDetails *arg1 = 0 ;
-  CAANearParabolicObjectDetails *result = 0 ;
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANearParabolicObjectElements(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAANearParabolicObjectElements *arg1 = (CAANearParabolicObjectElements *) 0 ;
   
   (void)jenv;
   (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAANearParabolicObjectDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAANearParabolicObjectDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAANearParabolicObjectDetails *)new CAANearParabolicObjectDetails((CAANearParabolicObjectDetails const &)*arg1);
-  *(CAANearParabolicObjectDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANearParabolicObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAANearParabolicObjectDetails *arg1 = (CAANearParabolicObjectDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAANearParabolicObjectDetails **)&jarg1; 
+  arg1 = *(CAANearParabolicObjectElements **)&jarg1; 
   delete arg1;
 }
 
@@ -9155,6 +8923,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolicObject
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANearParabolicObjectDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAANearParabolicObjectDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAANearParabolicObjectDetails *)new CAANearParabolicObjectDetails();
+  *(CAANearParabolicObjectDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANearParabolicObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAANearParabolicObjectDetails *arg1 = (CAANearParabolicObjectDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAANearParabolicObjectDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAANearParabolic_1Calculate(JNIEnv *jenv, jclass jcls, jdouble jarg1, jlong jarg2, jobject jarg2_, jboolean jarg3) {
   jlong jresult = 0 ;
   double arg1 ;
@@ -9313,47 +9103,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANeptune(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANodeObjectDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAANodeObjectDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAANodeObjectDetails *)new CAANodeObjectDetails();
-  *(CAANodeObjectDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANodeObjectDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAANodeObjectDetails *arg1 = 0 ;
-  CAANodeObjectDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAANodeObjectDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAANodeObjectDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAANodeObjectDetails *)new CAANodeObjectDetails((CAANodeObjectDetails const &)*arg1);
-  *(CAANodeObjectDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANodeObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAANodeObjectDetails *arg1 = (CAANodeObjectDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAANodeObjectDetails **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAANodeObjectDetails_1t_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAANodeObjectDetails *arg1 = (CAANodeObjectDetails *) 0 ;
   double arg2 ;
@@ -9407,6 +9156,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAANodeObjectDetails_1
   result = (double) ((arg1)->radius);
   jresult = (jdouble)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAANodeObjectDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAANodeObjectDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAANodeObjectDetails *)new CAANodeObjectDetails();
+  *(CAANodeObjectDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANodeObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAANodeObjectDetails *arg1 = (CAANodeObjectDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAANodeObjectDetails **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -9628,47 +9399,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAANutation(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAParabolicObjectElements_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAParabolicObjectElements *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAParabolicObjectElements *)new CAAParabolicObjectElements();
-  *(CAAParabolicObjectElements **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAParabolicObjectElements_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAParabolicObjectElements *arg1 = 0 ;
-  CAAParabolicObjectElements *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAParabolicObjectElements **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAParabolicObjectElements const & reference is null");
-    return 0;
-  } 
-  result = (CAAParabolicObjectElements *)new CAAParabolicObjectElements((CAAParabolicObjectElements const &)*arg1);
-  *(CAAParabolicObjectElements **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAParabolicObjectElements(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAParabolicObjectElements *arg1 = (CAAParabolicObjectElements *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAParabolicObjectElements **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAAParabolicObjectElements_1q_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAAParabolicObjectElements *arg1 = (CAAParabolicObjectElements *) 0 ;
   double arg2 ;
@@ -9837,43 +9567,24 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAParabolicObjectElem
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAParabolicObjectDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAParabolicObjectElements(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
-  CAAParabolicObjectDetails *result = 0 ;
+  CAAParabolicObjectElements *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAAParabolicObjectDetails *)new CAAParabolicObjectDetails();
-  *(CAAParabolicObjectDetails **)&jresult = result; 
+  result = (CAAParabolicObjectElements *)new CAAParabolicObjectElements();
+  *(CAAParabolicObjectElements **)&jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAParabolicObjectDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAParabolicObjectDetails *arg1 = 0 ;
-  CAAParabolicObjectDetails *result = 0 ;
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAParabolicObjectElements(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAParabolicObjectElements *arg1 = (CAAParabolicObjectElements *) 0 ;
   
   (void)jenv;
   (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAParabolicObjectDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAParabolicObjectDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAParabolicObjectDetails *)new CAAParabolicObjectDetails((CAAParabolicObjectDetails const &)*arg1);
-  *(CAAParabolicObjectDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAParabolicObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAParabolicObjectDetails *arg1 = (CAAParabolicObjectDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAParabolicObjectDetails **)&jarg1; 
+  arg1 = *(CAAParabolicObjectElements **)&jarg1; 
   delete arg1;
 }
 
@@ -10272,6 +9983,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAParabolicObjectDeta
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAParabolicObjectDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAParabolicObjectDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAParabolicObjectDetails *)new CAAParabolicObjectDetails();
+  *(CAAParabolicObjectDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAParabolicObjectDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAParabolicObjectDetails *arg1 = (CAAParabolicObjectDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAParabolicObjectDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAParabolic_1CalculateBarkers(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
   jdouble jresult = 0 ;
   double arg1 ;
@@ -10425,47 +10158,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAParallactic(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAATopocentricEclipticDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAATopocentricEclipticDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAATopocentricEclipticDetails *)new CAATopocentricEclipticDetails();
-  *(CAATopocentricEclipticDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAATopocentricEclipticDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAATopocentricEclipticDetails *arg1 = 0 ;
-  CAATopocentricEclipticDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAATopocentricEclipticDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAATopocentricEclipticDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAATopocentricEclipticDetails *)new CAATopocentricEclipticDetails((CAATopocentricEclipticDetails const &)*arg1);
-  *(CAATopocentricEclipticDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAATopocentricEclipticDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAATopocentricEclipticDetails *arg1 = (CAATopocentricEclipticDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAATopocentricEclipticDetails **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAATopocentricEclipticDetails_1Lambda_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAATopocentricEclipticDetails *arg1 = (CAATopocentricEclipticDetails *) 0 ;
   double arg2 ;
@@ -10547,6 +10239,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAATopocentricEcliptic
   result = (double) ((arg1)->Semidiameter);
   jresult = (jdouble)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAATopocentricEclipticDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAATopocentricEclipticDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAATopocentricEclipticDetails *)new CAATopocentricEclipticDetails();
+  *(CAATopocentricEclipticDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAATopocentricEclipticDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAATopocentricEclipticDetails *arg1 = (CAATopocentricEclipticDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAATopocentricEclipticDetails **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -10676,47 +10390,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAParallax(JNIEn
   (void)jenv;
   (void)jcls;
   arg1 = *(CAAParallax **)&jarg1; 
-  delete arg1;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalJupiterDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAPhysicalJupiterDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAPhysicalJupiterDetails *)new CAAPhysicalJupiterDetails();
-  *(CAAPhysicalJupiterDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalJupiterDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAPhysicalJupiterDetails *arg1 = 0 ;
-  CAAPhysicalJupiterDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAPhysicalJupiterDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAPhysicalJupiterDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAPhysicalJupiterDetails *)new CAAPhysicalJupiterDetails((CAAPhysicalJupiterDetails const &)*arg1);
-  *(CAAPhysicalJupiterDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalJupiterDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAPhysicalJupiterDetails *arg1 = (CAAPhysicalJupiterDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAPhysicalJupiterDetails **)&jarg1; 
   delete arg1;
 }
 
@@ -10917,6 +10590,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalJupiterDeta
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalJupiterDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAPhysicalJupiterDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAPhysicalJupiterDetails *)new CAAPhysicalJupiterDetails();
+  *(CAAPhysicalJupiterDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalJupiterDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAPhysicalJupiterDetails *arg1 = (CAAPhysicalJupiterDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAPhysicalJupiterDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalJupiter_1Calculate(JNIEnv *jenv, jclass jcls, jdouble jarg1, jboolean jarg2) {
   jlong jresult = 0 ;
   double arg1 ;
@@ -10951,47 +10646,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalJupite
   (void)jenv;
   (void)jcls;
   arg1 = *(CAAPhysicalJupiter **)&jarg1; 
-  delete arg1;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalMarsDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAPhysicalMarsDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAPhysicalMarsDetails *)new CAAPhysicalMarsDetails();
-  *(CAAPhysicalMarsDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalMarsDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAPhysicalMarsDetails *arg1 = 0 ;
-  CAAPhysicalMarsDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAPhysicalMarsDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAPhysicalMarsDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAPhysicalMarsDetails *)new CAAPhysicalMarsDetails((CAAPhysicalMarsDetails const &)*arg1);
-  *(CAAPhysicalMarsDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalMarsDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAPhysicalMarsDetails *arg1 = (CAAPhysicalMarsDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAPhysicalMarsDetails **)&jarg1; 
   delete arg1;
 }
 
@@ -11220,6 +10874,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalMarsDetails
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalMarsDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAPhysicalMarsDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAPhysicalMarsDetails *)new CAAPhysicalMarsDetails();
+  *(CAAPhysicalMarsDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalMarsDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAPhysicalMarsDetails *arg1 = (CAAPhysicalMarsDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAPhysicalMarsDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalMars_1Calculate(JNIEnv *jenv, jclass jcls, jdouble jarg1, jboolean jarg2) {
   jlong jresult = 0 ;
   double arg1 ;
@@ -11254,47 +10930,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalMars(J
   (void)jenv;
   (void)jcls;
   arg1 = *(CAAPhysicalMars **)&jarg1; 
-  delete arg1;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalMoonDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAPhysicalMoonDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAPhysicalMoonDetails *)new CAAPhysicalMoonDetails();
-  *(CAAPhysicalMoonDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalMoonDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAPhysicalMoonDetails *arg1 = 0 ;
-  CAAPhysicalMoonDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAPhysicalMoonDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAPhysicalMoonDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAPhysicalMoonDetails *)new CAAPhysicalMoonDetails((CAAPhysicalMoonDetails const &)*arg1);
-  *(CAAPhysicalMoonDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalMoonDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAPhysicalMoonDetails *arg1 = (CAAPhysicalMoonDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAPhysicalMoonDetails **)&jarg1; 
   delete arg1;
 }
 
@@ -11495,43 +11130,24 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalMoonDetails
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASelenographicMoonDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalMoonDetails(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
-  CAASelenographicMoonDetails *result = 0 ;
+  CAAPhysicalMoonDetails *result = 0 ;
   
   (void)jenv;
   (void)jcls;
-  result = (CAASelenographicMoonDetails *)new CAASelenographicMoonDetails();
-  *(CAASelenographicMoonDetails **)&jresult = result; 
+  result = (CAAPhysicalMoonDetails *)new CAAPhysicalMoonDetails();
+  *(CAAPhysicalMoonDetails **)&jresult = result; 
   return jresult;
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASelenographicMoonDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAASelenographicMoonDetails *arg1 = 0 ;
-  CAASelenographicMoonDetails *result = 0 ;
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalMoonDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAPhysicalMoonDetails *arg1 = (CAAPhysicalMoonDetails *) 0 ;
   
   (void)jenv;
   (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAASelenographicMoonDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAASelenographicMoonDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAASelenographicMoonDetails *)new CAASelenographicMoonDetails((CAASelenographicMoonDetails const &)*arg1);
-  *(CAASelenographicMoonDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASelenographicMoonDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAASelenographicMoonDetails *arg1 = (CAASelenographicMoonDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAASelenographicMoonDetails **)&jarg1; 
+  arg1 = *(CAAPhysicalMoonDetails **)&jarg1; 
   delete arg1;
 }
 
@@ -11617,6 +11233,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAASelenographicMoonDe
   result = (double) ((arg1)->c0);
   jresult = (jdouble)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASelenographicMoonDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAASelenographicMoonDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAASelenographicMoonDetails *)new CAASelenographicMoonDetails();
+  *(CAASelenographicMoonDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASelenographicMoonDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAASelenographicMoonDetails *arg1 = (CAASelenographicMoonDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAASelenographicMoonDetails **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -11750,47 +11388,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalMoon(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalSunDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAAPhysicalSunDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAAPhysicalSunDetails *)new CAAPhysicalSunDetails();
-  *(CAAPhysicalSunDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalSunDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAAPhysicalSunDetails *arg1 = 0 ;
-  CAAPhysicalSunDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAAPhysicalSunDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAAPhysicalSunDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAAPhysicalSunDetails *)new CAAPhysicalSunDetails((CAAPhysicalSunDetails const &)*arg1);
-  *(CAAPhysicalSunDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalSunDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAAPhysicalSunDetails *arg1 = (CAAPhysicalSunDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAAPhysicalSunDetails **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalSunDetails_1P_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAAPhysicalSunDetails *arg1 = (CAAPhysicalSunDetails *) 0 ;
   double arg2 ;
@@ -11875,6 +11472,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalSunDetails_
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAAPhysicalSunDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAAPhysicalSunDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAAPhysicalSunDetails *)new CAAPhysicalSunDetails();
+  *(CAAPhysicalSunDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalSunDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAAPhysicalSunDetails *arg1 = (CAAPhysicalSunDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAAPhysicalSunDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAAPhysicalSun_1Calculate(JNIEnv *jenv, jclass jcls, jdouble jarg1, jboolean jarg2) {
   jlong jresult = 0 ;
   double arg1 ;
@@ -11930,15 +11549,15 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAAPhysicalSun(JN
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPlanetaryPhenomena_1K(JNIEnv *jenv, jclass jcls, jdouble jarg1, jint jarg2, jint jarg3) {
   jdouble jresult = 0 ;
   double arg1 ;
-  CAAPlanetaryPhenomena::PlanetaryObject arg2 ;
-  CAAPlanetaryPhenomena::EventType arg3 ;
+  CAAPlanetaryPhenomena::Planet arg2 ;
+  CAAPlanetaryPhenomena::Type arg3 ;
   double result;
   
   (void)jenv;
   (void)jcls;
   arg1 = (double)jarg1; 
-  arg2 = (CAAPlanetaryPhenomena::PlanetaryObject)jarg2; 
-  arg3 = (CAAPlanetaryPhenomena::EventType)jarg3; 
+  arg2 = (CAAPlanetaryPhenomena::Planet)jarg2; 
+  arg3 = (CAAPlanetaryPhenomena::Type)jarg3; 
   result = (double)CAAPlanetaryPhenomena::K(arg1,arg2,arg3);
   jresult = (jdouble)result; 
   return jresult;
@@ -11948,15 +11567,15 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPlanetaryPhenomena_
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPlanetaryPhenomena_1Mean(JNIEnv *jenv, jclass jcls, jdouble jarg1, jint jarg2, jint jarg3) {
   jdouble jresult = 0 ;
   double arg1 ;
-  CAAPlanetaryPhenomena::PlanetaryObject arg2 ;
-  CAAPlanetaryPhenomena::EventType arg3 ;
+  CAAPlanetaryPhenomena::Planet arg2 ;
+  CAAPlanetaryPhenomena::Type arg3 ;
   double result;
   
   (void)jenv;
   (void)jcls;
   arg1 = (double)jarg1; 
-  arg2 = (CAAPlanetaryPhenomena::PlanetaryObject)jarg2; 
-  arg3 = (CAAPlanetaryPhenomena::EventType)jarg3; 
+  arg2 = (CAAPlanetaryPhenomena::Planet)jarg2; 
+  arg3 = (CAAPlanetaryPhenomena::Type)jarg3; 
   result = (double)CAAPlanetaryPhenomena::Mean(arg1,arg2,arg3);
   jresult = (jdouble)result; 
   return jresult;
@@ -11966,15 +11585,15 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPlanetaryPhenomena_
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPlanetaryPhenomena_1True(JNIEnv *jenv, jclass jcls, jdouble jarg1, jint jarg2, jint jarg3) {
   jdouble jresult = 0 ;
   double arg1 ;
-  CAAPlanetaryPhenomena::PlanetaryObject arg2 ;
-  CAAPlanetaryPhenomena::EventType arg3 ;
+  CAAPlanetaryPhenomena::Planet arg2 ;
+  CAAPlanetaryPhenomena::Type arg3 ;
   double result;
   
   (void)jenv;
   (void)jcls;
   arg1 = (double)jarg1; 
-  arg2 = (CAAPlanetaryPhenomena::PlanetaryObject)jarg2; 
-  arg3 = (CAAPlanetaryPhenomena::EventType)jarg3; 
+  arg2 = (CAAPlanetaryPhenomena::Planet)jarg2; 
+  arg3 = (CAAPlanetaryPhenomena::Type)jarg3; 
   result = (double)CAAPlanetaryPhenomena::True(arg1,arg2,arg3);
   jresult = (jdouble)result; 
   return jresult;
@@ -11984,14 +11603,14 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPlanetaryPhenomena_
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAAPlanetaryPhenomena_1ElongationValue(JNIEnv *jenv, jclass jcls, jdouble jarg1, jint jarg2, jboolean jarg3) {
   jdouble jresult = 0 ;
   double arg1 ;
-  CAAPlanetaryPhenomena::PlanetaryObject arg2 ;
+  CAAPlanetaryPhenomena::Planet arg2 ;
   bool arg3 ;
   double result;
   
   (void)jenv;
   (void)jcls;
   arg1 = (double)jarg1; 
-  arg2 = (CAAPlanetaryPhenomena::PlanetaryObject)jarg2; 
+  arg2 = (CAAPlanetaryPhenomena::Planet)jarg2; 
   arg3 = jarg3 ? true : false; 
   result = (double)CAAPlanetaryPhenomena::ElongationValue(arg1,arg2,arg3);
   jresult = (jdouble)result; 
@@ -12649,47 +12268,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAARefraction(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAARiseTransitSetDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAARiseTransitSetDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAARiseTransitSetDetails *)new CAARiseTransitSetDetails();
-  *(CAARiseTransitSetDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAARiseTransitSetDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAARiseTransitSetDetails *arg1 = 0 ;
-  CAARiseTransitSetDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAARiseTransitSetDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAARiseTransitSetDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAARiseTransitSetDetails *)new CAARiseTransitSetDetails((CAARiseTransitSetDetails const &)*arg1);
-  *(CAARiseTransitSetDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAARiseTransitSetDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAARiseTransitSetDetails *arg1 = (CAARiseTransitSetDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAARiseTransitSetDetails **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAARiseTransitSetDetails_1bRiseValid_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jboolean jarg2) {
   CAARiseTransitSetDetails *arg1 = (CAARiseTransitSetDetails *) 0 ;
   bool arg2 ;
@@ -12886,6 +12464,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAARiseTransitSetDetai
 }
 
 
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAARiseTransitSetDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAARiseTransitSetDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAARiseTransitSetDetails *)new CAARiseTransitSetDetails();
+  *(CAARiseTransitSetDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAARiseTransitSetDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAARiseTransitSetDetails *arg1 = (CAARiseTransitSetDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAARiseTransitSetDetails **)&jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_CAARiseTransitSet_1Calculate(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2, jdouble jarg3, jdouble jarg4, jdouble jarg5, jdouble jarg6, jdouble jarg7, jdouble jarg8, jdouble jarg9, jdouble jarg10) {
   jlong jresult = 0 ;
   double arg1 ;
@@ -13032,47 +12632,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASaturn(JNIEnv 
   (void)jenv;
   (void)jcls;
   arg1 = *(CAASaturn **)&jarg1; 
-  delete arg1;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASaturnMoonDetail_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAASaturnMoonDetail *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAASaturnMoonDetail *)new CAASaturnMoonDetail();
-  *(CAASaturnMoonDetail **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASaturnMoonDetail_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAASaturnMoonDetail *arg1 = 0 ;
-  CAASaturnMoonDetail *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAASaturnMoonDetail **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAASaturnMoonDetail const & reference is null");
-    return 0;
-  } 
-  result = (CAASaturnMoonDetail *)new CAASaturnMoonDetail((CAASaturnMoonDetail const &)*arg1);
-  *(CAASaturnMoonDetail **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASaturnMoonDetail(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAASaturnMoonDetail *arg1 = (CAASaturnMoonDetail *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAASaturnMoonDetail **)&jarg1; 
   delete arg1;
 }
 
@@ -13244,6 +12803,28 @@ SWIGEXPORT jboolean JNICALL Java_com_naughter_aaplus_AAJNI_CAASaturnMoonDetail_1
   result = (bool) ((arg1)->bInShadowTransit);
   jresult = (jboolean)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASaturnMoonDetail(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAASaturnMoonDetail *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAASaturnMoonDetail *)new CAASaturnMoonDetail();
+  *(CAASaturnMoonDetail **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASaturnMoonDetail(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAASaturnMoonDetail *arg1 = (CAASaturnMoonDetail *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAASaturnMoonDetail **)&jarg1; 
+  delete arg1;
 }
 
 
@@ -13539,47 +13120,6 @@ SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASaturnMoons(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASaturnRingDetails_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
-  jlong jresult = 0 ;
-  CAASaturnRingDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  result = (CAASaturnRingDetails *)new CAASaturnRingDetails();
-  *(CAASaturnRingDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASaturnRingDetails_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
-  jlong jresult = 0 ;
-  CAASaturnRingDetails *arg1 = 0 ;
-  CAASaturnRingDetails *result = 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  (void)jarg1_;
-  arg1 = *(CAASaturnRingDetails **)&jarg1;
-  if (!arg1) {
-    SWIG_JavaThrowException(jenv, SWIG_JavaNullPointerException, "CAASaturnRingDetails const & reference is null");
-    return 0;
-  } 
-  result = (CAASaturnRingDetails *)new CAASaturnRingDetails((CAASaturnRingDetails const &)*arg1);
-  *(CAASaturnRingDetails **)&jresult = result; 
-  return jresult;
-}
-
-
-SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASaturnRingDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
-  CAASaturnRingDetails *arg1 = (CAASaturnRingDetails *) 0 ;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = *(CAASaturnRingDetails **)&jarg1; 
-  delete arg1;
-}
-
-
 SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_CAASaturnRingDetails_1B_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CAASaturnRingDetails *arg1 = (CAASaturnRingDetails *) 0 ;
   double arg2 ;
@@ -13801,6 +13341,28 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAASaturnRingDetails_1
   result = (double) ((arg1)->U2);
   jresult = (jdouble)result; 
   return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_naughter_aaplus_AAJNI_new_1CAASaturnRingDetails(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  CAASaturnRingDetails *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (CAASaturnRingDetails *)new CAASaturnRingDetails();
+  *(CAASaturnRingDetails **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void JNICALL Java_com_naughter_aaplus_AAJNI_delete_1CAASaturnRingDetails(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+  CAASaturnRingDetails *arg1 = (CAASaturnRingDetails *) 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = *(CAASaturnRingDetails **)&jarg1; 
+  delete arg1;
 }
 
 

@@ -36,14 +36,6 @@ public class CAANearParabolicObjectElements {
     }
   }
 
-  public CAANearParabolicObjectElements() {
-    this(AAJNI.new_CAANearParabolicObjectElements__SWIG_0(), true);
-  }
-
-  public CAANearParabolicObjectElements(CAANearParabolicObjectElements arg0) {
-    this(AAJNI.new_CAANearParabolicObjectElements__SWIG_1(CAANearParabolicObjectElements.getCPtr(arg0), arg0), true);
-  }
-
   public void setQ(double value) {
     AAJNI.CAANearParabolicObjectElements_q_set(swigCPtr, this, value);
   }
@@ -98,6 +90,10 @@ public class CAANearParabolicObjectElements {
 
   public double getE() {
     return AAJNI.CAANearParabolicObjectElements_e_get(swigCPtr, this);
+  }
+
+  public CAANearParabolicObjectElements() {
+    this(AAJNI.new_CAANearParabolicObjectElements(), true);
   }
 
 }

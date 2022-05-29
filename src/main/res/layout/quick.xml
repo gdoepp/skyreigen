@@ -101,7 +101,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
                             android:text="@string/sidertime"
-                            android:textColor="#ffff00"
+                            android:textColor="#ffffff"
                             android:textSize="18sp"></TextView>
 
                         <TextView
@@ -109,8 +109,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="10dp"
-                            android:textColor="#ffff00"
+                            android:textColor="#ffffff"
                             android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow   android:id="@+id/tableRowSL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp">
+                    <TextView
+                    android:text="@string/sun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#ffff00"
+                        android:textSize="18sp"></TextView>
                     </TableRow>
 
                     <TableRow
@@ -234,6 +247,20 @@
                             android:gravity="right"
                             android:textColor="#ffff00"
                             android:textSize="18sp"></TextView>
+                    </TableRow>
+
+                    <TableRow  android:id="@+id/tableRowML"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#afafff"
+                        android:textSize="18sp"
+                        android:text="@string/moon"></TextView>
+
                     </TableRow>
 
                     <TableRow

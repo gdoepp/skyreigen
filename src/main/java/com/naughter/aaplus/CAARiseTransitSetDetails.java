@@ -36,14 +36,6 @@ public class CAARiseTransitSetDetails {
     }
   }
 
-  public CAARiseTransitSetDetails() {
-    this(AAJNI.new_CAARiseTransitSetDetails__SWIG_0(), true);
-  }
-
-  public CAARiseTransitSetDetails(CAARiseTransitSetDetails arg0) {
-    this(AAJNI.new_CAARiseTransitSetDetails__SWIG_1(CAARiseTransitSetDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setBRiseValid(boolean value) {
     AAJNI.CAARiseTransitSetDetails_bRiseValid_set(swigCPtr, this, value);
   }
@@ -98,6 +90,10 @@ public class CAARiseTransitSetDetails {
 
   public double getSet() {
     return AAJNI.CAARiseTransitSetDetails_Set_get(swigCPtr, this);
+  }
+
+  public CAARiseTransitSetDetails() {
+    this(AAJNI.new_CAARiseTransitSetDetails(), true);
   }
 
 }

@@ -21,7 +21,7 @@ package de.gdoeppert.sky.model;
 
 import com.naughter.aaplus.CAADiameters;
 import com.naughter.aaplus.CAAEarth;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAIlluminatedFraction;
 import com.naughter.aaplus.CAAMars;
 import com.naughter.aaplus.CAAPhysicalMars;
@@ -34,7 +34,7 @@ public class MarsElements extends PlanetElements {
 
     public MarsElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
-        theObject = EllipticalObject.MARS;
+        theObject = Object.MARS;
     }
 
     @Override

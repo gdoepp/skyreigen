@@ -9,10 +9,9 @@
     <string name="equtime">equ.tmp.</string>
     <string name="sun">Sol</string>
     <string name="moon">Luna</string>
-    <string name="sidertime">tmp.sid.</string>
-    <string name="centralmeridian">merid.c.</string>
+    <string name="sidertime">tiemp.sid.</string>
+    <string name="centralmeridian">merid.cnt.</string>
     <string name="look">aspecto</string>
-
 
     <string name="moonrise">sale</string>
     <string name="moontrans">tránsito</string>
@@ -20,13 +19,13 @@
     <string name="moondist">distanza</string>
     <string name="moondecl">declin.</string>
     <string name="moonphase">fase</string>
-    <string name="moonlibraLong">libr.lg.</string>
-    <string name="moonlibraLat">libr.lt.</string>
-    <string name="moonasc">asc.</string>
+    <string name="moonlibraLong">libr.lng.</string>
+    <string name="moonlibraLat">libr.lat.</string>
+    <string name="moonasc">asc.recta</string>
     <string name="moonperi">perigeo</string>
     <string name="moondisk">ilum.</string>
-    <string name="moondiam">diámet.</string>
-    <string name="moonsdiam">sdiam</string>
+    <string name="moondiam">diámetro</string>
+    <string name="moonsdiam">sdiám</string>
     <string name="moonlong">long.</string>
     <string name="moonage">edad</string>
     <string name="moonorbit">La órbita de la luna alrededor de la Tierra</string>
@@ -37,12 +36,12 @@
     <string name="planetdistsun">dist.sol</string>
     <string name="planetdecl">declin.</string>
     <string name="planetphase">fase</string>
-    <string name="planetra">A.R.</string>
+    <string name="planetra">asc.recta</string>
     <string name="planetmag">magn.</string>
     <string name="planetdisk">ilum.</string>
     <string name="planetdiam">diámet.</string>
     <string name="planetelong">elong.</string>
-    <string name="planetsdiam">sdiam</string>
+    <string name="planetsdiam">sdiám</string>
     <string name="planetdistearth">d.tierra</string>
     <string name="planetalt">altura</string>
     <string name="planetazi">acimut</string>

@@ -36,14 +36,6 @@ public class CAAPhysicalMarsDetails {
     }
   }
 
-  public CAAPhysicalMarsDetails() {
-    this(AAJNI.new_CAAPhysicalMarsDetails__SWIG_0(), true);
-  }
-
-  public CAAPhysicalMarsDetails(CAAPhysicalMarsDetails arg0) {
-    this(AAJNI.new_CAAPhysicalMarsDetails__SWIG_1(CAAPhysicalMarsDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setDE(double value) {
     AAJNI.CAAPhysicalMarsDetails_DE_set(swigCPtr, this, value);
   }
@@ -106,6 +98,10 @@ public class CAAPhysicalMarsDetails {
 
   public double getD() {
     return AAJNI.CAAPhysicalMarsDetails_d_get(swigCPtr, this);
+  }
+
+  public CAAPhysicalMarsDetails() {
+    this(AAJNI.new_CAAPhysicalMarsDetails(), true);
   }
 
 }

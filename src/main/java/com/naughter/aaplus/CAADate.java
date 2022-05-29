@@ -136,8 +136,8 @@ public class CAADate {
     AAJNI.CAADate_Get(swigCPtr, this, SWIGTYPE_p_long.getCPtr(Year), SWIGTYPE_p_long.getCPtr(Month), SWIGTYPE_p_long.getCPtr(Day), SWIGTYPE_p_long.getCPtr(Hour), SWIGTYPE_p_long.getCPtr(Minute), SWIGTYPE_p_double.getCPtr(Second));
   }
 
-  public CAADate.DAY_OF_WEEK DayOfWeek() {
-    return CAADate.DAY_OF_WEEK.swigToEnum(AAJNI.CAADate_DayOfWeek(swigCPtr, this));
+  public CAADate.DOW DayOfWeek() {
+    return CAADate.DOW.swigToEnum(AAJNI.CAADate_DayOfWeek(swigCPtr, this));
   }
 
   public double DayOfYear() {
@@ -164,14 +164,14 @@ public class CAADate {
     return AAJNI.CAADate_FractionalYear(swigCPtr, this);
   }
 
-  public final static class DAY_OF_WEEK {
-    public final static CAADate.DAY_OF_WEEK SUNDAY = new CAADate.DAY_OF_WEEK("SUNDAY", AAJNI.CAADate_DAY_OF_WEEK_SUNDAY_get());
-    public final static CAADate.DAY_OF_WEEK MONDAY = new CAADate.DAY_OF_WEEK("MONDAY", AAJNI.CAADate_DAY_OF_WEEK_MONDAY_get());
-    public final static CAADate.DAY_OF_WEEK TUESDAY = new CAADate.DAY_OF_WEEK("TUESDAY", AAJNI.CAADate_DAY_OF_WEEK_TUESDAY_get());
-    public final static CAADate.DAY_OF_WEEK WEDNESDAY = new CAADate.DAY_OF_WEEK("WEDNESDAY", AAJNI.CAADate_DAY_OF_WEEK_WEDNESDAY_get());
-    public final static CAADate.DAY_OF_WEEK THURSDAY = new CAADate.DAY_OF_WEEK("THURSDAY", AAJNI.CAADate_DAY_OF_WEEK_THURSDAY_get());
-    public final static CAADate.DAY_OF_WEEK FRIDAY = new CAADate.DAY_OF_WEEK("FRIDAY", AAJNI.CAADate_DAY_OF_WEEK_FRIDAY_get());
-    public final static CAADate.DAY_OF_WEEK SATURDAY = new CAADate.DAY_OF_WEEK("SATURDAY", AAJNI.CAADate_DAY_OF_WEEK_SATURDAY_get());
+  public final static class DOW {
+    public final static CAADate.DOW SUNDAY = new CAADate.DOW("SUNDAY", AAJNI.CAADate_DOW_SUNDAY_get());
+    public final static CAADate.DOW MONDAY = new CAADate.DOW("MONDAY", AAJNI.CAADate_DOW_MONDAY_get());
+    public final static CAADate.DOW TUESDAY = new CAADate.DOW("TUESDAY", AAJNI.CAADate_DOW_TUESDAY_get());
+    public final static CAADate.DOW WEDNESDAY = new CAADate.DOW("WEDNESDAY", AAJNI.CAADate_DOW_WEDNESDAY_get());
+    public final static CAADate.DOW THURSDAY = new CAADate.DOW("THURSDAY", AAJNI.CAADate_DOW_THURSDAY_get());
+    public final static CAADate.DOW FRIDAY = new CAADate.DOW("FRIDAY", AAJNI.CAADate_DOW_FRIDAY_get());
+    public final static CAADate.DOW SATURDAY = new CAADate.DOW("SATURDAY", AAJNI.CAADate_DOW_SATURDAY_get());
 
     public final int swigValue() {
       return swigValue;
@@ -181,33 +181,33 @@ public class CAADate {
       return swigName;
     }
 
-    public static DAY_OF_WEEK swigToEnum(int swigValue) {
+    public static DOW swigToEnum(int swigValue) {
       if (swigValue < swigValues.length && swigValue >= 0 && swigValues[swigValue].swigValue == swigValue)
         return swigValues[swigValue];
       for (int i = 0; i < swigValues.length; i++)
         if (swigValues[i].swigValue == swigValue)
           return swigValues[i];
-      throw new IllegalArgumentException("No enum " + DAY_OF_WEEK.class + " with value " + swigValue);
+      throw new IllegalArgumentException("No enum " + DOW.class + " with value " + swigValue);
     }
 
-    private DAY_OF_WEEK(String swigName) {
+    private DOW(String swigName) {
       this.swigName = swigName;
       this.swigValue = swigNext++;
     }
 
-    private DAY_OF_WEEK(String swigName, int swigValue) {
+    private DOW(String swigName, int swigValue) {
       this.swigName = swigName;
       this.swigValue = swigValue;
       swigNext = swigValue+1;
     }
 
-    private DAY_OF_WEEK(String swigName, DAY_OF_WEEK swigEnum) {
+    private DOW(String swigName, DOW swigEnum) {
       this.swigName = swigName;
       this.swigValue = swigEnum.swigValue;
       swigNext = this.swigValue+1;
     }
 
-    private static DAY_OF_WEEK[] swigValues = { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY };
+    private static DOW[] swigValues = { SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY };
     private static int swigNext = 0;
     private final int swigValue;
     private final String swigName;

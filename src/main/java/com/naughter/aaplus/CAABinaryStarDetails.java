@@ -36,14 +36,6 @@ public class CAABinaryStarDetails {
     }
   }
 
-  public CAABinaryStarDetails() {
-    this(AAJNI.new_CAABinaryStarDetails__SWIG_0(), true);
-  }
-
-  public CAABinaryStarDetails(CAABinaryStarDetails arg0) {
-    this(AAJNI.new_CAABinaryStarDetails__SWIG_1(CAABinaryStarDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setR(double value) {
     AAJNI.CAABinaryStarDetails_r_set(swigCPtr, this, value);
   }
@@ -66,6 +58,26 @@ public class CAABinaryStarDetails {
 
   public double getRho() {
     return AAJNI.CAABinaryStarDetails_Rho_get(swigCPtr, this);
+  }
+
+  public void setX(double value) {
+    AAJNI.CAABinaryStarDetails_x_set(swigCPtr, this, value);
+  }
+
+  public double getX() {
+    return AAJNI.CAABinaryStarDetails_x_get(swigCPtr, this);
+  }
+
+  public void setY(double value) {
+    AAJNI.CAABinaryStarDetails_y_set(swigCPtr, this, value);
+  }
+
+  public double getY() {
+    return AAJNI.CAABinaryStarDetails_y_get(swigCPtr, this);
+  }
+
+  public CAABinaryStarDetails() {
+    this(AAJNI.new_CAABinaryStarDetails(), true);
   }
 
 }

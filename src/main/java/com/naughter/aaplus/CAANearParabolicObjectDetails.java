@@ -36,14 +36,6 @@ public class CAANearParabolicObjectDetails {
     }
   }
 
-  public CAANearParabolicObjectDetails() {
-    this(AAJNI.new_CAANearParabolicObjectDetails__SWIG_0(), true);
-  }
-
-  public CAANearParabolicObjectDetails(CAANearParabolicObjectDetails arg0) {
-    this(AAJNI.new_CAANearParabolicObjectDetails__SWIG_1(CAANearParabolicObjectDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setHeliocentricRectangularEquatorial(CAA3DCoordinate value) {
     AAJNI.CAANearParabolicObjectDetails_HeliocentricRectangularEquatorial_set(swigCPtr, this, CAA3DCoordinate.getCPtr(value), value);
   }
@@ -156,6 +148,10 @@ public class CAANearParabolicObjectDetails {
 
   public double getPhaseAngle() {
     return AAJNI.CAANearParabolicObjectDetails_PhaseAngle_get(swigCPtr, this);
+  }
+
+  public CAANearParabolicObjectDetails() {
+    this(AAJNI.new_CAANearParabolicObjectDetails(), true);
   }
 
 }

@@ -36,14 +36,6 @@ public class CAAEllipticalObjectDetails {
     }
   }
 
-  public CAAEllipticalObjectDetails() {
-    this(AAJNI.new_CAAEllipticalObjectDetails__SWIG_0(), true);
-  }
-
-  public CAAEllipticalObjectDetails(CAAEllipticalObjectDetails arg0) {
-    this(AAJNI.new_CAAEllipticalObjectDetails__SWIG_1(CAAEllipticalObjectDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setHeliocentricRectangularEquatorial(CAA3DCoordinate value) {
     AAJNI.CAAEllipticalObjectDetails_HeliocentricRectangularEquatorial_set(swigCPtr, this, CAA3DCoordinate.getCPtr(value), value);
   }
@@ -156,6 +148,10 @@ public class CAAEllipticalObjectDetails {
 
   public double getPhaseAngle() {
     return AAJNI.CAAEllipticalObjectDetails_PhaseAngle_get(swigCPtr, this);
+  }
+
+  public CAAEllipticalObjectDetails() {
+    this(AAJNI.new_CAAEllipticalObjectDetails(), true);
   }
 
 }

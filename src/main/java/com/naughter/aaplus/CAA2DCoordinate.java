@@ -36,14 +36,6 @@ public class CAA2DCoordinate {
     }
   }
 
-  public CAA2DCoordinate() {
-    this(AAJNI.new_CAA2DCoordinate__SWIG_0(), true);
-  }
-
-  public CAA2DCoordinate(CAA2DCoordinate arg0) {
-    this(AAJNI.new_CAA2DCoordinate__SWIG_1(CAA2DCoordinate.getCPtr(arg0), arg0), true);
-  }
-
   public void setX(double value) {
     AAJNI.CAA2DCoordinate_X_set(swigCPtr, this, value);
   }
@@ -58,6 +50,10 @@ public class CAA2DCoordinate {
 
   public double getY() {
     return AAJNI.CAA2DCoordinate_Y_get(swigCPtr, this);
+  }
+
+  public CAA2DCoordinate() {
+    this(AAJNI.new_CAA2DCoordinate(), true);
   }
 
 }

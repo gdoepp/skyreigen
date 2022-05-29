@@ -36,14 +36,6 @@ public class CAASaturnRingDetails {
     }
   }
 
-  public CAASaturnRingDetails() {
-    this(AAJNI.new_CAASaturnRingDetails__SWIG_0(), true);
-  }
-
-  public CAASaturnRingDetails(CAASaturnRingDetails arg0) {
-    this(AAJNI.new_CAASaturnRingDetails__SWIG_1(CAASaturnRingDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setB2(double value) {
     AAJNI.CAASaturnRingDetails_B_set(swigCPtr, this, value);
   }
@@ -106,6 +98,10 @@ public class CAASaturnRingDetails {
 
   public double getU2() {
     return AAJNI.CAASaturnRingDetails_U2_get(swigCPtr, this);
+  }
+
+  public CAASaturnRingDetails() {
+    this(AAJNI.new_CAASaturnRingDetails(), true);
   }
 
 }

@@ -36,14 +36,6 @@ public class CAASaturnMoonDetail {
     }
   }
 
-  public CAASaturnMoonDetail() {
-    this(AAJNI.new_CAASaturnMoonDetail__SWIG_0(), true);
-  }
-
-  public CAASaturnMoonDetail(CAASaturnMoonDetail arg0) {
-    this(AAJNI.new_CAASaturnMoonDetail__SWIG_1(CAASaturnMoonDetail.getCPtr(arg0), arg0), true);
-  }
-
   public void setTrueRectangularCoordinates(CAA3DCoordinate value) {
     AAJNI.CAASaturnMoonDetail_TrueRectangularCoordinates_set(swigCPtr, this, CAA3DCoordinate.getCPtr(value), value);
   }
@@ -92,6 +84,10 @@ public class CAASaturnMoonDetail {
 
   public boolean getBInShadowTransit() {
     return AAJNI.CAASaturnMoonDetail_bInShadowTransit_get(swigCPtr, this);
+  }
+
+  public CAASaturnMoonDetail() {
+    this(AAJNI.new_CAASaturnMoonDetail(), true);
   }
 
 }

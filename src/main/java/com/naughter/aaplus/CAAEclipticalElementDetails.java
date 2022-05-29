@@ -36,14 +36,6 @@ public class CAAEclipticalElementDetails {
     }
   }
 
-  public CAAEclipticalElementDetails() {
-    this(AAJNI.new_CAAEclipticalElementDetails__SWIG_0(), true);
-  }
-
-  public CAAEclipticalElementDetails(CAAEclipticalElementDetails arg0) {
-    this(AAJNI.new_CAAEclipticalElementDetails__SWIG_1(CAAEclipticalElementDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setI(double value) {
     AAJNI.CAAEclipticalElementDetails_i_set(swigCPtr, this, value);
   }
@@ -66,6 +58,10 @@ public class CAAEclipticalElementDetails {
 
   public double getOmega() {
     return AAJNI.CAAEclipticalElementDetails_omega_get(swigCPtr, this);
+  }
+
+  public CAAEclipticalElementDetails() {
+    this(AAJNI.new_CAAEclipticalElementDetails(), true);
   }
 
 }

@@ -40,7 +40,7 @@ public class CAAElliptical {
     return AAJNI.CAAElliptical_DistanceToLightTime(Distance);
   }
 
-  public static CAAEllipticalPlanetaryDetails Calculate(double JD, CAAElliptical.EllipticalObject object, boolean bHighPrecision) {
+  public static CAAEllipticalPlanetaryDetails Calculate(double JD, CAAElliptical.Object object, boolean bHighPrecision) {
     return new CAAEllipticalPlanetaryDetails(AAJNI.CAAElliptical_Calculate__SWIG_0(JD, object.swigValue(), bHighPrecision), true);
   }
 
@@ -84,15 +84,15 @@ public class CAAElliptical {
     this(AAJNI.new_CAAElliptical(), true);
   }
 
-  public final static class EllipticalObject {
-    public final static CAAElliptical.EllipticalObject SUN = new CAAElliptical.EllipticalObject("SUN");
-    public final static CAAElliptical.EllipticalObject MERCURY = new CAAElliptical.EllipticalObject("MERCURY");
-    public final static CAAElliptical.EllipticalObject VENUS = new CAAElliptical.EllipticalObject("VENUS");
-    public final static CAAElliptical.EllipticalObject MARS = new CAAElliptical.EllipticalObject("MARS");
-    public final static CAAElliptical.EllipticalObject JUPITER = new CAAElliptical.EllipticalObject("JUPITER");
-    public final static CAAElliptical.EllipticalObject SATURN = new CAAElliptical.EllipticalObject("SATURN");
-    public final static CAAElliptical.EllipticalObject URANUS = new CAAElliptical.EllipticalObject("URANUS");
-    public final static CAAElliptical.EllipticalObject NEPTUNE = new CAAElliptical.EllipticalObject("NEPTUNE");
+  public final static class Object {
+    public final static CAAElliptical.Object SUN = new CAAElliptical.Object("SUN");
+    public final static CAAElliptical.Object MERCURY = new CAAElliptical.Object("MERCURY");
+    public final static CAAElliptical.Object VENUS = new CAAElliptical.Object("VENUS");
+    public final static CAAElliptical.Object MARS = new CAAElliptical.Object("MARS");
+    public final static CAAElliptical.Object JUPITER = new CAAElliptical.Object("JUPITER");
+    public final static CAAElliptical.Object SATURN = new CAAElliptical.Object("SATURN");
+    public final static CAAElliptical.Object URANUS = new CAAElliptical.Object("URANUS");
+    public final static CAAElliptical.Object NEPTUNE = new CAAElliptical.Object("NEPTUNE");
 
     public final int swigValue() {
       return swigValue;
@@ -102,33 +102,33 @@ public class CAAElliptical {
       return swigName;
     }
 
-    public static EllipticalObject swigToEnum(int swigValue) {
+    public static Object swigToEnum(int swigValue) {
       if (swigValue < swigValues.length && swigValue >= 0 && swigValues[swigValue].swigValue == swigValue)
         return swigValues[swigValue];
       for (int i = 0; i < swigValues.length; i++)
         if (swigValues[i].swigValue == swigValue)
           return swigValues[i];
-      throw new IllegalArgumentException("No enum " + EllipticalObject.class + " with value " + swigValue);
+      throw new IllegalArgumentException("No enum " + Object.class + " with value " + swigValue);
     }
 
-    private EllipticalObject(String swigName) {
+    private Object(String swigName) {
       this.swigName = swigName;
       this.swigValue = swigNext++;
     }
 
-    private EllipticalObject(String swigName, int swigValue) {
+    private Object(String swigName, int swigValue) {
       this.swigName = swigName;
       this.swigValue = swigValue;
       swigNext = swigValue+1;
     }
 
-    private EllipticalObject(String swigName, EllipticalObject swigEnum) {
+    private Object(String swigName, Object swigEnum) {
       this.swigName = swigName;
       this.swigValue = swigEnum.swigValue;
       swigNext = this.swigValue+1;
     }
 
-    private static EllipticalObject[] swigValues = { SUN, MERCURY, VENUS, MARS, JUPITER, SATURN, URANUS, NEPTUNE };
+    private static Object[] swigValues = { SUN, MERCURY, VENUS, MARS, JUPITER, SATURN, URANUS, NEPTUNE };
     private static int swigNext = 0;
     private final int swigValue;
     private final String swigName;

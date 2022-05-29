@@ -67,15 +67,18 @@ public class PolarView extends View {
             meshPaint.setStyle(Style.STROKE);
             float x = this.getWidth();
             float y = this.getHeight();
-            float r = Math.min(x, y) / 22;
+            float r = Math.min(x, y) / 23;
 
             for (int j = 9; j > 0; j--) {
                 canvas.drawCircle(x / 2, y / 2, r * j, meshPaint);
                 if (j % 3 == 0 && j != 0 && j != 9) {
+                    meshPaint.setStyle(Style.FILL_AND_STROKE);
                     canvas.drawText((9 - j) * 10 + "°", x / 2, y / 2 - r * j
                             + 5, meshPaint);
+                    meshPaint.setStyle(Style.STROKE);
                 }
             }
+
 
             for (int j = 0; j < 360; j += 15) {
                 float dx = (float) (Math.sin(j / 180.0 * Math.PI) * r);
@@ -83,10 +86,11 @@ public class PolarView extends View {
                 canvas.drawLine(x / 2, y / 2, x / 2 + dx * 9, y / 2 + dy * 9,
                         meshPaint);
                 if (j % 45 == 0) {
-
+                    meshPaint.setStyle(Style.FILL_AND_STROKE);
                     String hour = dir[j / 45];
-                    canvas.drawText(hour, (float) (x / 2 + dx * 10.4 - 8), y
+                    canvas.drawText(hour, (float) (x / 2 + dx * 10.4 + 8), y
                             / 2 + dy * 10 + 6, meshPaint);
+                    meshPaint.setStyle(Style.STROKE);
                 }
             }
 
@@ -175,7 +179,7 @@ public class PolarView extends View {
 
         float x = this.getWidth();
         float y = this.getHeight();
-        float r = Math.min(x, y) / 22;
+        float r = Math.min(x, y) / 23;
 
         float winterSet;
         float winterRise;
@@ -264,7 +268,7 @@ public class PolarView extends View {
 
         float x = this.getWidth();
         float y = this.getHeight();
-        float r = Math.min(x, y) / 22;
+        float r = Math.min(x, y) / 23;
         Path path = new Path();
         boolean first = true;
         double time = traj[0].getTime();
@@ -327,6 +331,7 @@ public class PolarView extends View {
         float w = paint.getStrokeWidth();
         paint.setStrokeWidth(0);
         paint.setTextAlign(align);
+        paint.setStyle(Style.FILL_AND_STROKE);
         canvas.drawText(valueS, x, y, paint);
         paint.setStrokeWidth(w);
     }

@@ -36,14 +36,6 @@ public class CAAPhysicalJupiterDetails {
     }
   }
 
-  public CAAPhysicalJupiterDetails() {
-    this(AAJNI.new_CAAPhysicalJupiterDetails__SWIG_0(), true);
-  }
-
-  public CAAPhysicalJupiterDetails(CAAPhysicalJupiterDetails arg0) {
-    this(AAJNI.new_CAAPhysicalJupiterDetails__SWIG_1(CAAPhysicalJupiterDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setDE(double value) {
     AAJNI.CAAPhysicalJupiterDetails_DE_set(swigCPtr, this, value);
   }
@@ -98,6 +90,10 @@ public class CAAPhysicalJupiterDetails {
 
   public double getP() {
     return AAJNI.CAAPhysicalJupiterDetails_P_get(swigCPtr, this);
+  }
+
+  public CAAPhysicalJupiterDetails() {
+    this(AAJNI.new_CAAPhysicalJupiterDetails(), true);
   }
 
 }

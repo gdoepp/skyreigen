@@ -8,6 +8,9 @@
     <string name="equtime">Zeitgleichung</string>
     <string name="sidertime">Sternzeit</string>
 
+    <string name="sun">Sonne</string>
+    <string name="moon">Mond</string>
+
     <string name="moonrise">Aufgang</string>
     <string name="moontrans">Kulmination</string>
     <string name="moonset">Untergang</string>

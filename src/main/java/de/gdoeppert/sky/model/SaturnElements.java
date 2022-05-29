@@ -24,7 +24,7 @@ import android.graphics.Color;
 import com.naughter.aaplus.CAA3DCoordinate;
 import com.naughter.aaplus.CAADiameters;
 import com.naughter.aaplus.CAAEarth;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAIlluminatedFraction;
 import com.naughter.aaplus.CAASaturn;
 import com.naughter.aaplus.CAASaturnMoonDetail;
@@ -42,7 +42,7 @@ public class SaturnElements extends PlanetElements {
     // private String ringLabel;
     public SaturnElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
-        theObject = EllipticalObject.SATURN;
+        theObject = Object.SATURN;
         // ringLabel = context.getResources().getString(R.string.planetring);
 
     }

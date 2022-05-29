@@ -9,8 +9,7 @@
     <string name="sun">Sun</string>
     <string name="moon">Moon</string>
     <string name="sidertime">sidereal time</string>
-    <string name="centralmeridian">cent. meridian</string>
-
+    <string name="centralmeridian">cent.meridian</string>
 
     <string name="moonrise">moonrise</string>
     <string name="moontrans">transit</string>

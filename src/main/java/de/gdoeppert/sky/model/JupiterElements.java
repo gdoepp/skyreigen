@@ -26,7 +26,7 @@ import android.graphics.Color;
 import com.naughter.aaplus.CAA3DCoordinate;
 import com.naughter.aaplus.CAADiameters;
 import com.naughter.aaplus.CAAEarth;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAGalileanMoonDetail;
 import com.naughter.aaplus.CAAGalileanMoons;
 import com.naughter.aaplus.CAAGalileanMoonsDetails;
@@ -45,7 +45,7 @@ public class JupiterElements extends PlanetElements {
 
     public JupiterElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
-        theObject = EllipticalObject.JUPITER;
+        theObject = Object.JUPITER;
     }
 
     @Override

@@ -36,14 +36,6 @@ public class CAASelenographicMoonDetails {
     }
   }
 
-  public CAASelenographicMoonDetails() {
-    this(AAJNI.new_CAASelenographicMoonDetails__SWIG_0(), true);
-  }
-
-  public CAASelenographicMoonDetails(CAASelenographicMoonDetails arg0) {
-    this(AAJNI.new_CAASelenographicMoonDetails__SWIG_1(CAASelenographicMoonDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setL0(double value) {
     AAJNI.CAASelenographicMoonDetails_l0_set(swigCPtr, this, value);
   }
@@ -66,6 +58,10 @@ public class CAASelenographicMoonDetails {
 
   public double getC0() {
     return AAJNI.CAASelenographicMoonDetails_c0_get(swigCPtr, this);
+  }
+
+  public CAASelenographicMoonDetails() {
+    this(AAJNI.new_CAASelenographicMoonDetails(), true);
   }
 
 }

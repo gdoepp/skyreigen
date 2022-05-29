@@ -27,7 +27,7 @@ import android.view.View;
 import com.naughter.aaplus.CAA2DCoordinate;
 import com.naughter.aaplus.CAACoordinateTransformation;
 import com.naughter.aaplus.CAAElliptical;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAEllipticalPlanetaryDetails;
 import com.naughter.aaplus.CAAMoon;
 import com.naughter.aaplus.CAANutation;
@@ -145,7 +145,7 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         super.onCancelled();
     }
 
-    private static Object lock = new Object();
+    private static java.lang.Object lock = new java.lang.Object();
     private static List<Constellation> constellations = null;
 
     private void readConstellations() {
@@ -248,13 +248,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_moon] = 0xef00ffff;
 
         CAAEllipticalPlanetaryDetails details = CAAElliptical.Calculate(
-                solarElements.getJD(), EllipticalObject.SUN, false);
+                solarElements.getJD(), Object.SUN, false);
         positions[idx_sun] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 7,
-                EllipticalObject.SUN, false);
+                Object.SUN, false);
         positions2[idx_sun] = new PlanetPositionEqu(solarElements.getJD() + 7,
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
@@ -262,13 +262,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_sun] = 0xefffff00;
 
         details = CAAElliptical.Calculate(solarElements.getJD(),
-                EllipticalObject.MERCURY, false);
+                Object.MERCURY, false);
         positions[idx_mercury] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 7,
-                EllipticalObject.MERCURY, false);
+                Object.MERCURY, false);
         positions2[idx_mercury] = new PlanetPositionEqu(
                 solarElements.getJD() + 7, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
@@ -276,13 +276,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_mercury] = 0xefdfdf40;
 
         details = CAAElliptical.Calculate(solarElements.getJD(),
-                EllipticalObject.VENUS, false);
+                Object.VENUS, false);
         positions[idx_venus] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 7,
-                EllipticalObject.VENUS, false);
+                Object.VENUS, false);
         positions2[idx_venus] = new PlanetPositionEqu(
                 solarElements.getJD() + 7, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
@@ -290,13 +290,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_venus] = 0xefffff80;
 
         details = CAAElliptical.Calculate(solarElements.getJD(),
-                EllipticalObject.MARS, false);
+                Object.MARS, false);
         positions[idx_mars] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 15,
-                EllipticalObject.MARS, false);
+                Object.MARS, false);
         positions2[idx_mars] = new PlanetPositionEqu(
                 solarElements.getJD() + 15, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
@@ -304,13 +304,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_mars] = 0xefff5020;
 
         details = CAAElliptical.Calculate(solarElements.getJD(),
-                EllipticalObject.JUPITER, false);
+                Object.JUPITER, false);
         positions[idx_jupiter] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 30,
-                EllipticalObject.JUPITER, false);
+                Object.JUPITER, false);
         positions2[idx_jupiter] = new PlanetPositionEqu(
                 solarElements.getJD() + 30, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
@@ -318,13 +318,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_jupiter] = 0xefffffff;
 
         details = CAAElliptical.Calculate(solarElements.getJD(),
-                EllipticalObject.SATURN, false);
+                Object.SATURN, false);
         positions[idx_saturn] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 30,
-                EllipticalObject.SATURN, false);
+                Object.SATURN, false);
         positions2[idx_saturn] = new PlanetPositionEqu(
                 solarElements.getJD() + 30, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
@@ -332,13 +332,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_saturn] = 0xefe0e080;
 
         details = CAAElliptical.Calculate(solarElements.getJD(),
-                EllipticalObject.URANUS, false);
+                Object.URANUS, false);
         positions[idx_uranus] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 365,
-                EllipticalObject.URANUS, false);
+                Object.URANUS, false);
         positions2[idx_uranus] = new PlanetPositionEqu(
                 solarElements.getJD() + 365, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
@@ -346,13 +346,13 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
         planetColors[idx_uranus] = 0xef00ffa0;
 
         details = CAAElliptical.Calculate(solarElements.getJD(),
-                EllipticalObject.NEPTUNE, false);
+                Object.NEPTUNE, false);
         positions[idx_neptune] = new PlanetPositionEqu(solarElements.getJD(),
                 details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),
                 solarElements.getJD0());
         details = CAAElliptical.Calculate(solarElements.getJD() + 365,
-                EllipticalObject.NEPTUNE, false);
+                Object.NEPTUNE, false);
         positions2[idx_neptune] = new PlanetPositionEqu(
                 solarElements.getJD() + 365, details.getApparentGeocentricRA(),
                 details.getApparentGeocentricDeclination(),

@@ -36,14 +36,6 @@ public class CAAEllipticalObjectElements {
     }
   }
 
-  public CAAEllipticalObjectElements() {
-    this(AAJNI.new_CAAEllipticalObjectElements__SWIG_0(), true);
-  }
-
-  public CAAEllipticalObjectElements(CAAEllipticalObjectElements arg0) {
-    this(AAJNI.new_CAAEllipticalObjectElements__SWIG_1(CAAEllipticalObjectElements.getCPtr(arg0), arg0), true);
-  }
-
   public void setA(double value) {
     AAJNI.CAAEllipticalObjectElements_a_set(swigCPtr, this, value);
   }
@@ -98,6 +90,10 @@ public class CAAEllipticalObjectElements {
 
   public double getT() {
     return AAJNI.CAAEllipticalObjectElements_T_get(swigCPtr, this);
+  }
+
+  public CAAEllipticalObjectElements() {
+    this(AAJNI.new_CAAEllipticalObjectElements(), true);
   }
 
 }

@@ -6,7 +6,7 @@ import com.naughter.aaplus.CAA2DCoordinate;
 import com.naughter.aaplus.CAACoordinateTransformation;
 import com.naughter.aaplus.CAADynamicalTime;
 import com.naughter.aaplus.CAAElliptical;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAEllipticalPlanetaryDetails;
 import com.naughter.aaplus.CAAMoon;
 import com.naughter.aaplus.CAANutation;
@@ -26,13 +26,13 @@ public class RiseSetCalculator {
     final CAAEllipticalPlanetaryDetails details3;
     final double jd;
 
-    public RiseSetCalculator(double jd, EllipticalObject theObject) {
+    public RiseSetCalculator(double jd, Object theObject) {
         this.jd = jd;
         deltaT = CAADynamicalTime.DeltaT(jd) / secs_a_day;
         details2 = CAAElliptical.Calculate(jd + deltaT, theObject, false);
-        if (theObject == EllipticalObject.NEPTUNE
-                || theObject == EllipticalObject.URANUS
-                || theObject == EllipticalObject.SATURN) {
+        if (theObject == Object.NEPTUNE
+                || theObject == Object.URANUS
+                || theObject == Object.SATURN) {
             details1 = details2;
             details3 = details2;
 
@@ -126,21 +126,21 @@ public class RiseSetCalculator {
             RiseSetAll rsDay = new RiseSetAll(j + 1, jd + j);
 
             RiseSetCalculator rstcal = new RiseSetCalculator(jd + j,
-                    EllipticalObject.SUN);
+                    Object.SUN);
             RiseSetCalculator rstcalMerc = new RiseSetCalculator(jd + j,
-                    EllipticalObject.MERCURY);
+                    Object.MERCURY);
             RiseSetCalculator rstcalVen = new RiseSetCalculator(jd + j,
-                    EllipticalObject.VENUS);
+                    Object.VENUS);
             RiseSetCalculator rstcalMar = new RiseSetCalculator(jd + j,
-                    EllipticalObject.MARS);
+                    Object.MARS);
             RiseSetCalculator rstcalJup = new RiseSetCalculator(jd + j,
-                    EllipticalObject.JUPITER);
+                    Object.JUPITER);
             RiseSetCalculator rstcalSat = new RiseSetCalculator(jd + j,
-                    EllipticalObject.SATURN);
+                    Object.SATURN);
             RiseSetCalculator rstcalUra = new RiseSetCalculator(jd + j,
-                    EllipticalObject.URANUS);
+                    Object.URANUS);
             RiseSetCalculator rstcalNep = new RiseSetCalculator(jd + j,
-                    EllipticalObject.NEPTUNE);
+                    Object.NEPTUNE);
 
             rsDay.rst[RSTitem.sun.ordinal()] = rstcal.createRst(
                     SolarElements.horizon, observer.localLong,

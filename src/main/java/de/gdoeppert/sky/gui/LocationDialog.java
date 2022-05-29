@@ -1,6 +1,8 @@
 package de.gdoeppert.sky.gui;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Criteria;
 import android.location.Geocoder;
@@ -9,6 +11,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -256,6 +259,8 @@ public class LocationDialog extends DialogFragment {
                 if (providerName == null || providerName.equals("")) return;
 
                 try {
+                    if(ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                    || ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
                     lm.requestLocationUpdates(providerName, 20000l, 1f,
                             new LocationListener() {
@@ -281,6 +286,10 @@ public class LocationDialog extends DialogFragment {
 
                                 }
                             });
+                    }else {
+                        // ignore
+                    }
+
                 } catch (Exception ex) {
                     // ignore
                 }
@@ -295,6 +304,7 @@ public class LocationDialog extends DialogFragment {
                                 || !addr.hasLongitude())
                             continue;
                         address = addr;
+                        break;
                     }
                 } catch (IOException e) {
                     // ignore

@@ -8,8 +8,11 @@
     <string name="sunset">set</string>
     <string name="equtime">equ.time</string>
     <string name="sidertime">sid.time</string>
-    <string name="centralmeridian">c.merid.</string>
+    <string name="centralmeridian">cnt.merid.</string>
     <string name="look">look</string>
+
+    <string name="sun">Sun</string>
+    <string name="moon">Moon</string>
 
     <string name="moonrise">rise</string>
     <string name="moontrans">transit</string>
@@ -29,7 +32,7 @@
     <string name="planetset">set</string>
     <string name="planetdistsun">dist.sun</string>
     <string name="planetdecl">declin.</string>
-    <string name="planetra">rectas.</string>
+    <string name="planetra">rectasc.</string>
     <string name="planetmag">magn.</string>
     <string name="planetdisk">illum.</string>
     <string name="planetdiam">diamet.</string>
@@ -163,15 +166,15 @@
     <string name="visibility_label">Visibility</string>
     
     <string name="infoshort">
-    <b>SkyReigen</b> V3.24\n
+    <b>SkyReigen</b> V3.27\n
     Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
     Rise, set, position, visibility and other data.\n
-        &#169; Gerhard Döppert 2012-2021\n
+        &#169; Gerhard Döppert 2012-2022\n
     </string>
     <string name="info">
     <b>SkyReigen</b>\n
     Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
-    &#169; Gerhard Döppert\n\n
+    &#169; Gerhard Döppert 2012-2022\n\n
     This application uses the library http://www.naughter.com/aa.html that
     implements algorithms from the book \"Astronomical Algorithms\" by Jean Meeus.\n
     The visibility calculations are taken from http://mhuss.com/AstroCpp/AstroCpp.zip.\n

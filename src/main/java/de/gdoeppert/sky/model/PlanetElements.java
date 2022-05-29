@@ -26,8 +26,8 @@ import com.naughter.aaplus.CAADate;
 import com.naughter.aaplus.CAAElliptical;
 import com.naughter.aaplus.CAAEllipticalPlanetaryDetails;
 import com.naughter.aaplus.CAAPlanetaryPhenomena;
-import com.naughter.aaplus.CAAPlanetaryPhenomena.EventType;
-import com.naughter.aaplus.CAAPlanetaryPhenomena.PlanetaryObject;
+import com.naughter.aaplus.CAAPlanetaryPhenomena.Type;
+import com.naughter.aaplus.CAAPlanetaryPhenomena.Planet;
 import com.projectpluto.astro.AngularBrightnessData;
 import com.projectpluto.astro.FixedBrightnessData;
 import com.projectpluto.astro.VisLimit;
@@ -285,47 +285,47 @@ public abstract class PlanetElements extends SolSysElements {
         Log.println(Log.DEBUG, "planet", "nxt event "
                 + this.getClass().getName());
 
-        PlanetaryObject planet = PlanetaryObject.swigToEnum(theObject
+        Planet planet = Planet.swigToEnum(theObject
                 .swigValue() - 1);
 
         if (events == null) {
 
             ArrayList<SkyEvent> events = new ArrayList<SkyEvent>();
-            EventType[] eventTypesK;
-            EventType[] eventTypes;
+            Type[] TypesK;
+            Type[] Types;
             String eventName[];
 
-            if (planet.swigValue() >= PlanetaryObject.URANUS.swigValue()) {
+            if (planet.swigValue() >= Planet.URANUS.swigValue()) {
 
-                eventTypesK = new EventType[]{EventType.CONJUNCTION,
-                        EventType.OPPOSITION};
+                TypesK = new Type[]{Type.CONJUNCTION,
+                        Type.OPPOSITION};
 
-                eventTypes = new EventType[]{EventType.CONJUNCTION,
-                        EventType.OPPOSITION};
+                Types = new Type[]{Type.CONJUNCTION,
+                        Type.OPPOSITION};
                 eventName = new String[]{
                         Messages.getString("PlanetElements.conj"), Messages.getString("PlanetElements.opp")}; //$NON-NLS-1$ //$NON-NLS-2$
 
-            } else if (planet.swigValue() >= PlanetaryObject.MARS.swigValue()) {
+            } else if (planet.swigValue() >= Planet.MARS.swigValue()) {
 
-                eventTypesK = new EventType[]{EventType.CONJUNCTION,
-                        EventType.OPPOSITION};
+                TypesK = new Type[]{Type.CONJUNCTION,
+                        Type.OPPOSITION};
 
-                eventTypes = new EventType[]{EventType.CONJUNCTION,
-                        EventType.OPPOSITION, EventType.STATION1,
-                        EventType.STATION2};
+                Types = new Type[]{Type.CONJUNCTION,
+                        Type.OPPOSITION, Type.STATION1,
+                        Type.STATION2};
                 eventName = new String[]{
                         Messages.getString("PlanetElements.conj"), Messages.getString("PlanetElements.opp"), Messages.getString("PlanetElements.stat"), Messages.getString("PlanetElements.stat")}; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
-            } else if (planet.swigValue() <= PlanetaryObject.NEPTUNE
+            } else if (planet.swigValue() <= Planet.NEPTUNE
                     .swigValue()) {
 
-                eventTypesK = new EventType[]{EventType.SUPERIOR_CONJUNCTION,
-                        EventType.INFERIOR_CONJUNCTION};
+                TypesK = new Type[]{Type.SUPERIOR_CONJUNCTION,
+                        Type.INFERIOR_CONJUNCTION};
 
-                eventTypes = new EventType[]{EventType.SUPERIOR_CONJUNCTION,
-                        EventType.INFERIOR_CONJUNCTION,
-                        EventType.EASTERN_ELONGATION,
-                        EventType.WESTERN_ELONGATION, EventType.STATION1,
-                        EventType.STATION2};
+                Types = new Type[]{Type.SUPERIOR_CONJUNCTION,
+                        Type.INFERIOR_CONJUNCTION,
+                        Type.EASTERN_ELONGATION,
+                        Type.WESTERN_ELONGATION, Type.STATION1,
+                        Type.STATION2};
                 eventName = new String[]{
                         Messages.getString("PlanetElements.supconj"), Messages.getString("PlanetElements.infconj"), //$NON-NLS-1$ //$NON-NLS-2$
                         Messages.getString("PlanetElements.elong"), Messages.getString("PlanetElements.wlong"), Messages.getString("PlanetElements.stat"), Messages.getString("PlanetElements.stat")}; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
@@ -337,14 +337,14 @@ public abstract class PlanetElements extends SolSysElements {
             double k = -1;
             TimeZone tzGmt = TimeZone.getTimeZone("GMT");
 
-            for (int j = 0; j < eventTypes.length; j++) {
+            for (int j = 0; j < Types.length; j++) {
 
-                if (j < eventTypesK.length) {
-                    k = CAAPlanetaryPhenomena.K(year, planet, eventTypesK[j]);
+                if (j < TypesK.length) {
+                    k = CAAPlanetaryPhenomena.K(year, planet, TypesK[j]);
                 }
 
-                double eventTime = CAAPlanetaryPhenomena.True(k, planet,
-                        eventTypes[j]);
+                double eventTime = CAAPlanetaryPhenomena.True(Math.ceil(k), planet,
+                        Types[j]);
 
                 CAADate time = new CAADate(eventTime, true);
                 Calendar cal = new GregorianCalendar(time.Year(),
@@ -353,21 +353,21 @@ public abstract class PlanetElements extends SolSysElements {
                 cal.setTimeZone(tzGmt);
                 SkyEvent ev = new SkyEvent(eventName[j], cal, eventTime);
                 double elong;
-                if (eventTypes[j].swigValue() == EventType.EASTERN_ELONGATION
+                if (Types[j].swigValue() == Type.EASTERN_ELONGATION
                         .swigValue()) {
-                    elong = CAAPlanetaryPhenomena.ElongationValue(k, planet,
+                    elong = CAAPlanetaryPhenomena.ElongationValue(Math.ceil(k), planet,
                             true);
                     ev.info = String
                             .format(Messages
                                     .getString("PlanetElements.elongform"), elong); //$NON-NLS-1$
-                } else if (eventTypes[j].swigValue() == EventType.WESTERN_ELONGATION
+                } else if (Types[j].swigValue() == Type.WESTERN_ELONGATION
                         .swigValue()) {
-                    elong = CAAPlanetaryPhenomena.ElongationValue(k, planet,
+                    elong = CAAPlanetaryPhenomena.ElongationValue(Math.ceil(k), planet,
                             false);
                     ev.info = String
                             .format(Messages
                                     .getString("PlanetElements.elongform"), elong); //$NON-NLS-1$
-                } else if (eventTypes[j].swigValue() == EventType.INFERIOR_CONJUNCTION
+                } else if (Types[j].swigValue() == Type.INFERIOR_CONJUNCTION
                         .swigValue()) {
                     SolarElements sol = new SolarElements(cal, getObserver(),
                             getDisplayParams());

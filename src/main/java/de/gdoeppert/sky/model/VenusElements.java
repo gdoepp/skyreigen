@@ -21,7 +21,7 @@ package de.gdoeppert.sky.model;
 
 import com.naughter.aaplus.CAADiameters;
 import com.naughter.aaplus.CAAEarth;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAIlluminatedFraction;
 import com.naughter.aaplus.CAAVenus;
 
@@ -31,7 +31,7 @@ public class VenusElements extends PlanetElements {
 
     public VenusElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
-        theObject = EllipticalObject.VENUS;
+        theObject = Object.VENUS;
     }
 
     @Override

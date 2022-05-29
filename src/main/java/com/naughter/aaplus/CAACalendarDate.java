@@ -36,14 +36,6 @@ public class CAACalendarDate {
     }
   }
 
-  public CAACalendarDate() {
-    this(AAJNI.new_CAACalendarDate__SWIG_0(), true);
-  }
-
-  public CAACalendarDate(CAACalendarDate arg0) {
-    this(AAJNI.new_CAACalendarDate__SWIG_1(CAACalendarDate.getCPtr(arg0), arg0), true);
-  }
-
   public void setYear(int value) {
     AAJNI.CAACalendarDate_Year_set(swigCPtr, this, value);
   }
@@ -66,6 +58,10 @@ public class CAACalendarDate {
 
   public int getDay() {
     return AAJNI.CAACalendarDate_Day_get(swigCPtr, this);
+  }
+
+  public CAACalendarDate() {
+    this(AAJNI.new_CAACalendarDate(), true);
   }
 
 }

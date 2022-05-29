@@ -26,7 +26,7 @@ import com.naughter.aaplus.CAADate;
 import com.naughter.aaplus.CAADiameters;
 import com.naughter.aaplus.CAAEarth;
 import com.naughter.aaplus.CAAElliptical;
-import com.naughter.aaplus.CAAElliptical.EllipticalObject;
+import com.naughter.aaplus.CAAElliptical.Object;
 import com.naughter.aaplus.CAAEllipticalPlanetaryDetails;
 import com.naughter.aaplus.CAAEquationOfTime;
 import com.naughter.aaplus.CAAEquinoxesAndSolstices;
@@ -57,7 +57,7 @@ public class SolarElements extends SolSysElements {
 
     public SolarElements(Calendar cal, EarthLocation loc, DisplayParams dp) {
         super(cal, loc, dp);
-        theObject = EllipticalObject.SUN;
+        theObject = Object.SUN;
     }
 
     @Override

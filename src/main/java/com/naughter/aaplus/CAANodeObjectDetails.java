@@ -36,14 +36,6 @@ public class CAANodeObjectDetails {
     }
   }
 
-  public CAANodeObjectDetails() {
-    this(AAJNI.new_CAANodeObjectDetails__SWIG_0(), true);
-  }
-
-  public CAANodeObjectDetails(CAANodeObjectDetails arg0) {
-    this(AAJNI.new_CAANodeObjectDetails__SWIG_1(CAANodeObjectDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setT(double value) {
     AAJNI.CAANodeObjectDetails_t_set(swigCPtr, this, value);
   }
@@ -58,6 +50,10 @@ public class CAANodeObjectDetails {
 
   public double getRadius() {
     return AAJNI.CAANodeObjectDetails_radius_get(swigCPtr, this);
+  }
+
+  public CAANodeObjectDetails() {
+    this(AAJNI.new_CAANodeObjectDetails(), true);
   }
 
 }

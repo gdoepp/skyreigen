@@ -36,14 +36,6 @@ public class CAASolarEclipseDetails {
     }
   }
 
-  public CAASolarEclipseDetails() {
-    this(AAJNI.new_CAASolarEclipseDetails__SWIG_0(), true);
-  }
-
-  public CAASolarEclipseDetails(CAASolarEclipseDetails arg0) {
-    this(AAJNI.new_CAASolarEclipseDetails__SWIG_1(CAASolarEclipseDetails.getCPtr(arg0), arg0), true);
-  }
-
   public void setFlags(long value) {
     AAJNI.CAASolarEclipseDetails_Flags_set(swigCPtr, this, value);
   }
@@ -90,6 +82,10 @@ public class CAASolarEclipseDetails {
 
   public double getGreatestMagnitude() {
     return AAJNI.CAASolarEclipseDetails_GreatestMagnitude_get(swigCPtr, this);
+  }
+
+  public CAASolarEclipseDetails() {
+    this(AAJNI.new_CAASolarEclipseDetails(), true);
   }
 
   public final static long TOTAL_ECLIPSE = AAJNI.CAASolarEclipseDetails_TOTAL_ECLIPSE_get();
