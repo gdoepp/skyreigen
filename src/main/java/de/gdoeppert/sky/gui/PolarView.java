@@ -157,7 +157,7 @@ public class PolarView extends View {
                         * Math.PI)
                         * r * (90 - alt) / 10.0);
                 meshPaint.setStyle(Style.FILL);
-                canvas.drawCircle(x / 2 + ex, y / 2 + ey, 4, meshPaint);
+                canvas.drawCircle(x / 2 + ex, y / 2 + ey, 6, meshPaint);
             }
             if (orientation != null) {
                 float ex = (float) (Math.sin(orientation[0]) * r
@@ -166,7 +166,7 @@ public class PolarView extends View {
                         * (90 + orientation[1] / Math.PI * 180f) / 10.0f);
                 meshPaint.setStyle(Style.FILL);
                 meshPaint.setColor(Color.WHITE);
-                canvas.drawCircle(x / 2 + ex, y / 2 + ey, 4, meshPaint);
+                canvas.drawCircle(x / 2 + ex, y / 2 + ey, 6, meshPaint);
 
             }
         } catch (Exception ex) {

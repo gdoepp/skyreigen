@@ -75,6 +75,8 @@ public class MonthFragment extends SkyFragment implements OnClickListener,
 
         SkyActivity activity = (SkyActivity) getActivity();
 
+        if (getRootView() == null) return;
+
         TextView monthText = (TextView) getRootView().findViewById(
                 R.id.monthText);
 

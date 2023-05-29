@@ -20,7 +20,6 @@ package de.gdoeppert.sky.tasks;
  */
 
 import android.content.Context;
-import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
 
@@ -40,56 +39,41 @@ import de.gdoeppert.sky.gui.EquatorialViewGL;
 import de.gdoeppert.sky.gui.SkyActivity;
 import de.gdoeppert.sky.model.Star;
 
-public class EquatorialBackgroundTask extends
-        AsyncTask<SkyActivity, String, SkyActivity> {
+public class EquatorialTaskStarReader {
 
     Context context;
     View currentTab;
 
-    public EquatorialBackgroundTask(View ecl, Context ctx) {
+    public EquatorialTaskStarReader(View ecl, Context ctx) {
         currentTab = ecl;
         context = ctx;
     }
 
-    @Override
-    protected void onPostExecute(SkyActivity result) {
 
-        EquatorialViewGL eclV = (EquatorialViewGL) currentTab
-                .findViewById(SkyActivity.ECLIPTIC_VIEW_ID);
+    protected void returnResults(EquatorialViewGL eclV, SkyActivity result) {
 
         eclV.setStars(stars);
 
-        eclV.invalidate();
-
-        super.onPostExecute(result);
-
-        eclV.setPlanetsReady(true);
         eclV.setStarsReady(true);
     }
 
-    @Override
-    protected SkyActivity doInBackground(SkyActivity... params) {
-        SkyActivity sky = params[0];
+    protected SkyActivity readStars(SkyActivity sky) {
 
         synchronized (lock) {
             if (stars == null) {
                 readStarLocations();
+                Log.println(Log.DEBUG, "equat", "stars finished");
             }
         }
-        if (isCancelled()) {
-            return sky;
-        }
-
-        Log.println(Log.DEBUG, "equat", "stars ready");
 
         return sky;
     }
 
-    private static Object lock = new Object();
+    private static final Object lock = new Object();
     private static Vector<Star> stars = null;
 
     @SuppressWarnings("unchecked")
-    private void readStarLocations() {
+    private void readStarLocations() {   // in background thread
 
         if (stars != null)
             return;
@@ -153,7 +137,7 @@ public class EquatorialBackgroundTask extends
             }
         }
 
-        EquatorialBackgroundTask.stars = stars;
+        EquatorialTaskStarReader.stars = stars;
 
         Log.println(Log.DEBUG, "equat", "stars ready");
     }

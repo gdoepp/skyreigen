@@ -9,7 +9,7 @@
     <string name="sun">Sun</string>
     <string name="moon">Moon</string>
     <string name="sidertime">sidereal time</string>
-    <string name="centralmeridian">cent.meridian</string>
+    <string name="centralmeridian">centr. meridian</string>
 
     <string name="moonrise">moonrise</string>
     <string name="moontrans">transit</string>
@@ -19,7 +19,7 @@
     <string name="moonphase">phase angle</string>
     <string name="moonasc">ascending node</string>
     <string name="moonperi">perigee</string>
-    <string name="moondisk">disk illuminated</string>
+    <string name="moondisk">disc illuminated</string>
     <string name="moondiam">diameter</string>
     <string name="moonsdiam">sdiam</string>
     <string name="moonlong">longitude</string>
@@ -33,7 +33,7 @@
     <string name="planetphase">phase angle</string>
     <string name="planetra">rectascension</string>
     <string name="planetmag">magnitude</string>
-    <string name="planetdisk">disk illuminated</string>
+    <string name="planetdisk">disc illuminated</string>
     <string name="planetdiam">diameter</string>
     <string name="planetelong">elongation</string>
     <string name="planetsdiam">sdiam</string>

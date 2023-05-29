@@ -61,7 +61,7 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
     private PlanetPositionEqu[] positionsHorz;
     private int[] planetColors;
     private double meridian;
-    private final AsyncTask<SkyActivity, String, SkyActivity> backgroundTask;
+    private final EquatorialTaskStarReader ebkt;
 
     static final int idx_moon = 0;
     static final int idx_sun = 1;
@@ -75,11 +75,10 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
     static final int idx_neptune = 9;
     static final int idx_count = 10;
 
-    public EquatorialTask(View ecl, Context ctx,
-                          AsyncTask<SkyActivity, String, SkyActivity> bktask) {
+    public EquatorialTask(View ecl, Context ctx) {
         currentTab = ecl;
         context = ctx;
-        backgroundTask = bktask;
+        ebkt = new EquatorialTaskStarReader(ecl, ctx);
     }
 
     @Override
@@ -99,20 +98,18 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
 
         eclV.setSouthern(result.getSkyData().getLocationLat() < 0);
 
-        eclV.invalidate();
         result.setProgressBarIndeterminateVisibility(false);
 
         super.onPostExecute(result);
-
-        if (backgroundTask != null) {
-            backgroundTask.executeOnExecutor(
-                    android.os.AsyncTask.THREAD_POOL_EXECUTOR, result);
-        }
 
         currentTab.setVisibility(View.VISIBLE);
         eclV.setConstellations(constellations);
 
         eclV.setPlanetsReady(true);
+
+        ebkt.returnResults(eclV, result);
+
+        eclV.invalidate();
     }
 
     @Override
@@ -129,23 +126,29 @@ public class EquatorialTask extends AsyncTask<SkyActivity, String, SkyActivity> 
             }
         }
 
+        if (isCancelled()) {
+            return sky;
+        }
+
         calcPositions(sky.getSolarElements());
 
         Log.println(Log.DEBUG, "equat", "ready");
+
+        if (isCancelled()) {
+            return sky;
+        }
+
+        ebkt.readStars(sky);
 
         return sky;
     }
 
     @Override
     protected void onCancelled() {
-        if (backgroundTask != null
-                && backgroundTask.getStatus() != AsyncTask.Status.FINISHED) {
-            backgroundTask.cancel(true);
-        }
         super.onCancelled();
     }
 
-    private static java.lang.Object lock = new java.lang.Object();
+    private static final java.lang.Object lock = new java.lang.Object();
     private static List<Constellation> constellations = null;
 
     private void readConstellations() {

@@ -66,7 +66,7 @@ public class VisibilityView extends View {
         meshPaint.reset();
         meshPaint.setTextSize(0.8f * getContext().getApplicationContext()
                 .getResources().getDimensionPixelSize(R.dimen.normalTextSize));
-        meshPaint.setStyle(Style.STROKE);
+        meshPaint.setStyle(Style.FILL_AND_STROKE);
         float w = this.getWidth();
         float h = this.getHeight();
         meshPaint.getTextBounds("XgX", 0, 3, bounds);
@@ -150,6 +150,7 @@ public class VisibilityView extends View {
             canvas.drawText("h>", 0, h, meshPaint);
 
             meshPaint.setColor(Color.RED);
+            meshPaint.setStyle(Style.STROKE);
             path.moveTo(
                     (float) (x1 + ((vislist[rangeIdx.first].getTimeHr() - x0 + 24) % 24)
                             * xd),

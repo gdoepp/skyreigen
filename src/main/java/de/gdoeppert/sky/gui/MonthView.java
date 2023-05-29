@@ -491,11 +491,15 @@ public class MonthView extends View implements OnTouchListener {
             }
         }
         if (y > y1 && y < h - y1 && ev.getAction() == MotionEvent.ACTION_DOWN) {
-            onoff = !onoff;
-            for (int j=0; j < showPlanet.length; j++) {
-                showPlanet[j] = onoff;
+            x = (x - x1) / (dx * 0.14f);
+            int n = (int) Math.floor(x);
+            if (n==3) {
+                onoff = !onoff;
+                for (int j = 0; j < showPlanet.length; j++) {
+                    showPlanet[j] = onoff;
+                }
+                this.invalidate();
             }
-            this.invalidate();
         }
         return false;
     }

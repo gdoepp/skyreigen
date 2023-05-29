@@ -1,67 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SkyReigen</string>
-    <string name="quart">Viert:\ </string>
+    <string name="quart">Viertel:\ </string>
     <string name="sunrise">Aufgang</string>
-    <string name="riseset">Auf/Untg.</string>
-    <string name="suntrans">Kulminat.</string>
+    <string name="riseset">Auf/Untgang</string>
+    <string name="suntrans">Kulmination</string>
     <string name="sunset">Untergang</string>
-    <string name="equtime">Zeitglch.</string>
+    <string name="equtime">Zeitgleich.</string>
     <string name="sidertime">Sternzeit</string>
-
-    <string name="centralmeridian">Zntr.Mer.</string>
-    <string name="look">Ansicht</string>
+    <string name="sundist">Entfernung</string>
+    <string name="centralmeridian">Zentr.merid.</string>
+    <string name="look">Scheibe</string>
 
     <string name="sun">Sonne</string>
     <string name="moon">Mond</string>
 
     <string name="moonrise">Aufgang</string>
-    <string name="moontrans">Kulminat.</string>
+    <string name="moontrans">Kulmination</string>
     <string name="moonset">Untergang</string>
-    <string name="moondist">Entfern.</string>
-    <string name="moondecl">Deklin.</string>
+    <string name="moondist">Entfernung</string>
+    <string name="moondecl">Deklination</string>
     <string name="moonphase">Phase</string>
-    <string name="moonlibraLong">Libr.Lng.</string>
-    <string name="moonlibraLat">Libr.Br.</string>
-    <string name="moonasc">AufKn.</string>
-    <string name="moonperi">Perig.</string>
-    <string name="moondisk">beleucht.</string>
-    <string name="moondiam">Dmess.</string>
+    <string name="moonlibraLong">Librat. Länge</string>
+    <string name="moonlibraLat">Librat. Breit.</string>
+    <string name="moonasc">AufstKn.</string>
+    <string name="moonperi">Perigäum</string>
+    <string name="moondisk">beleuchtet</string>
+    <string name="moondiam">Durchmess.</string>
     <string name="moonsdiam">Radius</string>
     <string name="moonlong">Länge</string>
     <string name="moonage">Alter</string>
     <string name="moonorbit">Mondbahn um die Erde</string>
 
     <string name="planetrise">Aufgang</string>
-    <string name="planettrans">Kulminat.</string>
+    <string name="planettrans">Kulmination</string>
     <string name="planetset">Untergang</string>
-    <string name="planetdistsun">Entf.So.</string>
-    <string name="planetdecl">Deklin.</string>
+    <string name="planetdistsun">Entf. Sonne</string>
+    <string name="planetdecl">Deklination</string>
     <string name="planetphase">Phase</string>
-    <string name="planetra">Rktasz.</string>
-    <string name="planetmag">Magnit.</string>
-    <string name="planetdisk">beleucht.</string>
-    <string name="planetdiam">Dmess.</string>
-    <string name="planetelong">Elong.</string>
+    <string name="planetra">Rektaszens.</string>
+    <string name="planetmag">Magnitude</string>
+    <string name="planetdisk">beleuchtet</string>
+    <string name="planetdiam">Durchmess.</string>
+    <string name="planetelong">Elongation</string>
     <string name="planetsdiam">Radius</string>
-    <string name="planetdistearth">Entf.Erde</string>
+    <string name="planetdistearth">Entf. Erde</string>
     <string name="planetalt">Höhe</string>
     <string name="planetazi">Azimut</string>
     <string name="planetring">Ring</string>
-    <string name="planetvis">Sichtbk.</string>
+    <string name="planetvis">Sichtbarkeit</string>
     <string name="planetDetails">Details</string>
 
-
-    <string name="sundist">Entfern.</string>
-
     <string name="alt">Höhe</string>
-    <string name="same">gleich</string>
-    <string name="altnoon">Mitt.höhe</string>
+    <string name="same">gleich am</string>
+    <string name="altnoon">Mittagshöhe</string>
     <string name="az">Azimut</string>
 
-    <string name="twicivil">zivile Dm.</string>
-    <string name="twinaut">naut. Dm.</string>
-    <string name="twiastro">astron.D.</string>
+    <string name="twicivil">zivile Dämm.</string>
+    <string name="twinaut">naut. Dämm.</string>
+    <string name="twiastro">astron. Dämm.</string>
 
     <string name="city">Stadt</string>
     <string name="lng">Länge</string>
@@ -174,16 +171,16 @@
     <string name="time_meridian">Meridian</string>
 
         <string name="infoshort">
-    <b>SkyReigen</b>\n
-    Android Ephemeriden-App v3.27 für Sonne, Mond und Planeten.\n
+    <b>SkyReigen</b> v3.32\n
+    Android Ephemeriden-App für Sonne, Mond und Planeten.\n
     Aufgang, Untergang, Position, Sichtbarkeit und andere Daten.\n
-    &#169; Gerhard Döppert, 2012-2022
+    &#169; Gerhard Döppert, 2012-2023
     </string>
     
     <string name="info">
-    <b>SkyReigen</b>\n
+    <b>SkyReigen</b> V3.32\n
     Android Ephemeriden-App für Sonne, Mond und Planeten.\n
-    &#169; Gerhard Döppert, 2012-2022\n\n
+    &#169; Gerhard Döppert, 2012-2023\n\n
     Die Anwendung benutzt die Library http://www.naughter.com/aa.html welche
     Algorithmen aus dem Buch \"Astronomical Algorithms\" von Jean Meeus implementiert.\n
     Für die Sichtbarkeitsberechnungen wird http://www.projectpluto.com/source.htm verwendet.\n

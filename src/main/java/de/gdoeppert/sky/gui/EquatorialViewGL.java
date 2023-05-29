@@ -21,6 +21,7 @@ package de.gdoeppert.sky.gui;
 
 import android.content.Context;
 import android.graphics.Paint;
+import android.opengl.GLES10;
 import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -32,6 +33,9 @@ import android.view.View;
 import java.util.List;
 import java.util.Vector;
 
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
+
 import de.gdoeppert.sky.R;
 import de.gdoeppert.sky.model.Constellation;
 import de.gdoeppert.sky.model.PlanetPositionEqu;
@@ -40,18 +44,18 @@ import de.gdoeppert.sky.model.Star;
 
 public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickListener {
 
-    private final GLRenderer renderer;
+    private final IGLRenderer renderer;
 
     @Override
     public void onPause() {
         super.onPause();
-        renderer.onPause();
+        Log.d("glview", "pausing");
     }
 
     @Override
     public void onResume() {
+        Log.d("glview", "resuming");
         super.onResume();
-        renderer.onResume();
     }
 
     public void setStarsReady(boolean eclReady) {
@@ -63,18 +67,28 @@ public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickL
         this.planetsReady = ovwReady;
         if (ovwReady) {
             float posSun = ((float) positions[SolSysPositions.idx_sun].getRa());
-            renderer.resetModel(posSun);
-            requestRender();
+            this.queueEvent(new Runnable() {
+                @Override
+                public void run() {
+                    renderer.resetModel(posSun);
+                    requestRender();
+                }
+            });
         }
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        if (isPortrait) {
-            renderer.resetView(1f * getHeight() / getWidth());
-        } else {
-            renderer.resetView(1f * getWidth() / getHeight());
-        }
+            this.queueEvent(new Runnable() {
+                @Override
+                public void run() {
+                    if (isPortrait) {
+                        renderer.resetView(1f * getHeight() / getWidth());
+                    } else {
+                        renderer.resetView(1f * getWidth() / getHeight());
+                    }
+                }
+            });
         super.onSizeChanged(w, h, oldw, oldh);
     }
 
@@ -172,7 +186,7 @@ public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickL
         starsReady = false;
         planetsReady = false;
 
-        // setDebugFlags(GLSurfaceView.DEBUG_CHECK_GL_ERROR);
+        setDebugFlags(GLSurfaceView.DEBUG_CHECK_GL_ERROR);
 
         setEGLContextClientVersion(1);
 
@@ -180,15 +194,14 @@ public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickL
 
         // Set the Renderer for drawing on the GLSurfaceView
         renderer = new GLRenderer(this);
+
         setRenderer(renderer);
 
         // Render the view only when there is a change in the drawing data
         setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 
-        setOnLongClickListener(this);
-        setLongClickable(true);
-
-
+        //setOnLongClickListener(this);
+        //setLongClickable(true);
     }
 
 
@@ -229,8 +242,8 @@ public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickL
                 float dx1 = (isPortrait ? dy : dx);
                 float dy1 = (isPortrait ? -dx : dy);
 
-                boolean ok = renderer.scroll(dx1 / this.getWidth(),
-                        dy1 / this.getHeight());
+                boolean ok = renderer.scroll(dx1 / getWidth(),
+                        dy1 / getHeight(), isPortrait);
 
                 mPreviousX = x;
                 mPreviousY = y;
@@ -250,10 +263,13 @@ public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickL
 
     protected void onScale(float scale, float x, float y) {
         Log.d("glview", "scale: " + scale + " pos: " + x + ", " + y);
+        this.queueEvent(new Runnable() {
+            @Override
+            public void run() {
 
-        renderer.zoom(x, y, scale);
-
-        requestRender();
+                renderer.zoom(x, y, scale);
+                requestRender();
+            } });
     }
 
     public void setPortrait(boolean port) {
@@ -288,8 +304,12 @@ public class EquatorialViewGL extends GLSurfaceView implements View.OnLongClickL
     @Override
     public boolean onLongClick(View view) {
         Log.d("equviewgl", "longclick");
-        renderer.toggleShowConstNames();
-        requestRender();
+        this.queueEvent(new Runnable() {
+            @Override
+            public void run() {
+                renderer.toggleShowConstNames();
+                requestRender();
+            }});
         return true;
     }
 }

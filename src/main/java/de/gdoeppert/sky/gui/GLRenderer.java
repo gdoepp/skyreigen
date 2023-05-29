@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.opengl.GLES10;
+import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
 import android.opengl.GLUtils;
@@ -34,8 +35,9 @@ import de.gdoeppert.sky.model.ConstellationVertex;
 import de.gdoeppert.sky.model.SolSysPositions;
 import de.gdoeppert.sky.model.Star;
 
-public class GLRenderer implements GLSurfaceView.Renderer {
+public class GLRenderer implements IGLRenderer {
 
+    @Override
     public void toggleShowConstNames() {
         showConstNames = !showConstNames;
     }
@@ -136,9 +138,13 @@ public class GLRenderer implements GLSurfaceView.Renderer {
     @Override
     public void onDrawFrame(GL10 gl) {
 
+        GLES10.glClear(GLES10.GL_COLOR_BUFFER_BIT
+                | GLES10.GL_DEPTH_BUFFER_BIT);
+
+        Log.d("glrend", "draw frame");
+
         if (glSurfaceView.planetsReady) {
             // logFrameRate();
-            Log.d("glrend", "draw frame");
 
             GL11 gl11 = null;
             if (gl instanceof GL11) {
@@ -150,30 +156,20 @@ public class GLRenderer implements GLSurfaceView.Renderer {
 
             updateView(gl11);
 
-            GLES10.glClear(GLES10.GL_COLOR_BUFFER_BIT
-                    | GLES10.GL_DEPTH_BUFFER_BIT);
-
             gl.glMatrixMode(GL10.GL_MODELVIEW);
 
-			/*
+            /*
              * the world coordinates are: x: 0 to 360 (right ascension), y: -45
-			 * to 45 (declination) we render the sky twice, giving a range of x:
-			 * -360 to 360
-			 */
+             * to 45 (declination) we render the sky twice, giving a range of x:
+             * -360 to 360
+             */
             render(gl11);
             gl.glPushMatrix();
             gl.glTranslatef(-360, 0, 0);
             render(gl11);
             gl.glPopMatrix();
-
+            Log.d("glrend", "rendered");
         }
-    }
-
-    public void onPause() {
-    }
-
-    public void onResume() {
-
     }
 
     @Override
@@ -219,7 +215,8 @@ public class GLRenderer implements GLSurfaceView.Renderer {
     /**
      * initialize view according to aspect ratio
      */
-    public synchronized void resetView(float aspectRatio) {
+    @Override
+    public void resetView(float aspectRatio) {
         viewDecl = 90f; // 45° north/south of equator
         viewRa = 90f * aspectRatio;
         dirty = true;
@@ -229,7 +226,8 @@ public class GLRenderer implements GLSurfaceView.Renderer {
      * initialize world coordinates (only right ascension of the sun is of
      * interest)
      */
-    public synchronized void resetModel(float posSun) {
+    @Override
+    public void resetModel(float posSun) {
         minRa = posSun - 360; // we show the celestial equator with the sun at
         // left and right
         maxRa = posSun;
@@ -239,17 +237,18 @@ public class GLRenderer implements GLSurfaceView.Renderer {
     }
 
     // / move view area by distX/Y
-    public synchronized boolean scroll(float distX, float distY) {
+    @Override
+    public boolean scroll(float distX, float distY, boolean isPortrait) {
 
         distX *= viewRa; // scale from normalized device coord to ra/decl
         distY *= viewDecl;
 
-        if (!glSurfaceView.isPortrait && Math.abs(distX) > Math.abs(distY)) {
+        if (!isPortrait && Math.abs(distX) > Math.abs(distY)) {
             if ((raCenter == minRa + viewRa / 2 && distX < 0)
                     || (raCenter == maxRa - viewRa / 2 && distX > 0)) {
                 return false; // limit reached
             }
-        } else if (glSurfaceView.isPortrait
+        } else if (isPortrait
                 && Math.abs(distY) > Math.abs(distX)) {
             if ((declCenter == minDecl + viewDecl / 2 && distY < 0)
                     || (declCenter == maxDecl - viewDecl / 2 && distY > 0)) {
@@ -279,7 +278,8 @@ public class GLRenderer implements GLSurfaceView.Renderer {
     }
 
     // / zoom view area about x/y by scale
-    public synchronized void zoom(float x, float y, float scale) {
+    @Override
+    public void zoom(float x, float y, float scale) {
 
         if (dirty) // need valid matrices, wait for update
             return;
@@ -931,7 +931,6 @@ public class GLRenderer implements GLSurfaceView.Renderer {
             drawText(gl11, glSurfaceView.time_meridian, glSurfaceView.meridian,
                     top, Color.YELLOW, 1);
         }
-
     }
 
     // / show constellation outlines and their short names
@@ -1027,7 +1026,7 @@ public class GLRenderer implements GLSurfaceView.Renderer {
 
     }
 
-    private synchronized void updateView(GL11 gl) {
+    private void updateView(GL11 gl) {
         gl.glMatrixMode(GL10.GL_PROJECTION);
         gl.glLoadIdentity();
         gl.glClearColor(0.1f, 0.1f, 0.1f, 0.1f);
@@ -1040,7 +1039,7 @@ public class GLRenderer implements GLSurfaceView.Renderer {
         Log.d("glrend", "updateView: " + degS + ", " + degN + ", " + ra1 + ", "
                 + ra2);
 
-        if (glSurfaceView.isSouthernHemisphere) { // rotate view for nothern
+        if (glSurfaceView.isSouthernHemisphere) { // rotate view for northern
             // hemisphere
 
             if (glSurfaceView.isPortrait) {
@@ -1060,7 +1059,7 @@ public class GLRenderer implements GLSurfaceView.Renderer {
         gl.glGetFloatv(GL11.GL_MODELVIEW_MATRIX, modelViewMatrix, 0);
         gl.glGetFloatv(GL11.GL_PROJECTION_MATRIX, projectMatrix, 0);
         dirty = false;
-
+        gl.glMatrixMode(GL10.GL_MODELVIEW);
     }
 
     private Vector<FloatBuffer> constellationOutlinesBuf = null;

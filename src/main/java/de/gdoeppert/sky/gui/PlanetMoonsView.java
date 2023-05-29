@@ -99,7 +99,7 @@ public class PlanetMoonsView extends View {
         float cy = (float) (y - moon.getY() / maxRadius * r);
 
         if (!moon.isOcultated()) {
-            canvas.drawCircle(cx, cy, 2, paint);
+            canvas.drawCircle(cx, cy, 3, paint);
         }
     }
 

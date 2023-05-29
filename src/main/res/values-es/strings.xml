@@ -6,60 +6,60 @@
     <string name="riseset">sale/pone</string>
     <string name="suntrans">tránsito</string>
     <string name="sunset">pone</string>
-    <string name="equtime">equ.tmp.</string>
+    <string name="equtime">ecua. tiempo</string>
     <string name="sun">Sol</string>
     <string name="moon">Luna</string>
-    <string name="sidertime">tiemp.sid.</string>
-    <string name="centralmeridian">merid.cnt.</string>
-    <string name="look">aspecto</string>
+    <string name="sidertime">tiempo sideral</string>
+    <string name="centralmeridian">merid. centr.</string>
+    <string name="look">disco</string>
 
     <string name="moonrise">sale</string>
     <string name="moontrans">tránsito</string>
     <string name="moonset">pone</string>
-    <string name="moondist">distanza</string>
-    <string name="moondecl">declin.</string>
+    <string name="moondist">distancia</string>
+    <string name="moondecl">declinación</string>
     <string name="moonphase">fase</string>
-    <string name="moonlibraLong">libr.lng.</string>
-    <string name="moonlibraLat">libr.lat.</string>
-    <string name="moonasc">asc.recta</string>
+    <string name="moonlibraLong">libr. long.</string>
+    <string name="moonlibraLat">libr. lat.</string>
+    <string name="moonasc">asc. recta</string>
     <string name="moonperi">perigeo</string>
-    <string name="moondisk">ilum.</string>
+    <string name="moondisk">iluminación</string>
     <string name="moondiam">diámetro</string>
     <string name="moonsdiam">sdiám</string>
-    <string name="moonlong">long.</string>
+    <string name="moonlong">longit.</string>
     <string name="moonage">edad</string>
     <string name="moonorbit">La órbita de la luna alrededor de la Tierra</string>
 
     <string name="planetrise">sale</string>
     <string name="planettrans">tránsito</string>
     <string name="planetset">pone</string>
-    <string name="planetdistsun">dist.sol</string>
-    <string name="planetdecl">declin.</string>
+    <string name="planetdistsun">dist. sol</string>
+    <string name="planetdecl">declinación</string>
     <string name="planetphase">fase</string>
-    <string name="planetra">asc.recta</string>
-    <string name="planetmag">magn.</string>
-    <string name="planetdisk">ilum.</string>
-    <string name="planetdiam">diámet.</string>
-    <string name="planetelong">elong.</string>
+    <string name="planetra">asc. recta</string>
+    <string name="planetmag">magnitud</string>
+    <string name="planetdisk">iluminación</string>
+    <string name="planetdiam">diámetro</string>
+    <string name="planetelong">elongación</string>
     <string name="planetsdiam">sdiám</string>
-    <string name="planetdistearth">d.tierra</string>
-    <string name="planetalt">altura</string>
+    <string name="planetdistearth">dist. tierra</string>
+    <string name="planetalt">altitud</string>
     <string name="planetazi">acimut</string>
     <string name="planetring">anillo</string>
     <string name="planetvis">visibilitad</string>
     <string name="planetDetails">más</string>
 
 
-    <string name="sundist">distanza</string>
+    <string name="sundist">distancia</string>
 
-    <string name="alt">altura</string>
-    <string name="same">misma a.</string>
-    <string name="altnoon">alt.medd.</string>
+    <string name="alt">altitud</string>
+    <string name="same">misma alt.</string>
+    <string name="altnoon">alt. mediod.</string>
     <string name="az">acimut</string>
 
-    <string name="twicivil">crep.civ.</string>
-    <string name="twinaut">c.náut.</string>
-    <string name="twiastro">c.astron.</string>
+    <string name="twicivil">crepusc. civ.</string>
+    <string name="twinaut">crep. náut.</string>
+    <string name="twiastro">crep. astron.</string>
 
     <string name="city">Lugar</string>
     <string name="lng">Longitud</string>

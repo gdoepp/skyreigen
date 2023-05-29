@@ -78,6 +78,7 @@ public class SunSurface extends View {
 
         paint.setStyle(Style.STROKE);
         paint.setColor(Color.BLUE);
+        paint.setStrokeWidth(3);
         canvas.drawLine(0, r, 0, -r, paint);
 
         paint.setColor(0xff009000);

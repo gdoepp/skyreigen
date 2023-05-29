@@ -6,25 +6,25 @@
     <string name="riseset">sorg/tram</string>
     <string name="suntrans">transito</string>
     <string name="sunset">tramonta</string>
-    <string name="equtime">equ.temp.</string>
+    <string name="equtime">equ. tempo</string>
     <string name="sun">Sole</string>
     <string name="moon">Luna</string>
-    <string name="sidertime">temp.sid.</string>
-    <string name="centralmeridian">merid.cnt.</string>
-    <string name="look">aspetto</string>
+    <string name="sidertime">tempo siderale</string>
+    <string name="centralmeridian">merid. centr.</string>
+    <string name="look">disco</string>
 
 
     <string name="moonrise">sorge</string>
     <string name="moontrans">transito</string>
     <string name="moonset">tramonta</string>
     <string name="moondist">distanza</string>
-    <string name="moondecl">declin.</string>
+    <string name="moondecl">declinazione</string>
     <string name="moonphase">fase</string>
-    <string name="moonlibraLong">libr.lng.</string>
-    <string name="moonlibraLat">libr.lat.</string>
-    <string name="moonasc">asc.retta</string>
+    <string name="moonlibraLong">libr. in long.</string>
+    <string name="moonlibraLat">libr. in lat.</string>
+    <string name="moonasc">ascens. retta</string>
     <string name="moonperi">perigeo</string>
-    <string name="moondisk">illum.</string>
+    <string name="moondisk">illuminazione</string>
     <string name="moondiam">diametro</string>
     <string name="moonsdiam">sdiam.</string>
     <string name="moonlong">long.</string>
@@ -34,16 +34,16 @@
     <string name="planetrise">sorge</string>
     <string name="planettrans">transito</string>
     <string name="planetset">tramonta</string>
-    <string name="planetdistsun">dist.sole</string>
-    <string name="planetdecl">declin.</string>
+    <string name="planetdistsun">dist. sole</string>
+    <string name="planetdecl">declinazione</string>
     <string name="planetphase">fase</string>
-    <string name="planetra">asc.retta</string>
-    <string name="planetmag">magnit.</string>
-    <string name="planetdisk">illum.</string>
-    <string name="planetdiam">diamet.</string>
-    <string name="planetelong">elong.</string>
+    <string name="planetra">ascens. retta</string>
+    <string name="planetmag">magnitudo</string>
+    <string name="planetdisk">illuminazione</string>
+    <string name="planetdiam">diametro</string>
+    <string name="planetelong">elongazione</string>
     <string name="planetsdiam">sdiam.</string>
-    <string name="planetdistearth">dist.terra</string>
+    <string name="planetdistearth">dist. terra</string>
     <string name="planetalt">altezza</string>
     <string name="planetazi">azimut</string>
     <string name="planetring">anello</string>
@@ -54,13 +54,13 @@
     <string name="sundist">distanza</string>
 
     <string name="alt">altezza</string>
-    <string name="same">stessa a.</string>
-    <string name="altnoon">alt.mezz.</string>
+    <string name="same">stessa alt. il</string>
+    <string name="altnoon">alt. a mezzog.</string>
     <string name="az">azimut</string>
 
-    <string name="twicivil">crep.civ.</string>
-    <string name="twinaut">crep.naut.</string>
-    <string name="twiastro">c.astron.</string>
+    <string name="twicivil">crepusc. civile</string>
+    <string name="twinaut">crepusc. naut.</string>
+    <string name="twiastro">crep. astron.</string>
 
     <string name="city">luogo</string>
     <string name="lng">long.</string>
@@ -68,7 +68,7 @@
     <string name="delete">rimuovi</string>
 
     <string name="location_prompt">cambia luogo</string>
-    <string name="locate">posiz.</string>
+    <string name="locate">posizione</string>
     <string name="humid">humid. rel.</string>
     <string name="temp">temperatura</string>
     <string name="timezone">orario</string>

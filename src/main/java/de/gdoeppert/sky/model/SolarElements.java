@@ -83,7 +83,7 @@ public class SolarElements extends SolSysElements {
     }
 
     public float getLong() {
-        return (float) details.getApparentGeocentricLongitude();
+        return (float) details.getApparentGeocentricEclipticalLongitude();
     }
 
     @Override

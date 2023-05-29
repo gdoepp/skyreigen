@@ -23,10 +23,14 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -76,16 +80,17 @@ public class SkyActivity extends FragmentActivity implements
     private boolean showPointer = true;
     private double temperature = 10;
     private double humidity = 80;
+    private int currentTab = -1;
 
     private final SkyData skyData = new SkyData();
 
     /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
+     * The {@link PagerAdapter} that will provide
      * fragments for each of the sections. We use a
-     * {@link android.support.v4.app.FragmentPagerAdapter} derivative, which
+     * {@link FragmentPagerAdapter} derivative, which
      * will keep every loaded fragment in memory. If this becomes too memory
      * intensive, it may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
+     * {@link FragmentStatePagerAdapter}.
      */
     SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -126,6 +131,7 @@ public class SkyActivity extends FragmentActivity implements
             Date date = df.parse((String) dateStr);
             getSkyData().setTime(date);
             switchToQuick();
+            currentTab = 0;
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -158,13 +164,9 @@ public class SkyActivity extends FragmentActivity implements
         mSectionsPagerAdapter = new SectionsPagerAdapter(
                 getSupportFragmentManager());
 
-        if (savedInstanceState != null) {
-            mSectionsPagerAdapter.restoreState(savedInstanceState);
-        }
-
         // Set up the ViewPager with the sections adapter.
         mViewPager = (MyViewPager) findViewById(R.id.pager);
-        // mViewPager.setOffscreenPageLimit(0);
+        //mViewPager.setOffscreenPageLimit(0);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         // When swiping between different sections, select the corresponding
@@ -190,6 +192,12 @@ public class SkyActivity extends FragmentActivity implements
                     .setText(mSectionsPagerAdapter.getPageTitle(i))
                     .setTabListener(this));
         }
+
+        if (savedInstanceState != null) {
+            mSectionsPagerAdapter.restoreState(savedInstanceState);
+            onRestoreInstanceState(savedInstanceState);
+        }
+
         Log.println(Log.DEBUG, "sky activity", "create finished"); //$NON-NLS-1$ //$NON-NLS-2$
 
     }
@@ -271,7 +279,7 @@ public class SkyActivity extends FragmentActivity implements
             // nothing... //e.printStackTrace();
         }
         super.onPause();
-
+        int ct = currentTab;
     }
 
     @Override
@@ -279,15 +287,15 @@ public class SkyActivity extends FragmentActivity implements
 
         Log.println(Log.DEBUG, "skyactivity", "on restore instance state"); //$NON-NLS-1$ //$NON-NLS-2$
 
-        getSkyData().setTimeInMillis(state.getLong("time")); //$NON-NLS-1$
+        getSkyData().setTimeInMillis(state.getLong("time", new Date().getTime())); //$NON-NLS-1$
 
         mSectionsPagerAdapter.restoreState(state);
-        int ct = state.getInt("currentTab", 0); //$NON-NLS-1$
-
-        mViewPager.setCurrentItem(ct);
-
+        currentTab = state.getInt("currentTab", 0); //$NON-NLS-1$
+        if (currentTab < 0 || currentTab >= mViewPager.getChildCount()) {
+            currentTab = 0;
+        }
+        mViewPager.setCurrentItem(currentTab);
         super.onRestoreInstanceState(state);
-
     }
 
     @Override
@@ -300,7 +308,7 @@ public class SkyActivity extends FragmentActivity implements
 		 */
         outState.putLong("time", getSkyData().getTimeInMillis()); //$NON-NLS-1$
         mSectionsPagerAdapter.saveState(outState);
-        outState.putInt("currentTab", mViewPager.getCurrentItem()); //$NON-NLS-1$
+        outState.putInt("currentTab", currentTab); //$NON-NLS-1$
 
         super.onSaveInstanceState(outState);
     }
@@ -310,8 +318,11 @@ public class SkyActivity extends FragmentActivity implements
      */
     @Override
     public void onStart() {
+
         Log.println(Log.DEBUG, "skyactivity", "on start"); //$NON-NLS-1$ //$NON-NLS-2$
         restore();
+        mViewPager.setCurrentItem(currentTab);
+        mSectionsPagerAdapter.getItem(currentTab).update();
         Log.println(Log.DEBUG, "skyactivity", "on start -restored"); //$NON-NLS-1$ //$NON-NLS-2$
         super.onStart();
     }
@@ -429,6 +440,7 @@ public class SkyActivity extends FragmentActivity implements
             mSectionsPagerAdapter.getItem(Frags.itQuick.ordinal()).update();
         } else {
             mViewPager.setCurrentItem(0);
+            currentTab = 0;
         }
     }
 
@@ -440,8 +452,9 @@ public class SkyActivity extends FragmentActivity implements
     @Override
     public void onTabReselected(Tab tab, FragmentTransaction arg1) {
         mViewPager.setCurrentItem(tab.getPosition());
+        currentTab = mViewPager.getCurrentItem();
 
-        SkyFragment frag = mSectionsPagerAdapter.getItem(tab.getPosition());
+        SkyFragment frag = mSectionsPagerAdapter.getItem(currentTab);
 
         frag.update();
 
@@ -455,8 +468,8 @@ public class SkyActivity extends FragmentActivity implements
     public void onTabSelected(Tab tab, FragmentTransaction arg1) {
         Log.println(Log.DEBUG, "skyactivity", //$NON-NLS-1$
                 "on tab selected " + tab.getPosition()); //$NON-NLS-1$
-
         mViewPager.setCurrentItem(tab.getPosition());
+        currentTab = mViewPager.getCurrentItem();
 
         SkyFragment frag = mSectionsPagerAdapter.getItem(tab.getPosition());
 
@@ -472,7 +485,7 @@ public class SkyActivity extends FragmentActivity implements
 
         SkyFragment frag = mSectionsPagerAdapter.getItem(tab.getPosition());
         frag.unselect();
-
+        currentTab = -1;
         Log.d("skyactivity", //$NON-NLS-1$
                 "on tab unselected " + tab.getPosition()); //$NON-NLS-1$
 
@@ -482,16 +495,14 @@ public class SkyActivity extends FragmentActivity implements
         return skyData;
     }
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
     enum Frags {
         itQuick, itSun, itMoon, itPlanet, itEcliptic, itEquatorial, itMonth
     }
 
-    ;
-
+    /**
+     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+     * one of the sections/tabs/pages.
+     */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Frags frags;
 

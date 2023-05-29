@@ -5,7 +5,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.AsyncTask;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -204,6 +204,7 @@ public class SkyFragment extends Fragment implements OnSeekBarChangeListener {
     @Override
     public void onPause() {
         registerSensorListener(null);
+        stopTask(task);
         super.onPause();
     }
 

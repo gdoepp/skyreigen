@@ -1,12 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "28.0.3"
+    compileSdkVersion 32
     defaultConfig {
         applicationId "de.gdoeppert.sky"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 32
     }
     buildTypes {
         release {
@@ -25,5 +24,5 @@ repositories {
     maven{url 'https://maven.google.com'}
 }
 dependencies {
-    implementation 'com.android.support:support-v4:28.+'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }

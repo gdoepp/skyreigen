@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SkyReigen</string>
-    <string name="quart">quar:</string>
+    <string name="quart">quarter:</string>
     <string name="sunrise">rise</string>
     <string name="riseset">rise/set</string>
     <string name="suntrans">transit</string>
     <string name="sunset">set</string>
-    <string name="equtime">equ.time</string>
-    <string name="sidertime">sid.time</string>
-    <string name="centralmeridian">cnt.merid.</string>
-    <string name="look">look</string>
+    <string name="equtime">equ. of time</string>
+    <string name="sidertime">sidereal time</string>
+    <string name="centralmeridian">central merid.</string>
+    <string name="look">sun disc</string>
 
     <string name="sun">Sun</string>
     <string name="moon">Moon</string>
@@ -18,26 +18,26 @@
     <string name="moontrans">transit</string>
     <string name="moonset">set</string>
     <string name="moondist">distance</string>
-    <string name="moondecl">declin.</string>
+    <string name="moondecl">declination</string>
     <string name="moonphase">phase</string>
-    <string name="moonlibraLong">libr.lng.</string>
-    <string name="moonlibraLat">libr.lat.</string>
-    <string name="moondisk">illum.</string>
-    <string name="moondiam">diamet.</string>
+    <string name="moonlibraLong">librat. long.</string>
+    <string name="moonlibraLat">librat. lat.</string>
+    <string name="moondisk">illumination</string>
+    <string name="moondiam">diameter</string>
     <string name="moonage">age</string>
     <string name="moonorbit">Orbit of the moon</string>
 
     <string name="planetrise">rise</string>
     <string name="planettrans">transit</string>
     <string name="planetset">set</string>
-    <string name="planetdistsun">dist.sun</string>
-    <string name="planetdecl">declin.</string>
-    <string name="planetra">rectasc.</string>
-    <string name="planetmag">magn.</string>
-    <string name="planetdisk">illum.</string>
-    <string name="planetdiam">diamet.</string>
-    <string name="planetelong">elong.</string>
-    <string name="planetdistearth">d.earth</string>
+    <string name="planetdistsun">dist. sun</string>
+    <string name="planetdecl">declination</string>
+    <string name="planetra">right ascens.</string>
+    <string name="planetmag">magnitude</string>
+    <string name="planetdisk">illumination</string>
+    <string name="planetdiam">diameter</string>
+    <string name="planetelong">elongation</string>
+    <string name="planetdistearth">dist. earth</string>
     <string name="planetalt">altitude</string>
     <string name="planetazi">azimuth</string>
     <string name="planetring">ring</string>
@@ -46,13 +46,13 @@
     <string name="sundist">distance</string>
 
     <string name="alt">altitude</string>
-    <string name="altnoon">max. alt.</string>
+    <string name="altnoon">max. altitude</string>
     <string name="az">azimuth</string>
-    <string name="same">same</string>
+    <string name="same">same alt. on</string>
 
-    <string name="twicivil">civil twil.</string>
+    <string name="twicivil">civil twilight</string>
     <string name="twinaut">nautical</string>
-    <string name="twiastro">astronom.</string>
+    <string name="twiastro">astronomical</string>
 
     <string name="city">city</string>
     <string name="lng">longitude</string>
@@ -166,15 +166,15 @@
     <string name="visibility_label">Visibility</string>
     
     <string name="infoshort">
-    <b>SkyReigen</b> V3.27\n
+    <b>SkyReigen</b> V3.32\n
     Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
     Rise, set, position, visibility and other data.\n
-        &#169; Gerhard Döppert 2012-2022\n
+        &#169; Gerhard Döppert 2012-2023\n
     </string>
     <string name="info">
-    <b>SkyReigen</b>\n
+    <b>SkyReigen</b> V3.32\n
     Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
-    &#169; Gerhard Döppert 2012-2022\n\n
+    &#169; Gerhard Döppert 2012-2023\n\n
     This application uses the library http://www.naughter.com/aa.html that
     implements algorithms from the book \"Astronomical Algorithms\" by Jean Meeus.\n
     The visibility calculations are taken from http://mhuss.com/AstroCpp/AstroCpp.zip.\n

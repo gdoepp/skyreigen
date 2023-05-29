@@ -10,8 +10,8 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.content.ContextCompat;
+import androidx.fragment.app.DialogFragment;
+import androidx.core.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -30,7 +30,6 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -257,36 +256,36 @@ public class LocationDialog extends DialogFragment {
                 String providerName = lm.getBestProvider(whatFor, true);
 
                 if (providerName == null || providerName.equals("")) return;
-
+                LocationListener ll = null;
                 try {
                     if(ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
                     || ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
 
-                    lm.requestLocationUpdates(providerName, 20000l, 1f,
-                            new LocationListener() {
+                                ll = new LocationListener() {
 
-                                @Override
-                                public void onLocationChanged(Location arg0) {
+                                    @Override
+                                    public void onLocationChanged(Location arg0) {
 
-                                }
+                                    }
 
-                                @Override
-                                public void onProviderDisabled(String arg0) {
+                                    @Override
+                                    public void onProviderDisabled(String arg0) {
 
-                                }
+                                    }
 
-                                @Override
-                                public void onProviderEnabled(String arg0) {
+                                    @Override
+                                    public void onProviderEnabled(String arg0) {
 
-                                }
+                                    }
 
-                                @Override
-                                public void onStatusChanged(String arg0, int arg1,
-                                                            Bundle arg2) {
+                                    @Override
+                                    public void onStatusChanged(String arg0, int arg1,
+                                                                Bundle arg2) {
 
-                                }
-                            });
-                    }else {
+                                    }
+                                };
+                                lm.requestLocationUpdates(providerName, 20000l, 1f, ll);
+                    } else {
                         // ignore
                     }
 
@@ -310,7 +309,9 @@ public class LocationDialog extends DialogFragment {
                     // ignore
                     e.printStackTrace();
                 }
-
+                if (ll != null) {
+                    lm.removeUpdates(ll);
+                }
                 if (address == null) { // Geocoder not working, try
                     // workaround...
                     try {
