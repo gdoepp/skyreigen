@@ -14,7 +14,7 @@
     <string name="moonrise">Aufgang</string>
     <string name="moontrans">Kulmination</string>
     <string name="moonset">Untergang</string>
-    <string name="moondist">Entfernung</string>
+    <string name="moondist">Entfernung/1000Km</string>
     <string name="moondecl">Deklination</string>
     <string name="moonphase">Phasenwinkel</string>
     <string name="moonlibraLong">Libr. Länge</string>
@@ -30,7 +30,7 @@
     <string name="planetrise">Aufgang</string>
     <string name="planettrans">Kulmination</string>
     <string name="planetset">Untergang</string>
-    <string name="planetdistsun">Entf. Sonne</string>
+    <string name="planetdistsun">Entf. Sonne/AE</string>
     <string name="planetdecl">Deklination</string>
     <string name="planetphase">Phasenwinkel</string>
     <string name="planetra">Rektaszension</string>
@@ -39,7 +39,7 @@
     <string name="planetdiam">Durchmesser</string>
     <string name="planetelong">Elongation</string>
     <string name="planetsdiam">Radius</string>
-    <string name="planetdistearth">Erde</string>
+    <string name="planetdistearth">Erde/AE</string>
     <string name="planetalt">Höhe</string>
     <string name="planetazi">Azimut</string>
     <string name="planetring">Ring</string>
@@ -68,8 +68,8 @@
     <string name="timezone">Zeitzone</string>
     <string name="altitude">Höhe</string>
 
-    <string name="radeg">RA in °</string>
-    <string name="rahm">RA in Std:Min</string>
+    <string name="radeg">RectAsc in °</string>
+    <string name="rahm">RectAsc in Std:Min</string>
     <string name="showptr">Zeiger ein</string>
     <string name="azimuthSouth">Azimut 0 im Süden</string>
     <string name="azimuthNorth">Azimut 0 im Norden</string>

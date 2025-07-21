@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SkyReigen</string>
-    <string name="quart">quart:</string>
+    <string name="quart">quartier</string>
     <string name="sunrise">lever</string>
     <string name="riseset">lev/coucher</string>
     <string name="suntrans">méridien</string>
@@ -16,7 +16,7 @@
     <string name="moonrise">lever</string>
     <string name="moontrans">méridien</string>
     <string name="moonset">coucher</string>
-    <string name="moondist">distance</string>
+    <string name="moondist">distance/mkm</string>
     <string name="moondecl">déclinaison</string>
     <string name="moonphase">phase</string>
     <string name="moonlibraLong">libr. long.</string>
@@ -33,7 +33,7 @@
     <string name="planetrise">lever</string>
     <string name="planettrans">méridien</string>
     <string name="planetset">coucher</string>
-    <string name="planetdistsun">dist. soleil</string>
+    <string name="planetdistsun">dist. soleil/UA</string>
     <string name="planetdecl">déclinaison</string>
     <string name="planetphase">phase</string>
     <string name="planetra">asc. droite</string>
@@ -42,7 +42,7 @@
     <string name="planetdiam">diamètre</string>
     <string name="planetelong">elongation</string>
     <string name="planetsdiam">sdiam.</string>
-    <string name="planetdistearth">dist. terre</string>
+    <string name="planetdistearth">dist. terre/UA</string>
     <string name="planetalt">hauteur</string>
     <string name="planetazi">azimut</string>
     <string name="planetring">anneau</string>
@@ -50,7 +50,7 @@
     <string name="planetDetails">plus</string>
 
 
-    <string name="sundist">distance</string>
+    <string name="sundist">distance/UA</string>
 
     <string name="alt">hauteur</string>
     <string name="same">même haut.</string>
@@ -73,8 +73,8 @@
     <string name="timezone">heure</string>
     <string name="altitude">hauteur</string>
 
-    <string name="radeg">RA en °</string>
-    <string name="rahm">RA en H:M</string>
+    <string name="radeg">AscDr en °</string>
+    <string name="rahm">AscDr en H:M</string>
     <string name="showptr">pointeur</string>
     <string name="azimuthSouth">azimut 0 S</string>
     <string name="azimuthNorth">azimut 0 N</string>

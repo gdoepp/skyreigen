@@ -91,7 +91,7 @@ public class MonthView extends View implements OnTouchListener {
 
         paint.reset();
 
-        paint.setStyle(Style.STROKE);
+        paint.setStyle(Style.FILL);
         paint.setAlpha(255);
         paint.setColor(Color.WHITE);
 
@@ -113,6 +113,7 @@ public class MonthView extends View implements OnTouchListener {
 
         drawAxes(canvas);
 
+        paint.setStyle(Style.STROKE);
         paint.setStrokeWidth(4);
 
         drawMoon(canvas, RSTitem.moon.ordinal(), 0x6fb0b0b0);
@@ -137,7 +138,6 @@ public class MonthView extends View implements OnTouchListener {
 
     void drawAxes(Canvas canvas) {
 
-        paint.setStyle(Style.STROKE);
         paint.setTextSize(getContext().getApplicationContext().getResources()
                 .getDimensionPixelSize(R.dimen.normalTextSize) * 0.7f);
 
@@ -146,15 +146,17 @@ public class MonthView extends View implements OnTouchListener {
         for (RiseSetAll r : rst) {
 
             paint.setColor(r.day % 5 == 0 ? 0xefffffff : 0x9f7f7f7f);
-
+            paint.setStyle(Style.STROKE);
             canvas.drawLine((r.day % 10 == 0 ? x1 / 2 : x1), y1 + (r.day - 1)
                     * dy, x1 + 1 * dx, y1 + (r.day - 1) * dy, paint);
             if (r.day % 5 == 0) {
+                paint.setStyle(Style.FILL);
                 canvas.drawText(r.day + ".", x1 / 10, y1 + (r.day - 1) * dy,
                         paint);
             }
         }
 
+        paint.setStyle(Style.STROKE);
         canvas.drawLine(0, y1, x1 + w, y1, paint);
 
         for (int j = 0; j < 24; j++) {
@@ -162,10 +164,12 @@ public class MonthView extends View implements OnTouchListener {
             paint.setColor(j % 3 % 5 == 0 ? 0xefffffff : 0x9f7f7f7f);
 
             float x = (24f + j - xNoon * 24f + 12f) % 24f;
+            paint.setStyle(Style.STROKE);
 
             canvas.drawLine(x1 + x * dx / 24f, (j % 3 == 0 ? 0 : y1 / 2f), x1
                     + x / 24f * dx, y1 + (rst.length - 1) * dy, paint);
             if (j % 3 == 0) {
+                paint.setStyle(Style.FILL);
                 canvas.drawText(j + "h", x1 + x * dx / 24f, y1 * 0.9f, paint);
             }
         }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SkyReigen</string>
-    <string name="quart">quart: </string>
+    <string name="quart">quarter: </string>
     <string name="sunrise">sunrise</string>
     <string name="riseset">rise/set/duration</string>
     <string name="suntrans">transit</string>
@@ -46,7 +46,7 @@
     <string name="sundist">distance</string>
 
     <string name="alt">altitude</string>
-    <string name="same">same alt.</string>
+    <string name="same">same altitude</string>
     <string name="altnoon">altitude noon</string>
     <string name="az">azimuth</string>
 
@@ -66,8 +66,8 @@
     <string name="timezone">timezone</string>
     <string name="altitude">altitude</string>
 
-    <string name="radeg">RA in °</string>
-    <string name="rahm">RA in H:M</string>
+    <string name="radeg">RectAsc in °</string>
+    <string name="rahm">RectAsc in H:M</string>
     <string name="showptr">show pointer</string>
     <string name="azimuthSouth">azimuth 0 at S</string>
     <string name="azimuthNorth">azimuth 0 at N</string>
