@@ -245,38 +245,30 @@ public class QuickFragment extends SkyFragment implements OnClickListener,
         SkyActivity activity = (SkyActivity) getActivity();
         SkyData skyData = activity.getSkyData();
 
-        switch (button.getId()) {
-            case R.id.locEdit:
-                LocationDialog locDialog = new LocationDialog();
-                locDialog.show(this.getFragmentManager(), "LocationDialog");
-                break;
-            case R.id.date:
-                showDatePicker();
-                break;
-            case R.id.time:
-                showTimePicker();
-                break;
-
-            case R.id.dateDecr:
-            case R.id.dateIncr:
-            case R.id.dateNow: {
-                if (button.getId() == R.id.dateDecr) {
-                    skyData.addCal(Calendar.DAY_OF_MONTH, -1);
-                } else if (button.getId() == R.id.dateIncr) {
-                    skyData.addCal(Calendar.DAY_OF_MONTH, 1);
-                } else {
-                    skyData.resetCal();
-                }
-
-                Date date = activity.getSkyData().getTime();
-                TextView dp = (TextView) getRootView().findViewById(R.id.date);
-                dp.setText(activity.getSkyData().formatDate(date));
-                dp = (TextView) getRootView().findViewById(R.id.time);
-                dp.setText(activity.getSkyData().formatTime(date));
-
-                update();
-                break;
+        int id = button.getId();
+        if (id == R.id.locEdit) {
+            LocationDialog locDialog = new LocationDialog();
+            locDialog.show(this.getFragmentManager(), "LocationDialog");
+        } else if (id == R.id.date) {
+            showDatePicker();
+        } else if (id == R.id.time) {
+            showTimePicker();
+        } else if (id == R.id.dateDecr || id == R.id.dateIncr || id == R.id.dateNow) {
+            if (button.getId() == R.id.dateDecr) {
+                skyData.addCal(Calendar.DAY_OF_MONTH, -1);
+            } else if (button.getId() == R.id.dateIncr) {
+                skyData.addCal(Calendar.DAY_OF_MONTH, 1);
+            } else {
+                skyData.resetCal();
             }
+
+            Date date = activity.getSkyData().getTime();
+            TextView dp = (TextView) getRootView().findViewById(R.id.date);
+            dp.setText(activity.getSkyData().formatDate(date));
+            dp = (TextView) getRootView().findViewById(R.id.time);
+            dp.setText(activity.getSkyData().formatTime(date));
+
+            update();
         }
     }
 

@@ -140,33 +140,27 @@ public class MonthFragment extends SkyFragment implements OnClickListener,
     public void onClick(View button) {
         SkyActivity activity = (SkyActivity) getActivity();
 
-        switch (button.getId()) {
-            case R.id.monthDecr:
-            case R.id.monthIncr:
-            case R.id.monthNow: {
-
-                if (button.getId() == R.id.monthDecr) {
-                    month--;
-                    if (month < 1) {
-                        month = 12;
-                        year--;
-                    }
-                } else if (button.getId() == R.id.monthIncr) {
-                    month++;
-                    if (month > 12) {
-                        month = 1;
-                        year++;
-                    }
-                } else {
-                    Calendar cal = activity.getSkyData().getCalClone();
-                    month = cal.get(Calendar.MONTH) + 1;
-                    year = cal.get(Calendar.YEAR);
+        int id = button.getId();
+        if (id == R.id.monthDecr || id == R.id.monthIncr || id == R.id.monthNow) {
+            if (button.getId() == R.id.monthDecr) {
+                month--;
+                if (month < 1) {
+                    month = 12;
+                    year--;
                 }
-
-                update();
-                break;
-
+            } else if (button.getId() == R.id.monthIncr) {
+                month++;
+                if (month > 12) {
+                    month = 1;
+                    year++;
+                }
+            } else {
+                Calendar cal = activity.getSkyData().getCalClone();
+                month = cal.get(Calendar.MONTH) + 1;
+                year = cal.get(Calendar.YEAR);
             }
+
+            update();
         }
 
     }

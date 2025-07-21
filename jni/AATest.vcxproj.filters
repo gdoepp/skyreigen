@@ -375,6 +375,9 @@
     <ClCompile Include="AAVSOP2013.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AA+.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AA+.h">

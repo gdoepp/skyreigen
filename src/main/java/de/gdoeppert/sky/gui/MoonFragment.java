@@ -69,41 +69,27 @@ public class MoonFragment extends SkyFragment implements OnClickListener {
         SkyEvent[] events = elements.getNextEvent();
         SkyActivity activity = (SkyActivity) getActivity();
 
-        switch (button.getId()) {
-            case R.id.moonevent0:
-                activity.showMessage(
-                        Messages.getString("MoonFragment.event"), events[0].info); //$NON-NLS-1$
-                break;
-            case R.id.moonevent1:
-                activity.showMessage(
-                        Messages.getString("MoonFragment.event"), events[1].info); //$NON-NLS-1$
-                break;
-            case R.id.moonevent2:
-                activity.showMessage(
-                        Messages.getString("MoonFragment.event"), events[2].info); //$NON-NLS-1$
-                break;
-            case R.id.moonevent3:
-                activity.showMessage(
-                        Messages.getString("MoonFragment.event"), events[3].info); //$NON-NLS-1$
-                break;
-            case R.id.moonevent4:
-                activity.showMessage(
-                        Messages.getString("MoonFragment.event"), events[4].info); //$NON-NLS-1$
-                break;
-            case R.id.moonevent5:
-                activity.showMessage(
-                        Messages.getString("MoonFragment.event"), events[5].info); //$NON-NLS-1$
-                break;
-
-            case R.id.mooneventdate0:
-            case R.id.mooneventdate1:
-            case R.id.mooneventdate2:
-            case R.id.mooneventdate3:
-            case R.id.mooneventdate4:
-            case R.id.mooneventdate5:
-                activity.switchDate(button, this);
-                break;
-
+        int id = button.getId();
+        if (id == R.id.moonevent0) {
+            activity.showMessage(
+                    Messages.getString("MoonFragment.event"), events[0].info); //$NON-NLS-1$
+        } else if (id == R.id.moonevent1) {
+            activity.showMessage(
+                    Messages.getString("MoonFragment.event"), events[1].info); //$NON-NLS-1$
+        } else if (id == R.id.moonevent2) {
+            activity.showMessage(
+                    Messages.getString("MoonFragment.event"), events[2].info); //$NON-NLS-1$
+        } else if (id == R.id.moonevent3) {
+            activity.showMessage(
+                    Messages.getString("MoonFragment.event"), events[3].info); //$NON-NLS-1$
+        } else if (id == R.id.moonevent4) {
+            activity.showMessage(
+                    Messages.getString("MoonFragment.event"), events[4].info); //$NON-NLS-1$
+        } else if (id == R.id.moonevent5) {
+            activity.showMessage(
+                    Messages.getString("MoonFragment.event"), events[5].info); //$NON-NLS-1$
+        } else if (id == R.id.mooneventdate0 || id == R.id.mooneventdate1 || id == R.id.mooneventdate2 || id == R.id.mooneventdate3 || id == R.id.mooneventdate4 || id == R.id.mooneventdate5) {
+            activity.switchDate(button, this);
         }
     }
 

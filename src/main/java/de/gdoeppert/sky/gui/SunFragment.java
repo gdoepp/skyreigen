@@ -64,15 +64,9 @@ public class SunFragment extends SkyFragment implements OnClickListener {
 
         SkyActivity activity = (SkyActivity) getActivity();
 
-        switch (button.getId()) {
-
-            case R.id.suneventdate0:
-            case R.id.suneventdate1:
-            case R.id.suneventdate2:
-            case R.id.suneventdate3:
-                activity.switchDate(button, this);
-                break;
-
+        int id = button.getId();
+        if (id == R.id.suneventdate0 || id == R.id.suneventdate1 || id == R.id.suneventdate2 || id == R.id.suneventdate3) {
+            activity.switchDate(button, this);
         }
     }
 }

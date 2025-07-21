@@ -1,20 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
+
 PROJECT (AstronomicalAlgorithms)
 
-cmake_minimum_required(VERSION 3.8)
-
+SET(AAPLUS_VERSION "2.63")
+SET(AAPLUS_VERSION_NUMBER 2063)
 SET(CMAKE_CXX_STANDARD 17)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Single output directory for building all executables.")
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib CACHE PATH "Single output directory for building all libraries.")
 
-#-----------------------------------------------------------------------------
-# Output directories.
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH
-  "Single output directory for building all executables.")
-SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib CACHE PATH
-  "Single output directory for building all libraries.")
+configure_file(AA+.h.in AA+.h)
 
-
-#-----------------------------------------------------------------------------
 SET ( SRCS_LIB
+  AA+.cpp
   AAAberration.cpp
   AAAngularSeparation.cpp
   AABinaryStar.cpp
@@ -136,9 +134,8 @@ SET ( SRCS_LIB
   stdafx.cpp
 )
 
-#-----------------------------------------------------------------------------
 SET ( INCS
-#  AA+.h
+  AA+.h
   AA2DCoordinate.h
   AA3DCoordinate.h
   AAAberration.h
@@ -259,21 +256,25 @@ SET ( SRCS
   AATest.cpp
 )
 
-#-----------------------------------------------------------------------------
-# Executables.
-#-----------------------------------------------------------------------------
 ADD_EXECUTABLE(AATest ${SRCS} )
 
-#-----------------------------------------------------------------------------
-# Libraries.
 ADD_LIBRARY(aaplus-static STATIC ${SRCS_LIB} ${INCS})
 SET_TARGET_PROPERTIES(aaplus-static PROPERTIES OUTPUT_NAME "aaplus")
 
 ADD_LIBRARY(aaplus-shared SHARED ${SRCS_LIB} ${INCS})
 SET_TARGET_PROPERTIES(aaplus-shared PROPERTIES OUTPUT_NAME "aaplus")
 
-install(TARGETS aaplus-shared aaplus-static 
-		DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" )
+include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_SOURCE_DIR})
+
+install(TARGETS aaplus-shared aaplus-static DESTINATION "${CMAKE_INSTALL_PREFIX}/lib")
 
 TARGET_LINK_LIBRARIES(AATest aaplus-static)
 
+set(CPACK_PACKAGE_NAME "aaplus")
+set(CPACK_PACKAGE_VENDOR "Naughter Software")
+set(CPACK_PACKAGE_VERSION "${AAPLUS_VERSION}")
+set(CPACK_PACKAGE_DESCRIPTION "AA+ is a C++ implementation for the algorithms as presented in the book 'Astronomical Algorithms' by Jean Meeus")
+set(CPACK_SOURCE_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}")
+set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-bin")
+set(CPACK_SOURCE_GENERATOR "ZIP")
+include(CPack)

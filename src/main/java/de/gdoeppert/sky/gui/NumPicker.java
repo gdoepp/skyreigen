@@ -76,19 +76,15 @@ public class NumPicker extends LinearLayout implements OnClickListener {
         Button btn = (Button) v;
         float f = getOffset();
 
-        switch (btn.getId()) {
-            case R.id.tzh1:
-                f--;
-                break;
-            case R.id.tzh2:
-                f++;
-                break;
-            case R.id.tzm1:
-                f -= 0.25;
-                break;
-            case R.id.tzm2:
-                f += 0.25;
-                break;
+        int id = btn.getId();
+        if (id == R.id.tzh1) {
+            f--;
+        } else if (id == R.id.tzh2) {
+            f++;
+        } else if (id == R.id.tzm1) {
+            f -= 0.25;
+        } else if (id == R.id.tzm2) {
+            f += 0.25;
         }
         if (f < -24) f += 24;
         if (f > 24) f -= 24;

@@ -193,41 +193,27 @@ public class PlanetFragment extends SkyFragment implements
                 .getPlanetElements(planetIdx);
         SkyEvent[] planetEvents = planetElements.getNextEvent();
 
-        switch (arg0.getId()) {
-
-            case R.id.planetevent0:
-                activity.showMessage(
-                        Messages.getString("PlanetFragment.plev"), planetEvents[0].info); //$NON-NLS-1$
-                break;
-            case R.id.planetevent1:
-                activity.showMessage(
-                        Messages.getString("PlanetFragment.plev"), planetEvents[1].info); //$NON-NLS-1$
-                break;
-            case R.id.planetevent2:
-                activity.showMessage(
-                        Messages.getString("PlanetFragment.plev"), planetEvents[2].info); //$NON-NLS-1$
-                break;
-            case R.id.planetevent3:
-                activity.showMessage(
-                        Messages.getString("PlanetFragment.plev"), planetEvents[3].info); //$NON-NLS-1$
-                break;
-            case R.id.planetevent4:
-                activity.showMessage(
-                        Messages.getString("PlanetFragment.plev"), planetEvents[4].info); //$NON-NLS-1$
-                break;
-            case R.id.planetevent5:
-                activity.showMessage(
-                        Messages.getString("PlanetFragment.plev"), planetEvents[5].info); //$NON-NLS-1$
-                break;
-
-            case R.id.planeteventdate0:
-            case R.id.planeteventdate1:
-            case R.id.planeteventdate2:
-            case R.id.planeteventdate3:
-            case R.id.planeteventdate4:
-            case R.id.planeteventdate5:
-                activity.switchDate(arg0, this);
-                break;
+        int id = arg0.getId();
+        if (id == R.id.planetevent0) {
+            activity.showMessage(
+                    Messages.getString("PlanetFragment.plev"), planetEvents[0].info); //$NON-NLS-1$
+        } else if (id == R.id.planetevent1) {
+            activity.showMessage(
+                    Messages.getString("PlanetFragment.plev"), planetEvents[1].info); //$NON-NLS-1$
+        } else if (id == R.id.planetevent2) {
+            activity.showMessage(
+                    Messages.getString("PlanetFragment.plev"), planetEvents[2].info); //$NON-NLS-1$
+        } else if (id == R.id.planetevent3) {
+            activity.showMessage(
+                    Messages.getString("PlanetFragment.plev"), planetEvents[3].info); //$NON-NLS-1$
+        } else if (id == R.id.planetevent4) {
+            activity.showMessage(
+                    Messages.getString("PlanetFragment.plev"), planetEvents[4].info); //$NON-NLS-1$
+        } else if (id == R.id.planetevent5) {
+            activity.showMessage(
+                    Messages.getString("PlanetFragment.plev"), planetEvents[5].info); //$NON-NLS-1$
+        } else if (id == R.id.planeteventdate0 || id == R.id.planeteventdate1 || id == R.id.planeteventdate2 || id == R.id.planeteventdate3 || id == R.id.planeteventdate4 || id == R.id.planeteventdate5) {
+            activity.switchDate(arg0, this);
         }
 
     }

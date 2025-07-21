@@ -8,20 +8,20 @@
 
 package com.naughter.aaplus;
 
-public class CAAMoonPerigeeApogee {
+public class CAAPlus {
   private transient long swigCPtr;
   protected transient boolean swigCMemOwn;
 
-  protected CAAMoonPerigeeApogee(long cPtr, boolean cMemoryOwn) {
+  protected CAAPlus(long cPtr, boolean cMemoryOwn) {
     swigCMemOwn = cMemoryOwn;
     swigCPtr = cPtr;
   }
 
-  protected static long getCPtr(CAAMoonPerigeeApogee obj) {
+  protected static long getCPtr(CAAPlus obj) {
     return (obj == null) ? 0 : obj.swigCPtr;
   }
 
-  protected static long swigRelease(CAAMoonPerigeeApogee obj) {
+  protected static long swigRelease(CAAPlus obj) {
     long ptr = 0;
     if (obj != null) {
       if (!obj.swigCMemOwn)
@@ -42,42 +42,22 @@ public class CAAMoonPerigeeApogee {
     if (swigCPtr != 0) {
       if (swigCMemOwn) {
         swigCMemOwn = false;
-        AAJNI.delete_CAAMoonPerigeeApogee(swigCPtr);
+        AAJNI.delete_CAAPlus(swigCPtr);
       }
       swigCPtr = 0;
     }
   }
 
-  public static double K(double Year) {
-    return AAJNI.CAAMoonPerigeeApogee_K(Year);
+  public static String Version() {
+    return AAJNI.CAAPlus_Version();
   }
 
-  public static double MeanPerigee(double k) {
-    return AAJNI.CAAMoonPerigeeApogee_MeanPerigee(k);
+  public static int VersionNumber() {
+    return AAJNI.CAAPlus_VersionNumber();
   }
 
-  public static double MeanApogee(double k) {
-    return AAJNI.CAAMoonPerigeeApogee_MeanApogee(k);
-  }
-
-  public static double TruePerigee(double k) {
-    return AAJNI.CAAMoonPerigeeApogee_TruePerigee(k);
-  }
-
-  public static double TrueApogee(double k) {
-    return AAJNI.CAAMoonPerigeeApogee_TrueApogee(k);
-  }
-
-  public static double PerigeeParallax(double k) {
-    return AAJNI.CAAMoonPerigeeApogee_PerigeeParallax(k);
-  }
-
-  public static double ApogeeParallax(double k) {
-    return AAJNI.CAAMoonPerigeeApogee_ApogeeParallax(k);
-  }
-
-  public CAAMoonPerigeeApogee() {
-    this(AAJNI.new_CAAMoonPerigeeApogee(), true);
+  public CAAPlus() {
+    this(AAJNI.new_CAAPlus(), true);
   }
 
 }
