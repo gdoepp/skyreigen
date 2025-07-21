@@ -2211,20 +2211,6 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1PlutoSem
 }
 
 
-SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1GeocentricMoonSemidiameter(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
-  jdouble jresult = 0 ;
-  double arg1 ;
-  double result;
-  
-  (void)jenv;
-  (void)jcls;
-  arg1 = (double)jarg1; 
-  result = (double)CAADiameters::GeocentricMoonSemidiameter(arg1);
-  jresult = (jdouble)result; 
-  return jresult;
-}
-
-
 SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1ApparentAsteroidDiameter(JNIEnv *jenv, jclass jcls, jdouble jarg1, jdouble jarg2) {
   jdouble jresult = 0 ;
   double arg1 ;
@@ -2236,6 +2222,20 @@ SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1Apparent
   arg1 = (double)jarg1; 
   arg2 = (double)jarg2; 
   result = (double)CAADiameters::ApparentAsteroidDiameter(arg1,arg2);
+  jresult = (jdouble)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jdouble JNICALL Java_com_naughter_aaplus_AAJNI_CAADiameters_1GeocentricMoonSemidiameter(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
+  jdouble jresult = 0 ;
+  double arg1 ;
+  double result;
+  
+  (void)jenv;
+  (void)jcls;
+  arg1 = (double)jarg1; 
+  result = (double)CAADiameters::GeocentricMoonSemidiameter(arg1);
   jresult = (jdouble)result; 
   return jresult;
 }

@@ -23,7 +23,6 @@ SET ( SRCS_LIB
   AADiameters.cpp
   AADynamicalTime.cpp
   AAEarth.cpp
-  AAEaster.cpp
   AAEclipses.cpp
   AAEclipticalElements.cpp
   AAElementsPlanetaryOrbit.cpp
@@ -82,6 +81,7 @@ SET ( SRCS_LIB
   AASun.cpp
   AAUranus.cpp
   AAVenus.cpp
+  AAVSOP2013.cpp
   AAVSOP87.cpp
   AAVSOP87A_EAR.cpp
   AAVSOP87A_EMB.cpp
@@ -200,6 +200,7 @@ SET ( INCS
   AASun.h
   AAUranus.h
   AAVenus.h
+  AAVSOP2013.h
   AAVSOP87.h
   AAVSOP87A_EAR.h
   AAVSOP87A_EMB.h

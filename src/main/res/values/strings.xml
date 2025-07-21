@@ -166,13 +166,13 @@
     <string name="visibility_label">Visibility</string>
     
     <string name="infoshort">
-    <b>SkyReigen</b> V3.32\n
+    <b>SkyReigen</b> V3.33\n
     Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
     Rise, set, position, visibility and other data.\n
         &#169; Gerhard Döppert 2012-2023\n
     </string>
     <string name="info">
-    <b>SkyReigen</b> V3.32\n
+    <b>SkyReigen</b> V3.33\n
     Android ephemeris application showing ephemeris for Sun, Moon and Planets.\n
     &#169; Gerhard Döppert 2012-2023\n\n
     This application uses the library http://www.naughter.com/aa.html that

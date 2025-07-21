@@ -39,9 +39,6 @@
     <ClCompile Include="AAEarth.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AAEaster.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="AAEclipses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -373,6 +370,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AAPlanetaryPhenomena2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AAVSOP2013.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -744,6 +744,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AAPlanetaryPhenomena2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AAVSOP2013.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
