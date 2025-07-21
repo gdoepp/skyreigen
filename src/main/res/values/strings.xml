@@ -17,7 +17,7 @@
     <string name="moonrise">rise</string>
     <string name="moontrans">transit</string>
     <string name="moonset">set</string>
-    <string name="moondist">distance</string>
+    <string name="moondist">distance/tkm</string>
     <string name="moondecl">declination</string>
     <string name="moonphase">phase</string>
     <string name="moonlibraLong">librat. long.</string>
@@ -30,20 +30,20 @@
     <string name="planetrise">rise</string>
     <string name="planettrans">transit</string>
     <string name="planetset">set</string>
-    <string name="planetdistsun">dist. sun</string>
+    <string name="planetdistsun">dist. sun/AU</string>
     <string name="planetdecl">declination</string>
     <string name="planetra">right ascens.</string>
     <string name="planetmag">magnitude</string>
     <string name="planetdisk">illumination</string>
     <string name="planetdiam">diameter</string>
     <string name="planetelong">elongation</string>
-    <string name="planetdistearth">dist. earth</string>
+    <string name="planetdistearth">dist. earth/AU</string>
     <string name="planetalt">altitude</string>
     <string name="planetazi">azimuth</string>
     <string name="planetring">ring</string>
     <string name="planetvis">visibility</string>
     <string name="planetDetails">details</string>
-    <string name="sundist">distance</string>
+    <string name="sundist">distance/AU</string>
 
     <string name="alt">altitude</string>
     <string name="altnoon">max. altitude</string>
@@ -65,8 +65,8 @@
     <string name="timezone">timezone</string>
     <string name="altitude">altitude</string>
 
-    <string name="radeg">RA in °</string>
-    <string name="rahm">RA in H:M</string>
+    <string name="radeg">RectAsc in °</string>
+    <string name="rahm">RectAsc in H:M</string>
     <string name="showptr">show pointer</string>
     <string name="azimuthSouth">azimuth 0 at S</string>
     <string name="azimuthNorth">azimuth 0 at N</string>
