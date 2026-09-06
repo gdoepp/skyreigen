@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 
 PROJECT (AstronomicalAlgorithms)
 
-SET(AAPLUS_VERSION "2.63")
-SET(AAPLUS_VERSION_NUMBER 2063)
+SET(AAPLUS_VERSION "2.74")
+SET(AAPLUS_VERSION_NUMBER 2074)
 SET(CMAKE_CXX_STANDARD 17)
 SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Single output directory for building all executables.")
@@ -17,7 +17,6 @@ SET ( SRCS_LIB
   AAAngularSeparation.cpp
   AABinaryStar.cpp
   AACoordinateTransformation.cpp
-  AADate.cpp
   AADiameters.cpp
   AADynamicalTime.cpp
   AAEarth.cpp
@@ -33,9 +32,9 @@ SET ( SRCS_LIB
   AAFK5.cpp
   AAGalileanMoons.cpp
   AAGlobe.cpp
+  AAHyperbolic.cpp
   AAIlluminatedFraction.cpp
   AAInterpolate.cpp
-  AAJewishCalendar.cpp
   AAJupiter.cpp
   AAKepler.cpp
   AAMars.cpp
@@ -50,7 +49,6 @@ SET ( SRCS_LIB
   AAMoonPerigeeApogee2.cpp
   AAMoonPhases.cpp
   AAMoonPhases2.cpp
-  AAMoslemCalendar.cpp
   AANearParabolic.cpp
   AANeptune.cpp
   AANodes.cpp
@@ -157,6 +155,7 @@ SET ( INCS
   AAFK5.h
   AAGalileanMoons.h
   AAGlobe.h
+  AAHyperbolic.h
   AAIlluminatedFraction.h
   AAInterpolate.h
   AAJewishCalendar.h

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-: "${NDK_HOME:=/opt/android/ndk}"
+: "${NDK_HOME:=/home/gd/Android/Sdk/ndk/29.0.14033849}"
 echo creating interfaces to java:
 cd swiggen
 ./swiggen.sh

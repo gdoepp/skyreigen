@@ -3,7 +3,7 @@ Module : AA+.h
 Purpose: Main include file for AA+ framework
 Created: PJN / 30-1-2005
 
-Copyright (c) 2003 - 2025 by PJ Naughter (Web: www.naughter.com, Email: pjna@naughter.com)
+Copyright (c) 2003 - 2026 by PJ Naughter (Web: www.naughter.com, Email: pjna@naughter.com)
 
 All rights reserved.
 
@@ -76,6 +76,7 @@ to maintain a single distribution point for the source code.
 #include "AAFK5.h"
 #include "AAGalileanMoons.h"
 #include "AAGlobe.h"
+#include "AAHyperbolic.h"
 #include "AAIlluminatedFraction.h"
 #include "AAInterpolate.h"
 #include "AAJewishCalendar.h"
