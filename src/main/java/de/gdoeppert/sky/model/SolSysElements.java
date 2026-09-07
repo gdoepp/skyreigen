@@ -192,8 +192,9 @@ public abstract class SolSysElements {
     protected String printTimeSpan(double days, int times) {
         CAADate date = new CAADate();
         int hours = (int) Math.floor(days * 24);
-        date.Set(0, 0, 0, hours, (int) (Math.round((days * 24 - hours) * 60)),
+        date.Set(2000, 1, 1, hours, (int) (Math.round((days * 24 - hours) * 60)),
                 0, true);
+
         return printTimeSpan(date,  times);
     }
 
