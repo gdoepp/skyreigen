@@ -171,14 +171,14 @@
     <string name="time_meridian">Meridian</string>
 
         <string name="infoshort">
-    <b>SkyReigen</b> v3.38\n
+    <b>SkyReigen</b> v3.39\n
     Android Ephemeriden-App für Sonne, Mond und Planeten.\n
     Aufgang, Untergang, Position, Sichtbarkeit und andere Daten.\n
     &#169; Gerhard Döppert, 2012-2026
     </string>
     
     <string name="info">
-    <b>SkyReigen</b> V3.38\n
+    <b>SkyReigen</b> V3.39\n
     Android Ephemeriden-App für Sonne, Mond und Planeten.\n
     &#169; Gerhard Döppert, 2012-2026\n\n
     Die Anwendung benutzt die Library http://www.naughter.com/aa.html welche
